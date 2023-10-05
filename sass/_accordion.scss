@@ -1,0 +1,60 @@
+@mixin accordion($icon:block){
+    .accordion-item{
+        background-color: #fff;
+        margin-bottom:2rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        &:last-child{
+            margin-bottom:0;
+        }
+        .accordion-head{
+            font-size: 1.5rem;
+            padding:1.3rem 1.8rem;
+            color:#566a7f;
+            width:100%;
+            text-align: left;
+            position: relative;
+            &:after{
+                content:'';
+                display: $icon;
+                width:2.5rem;
+                height:2.5rem;
+                background-image: url(../images/icon/chevron-right-regular-240.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                position: absolute;
+                right: 1.3rem;
+                top:50%;
+                transform: translateY(-50%);
+                transition: 500ms;
+            }
+        }
+        .accordion-body{
+            height:100px;
+            transition:500ms;
+            &.none{
+                height:0 !important;
+            }
+            .accordion-text{
+                padding:0 1.8rem 1.3rem;
+                font-size: 1.5rem;
+                color:#697a8d;
+            }
+        }
+        &.active{
+            .accordion-head{
+                &:after{
+                    transform: translateY(-50%) rotate(90deg);
+                }
+            }
+        }
+    }
+}
+
+.accordion{
+    @include accordion(block);
+    &-simple{
+        @include accordion(none)
+    }
+}

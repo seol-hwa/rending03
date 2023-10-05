@@ -1,0 +1,205 @@
+@mixin button-bg($bg, $color: #fff) {
+    color: $color;
+    background: $bg;
+    box-shadow: 0 0.125rem 0.25rem 0 rgba($bg, .4);
+
+    &:hover {
+        background: darken($bg, 8%);
+        transition: all 0.3s ease;
+    }
+
+    &:active,
+    &.active,
+    .btn-check:checked+& {
+        background: darken($bg, 8%);
+    }
+}
+
+@mixin btn-group($color,$bg:#fff) {
+    color: $color;
+    background: $bg;
+    border: 1px solid $color;
+    margin-left:-0.1rem;
+    display: block;
+    
+    &:first-of-type {
+        border-radius: 0.8rem 0 0 0.8rem;
+        margin-left:0;
+    }
+    &:last-of-type{
+        border-radius: 0 0.8rem 0.8rem 0;
+    }
+
+    &:hover {
+        background: $color;
+        color:$bg;
+        transition: all 0.3s ease;
+    }
+
+    &:active,
+    &.active,
+    .btn-check:checked+& {
+        background: darken($color,8%);
+        color:$bg;
+    }
+    
+}
+
+
+.btn {
+    padding: 0.7rem 2rem;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.5rem;
+
+    //color
+    &-d-gray {
+        @include button-bg(#8592a3);
+    }
+
+    &-d-red {
+        @include button-bg(#ff3e1d);
+    }
+
+    &-d-yellow {
+        @include button-bg(#f1c40f);
+    }
+
+    &-d-blue {
+        @include button-bg(#03c3ec);
+    }
+
+    &-d-green {
+        @include button-bg(#71dd37);
+    }
+
+    &-d-dark {
+        @include button-bg(#233446);
+    }
+
+    &-d-purple {
+        @include button-bg(#696dff);
+    }
+    &-r8-gray {
+        border-radius: 0.8rem;
+        @include button-bg(#8592a3);
+    }
+
+    &-r8-red {
+        border-radius: 0.8rem;
+        @include button-bg(#ff3e1d);
+    }
+
+    &-r8-yellow {
+        border-radius: 0.8rem;
+        @include button-bg(#f1c40f);
+    }
+
+    &-r8-blue {
+        border-radius: 0.8rem;
+        @include button-bg(#03c3ec);
+    }
+
+    &-r8-green {
+        border-radius: 0.8rem;
+        @include button-bg(#71dd37);
+    }
+
+    &-r8-dark {
+        border-radius: 0.8rem;
+        @include button-bg(#233446);
+    }
+
+    &-r8-purple {
+        border-radius: 0.8rem;
+        @include button-bg(#696dff);
+    }
+
+    &-r50-gray {
+        border-radius: 5rem;
+        @include button-bg(#8592a3);
+    }
+
+    &-r50-red {
+        border-radius: 5rem;
+        @include button-bg(#ff3e1d);
+    }
+
+    &-r50-yellow {
+        border-radius: 5rem;
+        @include button-bg(#f1c40f);
+    }
+
+    &-r50-blue {
+        border-radius: 5rem;
+        @include button-bg(#03c3ec);
+    }
+
+    &-r50-green {
+        border-radius: 5rem;
+        @include button-bg(#71dd37);
+    }
+
+    &-r50-dark {
+        border-radius: 5rem;
+        @include button-bg(#233446);
+    }
+
+    &-r50-purple {
+        border-radius: 5rem;
+        @include button-bg(#696dff);
+    }
+
+    //size
+    &-xl {
+        padding: 1.7rem 3.4rem;
+        font-size: 2rem;
+    }
+
+    &-lg {
+        padding: 1.2rem 2.4rem;
+        font-size: 1.6rem;
+    }
+
+    &-sm {
+        padding: 0.4rem 1.1rem;
+        border-radius: 0.4rem;
+        font-size: 1.2rem;
+    }
+
+    &-xs {
+        padding: 0 0.8rem;
+        border-radius: 0.2rem;
+        font-size: 1.2rem;
+    }
+
+    //toggle state
+    &:disabled {
+        cursor: default;
+        pointer-events: none;
+        opacity: 0.6;
+    }
+    
+    //btn-group
+    &-outline-red{
+        @include btn-group(#ff3e1d);
+    }
+    &-outline-blue{
+        @include btn-group(#03c3ec);
+    }
+    &-outline-green{
+        @include btn-group(#71dd37);
+    }
+    &-outline-gray{
+        @include btn-group(#8592a3);
+    }
+    &-outline-dark{
+        @include btn-group(#233446);
+    }
+    &-outline-purple{
+        @include btn-group(#696dff);
+    }
+    &-outline-yellow{
+        @include btn-group(#f1c40f);
+    }
+}

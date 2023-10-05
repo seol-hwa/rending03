@@ -1,0 +1,75 @@
+@mixin navTabs($liWidth:auto,$btnWidth:auto, $bdR:0.5rem) {
+    .nav-list {
+        display: flex;
+        li {
+            width:$liWidth;
+            .nav-link {
+                font-size: 1.5rem;
+                width:$btnWidth;
+                padding: 0.8rem 2rem;
+                color: #566a7f;
+                background-color: #eceef1;
+                border-right: 1px solid #fff;
+            }
+
+            &:first-child {
+                .nav-link {
+                    border-radius: 0.5rem 0 0;
+                }
+            }
+
+            &:last-child {
+                .nav-link {
+                    border: none;
+                    border-radius: 0 0.5rem 0 0;
+                }
+            }
+
+            .active {
+                background-color: #fff;
+                box-shadow: 0 2px 6px 0 rgba(67,89,113,.12);
+            }
+        }
+    }
+    .tab-wrap{
+        border-radius: 0 $bdR 0.5rem 0.5rem;
+        background-color: #fff;
+        padding:2rem;
+        box-shadow: 0 6px 7px -1px rgba(67,89,113,.12);
+        position:relative;
+        .tab-box{
+            display: none;
+            p{
+                font-size: 1.5rem;
+                line-height: 2;
+                color:#697a8d;
+                margin-bottom:2rem;
+                &:last-child{
+                    margin-bottom:0;
+                }
+            }
+        }
+        .active{
+            display: block;
+        }
+    }
+}
+
+.nav {
+    &-tabs {
+        @include navTabs();
+    }
+    &-fill{
+        @include navTabs(calc(100% / 3), 100%, 0);
+    }
+}
+
+
+//그리드 대체
+@media (max-width:1024px){
+    .spare-colum{
+        >div{
+            width:100% !important;
+        }
+    }
+}

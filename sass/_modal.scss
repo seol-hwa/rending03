@@ -1,0 +1,211 @@
+@mixin modal() {
+    &.active {
+        .popup__bg {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .popup__wrap {
+            visibility: visible;
+            .popup-type-1,
+            .popup-type-2,
+            .popup-type-3,
+            .popup-type-4 {
+                visibility: visible;
+                transform: scale(1);
+                opacity:1;
+            }
+        }
+    }
+
+    .popup__bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(#000000, 0.2);
+        width: 100%;
+        height: 100vh;
+        padding: 0 2rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 200ms;
+    }
+
+    .popup__wrap {
+        position: fixed;
+        top: 50%;
+        right: 0;
+        width: 100%;
+        transform: translateY(-50%);
+        visibility: hidden;
+        %popup-type{
+            position: relative;
+            transform: scale(0);
+            background: #fff;
+            border-radius: 1rem;
+            margin: 0 auto;
+            max-width: 80rem;
+            overflow: hidden;
+            visibility: hidden;
+            opacity: 0;
+            transition: transform 300ms, opacity 200ms;
+
+            .popup--header {
+                display: flex;
+                justify-content: center;
+                padding: 4rem 2rem 2rem;
+
+                &__title {
+                    font-size: 2.2rem;
+                    color: #222;
+
+                    >span {
+                        color: red;
+                    }
+                }
+
+                .popup__close-btn {
+                    padding: 0;
+                    position: absolute;
+                    top: 2rem;
+                    right: 2rem;
+                }
+            }
+        }
+        .popup-type-1 {
+            @extend %popup-type;
+
+            .popup--body {
+                padding: 0 2rem 4rem;
+
+                &__text {
+                    font-size: 1.6rem;
+                    color: #222;
+                    text-align: center;
+                    font-weight: 500;
+                }
+            }
+
+            .popup--footer {
+                display: flex;
+
+                button {
+                    flex: 1;
+                    padding: 1.6rem;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                }
+            }
+        }
+        .popup-type-2 {
+            @extend %popup-type;
+    
+            .popup--body {
+                padding: 0 2rem 6rem;
+    
+                &__text {
+                    font-size: 2.2rem;
+                    font-weight: 500;
+                    color: #222;
+                    text-align: center;
+                }
+            }
+    
+            .popup--footer {
+                display: flex;
+    
+                button {
+                    flex: 1;
+                    padding: 1.6rem;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    
+        .popup-type-3 {
+            @extend %popup-type;
+    
+            .popup--body {
+                padding: 0 2rem 6rem;
+    
+                &__text {
+                    font-size: 2.2rem;
+                    font-weight: 500;
+                    color: #222;
+                    text-align: center;
+                }
+            }
+    
+            .popup--footer {
+                display: flex;
+    
+                button {
+                    flex: 1;
+                    padding: 1.6rem;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    
+        .popup-type-4 {
+            @extend %popup-type;
+                
+            .popup--body {
+                padding: 0 2rem 4rem;
+    
+                &__text {
+                    font-size: 1.6rem;
+                    color: #222;
+                    text-align: center;
+                    font-weight: 500;
+                }
+            }
+    
+            .popup--footer {
+                display: flex;
+    
+                button {
+                    flex: 1;
+                    padding: 1.6rem;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                }
+            }
+        }
+    
+        @media (max-width:1024px) {
+    
+            .popup-type-1,
+            .popup-type-4 {
+                .popup--header {
+                    &__title {
+                        font-size: 1.8rem;
+                    }
+                }
+    
+                .popup--body {
+                    &__text {
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+    
+            .popup-type-2,
+            .popup-type-3 {
+                .popup--body {
+                    &__text {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+    
+        }
+    }
+
+}
+
+.popup {
+    @include modal();
+}

@@ -1,0 +1,95 @@
+@import './guide';
+body{
+  background: #F5F6FF;
+  .login-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    .login-wrap{
+      display: flex;
+      justify-content: center;
+      width: 760px;
+      height: 420px;
+      border-radius: 10px;
+      overflow: hidden;
+      .login-split{
+        width: 50%;
+        height: 100%;
+      }
+      .login-txt{
+        background: #3066E2;
+        color: #fff;
+        padding: 9.4rem 2.7rem;
+        h2{
+          line-height: 34px;
+          letter-spacing: -1px;
+        }
+      }
+
+      .login-cont{
+        background: #fff;
+        padding: 3.5rem 3rem;
+        .logo{
+          text-align: center;
+          color: #3066E2;
+          font-weight: 800;
+        }
+        .login-form{
+          margin-top: 4rem;
+        }
+        .form-style{
+          input{
+          width: 320px;
+          height: 40px;
+          background: #fff;
+          border-radius: 5px;
+          border: 1px solid #d9d9d9;
+          margin-bottom: 2.5rem;
+          font-size: 1.5rem;
+        }
+        }
+      }
+      .login-btn{
+        .btn{
+          width: 320px;
+          height: 40px;
+          background: #3066E2;
+          color: #fff;
+          border-radius: 5px;
+        }
+      }
+      .login-menu{
+        margin-top: 3rem;
+        ul {
+          text-align: center;
+          li{
+            display: inline-block;
+            text-align: center;
+            position: relative;
+            a{
+              display: inline-block;
+              color: #9c9c9c;
+              padding: 1rem;
+
+            }
+            &:first-child a:after{
+              position: absolute;
+              content:'·';
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+        }  
+      }
+    }
+    .login-copy{
+      text-align: center;
+      margin-top: 2rem;
+      color: #9c9c9c;
+    }
+  }
+}
