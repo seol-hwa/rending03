@@ -11270,11 +11270,43 @@ body main .visual-con .inner .visual-wrap .visual-start__login {
   background-color: #011A52;
   color: #fff;
 }
+body main .service-con {
+  background-color: #fff;
+}
 body main .service-con .inner .service__title {
   font-size: 4.8rem;
   font-weight: 700;
   line-height: 1.5;
   color: #3066E2;
+}
+body main .service-con .inner .layout-style-4 .layout {
+  align-items: center;
+  justify-content: center;
+}
+body main .service-con .inner .layout-style-4 .layout .img-wrap {
+  width: 39.7297297297%;
+  padding-bottom: 44.8648648649%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 4.2rem;
+}
+body main .service-con .inner .layout-style-4 .layout:first-child .img-wrap {
+  background-image: url(../images/target.svg);
+}
+body main .service-con .inner .layout-style-4 .layout:nth-child(2) .img-wrap {
+  background-image: url(../images/analyze.svg);
+}
+body main .service-con .inner .layout-style-4 .layout:nth-child(3) .img-wrap {
+  background-image: url(../images/real-monitor.svg);
+}
+body main .service-con .inner .layout-style-4 .layout:nth-child(4) .img-wrap {
+  background-image: url(../images/custom.svg);
+}
+body main .service-con .inner .layout-style-4 .layout .layout-title {
+  font-size: 2.3rem;
+  line-height: 1.3;
+  color: #011A52;
 }
 
 @media (max-width: 1200px) {
