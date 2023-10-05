@@ -9724,7 +9724,7 @@ body .login-container .login-wrap .login-split {
 body .login-container .login-wrap .login-txt {
   background: #3066E2;
   color: #fff;
-  padding: 94px 27px;
+  padding: 9.4rem 2.7rem;
 }
 body .login-container .login-wrap .login-txt h2 {
   line-height: 34px;
@@ -9732,7 +9732,7 @@ body .login-container .login-wrap .login-txt h2 {
 }
 body .login-container .login-wrap .login-cont {
   background: #fff;
-  padding: 35px 30px;
+  padding: 3.5rem 3rem;
 }
 body .login-container .login-wrap .login-cont .logo {
   text-align: center;
