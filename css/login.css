@@ -2793,11 +2793,6 @@ body, html {
   font-size: 1.2rem;
   transition: 300ms;
 }
-.form-style input::-moz-placeholder, .form-style select::-moz-placeholder {
-  color: #ccc;
-  -moz-transition: 300ms;
-  transition: 300ms;
-}
 .form-style input::placeholder,
 .form-style select::placeholder {
   color: #ccc;
@@ -2808,22 +2803,13 @@ body, html {
   border-color: #8592a3;
   box-shadow: 0 0 2.5px 0.5px rgba(133, 146, 163, 0.1);
 }
-.form-style input:focus::-moz-placeholder, .form-style select:focus::-moz-placeholder {
-  text-indent: 0.8rem;
-}
 .form-style input:focus::placeholder,
 .form-style select:focus::placeholder {
   text-indent: 0.8rem;
 }
 .form-style select {
   background: #fff url(../images/icon/chevron-down-regular-240_1.png) no-repeat right 0.6rem top 42%/2.4rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.form-style input:-moz-read-only {
-  background: #eee;
-  display: block;
+  appearance: none;
 }
 .form-style input:read-only {
   background: #eee;
@@ -2850,11 +2836,6 @@ body, html {
   font-size: 1.2rem;
   transition: 300ms;
 }
-.form-style-red input::-moz-placeholder, .form-style-red select::-moz-placeholder {
-  color: #ccc;
-  -moz-transition: 300ms;
-  transition: 300ms;
-}
 .form-style-red input::placeholder,
 .form-style-red select::placeholder {
   color: #ccc;
@@ -2865,22 +2846,13 @@ body, html {
   border-color: #ff3e1d;
   box-shadow: 0 0 2.5px 0.5px rgba(255, 62, 29, 0.1);
 }
-.form-style-red input:focus::-moz-placeholder, .form-style-red select:focus::-moz-placeholder {
-  text-indent: 0.8rem;
-}
 .form-style-red input:focus::placeholder,
 .form-style-red select:focus::placeholder {
   text-indent: 0.8rem;
 }
 .form-style-red select {
   background: #fff url(../images/icon/chevron-down-regular-240_1.png) no-repeat right 0.6rem top 42%/2.4rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.form-style-red input:-moz-read-only {
-  background: #eee;
-  display: block;
+  appearance: none;
 }
 .form-style-red input:read-only {
   background: #eee;
@@ -2907,11 +2879,6 @@ body, html {
   font-size: 1.2rem;
   transition: 300ms;
 }
-.form-style-dark input::-moz-placeholder, .form-style-dark select::-moz-placeholder {
-  color: #ccc;
-  -moz-transition: 300ms;
-  transition: 300ms;
-}
 .form-style-dark input::placeholder,
 .form-style-dark select::placeholder {
   color: #ccc;
@@ -2922,22 +2889,13 @@ body, html {
   border-color: #233446;
   box-shadow: 0 0 2.5px 0.5px rgba(35, 52, 70, 0.1);
 }
-.form-style-dark input:focus::-moz-placeholder, .form-style-dark select:focus::-moz-placeholder {
-  text-indent: 0.8rem;
-}
 .form-style-dark input:focus::placeholder,
 .form-style-dark select:focus::placeholder {
   text-indent: 0.8rem;
 }
 .form-style-dark select {
   background: #fff url(../images/icon/chevron-down-regular-240_1.png) no-repeat right 0.6rem top 42%/2.4rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.form-style-dark input:-moz-read-only {
-  background: #eee;
-  display: block;
+  appearance: none;
 }
 .form-style-dark input:read-only {
   background: #eee;
@@ -2964,11 +2922,6 @@ body, html {
   font-size: 1.2rem;
   transition: 300ms;
 }
-.form-style-purple input::-moz-placeholder, .form-style-purple select::-moz-placeholder {
-  color: #ccc;
-  -moz-transition: 300ms;
-  transition: 300ms;
-}
 .form-style-purple input::placeholder,
 .form-style-purple select::placeholder {
   color: #ccc;
@@ -2979,22 +2932,13 @@ body, html {
   border-color: #696dff;
   box-shadow: 0 0 2.5px 0.5px rgba(105, 109, 255, 0.1);
 }
-.form-style-purple input:focus::-moz-placeholder, .form-style-purple select:focus::-moz-placeholder {
-  text-indent: 0.8rem;
-}
 .form-style-purple input:focus::placeholder,
 .form-style-purple select:focus::placeholder {
   text-indent: 0.8rem;
 }
 .form-style-purple select {
   background: #fff url(../images/icon/chevron-down-regular-240_1.png) no-repeat right 0.6rem top 42%/2.4rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
-.form-style-purple input:-moz-read-only {
-  background: #eee;
-  display: block;
+  appearance: none;
 }
 .form-style-purple input:read-only {
   background: #eee;
@@ -3181,9 +3125,7 @@ body, html {
 .form-check input {
   width: 2rem;
   height: 2rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 1px solid #ddd;
 }
 .form-check input:hover {
@@ -3230,9 +3172,7 @@ body, html {
 .form-check-red input {
   width: 2rem;
   height: 2rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 1px solid #ddd;
 }
 .form-check-red input:hover {
@@ -3279,9 +3219,7 @@ body, html {
 .form-check-purple input {
   width: 2rem;
   height: 2rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 1px solid #ddd;
 }
 .form-check-purple input:hover {
@@ -3328,9 +3266,7 @@ body, html {
 .form-check-dark input {
   width: 2rem;
   height: 2rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 1px solid #ddd;
 }
 .form-check-dark input:hover {
@@ -3377,9 +3313,7 @@ body, html {
 .form-check-inline input {
   width: 2rem;
   height: 2rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 1px solid #ddd;
 }
 .form-check-inline input:hover {
@@ -3426,9 +3360,7 @@ body, html {
 .form-check-inline-red input {
   width: 2rem;
   height: 2rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 1px solid #ddd;
 }
 .form-check-inline-red input:hover {
@@ -3475,9 +3407,7 @@ body, html {
 .form-check-inline-purple input {
   width: 2rem;
   height: 2rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 1px solid #ddd;
 }
 .form-check-inline-purple input:hover {
@@ -3524,9 +3454,7 @@ body, html {
 .form-check-inline-dark input {
   width: 2rem;
   height: 2rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 1px solid #ddd;
 }
 .form-check-inline-dark input:hover {
@@ -3573,9 +3501,7 @@ body, html {
 .form-switch input {
   width: 3.4rem;
   height: 2rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 1px solid #ddd;
   transition: 300ms;
 }
@@ -3616,9 +3542,7 @@ body, html {
 .form-switch-red input {
   width: 3.4rem;
   height: 2rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 1px solid #ddd;
   transition: 300ms;
 }
@@ -3659,9 +3583,7 @@ body, html {
 .form-switch-dark input {
   width: 3.4rem;
   height: 2rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 1px solid #ddd;
   transition: 300ms;
 }
@@ -3702,9 +3624,7 @@ body, html {
 .form-switch-purple input {
   width: 3.4rem;
   height: 2rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 1px solid #ddd;
   transition: 300ms;
 }
@@ -3759,11 +3679,6 @@ body, html {
   font-size: 1.2rem;
   transition: 300ms;
 }
-.form-style-change div input::-moz-placeholder, .form-style-change div select::-moz-placeholder {
-  color: #ccc;
-  -moz-transition: 300ms;
-  transition: 300ms;
-}
 .form-style-change div input::placeholder,
 .form-style-change div select::placeholder {
   color: #ccc;
@@ -3773,10 +3688,6 @@ body, html {
 .form-style-change div select:focus {
   border-color: #8592a3;
   box-shadow: 0 0 2.5px 0.5px rgba(133, 146, 163, 0.1);
-}
-.form-style-change div input:-moz-read-only {
-  background: #eee;
-  display: block;
 }
 .form-style-change div input:read-only {
   background: #eee;
@@ -3808,11 +3719,6 @@ body, html {
   font-size: 1.2rem;
   transition: 300ms;
 }
-.form-style-change-red div input::-moz-placeholder, .form-style-change-red div select::-moz-placeholder {
-  color: #ccc;
-  -moz-transition: 300ms;
-  transition: 300ms;
-}
 .form-style-change-red div input::placeholder,
 .form-style-change-red div select::placeholder {
   color: #ccc;
@@ -3822,10 +3728,6 @@ body, html {
 .form-style-change-red div select:focus {
   border-color: #ff3e1d;
   box-shadow: 0 0 2.5px 0.5px rgba(255, 62, 29, 0.1);
-}
-.form-style-change-red div input:-moz-read-only {
-  background: #eee;
-  display: block;
 }
 .form-style-change-red div input:read-only {
   background: #eee;
@@ -3857,11 +3759,6 @@ body, html {
   font-size: 1.2rem;
   transition: 300ms;
 }
-.form-style-change-dark div input::-moz-placeholder, .form-style-change-dark div select::-moz-placeholder {
-  color: #ccc;
-  -moz-transition: 300ms;
-  transition: 300ms;
-}
 .form-style-change-dark div input::placeholder,
 .form-style-change-dark div select::placeholder {
   color: #ccc;
@@ -3871,10 +3768,6 @@ body, html {
 .form-style-change-dark div select:focus {
   border-color: #233446;
   box-shadow: 0 0 2.5px 0.5px rgba(35, 52, 70, 0.1);
-}
-.form-style-change-dark div input:-moz-read-only {
-  background: #eee;
-  display: block;
 }
 .form-style-change-dark div input:read-only {
   background: #eee;
@@ -3906,11 +3799,6 @@ body, html {
   font-size: 1.2rem;
   transition: 300ms;
 }
-.form-style-change-purple div input::-moz-placeholder, .form-style-change-purple div select::-moz-placeholder {
-  color: #ccc;
-  -moz-transition: 300ms;
-  transition: 300ms;
-}
 .form-style-change-purple div input::placeholder,
 .form-style-change-purple div select::placeholder {
   color: #ccc;
@@ -3920,10 +3808,6 @@ body, html {
 .form-style-change-purple div select:focus {
   border-color: #696dff;
   box-shadow: 0 0 2.5px 0.5px rgba(105, 109, 255, 0.1);
-}
-.form-style-change-purple div input:-moz-read-only {
-  background: #eee;
-  display: block;
 }
 .form-style-change-purple div input:read-only {
   background: #eee;
@@ -4782,8 +4666,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .swiper-pagination-fraction {
@@ -4849,8 +4732,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .slick-wrap .arrow-box button {
   position: absolute;
@@ -6056,8 +5938,7 @@ body {
   width: 100%;
   height: 0;
   background: rgba(255, 255, 255, 0.6);
-  -webkit-backdrop-filter: blur(1rem);
-          backdrop-filter: blur(1rem);
+  backdrop-filter: blur(1rem);
   position: absolute;
   left: 0;
   top: 0;
@@ -9773,4 +9654,6 @@ body .login-container .login-copy {
   text-align: center;
   margin-top: 2rem;
   color: #9c9c9c;
-}/*# sourceMappingURL=login.css.map */
+}
+
+/*# sourceMappingURL=login.css.map */
