@@ -1,0 +1,27 @@
+body{
+  background: #F5F6FF;
+  .login-container{
+    display: flex;
+    justify-content: cetner;
+    align-items: center;
+    .login-wrap{
+      display: flex;
+      .login-form{
+        .form-style input{
+          width: 320px;
+          background: #fff;
+          border-radius: 5px;
+          border: 1px solid #d9d9d9;
+        }
+      }
+      .login-btn{
+        .btn{
+          width: 320px;
+          background: #3066E2;
+          border-radius: 5px;
+          
+        }
+      }
+    }
+  }
+}
