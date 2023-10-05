@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   font-family: "Noto Sans KR", sans-serif;
@@ -2792,6 +2793,11 @@ body, html {
   font-size: 1.2rem;
   transition: 300ms;
 }
+.form-style input::-moz-placeholder, .form-style select::-moz-placeholder {
+  color: #ccc;
+  -moz-transition: 300ms;
+  transition: 300ms;
+}
 .form-style input::placeholder,
 .form-style select::placeholder {
   color: #ccc;
@@ -2802,13 +2808,22 @@ body, html {
   border-color: #8592a3;
   box-shadow: 0 0 2.5px 0.5px rgba(133, 146, 163, 0.1);
 }
+.form-style input:focus::-moz-placeholder, .form-style select:focus::-moz-placeholder {
+  text-indent: 0.8rem;
+}
 .form-style input:focus::placeholder,
 .form-style select:focus::placeholder {
   text-indent: 0.8rem;
 }
 .form-style select {
   background: #fff url(../images/icon/chevron-down-regular-240_1.png) no-repeat right 0.6rem top 42%/2.4rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.form-style input:-moz-read-only {
+  background: #eee;
+  display: block;
 }
 .form-style input:read-only {
   background: #eee;
@@ -2835,6 +2850,11 @@ body, html {
   font-size: 1.2rem;
   transition: 300ms;
 }
+.form-style-red input::-moz-placeholder, .form-style-red select::-moz-placeholder {
+  color: #ccc;
+  -moz-transition: 300ms;
+  transition: 300ms;
+}
 .form-style-red input::placeholder,
 .form-style-red select::placeholder {
   color: #ccc;
@@ -2845,13 +2865,22 @@ body, html {
   border-color: #ff3e1d;
   box-shadow: 0 0 2.5px 0.5px rgba(255, 62, 29, 0.1);
 }
+.form-style-red input:focus::-moz-placeholder, .form-style-red select:focus::-moz-placeholder {
+  text-indent: 0.8rem;
+}
 .form-style-red input:focus::placeholder,
 .form-style-red select:focus::placeholder {
   text-indent: 0.8rem;
 }
 .form-style-red select {
   background: #fff url(../images/icon/chevron-down-regular-240_1.png) no-repeat right 0.6rem top 42%/2.4rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.form-style-red input:-moz-read-only {
+  background: #eee;
+  display: block;
 }
 .form-style-red input:read-only {
   background: #eee;
@@ -2878,6 +2907,11 @@ body, html {
   font-size: 1.2rem;
   transition: 300ms;
 }
+.form-style-dark input::-moz-placeholder, .form-style-dark select::-moz-placeholder {
+  color: #ccc;
+  -moz-transition: 300ms;
+  transition: 300ms;
+}
 .form-style-dark input::placeholder,
 .form-style-dark select::placeholder {
   color: #ccc;
@@ -2888,13 +2922,22 @@ body, html {
   border-color: #233446;
   box-shadow: 0 0 2.5px 0.5px rgba(35, 52, 70, 0.1);
 }
+.form-style-dark input:focus::-moz-placeholder, .form-style-dark select:focus::-moz-placeholder {
+  text-indent: 0.8rem;
+}
 .form-style-dark input:focus::placeholder,
 .form-style-dark select:focus::placeholder {
   text-indent: 0.8rem;
 }
 .form-style-dark select {
   background: #fff url(../images/icon/chevron-down-regular-240_1.png) no-repeat right 0.6rem top 42%/2.4rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.form-style-dark input:-moz-read-only {
+  background: #eee;
+  display: block;
 }
 .form-style-dark input:read-only {
   background: #eee;
@@ -2921,6 +2964,11 @@ body, html {
   font-size: 1.2rem;
   transition: 300ms;
 }
+.form-style-purple input::-moz-placeholder, .form-style-purple select::-moz-placeholder {
+  color: #ccc;
+  -moz-transition: 300ms;
+  transition: 300ms;
+}
 .form-style-purple input::placeholder,
 .form-style-purple select::placeholder {
   color: #ccc;
@@ -2931,13 +2979,22 @@ body, html {
   border-color: #696dff;
   box-shadow: 0 0 2.5px 0.5px rgba(105, 109, 255, 0.1);
 }
+.form-style-purple input:focus::-moz-placeholder, .form-style-purple select:focus::-moz-placeholder {
+  text-indent: 0.8rem;
+}
 .form-style-purple input:focus::placeholder,
 .form-style-purple select:focus::placeholder {
   text-indent: 0.8rem;
 }
 .form-style-purple select {
   background: #fff url(../images/icon/chevron-down-regular-240_1.png) no-repeat right 0.6rem top 42%/2.4rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.form-style-purple input:-moz-read-only {
+  background: #eee;
+  display: block;
 }
 .form-style-purple input:read-only {
   background: #eee;
@@ -3124,7 +3181,9 @@ body, html {
 .form-check input {
   width: 2rem;
   height: 2rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 1px solid #ddd;
 }
 .form-check input:hover {
@@ -3171,7 +3230,9 @@ body, html {
 .form-check-red input {
   width: 2rem;
   height: 2rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 1px solid #ddd;
 }
 .form-check-red input:hover {
@@ -3218,7 +3279,9 @@ body, html {
 .form-check-purple input {
   width: 2rem;
   height: 2rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 1px solid #ddd;
 }
 .form-check-purple input:hover {
@@ -3265,7 +3328,9 @@ body, html {
 .form-check-dark input {
   width: 2rem;
   height: 2rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 1px solid #ddd;
 }
 .form-check-dark input:hover {
@@ -3312,7 +3377,9 @@ body, html {
 .form-check-inline input {
   width: 2rem;
   height: 2rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 1px solid #ddd;
 }
 .form-check-inline input:hover {
@@ -3359,7 +3426,9 @@ body, html {
 .form-check-inline-red input {
   width: 2rem;
   height: 2rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 1px solid #ddd;
 }
 .form-check-inline-red input:hover {
@@ -3406,7 +3475,9 @@ body, html {
 .form-check-inline-purple input {
   width: 2rem;
   height: 2rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 1px solid #ddd;
 }
 .form-check-inline-purple input:hover {
@@ -3453,7 +3524,9 @@ body, html {
 .form-check-inline-dark input {
   width: 2rem;
   height: 2rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 1px solid #ddd;
 }
 .form-check-inline-dark input:hover {
@@ -3500,7 +3573,9 @@ body, html {
 .form-switch input {
   width: 3.4rem;
   height: 2rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 1px solid #ddd;
   transition: 300ms;
 }
@@ -3541,7 +3616,9 @@ body, html {
 .form-switch-red input {
   width: 3.4rem;
   height: 2rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 1px solid #ddd;
   transition: 300ms;
 }
@@ -3582,7 +3659,9 @@ body, html {
 .form-switch-dark input {
   width: 3.4rem;
   height: 2rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 1px solid #ddd;
   transition: 300ms;
 }
@@ -3623,7 +3702,9 @@ body, html {
 .form-switch-purple input {
   width: 3.4rem;
   height: 2rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 1px solid #ddd;
   transition: 300ms;
 }
@@ -3678,6 +3759,11 @@ body, html {
   font-size: 1.2rem;
   transition: 300ms;
 }
+.form-style-change div input::-moz-placeholder, .form-style-change div select::-moz-placeholder {
+  color: #ccc;
+  -moz-transition: 300ms;
+  transition: 300ms;
+}
 .form-style-change div input::placeholder,
 .form-style-change div select::placeholder {
   color: #ccc;
@@ -3687,6 +3773,10 @@ body, html {
 .form-style-change div select:focus {
   border-color: #8592a3;
   box-shadow: 0 0 2.5px 0.5px rgba(133, 146, 163, 0.1);
+}
+.form-style-change div input:-moz-read-only {
+  background: #eee;
+  display: block;
 }
 .form-style-change div input:read-only {
   background: #eee;
@@ -3718,6 +3808,11 @@ body, html {
   font-size: 1.2rem;
   transition: 300ms;
 }
+.form-style-change-red div input::-moz-placeholder, .form-style-change-red div select::-moz-placeholder {
+  color: #ccc;
+  -moz-transition: 300ms;
+  transition: 300ms;
+}
 .form-style-change-red div input::placeholder,
 .form-style-change-red div select::placeholder {
   color: #ccc;
@@ -3727,6 +3822,10 @@ body, html {
 .form-style-change-red div select:focus {
   border-color: #ff3e1d;
   box-shadow: 0 0 2.5px 0.5px rgba(255, 62, 29, 0.1);
+}
+.form-style-change-red div input:-moz-read-only {
+  background: #eee;
+  display: block;
 }
 .form-style-change-red div input:read-only {
   background: #eee;
@@ -3758,6 +3857,11 @@ body, html {
   font-size: 1.2rem;
   transition: 300ms;
 }
+.form-style-change-dark div input::-moz-placeholder, .form-style-change-dark div select::-moz-placeholder {
+  color: #ccc;
+  -moz-transition: 300ms;
+  transition: 300ms;
+}
 .form-style-change-dark div input::placeholder,
 .form-style-change-dark div select::placeholder {
   color: #ccc;
@@ -3767,6 +3871,10 @@ body, html {
 .form-style-change-dark div select:focus {
   border-color: #233446;
   box-shadow: 0 0 2.5px 0.5px rgba(35, 52, 70, 0.1);
+}
+.form-style-change-dark div input:-moz-read-only {
+  background: #eee;
+  display: block;
 }
 .form-style-change-dark div input:read-only {
   background: #eee;
@@ -3798,6 +3906,11 @@ body, html {
   font-size: 1.2rem;
   transition: 300ms;
 }
+.form-style-change-purple div input::-moz-placeholder, .form-style-change-purple div select::-moz-placeholder {
+  color: #ccc;
+  -moz-transition: 300ms;
+  transition: 300ms;
+}
 .form-style-change-purple div input::placeholder,
 .form-style-change-purple div select::placeholder {
   color: #ccc;
@@ -3807,6 +3920,10 @@ body, html {
 .form-style-change-purple div select:focus {
   border-color: #696dff;
   box-shadow: 0 0 2.5px 0.5px rgba(105, 109, 255, 0.1);
+}
+.form-style-change-purple div input:-moz-read-only {
+  background: #eee;
+  display: block;
 }
 .form-style-change-purple div input:read-only {
   background: #eee;
@@ -4665,7 +4782,8 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper-pagination-fraction {
@@ -4731,7 +4849,8 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .slick-wrap .arrow-box button {
   position: absolute;
@@ -5929,7 +6048,8 @@ body {
   width: 100%;
   height: 0;
   background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
   position: absolute;
   left: 0;
   top: 0;
@@ -9578,4 +9698,91 @@ header .inner .gnb-wrap__main-list {
   gap: 5.8rem;
 }
 
-/*# sourceMappingURL=styles.css.map */
+body {
+  background: #F5F6FF;
+}
+body .login-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+}
+body .login-container .login-wrap {
+  display: flex;
+  justify-content: center;
+  width: 760px;
+  height: 420px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+body .login-container .login-wrap .login-split {
+  width: 50%;
+  height: 100%;
+}
+body .login-container .login-wrap .login-txt {
+  background: #3066E2;
+  color: #fff;
+  padding: 94px 27px;
+}
+body .login-container .login-wrap .login-txt h2 {
+  line-height: 34px;
+  letter-spacing: -1px;
+}
+body .login-container .login-wrap .login-cont {
+  background: #fff;
+  padding: 35px 30px;
+}
+body .login-container .login-wrap .login-cont .logo {
+  text-align: center;
+  color: #3066E2;
+  font-weight: 800;
+}
+body .login-container .login-wrap .login-cont .login-form {
+  margin-top: 4rem;
+}
+body .login-container .login-wrap .login-cont .form-style input {
+  width: 320px;
+  height: 40px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+}
+body .login-container .login-wrap .login-btn .btn {
+  width: 320px;
+  height: 40px;
+  background: #3066E2;
+  color: #fff;
+  border-radius: 5px;
+}
+body .login-container .login-wrap .login-menu {
+  margin-top: 3rem;
+}
+body .login-container .login-wrap .login-menu ul {
+  text-align: center;
+}
+body .login-container .login-wrap .login-menu ul li {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+body .login-container .login-wrap .login-menu ul li a {
+  display: inline-block;
+  color: #9c9c9c;
+  padding: 1rem;
+}
+body .login-container .login-wrap .login-menu ul li:first-child a:after {
+  position: absolute;
+  content: "·";
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+body .login-container .login-copy {
+  text-align: center;
+  margin-top: 2rem;
+  color: #9c9c9c;
+}/*# sourceMappingURL=styles.css.map */
