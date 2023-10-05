@@ -1,0 +1,281 @@
+.section-wrap {
+    margin-bottom: 2rem;
+}
+
+@mixin shortWord($line) {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+}
+
+.layout-style-4 {
+    // display: flex;
+    // flex-wrap: wrap;
+    gap: 2rem 0;
+    // overflow: hidden;
+
+    .layout {
+        padding: 0 1.5rem 0 1.5rem;
+        // width: 25% !important;
+        // flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        // min-width: 20rem;
+
+        .img-wrap {
+            margin: 0 0 1.5rem 0;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .text-wrap {
+            .layout-title {
+                font-size: 1.6rem;
+                text-transform: uppercase;
+                @include shortWord(2);
+            }
+
+            .layout-title-sub {
+                font-size: 1.6rem;
+                color: rgba(#000, 0.6);
+                margin: 2rem 0 0 0;
+                @include shortWord(2);
+            }
+
+            .layout-date {
+                font-size: 1.4rem;
+                color: rgba(#000, 0.6);
+                margin: 1rem 0 0 0;
+            }
+        }
+    }
+}
+
+.layout-style-2 {
+    // display: flex;
+    gap: 0;
+
+    .layout {
+        // width: 50%;
+        background-color: cadetblue;
+        padding: 0;
+
+        .img-wrap {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000;
+            display: flex;
+            align-items: center;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .text-wrap {
+            padding: 6rem 6rem 6rem 6rem;
+            height: 100%;
+
+            .small-title {
+                font-size: 1.4rem;
+                margin: 0 0 3rem 0;
+                color: #fff;
+                font-weight: 700;
+            }
+
+            .layout-title {
+                color: #fff;
+                font-size: 2.4rem;
+                margin: 0 0 1rem 0;
+                font-weight: 700;
+                @include shortWord(3);
+            }
+
+            .layout-title-sub {
+                color: rgba(#fff, 0.6);
+                font-size: 1.4rem;
+                margin: 0 0 3rem 0;
+                @include shortWord(2);
+            }
+
+            .more-view-btn {
+                color: #fff;
+                border: 1px solid #fff;
+                border-radius: 3rem;
+                text-transform: uppercase;
+                padding: 1rem 3rem 1rem 3rem;
+                font-size: 1.4rem;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.layout-style-3 {
+    // display: flex;
+    // overflow: hidden;
+
+    .layout {
+        padding: 0 1.5rem 0 1.5rem;
+        // width: 33.3333333333% !important;
+        // flex-shrink: 0;
+        // min-width: 20rem;
+        display: flex;
+        flex-direction: column;
+
+        .img-wrap {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 0 2rem 0;
+
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+
+        .text-wrap {
+            .layout-title {
+                font-size: 1.8rem;
+                font-weight: 700;
+                @include shortWord(2);
+            }
+
+            .layout-title-sub {
+                font-size: 1.6rem;
+                color: rgba(#000, 0.6);
+                margin: 2rem 0 0 0;
+                @include shortWord(2);
+            }
+
+            .layout-date {
+                font-size: 1.4rem;
+                color: rgba(#000, 0.6);
+                margin: 1rem 0 0 0;
+            }
+        }
+    }
+}
+
+@mixin noneImg() {
+    // display: flex;
+    // overflow: hidden;
+
+    .layout {
+        padding: 0 1rem 0 1rem;
+        // width: $width !important;
+        // flex-shrink: 0;
+
+        .text-wrap {
+            border: 1px solid #ddd;
+            border-radius: 0.5rem;
+            padding: 2rem 2rem 2rem 2rem;
+            display: flex;
+            flex-direction: column;
+
+            .layout-title {
+                font-size: 1.6rem;
+                text-transform: uppercase;
+                @include shortWord(2);
+            }
+
+            .layout-title-sub {
+                font-size: 1.6rem;
+                color: rgba(#000, 0.6);
+                margin: 2rem 0 0 0;
+                @include shortWord(2);
+            }
+
+            .layout-date {
+                font-size: 1.4rem;
+                color: rgba(#000, 0.6);
+                margin: 1rem 0 0 0;
+            }
+        }
+    }
+}
+
+.layout-style-text-4 {
+    @include noneImg();
+}
+
+.layout-style-text-3 {
+    @include noneImg();
+}
+
+@media (max-width:1024px) {
+    .layout-style-4 {
+        .layout {
+
+            // width:100%;
+            .text-wrap {
+                .layout-title {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    .layout-style-2 {
+        display: block;
+
+        // .layout {
+        //     width: 100%;
+        // }
+    }
+
+    .layout-style-3 {
+        .layout {
+            .text-wrap {
+                .layout-title {
+                    font-size: 1.6rem;
+                }
+
+                .layout-title-sub {
+                    font-size: 1.4rem;
+                }
+
+                .layout-date {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:670px) {
+    .layout-style-2 {
+        .layout {
+            .text-wrap {
+                padding: 4rem 4rem 4rem 4rem;
+
+                .small-title {
+                    font-size: 1.2rem;
+                }
+
+                .layout-title {
+                    font-size: 2rem;
+                }
+
+                .layout-title-sub {
+                    font-size: 1.2rem;
+                }
+
+                .more-view-btn {
+                    padding: 1rem 2rem 1rem 2rem;
+                    font-size: 1.2rem;
+                }
+
+            }
+        }
+    }
+}

@@ -1,0 +1,61 @@
+@mixin groupList($actColor) {
+    .list-group-numbered {
+        counter-reset: section;
+
+        .list-item {
+            &:before {
+                content: counters(section, '.') '. ';
+                counter-increment: section;
+            }
+        }
+    }
+
+    .list-item {
+        display: block;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        border-width: 1px;
+        border-color: #eee;
+        border-style: solid;
+        border-top-width: 0;
+        color: #697a8d;
+
+        &:first-child {
+            border-radius: 0.5rem 0.5rem 0 0;
+            border-top-width: 1px;
+        }
+
+        &:last-child {
+            border-radius: 0 0 0.5rem 0.5rem;
+        }
+
+        &.active {
+            background: $actColor;
+            border-color: $actColor;
+            color: #fff;
+        }
+
+        &.disabled {
+            color: #ccc;
+            cursor: default;
+        }
+    }
+
+    .list-item-action {
+        cursor: pointer;
+        &:hover {
+            background: #f1f1f1;
+        }
+
+        &.active {
+            background: $actColor;
+        }
+
+        &.disabled {
+            background: transparent;
+        }
+    }
+}
+
+//group-list
+@include groupList(#696cff);
