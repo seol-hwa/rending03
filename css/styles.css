@@ -11278,6 +11278,10 @@ body main .service-con .inner .service__title {
   font-weight: 700;
   line-height: 1.5;
   color: #3066E2;
+  word-break: keep-all;
+}
+body main .service-con .inner .layout-style-4 {
+  gap: 5rem 0;
 }
 body main .service-con .inner .layout-style-4 .layout {
   align-items: center;
@@ -11323,6 +11327,7 @@ body main .data-con .inner .layout-style-2 .layout .text-wrap .layout-title {
   color: #3066E2;
   margin-bottom: 0;
   font-weight: 800;
+  overflow: visible;
 }
 body main .data-con .inner .layout-style-2 .layout .text-wrap .layout-title-sub {
   font-size: 2rem;
@@ -11373,9 +11378,25 @@ body main .data-con .inner .layout-style-2 .layout .img-wrap .graph-wrap .graph-
     padding: 2rem 0;
   }
 }
+@media (max-width: 1199px) {
+  body main .data-con .inner .layout-style-2 .layout:first-child {
+    margin-bottom: 5rem;
+  }
+  body main .data-con .inner .layout-style-2 .layout .text-wrap {
+    padding: 0;
+  }
+  body main .data-con .inner .layout-style-2 .layout .text-wrap .layout-title-sub {
+    margin: 0 0 3rem;
+  }
+}
 @media (max-width: 1024px) {
   body .con-wrap__header2 {
     padding: 1rem 0;
+  }
+}
+@media (max-width: 991px) {
+  body main .service-con .inner .layout-style-4 .layout .img-wrap {
+    margin: 0 0 2.5rem;
   }
 }
 

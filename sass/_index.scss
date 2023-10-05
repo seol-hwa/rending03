@@ -165,15 +165,19 @@ body {
         //2nd section
         .service-con {
             background-color: #fff;
+
             .inner {
                 .service__title {
                     font-size: 4.8rem;
                     font-weight: 700;
                     line-height: 1.5;
                     color: #3066E2;
+                    word-break: keep-all;
                 }
 
                 .layout-style-4 {
+                    gap: 5rem 0;
+
                     .layout {
                         align-items: center;
                         justify-content: center;
@@ -184,7 +188,7 @@ body {
                             background-position: center;
                             background-repeat: no-repeat;
                             background-size: contain;
-                            margin-bottom:4.2rem;
+                            margin-bottom: 4.2rem;
                         }
 
                         &:first-child {
@@ -192,102 +196,92 @@ body {
                                 background-image: url(../images/target.svg);
                             }
                         }
+
                         &:nth-child(2) {
                             .img-wrap {
                                 background-image: url(../images/analyze.svg);
                             }
                         }
+
                         &:nth-child(3) {
                             .img-wrap {
                                 background-image: url(../images/real-monitor.svg);
                             }
                         }
+
                         &:nth-child(4) {
                             .img-wrap {
                                 background-image: url(../images/custom.svg);
                             }
                         }
-                        .layout-title{
+
+                        .layout-title {
                             font-size: 2.3rem;
                             line-height: 1.3;
-                            color:#011A52;
+                            color: #011A52;
                         }
                     }
                 }
             }
         }
+
         //3rd section
-        .data-con{
+        .data-con {
             background-color: #FAFBFF;
-            .inner{
-                .layout-style-2{
-                    .layout{
+
+            .inner {
+                .layout-style-2 {
+                    .layout {
                         background-color: transparent;
-                        .text-wrap{
-                            padding:0 10rem 0 0;
-                            .layout-title{
+
+                        .text-wrap {
+                            padding: 0 10rem 0 0;
+
+                            .layout-title {
                                 font-size: 6rem;
                                 line-height: 1.3;
-                                color:#3066E2;
-                                margin-bottom:0;
+                                color: #3066E2;
+                                margin-bottom: 0;
                                 font-weight: 800;
+                                overflow: visible;
                             }
-                            .layout-title-sub{
+
+                            .layout-title-sub {
                                 font-size: 2rem;
                                 line-height: 1.5;
-                                color:#333;
+                                color: #333;
                                 font-weight: 700;
                                 word-break: keep-all;
-                                margin:0 0 32.4rem;
+                                margin: 0 0 32.4rem;
                             }
-                            .sub-text{
+
+                            .sub-text {
                                 font-size: 1.8rem;
                                 line-height: 1.6;
                                 word-break: keep-all;
-                                color:#333;
+                                color: #333;
                             }
                         }
-                        .img-wrap{
+
+                        .img-wrap {
                             background-color: transparent;
                             justify-content: space-around;
-                            .graph-wrap{
-                                width:11%;
-                                .graph-percent{
+
+                            .graph-wrap {
+                                width: 11%;
+
+                                .graph-percent {
                                     font-size: 2rem;
                                     line-height: 1.5;
-                                    color:#3066E2;
+                                    color: #3066E2;
                                     text-align: center;
                                 }
-                                .graph-stick{
-                                    width:100%;
-                                    padding-bottom:500%;
-                                    background-image: linear-gradient(to top,#3066E2 0%, #C2DAF6 0%);
+
+                                .graph-stick {
+                                    width: 100%;
+                                    padding-bottom: 500%;
+                                    background-image: linear-gradient(to top, #3066E2 0%, #C2DAF6 0%);
                                 }
-                                // &:first-child{
-                                //     .graph-stick{
-                                //         background-image: linear-gradient(to top,#3066E2 0%, #C2DAF6 0%);
-                                //     }
-                                // }
-                                // &:nth-child(2){
-                                //     .graph-stick{
-                                //         background-image: linear-gradient(to top,#3066E2 95%, #C2DAF6 5%);
-                                //     }
-                                // }
-                                // &:nth-child(3){
-                                //     .graph-stick{
-                                //         background-image: linear-gradient(to top,#3066E2 80%, #C2DAF6 20%);
-                                //     }
-                                // }
-                                // &:nth-child(4){
-                                //     .graph-stick{
-                                //         background-image: linear-gradient(to top,#3066E2 90%, #C2DAF6 10%);
-                                //     }
-                                // }
-                                // &:nth-child(5){
-                                //     .graph-stick{
-                                //         background-image: linear-gradient(to top,#3066E2 95%, #C2DAF6 5%);
-                                //     }
-                                // }
                             }
                         }
                     }
@@ -336,12 +330,56 @@ body {
     }
 }
 
+@media (max-width:1199px) {
+    body {
+        main {
+            .data-con {
+                .inner {
+                    .layout-style-2 {
+                        .layout {
+                            &:first-child {
+                                margin-bottom: 5rem;
+                            }
+
+                            .text-wrap {
+                                padding: 0;
+
+                                .layout-title-sub {
+                                    margin: 0 0 3rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width:1024px) {
     body {
 
         //header
         .con-wrap__header2 {
             padding: 1rem 0;
+        }
+    }
+}
+
+@media (max-width:991px) {
+    body {
+        main {
+            .service-con {
+                .inner {
+                    .layout-style-4 {
+                        .layout {
+                            .img-wrap {
+                                margin: 0 0 2.5rem;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
