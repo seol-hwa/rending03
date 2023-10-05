@@ -1,0 +1,19 @@
+.blind{
+    position:absolute;
+    width:1px;
+    height:1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    z-index: -1;
+    border:none;
+}
+.inner{
+    width:160rem;
+    margin:0 auto;
+}
+.tab-menu{
+    li{
+        position:absolute;
+        top:-100%;
+    }
+}

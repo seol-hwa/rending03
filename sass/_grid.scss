@@ -1,0 +1,93 @@
+@mixin flex($justify: initial, $align: initial) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.d-flex {
+    @include flex();
+
+    &-right {
+        @include flex(flex-end);
+    }
+
+    &-left {
+        @include flex(flex-start);
+    }
+
+    &-center {
+        @include flex(center);
+    }
+
+    &-all-center {
+        @include flex(center, center);
+    }
+}
+
+@mixin grid($justify: initial, $align: initial) {
+    display: grid;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.d-grid {
+    &-left {
+        @include grid(start);
+    }
+
+    &-right {
+        @include grid(end);
+    }
+
+    &-center {
+        @include grid(center);
+    }
+
+    &-all-center {
+        @include grid(center, center);
+    }
+}
+
+
+$size-data: (
+    sm:576px,
+    md:768px,
+    lg:992px,
+    xl:1200px,
+    xxl:1400px
+);
+
+@mixin gridSystem($col) {
+
+    @each $size,
+    $px in $size-data {
+        @media (min-width:$px) {
+            .col-#{$size}-#{$col} {
+                width: calc(100% / 12) * $col;
+                padding:0 0.5rem;
+            }
+        }
+    }
+
+}
+@mixin gridSystemMo($col){
+
+    .col-#{$col} {
+        width: calc(100% / 12) * $col;
+        padding:0 0.5rem;
+    }
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    gap:1rem 0;
+}
+
+@for $col from 12 through 1{
+    @include gridSystemMo($col);
+}
+
+@for $col from 12 through 1 {
+    @include gridSystem($col);
+}

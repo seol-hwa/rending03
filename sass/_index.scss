@@ -1,0 +1,25 @@
+header {
+    background-color: #3066E2;
+    border-bottom: 2px solid #fff;
+    position:relative;
+
+    .inner {
+        height: 6.8rem;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            color: #fff;
+            line-height: 1;
+
+            a {
+                display: block;
+            }
+        }
+        .gnb-wrap{
+            &__main-list{
+                gap:5.8rem;
+            }
+        }
+    }
+}

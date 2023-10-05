@@ -1,0 +1,477 @@
+//border-color
+@mixin inputBorderColor($bdColor) {
+    margin-bottom:1rem;
+    &:last-child{
+        margin-bottom:0;
+    }
+    label {
+        color: #566a7f;
+        font-size: 1.2rem;
+    }
+
+    input,
+    select {
+        padding: 1rem;
+        border: 1px solid #ddd;
+        color: #566a7f;
+        display: block;
+        margin-top: 1rem;
+        width: 100%;
+        font-size: 1.2rem;
+        transition: 300ms;
+
+        &::placeholder {
+            color: #ccc;
+            transition: 300ms;
+        }
+
+        &:focus {
+            border-color: $bdColor;
+            box-shadow: 0 0 2.5px 0.5px rgba($bdColor, 0.1);
+        }
+
+        &:focus::placeholder {
+            text-indent: 0.8rem;
+        }
+    }
+    select{
+        background:#fff url(../images/icon/chevron-down-regular-240_1.png) no-repeat right 0.6rem top 42%/2.4rem;
+        appearance: none;
+    }
+
+    input:read-only {
+        background: #eee;
+        display: block;
+    }
+}
+
+//border:none > focus boder
+@mixin readPlain($bdColor) {
+    margin-bottom:1rem;
+    &:last-child{
+        margin-bottom:0;
+    }
+    label {
+        color: #566a7f;
+        font-size: 1.2rem;
+    }
+
+    input {
+        padding: 1rem 0;
+        border: 2px solid transparent;
+        color: #566a7f;
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+
+        &:focus {
+            border: 2px solid $bdColor;
+        }
+    }
+}
+
+//border-radius
+@mixin inputBorderRound($round: 0) {
+    border-radius:#{calc($round/10)}rem;
+}
+
+//float label
+@mixin inputFloatLabel($padding, $bdColor) {
+    position: relative;
+    margin-bottom:1rem;
+    &:last-child{
+        margin-bottom:0;
+    }
+
+    input {
+        padding: $padding;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        width: 100%;
+        font-size: 1.2rem;
+
+        &:focus {
+            padding:calc($padding*1.5) $padding calc($padding/2);
+            border-color: $bdColor;
+            box-shadow: 0 0 2.5px 0.5px rgba($bdColor, 0.1);
+        }
+    }
+
+    label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: $padding;
+        pointer-events: none;
+        transition: 300ms;
+        color: #566a7f;
+        font-size: 1.4rem;
+
+        &.focus {
+            padding:calc($padding/2) $padding;
+            transition: 300ms;
+            font-size: 1.2rem;
+            color: $bdColor;
+        }
+    }
+}
+
+//form check
+@mixin inputCheck($bdColor, $display: flex, $margin-direction: 'margin-bottom') {
+    display: $display;
+    align-items: center;
+    gap: 1rem;
+    #{$margin-direction}: 1rem;
+
+    &:last-child {
+        #{$margin-direction}: 0;
+    }
+
+    input {
+        width: 2rem;
+        height: 2rem;
+        appearance: none;
+        border: 1px solid #ddd;
+
+        &:hover {
+            border-color: $bdColor;
+        }
+
+        &[type=checkbox] {
+            border-radius: 0.4rem;
+
+            &:checked {
+                background: $bdColor url(../images/icon/check-regular-240.png) no-repeat center/cover;
+                border-color: $bdColor;
+                box-shadow: 0 2px 4px 0 rgba($bdColor, 0.4);
+            }
+        }
+
+        &[type=radio] {
+            border-radius: 50%;
+
+            &:checked {
+                background: $bdColor url(../images/icon/circle-solid-240.png) no-repeat center/0.7rem;
+                border-color: $bdColor;
+                box-shadow: 0 2px 4px 0 rgba($bdColor, 0.4);
+            }
+        }
+
+        &:disabled:hover {
+            border-color: #ddd;
+        }
+
+        &:disabled:checked:hover {
+            border-color: $bdColor;
+        }
+
+        &:disabled,
+        &:disabled~label {
+            opacity: 0.5;
+        }
+    }
+
+    label {
+        color: #566a7f;
+        font-size: 1.2rem;
+    }
+}
+
+//form switch
+@mixin switchCheck($bdColor) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    input {
+        width: 3.4rem;
+        height: 2rem;
+        appearance: none;
+        border: 1px solid #ddd;
+        transition: 300ms;
+
+        &:hover {
+            border-color: $bdColor;
+        }
+
+        &[type=checkbox] {
+            border-radius: 2rem;
+            background: transparent url(../images/icon/circle-solid-240_1.png) no-repeat left 0.1rem center/1.7rem;
+
+            &:checked {
+                background: $bdColor url(../images/icon/circle-solid-240.png) no-repeat right 0.1rem center/1.7rem;
+                border-color: $bdColor;
+                box-shadow: 0 2px 4px 0 rgba($bdColor, 0.4);
+            }
+        }
+
+        &:disabled:hover {
+            border-color: #ddd;
+        }
+
+        &:disabled:checked:hover {
+            border-color: $bdColor;
+        }
+
+        &:disabled,
+        &:disabled~label {
+            opacity: 0.5;
+        }
+    }
+
+    label {
+        color: #566a7f;
+        font-size: 1.2rem;
+    }
+}
+
+//HTML5 Inputs
+@mixin formChangeDisplay($bdColor) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    label {
+        color: #566a7f;
+        font-size: 1.2rem;
+        width: 10rem;
+    }
+
+    div {
+        flex-grow: 1;
+
+        input,
+        select {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            color: #566a7f;
+            display: block;
+            width: 100%;
+            font-size: 1.2rem;
+            transition: 300ms;
+
+            &::placeholder {
+                color: #ccc;
+                transition: 300ms;
+            }
+
+            &:focus {
+                border-color: $bdColor;
+                box-shadow: 0 0 2.5px 0.5px rgba($bdColor, 0.1);
+            }
+        }
+
+        input:read-only {
+            background: #eee;
+            display: block;
+        }
+    }
+}
+
+//file
+@mixin formFile($bdColor) {
+    margin-bottom:1rem;
+    &:last-child{
+        margin-bottom:0;
+    }
+    label {
+        color: #566a7f;
+        font-size: 1.2rem;
+    }
+
+    input {
+        border: 1px solid #ddd;
+        color: #566a7f;
+        display: block;
+        margin-top: 1rem;
+        width: 100%;
+        font-size: 1.2rem;
+        transition: 300ms;
+        cursor: pointer;
+
+        &[type=file]::file-selector-button {
+            padding: 1rem 1.4rem;
+            background: #fff;
+            border: none;
+            margin: 0 1rem 0 0;
+            border-right: 1px solid #ddd;
+            color: #566a7f;
+            cursor: pointer;
+        }
+
+        &[type=file]:hover::file-selector-button {
+            background: #eee;
+        }
+
+
+        &[type=file]:focus {
+            border-color: $bdColor;
+            box-shadow: 0 0 2.5px 0.5px rgba($bdColor, 0.1);
+            &::file-selector-button{
+                border-color:$bdColor;
+            }
+        }
+
+        &[type=file]:disabled {
+            background: #eee;
+            cursor: default;
+
+            &::file-selector-button {
+                background: #fff;
+                cursor: default;
+            }
+        }
+
+    }
+}
+
+.form-style {
+    @include inputBorderColor(#8592a3);
+
+    &-red {
+        @include inputBorderColor(#ff3e1d);
+    }
+
+    &-dark {
+        @include inputBorderColor(#233446);
+    }
+
+    &-purple {
+        @include inputBorderColor(#696dff);
+    }
+
+    //float
+    &-float {
+        @include inputFloatLabel(2rem, #8592a3);
+    }
+
+    &-float-red {
+        @include inputFloatLabel(2rem, #ff3e1d);
+    }
+
+    &-float-purple {
+        @include inputFloatLabel(2rem, #696dff);
+    }
+
+    &-float-dark {
+        @include inputFloatLabel(2rem, #233446);
+    }
+
+    //read plain
+    &-readplain {
+        @include readPlain(#000);
+    }
+}
+
+.form {
+    &-round-8 {
+        @include inputBorderRound(8);
+    }
+
+    &-round-50 {
+        @include inputBorderRound(50);
+    }
+
+    //checkbox
+    &-check {
+        @include inputCheck(#8592a3);
+    }
+
+    &-check-red {
+        @include inputCheck(#ff3e1d);
+    }
+
+    &-check-purple {
+        @include inputCheck(#696dff);
+    }
+
+    &-check-dark {
+        @include inputCheck(#233446);
+    }
+
+    &-check-inline {
+        @include inputCheck(#8592a3, inline-flex, 'margin-right');
+    }
+
+    &-check-inline-red {
+        @include inputCheck(#ff3e1d, inline-flex, 'margin-right');
+    }
+
+    &-check-inline-purple {
+        @include inputCheck(#696dff, inline-flex, 'margin-right');
+    }
+
+    &-check-inline-dark {
+        @include inputCheck(#233446, inline-flex, 'margin-right');
+    }
+
+    //switch
+    &-switch {
+        @include switchCheck(#8592a3);
+    }
+
+    &-switch-red {
+        @include switchCheck(#ff3e1d);
+    }
+
+    &-switch-dark {
+        @include switchCheck(#233446);
+    }
+
+    &-switch-purple {
+        @include switchCheck(#696dff);
+    }
+
+    //HTML5 inputs
+    &-style-change {
+        @include formChangeDisplay(#8592a3);
+    }
+
+    &-style-change-red {
+        @include formChangeDisplay(#ff3e1d);
+    }
+
+    &-style-change-dark {
+        @include formChangeDisplay(#233446);
+    }
+
+    &-style-change-purple {
+        @include formChangeDisplay(#696dff);
+    }
+
+    //file
+    &-file {
+        @include formFile(#8592a3);
+    }
+
+    &-file-red {
+        @include formFile(#ff3e1d);
+    }
+
+    &-file-dark {
+        @include formFile(#233446);
+    }
+
+    &-file-purple {
+        @include formFile(#696dff);
+    }
+}
+
+//그리드 대체
+@media (max-width:1024px) {
+    .container-wrap__basic-input{
+        >div{
+            width:100% !important;
+        }
+    }
+}

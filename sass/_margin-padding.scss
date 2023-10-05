@@ -1,0 +1,37 @@
+@mixin margin($i){
+    .mt-#{$i}{
+        margin-top:#{calc($i/10)}rem;
+    }
+    .mb-#{$i}{
+        margin-bottom:#{calc($i/10)}rem;
+    }
+    .ml-#{$i}{
+        margin-left:#{calc($i/10)}rem;
+    }
+    .mr-#{$i}{
+        margin-right:#{calc($i/10)}rem;
+    }
+}
+
+@mixin padding($i){
+    .pt-#{$i}{
+        padding-top:#{calc($i/10)}rem;
+    }
+    .pb-#{$i}{
+        padding-bottom:#{calc($i/10)}rem;
+    }
+    .pl-#{$i}{
+        padding-left:#{calc($i/10)}rem;
+    }
+    .pr-#{$i}{
+        padding-right:#{calc($i/10)}rem;
+    }
+}
+
+@for $i from 100 through 1{
+    @include margin($i*3);
+}
+
+@for $i from 100 through 1{
+    @include padding($i*3);
+}
