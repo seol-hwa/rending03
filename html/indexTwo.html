@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <section class="review-con pt-132 pb-234">
@@ -219,11 +220,12 @@
                 duration: 0.3,
                 opacity: 1,
                 y: 0,
-            }).to(reviewText, {
-                duration: 0.3,
-                opacity: 1,
-                y: 0,
             })
+            // .to(reviewText, {
+            //     duration: 0.3,
+            //     opacity: 1,
+            //     y: 0,
+            // })
 
             slideItem.forEach(el => {
                 gsap.to(el, {
@@ -231,6 +233,7 @@
                     x: 0,
                 })
             })
+
             //swiper js
             if (!swiperState) {
                 swiperState = true;
