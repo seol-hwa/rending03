@@ -11166,49 +11166,120 @@ body {
   top: -100%;
 }
 
-.inner {
-  width: 700px;
+.review-con {
+  background-color: #fff;
+  overflow: hidden;
+}
+.review-con .inner {
+  width: 100%;
+  overflow: hidden;
+}
+.review-con .inner .review-title {
+  color: #3066E2;
+}
+.review-con .inner .title-box {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.review-con .inner .title-box .title-box__text {
+  max-width: 70rem;
   margin: 0 auto;
+}
+.review-con .inner .swiper {
+  padding: 0 0rem 2rem;
+  overflow: visible;
+}
+.review-con .inner .swiper-wrapper {
+  transition-timing-function: linear;
+}
+.review-con .inner .swiper-wrapper .swiper-slide {
+  text-align: initial;
+  min-height: 25.5rem;
+}
+.review-con .inner .review-wrap {
+  height: 25.5rem;
+}
+.review-con .inner .review-wrap .review-box {
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.15);
+  padding: 3rem 2.2rem 1.6rem;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.review-con .inner .review-wrap .review-box .review-text {
+  color: #404040;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.review-con .inner .review-wrap .review-box .profile-box {
+  align-items: center;
+  margin-left: auto;
+}
+.review-con .inner .review-wrap .review-box .profile-box .profile-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.review-con .inner .review-wrap .review-box .profile-box .profile-img {
+  width: 5.5rem;
+  height: 5.5rem;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  margin-left: 2rem;
+  flex-shrink: 0;
 }
 
 .faq-con {
   padding: 11.6rem 0;
   background: #3066E2;
 }
-.faq-con .accordion {
+.faq-con .faq-wrap {
+  width: 700px;
+  margin: 0 auto;
+}
+.faq-con .faq-wrap .accordion {
   margin-top: 4rem;
 }
-.faq-con .accordion .accordion-item .accordion-head {
+.faq-con .faq-wrap .accordion .accordion-item .accordion-head {
   padding: 3.5rem 3rem;
 }
-.faq-con .accordion .accordion-item .accordion-head:after {
+.faq-con .faq-wrap .accordion .accordion-item .accordion-head:after {
   background-image: url("../images/icon/arrow-under.svg");
   right: 3rem;
 }
-.faq-con .accordion .accordion-item .accordion-body {
+.faq-con .faq-wrap .accordion .accordion-item .accordion-body {
   box-sizing: border-box;
   border-top: none;
   height: 100%;
 }
-.faq-con .accordion .accordion-item .accordion-body .accordion-text {
+.faq-con .faq-wrap .accordion .accordion-item .accordion-body .accordion-text {
   padding: 2rem 3rem 3rem;
 }
-.faq-con .accordion .accordion-item .accordion-body.none {
+.faq-con .faq-wrap .accordion .accordion-item .accordion-body.none {
   border: solid 1px transparent;
 }
-.faq-con .accordion .accordion-item.active .accordion-head {
+.faq-con .faq-wrap .accordion .accordion-item.active .accordion-head {
   color: #3066E2;
 }
-.faq-con .accordion .accordion-item.active .accordion-head:after {
+.faq-con .faq-wrap .accordion .accordion-item.active .accordion-head:after {
   transform: translateY(-50%) rotate(-180deg);
 }
-.faq-con .accordion .accordion-item.active .accordion-body {
+.faq-con .faq-wrap .accordion .accordion-item.active .accordion-body {
   border-top: solid 1px #d9d9d9;
 }
-.faq-con .faq-title {
+.faq-con .faq-wrap .faq-title {
   color: #fff;
   text-align: center;
 }
-.faq-con .faq-accordian {
+.faq-con .faq-wrap .faq-accordian {
   margin-top: 4rem;
 }/*# sourceMappingURL=idxTwo.css.map */

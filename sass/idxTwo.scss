@@ -1,51 +1,133 @@
 @import './guide';
 
-.inner{
-    width: 700px;
-    margin: 0 auto;
+.review-con {
+    background-color: #fff;
+    overflow: hidden;
+    .inner {
+        width: 100%;
+        overflow: hidden;
+        .review-title{
+            color: #3066E2;
+        }
+        .title-box {
+            text-align: center;
+            margin-bottom: 10rem;
+
+            .title-box__text {
+                max-width: 70rem;
+                margin: 0 auto;
+            }
+        }
+
+        //swiper css
+        .swiper {
+            padding: 0 0rem 2rem;
+            overflow: visible;
+
+            &-wrapper {
+                transition-timing-function: linear;
+
+                .swiper-slide {
+                    text-align: initial;
+                    min-height: 25.5rem;
+                }
+            }
+        }
+
+        .review-wrap {
+            height:25.5rem;
+
+            .review-box {
+                border-radius: 1rem;
+                box-shadow: 0 0 1rem 0 rgba(#000, 0.15);
+                padding: 3rem 2.2rem 1.6rem;
+                font-size: 1.8rem;
+                line-height: 1.6;
+                flex-shrink: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .review-text {
+                    color: #404040;
+                    margin-bottom: 1rem;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 5;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .profile-box {
+                    align-items: center;
+                    margin-left: auto;
+
+                    .profile-name {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                    .profile-img {
+                        width: 5.5rem;
+                        height: 5.5rem;
+                        overflow: hidden;
+                        border-radius: 50%;
+                        background-color: #d9d9d9;
+                        margin-left: 2rem;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+        }
+    }
 }
 .faq-con{
     padding: 11.6rem 0;
     background: #3066E2;
-    .accordion{
-        margin-top: 4rem;
-        .accordion-item{
-        .accordion-head{
-            padding: 3.5rem 3rem;
-            &:after{
-            background-image: url("../images/icon/arrow-under.svg");
-            right: 3rem;
-            }
-        }
-        .accordion-body{
-            box-sizing: border-box;
-            border-top: none;
-            height: 100%;
-            .accordion-text{
-                padding: 2rem 3rem 3rem;
-            }
-        }
-        .accordion-body.none{
-          border: solid 1px transparent;
-        }
-        &.active{
+    .faq-wrap{
+        width: 700px;
+        margin: 0 auto;
+        .accordion{
+            margin-top: 4rem;
+            .accordion-item{
             .accordion-head{
-              color: #3066E2;
+                padding: 3.5rem 3rem;
                 &:after{
-                    transform: translateY(-50%) rotate(-180deg);
+                background-image: url("../images/icon/arrow-under.svg");
+                right: 3rem;
                 }
             }
             .accordion-body{
-                border-top: solid 1px #d9d9d9;
+                box-sizing: border-box;
+                border-top: none;
+                height: 100%;
+                .accordion-text{
+                    padding: 2rem 3rem 3rem;
+                }
+            }
+            .accordion-body.none{
+            border: solid 1px transparent;
+            }
+            &.active{
+                .accordion-head{
+                color: #3066E2;
+                    &:after{
+                        transform: translateY(-50%) rotate(-180deg);
+                    }
+                }
+                .accordion-body{
+                    border-top: solid 1px #d9d9d9;
+                }
+            }
             }
         }
+        .faq-title{
+            color: #fff;
+            text-align: center;
         }
-    }
-    .faq-title{
-        color: #fff;
-        text-align: center;
-    }
-    .faq-accordian{
-        margin-top: 4rem;
+        .faq-accordian{
+            margin-top: 4rem;
+        }
     }
 }
