@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   font-family: "Noto Sans KR", sans-serif;
@@ -11161,105 +11160,55 @@ body {
     padding: 0 5rem;
   }
 }
-@media (max-width: 500px) {
-  .inner {
-    padding: 0 3rem;
-  }
-}
 
 .tab-menu li {
   position: absolute;
   top: -100%;
 }
 
-body {
-  background: #F5F6FF;
+.inner {
+  width: 700px;
+  margin: 0 auto;
 }
-body .inner {
-  height: 100%;
-}
-body .inner .login-container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: 100%;
-}
-body .inner .login-container .login-wrap {
-  display: flex;
-  justify-content: center;
-  width: 760px;
-  height: 420px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-body .inner .login-container .login-wrap .login-split {
-  width: 50%;
-  height: 100%;
-}
-body .inner .login-container .login-wrap .login-txt {
+
+.faq-con {
+  padding: 11.6rem 0;
   background: #3066E2;
-  color: #fff;
-  padding: 9.4rem 2.7rem;
 }
-body .inner .login-container .login-wrap .login-txt h2 {
-  line-height: 34px;
-  letter-spacing: -1px;
-}
-body .inner .login-container .login-wrap .login-cont {
-  background: #fff;
-  padding: 3.5rem 3rem;
-}
-body .inner .login-container .login-wrap .login-cont .logo {
-  text-align: center;
-  color: #3066E2;
-  font-weight: 800;
-}
-body .inner .login-container .login-wrap .login-cont .login-form {
+.faq-con .accordion {
   margin-top: 4rem;
 }
-body .inner .login-container .login-wrap .login-cont .form-style input {
-  width: 320px;
-  height: 40px;
-  background: #fff;
-  border-radius: 5px;
-  border: 1px solid #d9d9d9;
-  margin-bottom: 2.5rem;
-  font-size: 1.5rem;
+.faq-con .accordion .accordion-item .accordion-head {
+  padding: 3.5rem 3rem;
 }
-body .inner .login-container .login-wrap .login-btn .btn {
-  width: 320px;
-  height: 40px;
-  background: #3066E2;
+.faq-con .accordion .accordion-item .accordion-head:after {
+  background-image: url("../images/icon/arrow-under.svg");
+  right: 3rem;
+}
+.faq-con .accordion .accordion-item .accordion-body {
+  box-sizing: border-box;
+  border-top: none;
+  height: 100%;
+}
+.faq-con .accordion .accordion-item .accordion-body .accordion-text {
+  padding: 2rem 3rem 3rem;
+}
+.faq-con .accordion .accordion-item .accordion-body.none {
+  border: solid 1px transparent;
+}
+.faq-con .accordion .accordion-item.active .accordion-head {
+  color: #3066E2;
+}
+.faq-con .accordion .accordion-item.active .accordion-head:after {
+  transform: translateY(-50%) rotate(-180deg);
+}
+.faq-con .accordion .accordion-item.active .accordion-body {
+  border-top: solid 1px #d9d9d9;
+}
+.faq-con .faq-title {
   color: #fff;
-  border-radius: 5px;
-}
-body .inner .login-container .login-wrap .login-menu {
-  margin-top: 3rem;
-}
-body .inner .login-container .login-wrap .login-menu ul {
   text-align: center;
 }
-body .inner .login-container .login-wrap .login-menu ul li {
-  display: inline-block;
-  text-align: center;
-  position: relative;
-}
-body .inner .login-container .login-wrap .login-menu ul li a {
-  display: inline-block;
-  color: #9c9c9c;
-  padding: 1rem;
-}
-body .inner .login-container .login-wrap .login-menu ul li:first-child a:after {
-  position: absolute;
-  content: "·";
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-body .inner .login-container .login-copy {
-  text-align: center;
-  margin-top: 2rem;
-  color: #9c9c9c;
-}/*# sourceMappingURL=login.css.map */
+.faq-con .faq-accordian {
+  margin-top: 4rem;
+}/*# sourceMappingURL=idxTwo.css.map */
