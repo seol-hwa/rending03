@@ -11161,6 +11161,11 @@ body {
     padding: 0 5rem;
   }
 }
+@media (max-width: 500px) {
+  .inner {
+    padding: 0 3rem;
+  }
+}
 
 .tab-menu li {
   position: absolute;
@@ -11257,4 +11262,6 @@ body .inner .login-container .login-copy {
   text-align: center;
   margin-top: 2rem;
   color: #9c9c9c;
-}/*# sourceMappingURL=login.css.map */
+}
+
+/*# sourceMappingURL=login.css.map */
