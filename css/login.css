@@ -11170,7 +11170,10 @@ body {
 body {
   background: #F5F6FF;
 }
-body .login-container {
+body .inner {
+  height: 100%;
+}
+body .inner .login-container {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -11178,7 +11181,7 @@ body .login-container {
   flex-direction: column;
   height: 100%;
 }
-body .login-container .login-wrap {
+body .inner .login-container .login-wrap {
   display: flex;
   justify-content: center;
   width: 760px;
@@ -11186,32 +11189,32 @@ body .login-container .login-wrap {
   border-radius: 10px;
   overflow: hidden;
 }
-body .login-container .login-wrap .login-split {
+body .inner .login-container .login-wrap .login-split {
   width: 50%;
   height: 100%;
 }
-body .login-container .login-wrap .login-txt {
+body .inner .login-container .login-wrap .login-txt {
   background: #3066E2;
   color: #fff;
   padding: 9.4rem 2.7rem;
 }
-body .login-container .login-wrap .login-txt h2 {
+body .inner .login-container .login-wrap .login-txt h2 {
   line-height: 34px;
   letter-spacing: -1px;
 }
-body .login-container .login-wrap .login-cont {
+body .inner .login-container .login-wrap .login-cont {
   background: #fff;
   padding: 3.5rem 3rem;
 }
-body .login-container .login-wrap .login-cont .logo {
+body .inner .login-container .login-wrap .login-cont .logo {
   text-align: center;
   color: #3066E2;
   font-weight: 800;
 }
-body .login-container .login-wrap .login-cont .login-form {
+body .inner .login-container .login-wrap .login-cont .login-form {
   margin-top: 4rem;
 }
-body .login-container .login-wrap .login-cont .form-style input {
+body .inner .login-container .login-wrap .login-cont .form-style input {
   width: 320px;
   height: 40px;
   background: #fff;
@@ -11220,37 +11223,37 @@ body .login-container .login-wrap .login-cont .form-style input {
   margin-bottom: 2.5rem;
   font-size: 1.5rem;
 }
-body .login-container .login-wrap .login-btn .btn {
+body .inner .login-container .login-wrap .login-btn .btn {
   width: 320px;
   height: 40px;
   background: #3066E2;
   color: #fff;
   border-radius: 5px;
 }
-body .login-container .login-wrap .login-menu {
+body .inner .login-container .login-wrap .login-menu {
   margin-top: 3rem;
 }
-body .login-container .login-wrap .login-menu ul {
+body .inner .login-container .login-wrap .login-menu ul {
   text-align: center;
 }
-body .login-container .login-wrap .login-menu ul li {
+body .inner .login-container .login-wrap .login-menu ul li {
   display: inline-block;
   text-align: center;
   position: relative;
 }
-body .login-container .login-wrap .login-menu ul li a {
+body .inner .login-container .login-wrap .login-menu ul li a {
   display: inline-block;
   color: #9c9c9c;
   padding: 1rem;
 }
-body .login-container .login-wrap .login-menu ul li:first-child a:after {
+body .inner .login-container .login-wrap .login-menu ul li:first-child a:after {
   position: absolute;
   content: "·";
   right: 0;
   top: 50%;
   transform: translateY(-50%);
 }
-body .login-container .login-copy {
+body .inner .login-container .login-copy {
   text-align: center;
   margin-top: 2rem;
   color: #9c9c9c;
