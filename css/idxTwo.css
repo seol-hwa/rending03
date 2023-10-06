@@ -11166,6 +11166,11 @@ body {
   top: -100%;
 }
 
+.inner {
+  width: 700px;
+  margin: 0 auto;
+}
+
 .faq-con {
   padding: 11.6rem 0;
   background: #3066E2;
@@ -11173,16 +11178,32 @@ body {
 .faq-con .accordion {
   margin-top: 4rem;
 }
+.faq-con .accordion .accordion-item .accordion-head {
+  padding: 3.5rem 3rem;
+}
 .faq-con .accordion .accordion-item .accordion-head:after {
   background-image: url("../images/icon/arrow-under.svg");
   right: 3rem;
 }
 .faq-con .accordion .accordion-item .accordion-body {
   box-sizing: border-box;
-  border: solid 1px #d9d9d9;
+  border-top: none;
+  height: 100%;
+}
+.faq-con .accordion .accordion-item .accordion-body .accordion-text {
+  padding: 2rem 3rem 3rem;
+}
+.faq-con .accordion .accordion-item .accordion-body.none {
+  border: solid 1px transparent;
+}
+.faq-con .accordion .accordion-item.active .accordion-head {
+  color: #3066E2;
 }
 .faq-con .accordion .accordion-item.active .accordion-head:after {
   transform: translateY(-50%) rotate(-180deg);
+}
+.faq-con .accordion .accordion-item.active .accordion-body {
+  border-top: solid 1px #d9d9d9;
 }
 .faq-con .faq-title {
   color: #fff;
