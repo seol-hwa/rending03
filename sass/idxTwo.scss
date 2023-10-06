@@ -179,3 +179,36 @@
     }
 }
 
+@media (max-width: 1024px){
+    .faq-con{
+        .faq-wrap{
+            .accordion{
+                .accordion-item{
+                    .accordion-head{
+                        padding: 2.5rem 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 720px){
+    .review-con{
+        .inner{
+            .review-title{
+                font-size: 5rem;
+                margin-bottom: 7.2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px){
+    .review-con{
+        .inner{
+            .review-title{
+                font-size: 4rem;
+            }
+        }
+    }
+}
