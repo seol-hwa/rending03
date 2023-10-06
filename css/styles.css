@@ -11372,6 +11372,47 @@ body main .data-con .inner .layout-style-2 .layout .img-wrap .graph-wrap .graph-
   padding-bottom: 500%;
   background-image: linear-gradient(to top, #3066E2 0%, #C2DAF6 0%);
 }
+body main .faq-con {
+  padding: 11.6rem 0;
+  background: #3066E2;
+}
+body main .faq-con .accordion {
+  margin-top: 4rem;
+}
+body main .faq-con .accordion .accordion-item .accordion-head {
+  padding: 3.5rem 3rem;
+}
+body main .faq-con .accordion .accordion-item .accordion-head:after {
+  background-image: url("../images/icon/arrow-under.svg");
+  right: 3rem;
+}
+body main .faq-con .accordion .accordion-item .accordion-body {
+  box-sizing: border-box;
+  border-top: none;
+  height: 100%;
+}
+body main .faq-con .accordion .accordion-item .accordion-body .accordion-text {
+  padding: 2rem 3rem 3rem;
+}
+body main .faq-con .accordion .accordion-item .accordion-body.none {
+  border: solid 1px transparent;
+}
+body main .faq-con .accordion .accordion-item.active .accordion-head {
+  color: #3066E2;
+}
+body main .faq-con .accordion .accordion-item.active .accordion-head:after {
+  transform: translateY(-50%) rotate(-180deg);
+}
+body main .faq-con .accordion .accordion-item.active .accordion-body {
+  border-top: solid 1px #d9d9d9;
+}
+body main .faq-con .faq-title {
+  color: #fff;
+  text-align: center;
+}
+body main .faq-con .faq-accordian {
+  margin-top: 4rem;
+}
 
 @media (max-width: 1200px) {
   body .con-wrap__header2 .inner .header2__pc-wrap .nav-style-2 .main-list:after {
