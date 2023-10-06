@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!--style css-->
     <link rel="stylesheet" href="../css/styles.css">
+    <!--gsap cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+        integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -22,19 +26,39 @@
             <div class="inner">
                 <div class="visual-wrap pl-102">
                     <div class="title-box pb-36">
-                        <h2 class="title-box__title">99 마케팅, <span>또 다른 성공<br></span>
-                            지금 시작하세요.</h2>
+                        <h2 class="title-box__title">
+                            <span class="visual__hid">
+                                <span class="hid__span">99 마케팅, </span>
+                            </span>
+                            <span class="visual__hid">
+                                <span class="hid__span">또 다른 성공</span>
+                            </span>
+                            <span class="visual__hid">
+                                <span class="hid__span">지금 시작하세요.</span>
+                            </span>
+                        </h2>
                     </div>
                     <div class="visual-start d-flex">
-                        <a href="#" class="visual-start__experience d-flex-all-center">체험하기</a>
-                        <a href="login.html" class="visual-start__login d-flex-all-center">로그인</a>
+                        <div class="visual-start__hid">
+                            <a href="#" class="visual-start__experience d-flex-all-center">체험하기</a>
+                        </div>
+                        <div class="visual-start__hid">
+                            <a href="login.html" class="visual-start__login d-flex-all-center">로그인</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="service-con pt-132 pb-234">
             <div class="inner">
-                <h2 class="service__title mb-102">최적의 고도화 <span>마케팅 서비스</span></h2>
+                <h2 class="service__title mb-102">
+                    <span class="service__hid">
+                        <span class="hid__span">최적의 고도화 </span>
+                    </span>
+                    <span class="service__hid">
+                        <span class="hid__span">마케팅 서비스</span>
+                    </span>
+                </h2>
                 <div class="layout-style-4 row">
                     <div class="layout col-12 col-sm-6 col-lg-3">
                         <a href="#" class="service-link">
