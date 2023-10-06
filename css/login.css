@@ -11212,10 +11212,13 @@ body .inner .login-container .login-wrap .login-txt {
   padding: 9.4rem 2.7rem;
 }
 body .inner .login-container .login-wrap .login-txt h2 {
-  line-height: 34px;
   letter-spacing: -1px;
 }
 body .inner .login-container .login-wrap .login-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: #fff;
   padding: 3.5rem 3rem;
 }
@@ -11228,6 +11231,7 @@ body .inner .login-container .login-wrap .login-cont .login-form {
   margin-top: 4rem;
 }
 body .inner .login-container .login-wrap .login-cont .form-style input {
+  margin: auto;
   width: 320px;
   height: 40px;
   background: #fff;
@@ -11235,6 +11239,9 @@ body .inner .login-container .login-wrap .login-cont .form-style input {
   border: 1px solid #d9d9d9;
   margin-bottom: 2.5rem;
   font-size: 1.5rem;
+}
+body .inner .login-container .login-wrap .login-btn {
+  margin: 0;
 }
 body .inner .login-container .login-wrap .login-btn .btn {
   width: 320px;
@@ -11270,4 +11277,47 @@ body .inner .login-container .login-copy {
   text-align: center;
   margin-top: 2rem;
   color: #9c9c9c;
+}
+
+@media (max-width: 1280px) {
+  .inner .login-container .login-wrap {
+    width: 100%;
+  }
+}
+@media (max-width: 881px) {
+  body .inner .login-container .login-wrap {
+    width: 100%;
+  }
+  body .inner .login-container .login-wrap .login-txt h2 {
+    font-size: 1.8rem;
+  }
+  body .inner .login-container .login-wrap .login-cont {
+    overflow: hidden;
+  }
+  body .inner .login-container .login-wrap .login-cont .login-form {
+    overflow: hidden;
+    width: 100%;
+  }
+  body .inner .login-container .login-wrap .login-cont .login-form input {
+    width: 100%;
+  }
+  body .inner .login-container .login-wrap .login-btn {
+    width: 100%;
+  }
+  body .inner .login-container .login-wrap .login-btn .btn {
+    width: 100%;
+  }
+}
+@media (max-width: 720px) {
+  body .inner .login-container .login-wrap {
+    flex-direction: column;
+    height: fit-content;
+  }
+  body .inner .login-container .login-wrap .login-split {
+    width: 100%;
+    height: fit-content;
+  }
+  body .inner .login-container .login-wrap .login-txt {
+    padding: 3.4rem 2.7rem 3.4rem;
+  }
 }/*# sourceMappingURL=login.css.map */
