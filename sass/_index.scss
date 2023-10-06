@@ -303,6 +303,64 @@ body {
                 }
             }
         }
+
+        //5th section
+        .faq-con {
+            padding: 11.6rem 0;
+            background: #3066E2;
+
+            .accordion {
+                margin-top: 4rem;
+
+                .accordion-item {
+                    .accordion-head {
+                        padding: 3.5rem 3rem;
+
+                        &:after {
+                            background-image: url("../images/icon/arrow-under.svg");
+                            right: 3rem;
+                        }
+                    }
+
+                    .accordion-body {
+                        box-sizing: border-box;
+                        border-top: none;
+                        height: 100%;
+
+                        .accordion-text {
+                            padding: 2rem 3rem 3rem;
+                        }
+                    }
+
+                    .accordion-body.none {
+                        border: solid 1px transparent;
+                    }
+
+                    &.active {
+                        .accordion-head {
+                            color: #3066E2;
+
+                            &:after {
+                                transform: translateY(-50%) rotate(-180deg);
+                            }
+                        }
+
+                        .accordion-body {
+                            border-top: solid 1px #d9d9d9;
+                        }
+                    }
+                }
+            }
+
+            .faq-title {
+                color: #fff;
+                text-align: center;
+            }
+
+            .faq-accordian {
+                margin-top: 4rem;
+            }
+        }
     }
 
 }
