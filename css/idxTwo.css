@@ -11160,6 +11160,11 @@ body {
     padding: 0 5rem;
   }
 }
+@media (max-width: 500px) {
+  .inner {
+    padding: 0 3rem;
+  }
+}
 
 .tab-menu li {
   position: absolute;
@@ -11211,4 +11216,6 @@ body {
 }
 .faq-con .faq-accordian {
   margin-top: 4rem;
-}/*# sourceMappingURL=idxTwo.css.map */
+}
+
+/*# sourceMappingURL=idxTwo.css.map */
