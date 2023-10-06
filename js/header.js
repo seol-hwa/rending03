@@ -33,6 +33,7 @@ head.innerHTML=`
                                 <li><a href="" class="sub-list__menu">1:1 문의</a></li>
                             </ul>
                         </li>
+                        <li class="nav-bg"></li>
                     </ul>
                     <button class="mo-nav-open" value="전체메뉴">
                         <i class="xi-bars xi-2x"></i>
@@ -81,6 +82,24 @@ head.innerHTML=`
         </div>
 `
 //nav_2
+//pc
+const nav2_main=document.querySelectorAll('.main-list__menu');
+const nav2_mainlist=document.querySelector('.main-list');
+const logo=document.querySelector('.logo');
+const header_right=document.querySelector('.pc-wrap__right a');
+
+nav2_main.forEach(el => {
+    el.addEventListener('focus',function(){
+        nav2_mainlist.classList.add('active');
+    })
+});
+logo.addEventListener('focus',function(){
+    nav2_mainlist.classList.remove('active');
+});
+header_right.addEventListener('focus',function(){
+    nav2_mainlist.classList.remove('active');
+});
+//mobile
 const nav2_open=document.querySelector('.nav-style-2 .mo-nav-open');
 const nav2_close=document.querySelector('.mo-nav-wrap-2 .mo-nav-close');
 const nav2_moWrap=document.querySelector('.mo-nav-wrap-2');
@@ -88,9 +107,11 @@ const nav2_subList=document.querySelectorAll('.mo-nav-wrap-2 .sub-list');
 
 nav2_open.addEventListener('click',function(){
     nav2_moWrap.classList.add('active');
+    document.querySelector('body').style.overflowY='hidden';
 })
 nav2_close.addEventListener('click',function(){
     nav2_moWrap.classList.remove('active');
+    document.querySelector('body').style.overflowY='auto';
 })
 
 nav2_subList.forEach(sub=>{

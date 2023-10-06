@@ -18,9 +18,17 @@
         padding:0 3rem;
     }
 }
-.tab-menu{
-    li{
+.skip-menu{
+    a{
+        padding:2rem 3rem;
+        font-size: 2rem;
+        background:#fff;
+        font-weight: 700;
         position:absolute;
         top:-100%;
+        z-index:999;
+        &:focus{
+            top:0;
+        }
     }
 }

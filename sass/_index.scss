@@ -21,16 +21,17 @@ body {
 
                 .nav-style-2 {
                     .main-list {
-                        &:after {
-                            top: 6.8rem;
-                            height: 29.8rem;
-                        }
 
-                        li {
+                        >li {
                             &:hover {
+                                background-color: rgba(#000, 0.1);
+
                                 .sub-list {
-                                    background-color: rgba(#bcc7e2, 0.2);
+                                    background-color: transparent;
                                 }
+                            }
+                            &:hover.nav-bg{
+                                background-color: #fff;
                             }
 
                             .main-list__menu {
@@ -45,10 +46,15 @@ body {
 
                             .sub-list {
                                 width: 100%;
-                                padding: 0.5rem 0;
-                                height: 29.8rem;
+                                height: 0;
+                                display: block;
+                                transition: all 100ms;
 
                                 li {
+                                    opacity: 0;
+                                    visibility: hidden;
+                                    transition: all 300ms;
+
                                     .sub-list__menu {
                                         color: #444;
                                         font-size: 1.8rem;
@@ -62,6 +68,39 @@ body {
                                         }
                                     }
                                 }
+                            }
+                        }
+
+                        .nav-bg {
+                            position: absolute;
+                            top: 6.8rem;
+                            left: 0;
+                            height: 0;
+                            width: 100%;
+                            background-color: #fff;
+                            transition: height 300ms;
+                        }
+
+                        &.active,
+                        &:hover {
+                            &:after {
+                                display: none;
+                            }
+
+                            li {
+                                .sub-list {
+                                    height: 30.6rem;
+                                    padding: 0.5rem 0;
+
+                                    li {
+                                        opacity: 1;
+                                        visibility: visible;
+                                    }
+                                }
+                            }
+
+                            .nav-bg {
+                                height: 30.6rem;
                             }
                         }
                     }
@@ -100,14 +139,38 @@ body {
 
             .mo-nav-wrap-2 {
                 .mo-nav-wrap__mo-nav-box {
+                    .mo-nav-box__header{
+                        .header__info{
+                            li{
+                                a{
+                                    &:hover{
+                                        color:#3066E2;
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+                        }
+                    }
                     .mo-main-list {
                         li {
+                            .mo-main-list__menu{
+                                &:hover,
+                                &.active{
+                                    // background-color: rgba(#6d8eda,0.1);
+                                    color:#4474e4;
+                                    font-weight: 700;
+                                }
+                            }
                             .sub-list {
                                 background: rgba(#bcc7e2, 0.2);
 
                                 li {
                                     .sub-list__menu {
                                         color: #666;
+                                        &:hover{
+                                            color:#222;
+                                            font-weight: 700;
+                                        }
                                     }
                                 }
                             }
@@ -309,6 +372,14 @@ body {
             padding: 11.6rem 0;
             background: #3066E2;
 
+            .faq-title {
+                font-size: 3.6rem;
+
+                .font-bold {
+                    font-weight: 700;
+                }
+            }
+
             .accordion {
                 margin-top: 4rem;
 
@@ -374,18 +445,14 @@ body {
                 .header2__pc-wrap {
                     .nav-style-2 {
                         .main-list {
-                            &:after {
-                                height: 25.2rem;
-                            }
 
-                            li {
+                            >li {
                                 .main-list__menu {
                                     padding: 2.5rem 2rem;
                                     font-size: 1.6rem;
                                 }
 
                                 .sub-list {
-                                    height: 25.4rem;
 
                                     li {
                                         .sub-list__menu {
@@ -393,6 +460,22 @@ body {
                                             padding: 2rem 0;
                                         }
                                     }
+                                }
+                            }
+
+                            .nav-bg {
+                                top: 6.6rem;
+                            }
+
+                            &:hover {
+                                li {
+                                    .sub-list {
+                                        height: 26.6rem;
+                                    }
+                                }
+
+                                .nav-bg {
+                                    height: 26.6rem;
                                 }
                             }
                         }
@@ -593,6 +676,15 @@ body {
                     }
                 }
             }
+
+            //5th section
+            .faq-con {
+                .faq-title {
+                    .line-br {
+                        display: block;
+                    }
+                }
+            }
         }
     }
 }
@@ -683,6 +775,13 @@ body {
                             }
                         }
                     }
+                }
+            }
+
+            //5th section
+            .faq-con {
+                .faq-title {
+                    font-size: 3.2rem;
                 }
             }
         }

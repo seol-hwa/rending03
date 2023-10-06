@@ -12,8 +12,12 @@
 </head>
 
 <body>
+    <ul class="skip-menu">
+        <li><a href="#main">본문 바로가기</a></li>
+        <li><a href="#footer">하단 바로가기</a></li>
+    </ul>
     <header class="con-wrap__header2"></header>
-    <main>
+    <main id="main">
         <section class="visual-con pt-270 pb-312">
             <div class="inner">
                 <div class="visual-wrap pl-102">
@@ -23,7 +27,7 @@
                     </div>
                     <div class="visual-start d-flex">
                         <a href="#" class="visual-start__experience d-flex-all-center">체험하기</a>
-                        <a href="#" class="visual-start__login d-flex-all-center">로그인</a>
+                        <a href="login.html" class="visual-start__login d-flex-all-center">로그인</a>
                     </div>
                 </div>
             </div>
@@ -118,10 +122,10 @@
         <!--5th section-->
         <section class="faq-con">
             <div class="inner">
-                <div class="faq-title font-36">
-                    SNS 마케팅에 대해 궁금하다면<br>
-                    FAQ를 이용해주세요
-                </div>
+                <h2 class="faq-title">
+                    SNS 마케팅에 대해 <span class="line-br">궁금하다면<br></span>
+                    <span class="font-bold">FAQ</span>를 이용해주세요
+                </h2>
                 <div class="faq-accordion accordion">
                     <div class="accordion-item active">
                         <button class="accordion-head font-20-b">보안상 위험하지 않나요?</button>
@@ -198,7 +202,7 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer id="footer" style="background-color: #444444; height:500px;"></footer>
     <script src="../js/header.js"></script>
     <script src="../js/index.js"></script>
 </body>

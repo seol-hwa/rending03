@@ -11167,9 +11167,17 @@ body {
   }
 }
 
-.tab-menu li {
+.skip-menu a {
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  background: #fff;
+  font-weight: 700;
   position: absolute;
   top: -100%;
+  z-index: 999;
+}
+.skip-menu a:focus {
+  top: 0;
 }
 
 body {
