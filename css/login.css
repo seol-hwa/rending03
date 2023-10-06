@@ -11161,6 +11161,11 @@ body {
     padding: 0 5rem;
   }
 }
+@media (max-width: 500px) {
+  .inner {
+    padding: 0 3rem;
+  }
+}
 
 .tab-menu li {
   position: absolute;
