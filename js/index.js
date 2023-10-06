@@ -92,3 +92,37 @@ function accordionAct(btn, item, body){
         })
     })
 }
+
+//gsap
+const visual_title=document.querySelectorAll('.visual__hid .hid__span');
+const visual_btn=document.querySelectorAll('.visual-start a');
+
+const service_title=document.querySelector('.service__title');
+
+//1st section gsap
+function visual(){
+    let tl=gsap.timeline();
+
+    tl.to(visual_title[0],{
+        duration:0.5,
+        y:0,
+    },'-=30%').to(visual_title[1],{
+        duration:0.5,
+        y:0,
+    },'-=30%').to(visual_title[2],{
+        duration:0.5,
+        y:0,
+    },'-=30%').to(visual_btn[0],{
+        duration:0.5,
+        y:0,
+    },'-=30%').to(visual_btn[1],{
+        duration:0.5,
+        y:0,
+    },'-=30%')
+}
+visual();
+
+//2nd~ section gsap
+// window.addEventListener('scroll',function(){
+//     let scrPoint=
+// })

@@ -11186,6 +11186,9 @@ body .con-wrap__header2 {
   padding: 0;
   background-color: #3066E2;
   border-bottom: 2px solid #fff;
+  width: 100%;
+  position: fixed;
+  z-index: 9;
 }
 body .con-wrap__header2 .inner .header2__pc-wrap h1 .logo {
   color: #fff;
@@ -11299,31 +11302,44 @@ body .con-wrap__header2 .inner .mo-nav-wrap-2 .mo-nav-wrap__mo-nav-box .mo-main-
   color: #222;
   font-weight: 700;
 }
-body main .title-box__title {
-  font-size: 6rem;
-  line-height: 1.3;
-}
 body main .visual-con {
   background-color: #3066E2;
 }
 body main .visual-con .inner .visual-wrap .title-box__title {
+  font-size: 6rem;
+  line-height: 1.3;
   color: #fff;
+}
+body main .visual-con .inner .visual-wrap .title-box__title .visual__hid {
+  display: inline-block;
+  overflow: hidden;
+}
+body main .visual-con .inner .visual-wrap .title-box__title .visual__hid .hid__span {
+  display: inline-block;
+  transform: translateY(100%);
+}
+body main .visual-con .inner .visual-wrap .title-box__title .visual__hid:last-child {
+  display: block;
 }
 body main .visual-con .inner .visual-wrap .visual-start {
   gap: 2.2rem;
 }
-body main .visual-con .inner .visual-wrap .visual-start a {
+body main .visual-con .inner .visual-wrap .visual-start__hid {
+  overflow: hidden;
+}
+body main .visual-con .inner .visual-wrap .visual-start__hid a {
   width: 18rem;
   height: 7rem;
   border-radius: 10rem;
   font-size: 2.4rem;
   font-weight: 800;
+  transform: translateY(110%);
 }
-body main .visual-con .inner .visual-wrap .visual-start__experience {
+body main .visual-con .inner .visual-wrap .visual-start__hid .visual-start__experience {
   background-color: #fff;
   color: #3066E2;
 }
-body main .visual-con .inner .visual-wrap .visual-start__login {
+body main .visual-con .inner .visual-wrap .visual-start__hid .visual-start__login {
   background-color: #011A52;
   color: #fff;
 }
@@ -11505,7 +11521,7 @@ body main .faq-con .faq-accordian {
   body .con-wrap__header2 {
     padding: 1rem 0;
   }
-  body main .title-box__title {
+  body main .visual-con .inner .visual-wrap .title-box__title {
     font-size: 4.8rem;
   }
   body main .visual-con .inner .visual-wrap .visual-start a {
@@ -11536,7 +11552,7 @@ body main .faq-con .faq-accordian {
   }
 }
 @media (max-width: 768px) {
-  body main .title-box__title {
+  body main .visual-con .inner .visual-wrap .title-box__title {
     font-size: 4rem;
     text-align: center;
   }
@@ -11568,10 +11584,10 @@ body main .faq-con .faq-accordian {
   }
 }
 @media (max-width: 500px) {
-  body main .title-box__title {
-    font-size: 3.4rem;
+  body main .visual-con .inner .visual-wrap .title-box__title {
+    font-size: 3rem;
   }
-  body main .title-box__title span {
+  body main .visual-con .inner .visual-wrap .title-box__title span {
     display: block;
   }
   body main .visual-con .inner .visual-wrap .visual-start {
@@ -11579,7 +11595,10 @@ body main .faq-con .faq-accordian {
     flex-direction: column;
     align-items: center;
   }
-  body main .visual-con .inner .visual-wrap .visual-start a {
+  body main .visual-con .inner .visual-wrap .visual-start__hid {
+    width: 100%;
+  }
+  body main .visual-con .inner .visual-wrap .visual-start__hid a {
     width: 100%;
     font-size: 1.8rem;
   }
@@ -11588,6 +11607,9 @@ body main .faq-con .faq-accordian {
   }
   body main .pb-312 {
     padding-bottom: 24rem;
+  }
+  body main .service-con .inner .service__title {
+    font-size: 3rem;
   }
   body main .service-con .inner .service__title span {
     display: block;
@@ -11602,13 +11624,13 @@ body main .faq-con .faq-accordian {
     padding-bottom: 9rem;
   }
   body main .data-con .inner .layout-style-2 .layout .text-wrap .data__text-box .layout-title {
-    font-size: 3.4rem;
+    font-size: 3rem;
   }
   body main .data-con .inner .layout-style-2 .layout .img-wrap .graph-wrap .graph-percent {
     font-size: 1.4rem;
   }
   body main .faq-con .faq-title {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 }
 

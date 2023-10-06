@@ -6,6 +6,9 @@ body {
         padding: 0;
         background-color: #3066E2;
         border-bottom: 2px solid #fff;
+        width: 100%;
+        position: fixed;
+        z-index: 9;
 
         .inner {
             .header2__pc-wrap {
@@ -30,7 +33,8 @@ body {
                                     background-color: transparent;
                                 }
                             }
-                            &:hover.nav-bg{
+
+                            &:hover.nav-bg {
                                 background-color: #fff;
                             }
 
@@ -139,36 +143,40 @@ body {
 
             .mo-nav-wrap-2 {
                 .mo-nav-wrap__mo-nav-box {
-                    .mo-nav-box__header{
-                        .header__info{
-                            li{
-                                a{
-                                    &:hover{
-                                        color:#3066E2;
+                    .mo-nav-box__header {
+                        .header__info {
+                            li {
+                                a {
+                                    &:hover {
+                                        color: #3066E2;
                                         font-weight: 700;
                                     }
                                 }
                             }
                         }
                     }
+
                     .mo-main-list {
                         li {
-                            .mo-main-list__menu{
+                            .mo-main-list__menu {
+
                                 &:hover,
-                                &.active{
+                                &.active {
                                     // background-color: rgba(#6d8eda,0.1);
-                                    color:#4474e4;
+                                    color: #4474e4;
                                     font-weight: 700;
                                 }
                             }
+
                             .sub-list {
                                 background: rgba(#bcc7e2, 0.2);
 
                                 li {
                                     .sub-list__menu {
                                         color: #666;
-                                        &:hover{
-                                            color:#222;
+
+                                        &:hover {
+                                            color: #222;
                                             font-weight: 700;
                                         }
                                     }
@@ -182,12 +190,6 @@ body {
     }
 
     main {
-        .title-box {
-            &__title {
-                font-size: 6rem;
-                line-height: 1.3;
-            }
-        }
 
         //1st section
         .visual-con {
@@ -197,29 +199,50 @@ body {
                 .visual-wrap {
                     .title-box {
                         &__title {
+                            font-size: 6rem;
+                            line-height: 1.3;
                             color: #fff;
+
+                            .visual__hid {
+                                display: inline-block;
+                                overflow: hidden;
+
+                                .hid__span {
+                                    display: inline-block;
+                                    transform: translateY(100%);
+                                }
+
+                                &:last-child {
+                                    display: block;
+                                }
+                            }
                         }
                     }
 
                     .visual-start {
                         gap: 2.2rem;
 
-                        a {
-                            width: 18rem;
-                            height: 7rem;
-                            border-radius: 10rem;
-                            font-size: 2.4rem;
-                            font-weight: 800;
-                        }
+                        &__hid {
+                            overflow: hidden;
 
-                        &__experience {
-                            background-color: #fff;
-                            color: #3066E2;
-                        }
+                            a {
+                                width: 18rem;
+                                height: 7rem;
+                                border-radius: 10rem;
+                                font-size: 2.4rem;
+                                font-weight: 800;
+                                transform: translateY(110%);
+                            }
 
-                        &__login {
-                            background-color: #011A52;
-                            color: #fff;
+                            .visual-start__experience {
+                                background-color: #fff;
+                                color: #3066E2;
+                            }
+
+                            .visual-start__login {
+                                background-color: #011A52;
+                                color: #fff;
+                            }
                         }
                     }
                 }
@@ -525,16 +548,17 @@ body {
         }
 
         main {
-            .title-box {
-                &__title {
-                    font-size: 4.8rem;
-                }
-            }
 
             //1st section
             .visual-con {
                 .inner {
                     .visual-wrap {
+                        .title-box {
+                            &__title {
+                                font-size: 4.8rem;
+                            }
+                        }
+
                         .visual-start {
                             a {
                                 width: 15rem;
@@ -613,17 +637,18 @@ body {
 @media (max-width:768px) {
     body {
         main {
-            .title-box {
-                &__title {
-                    font-size: 4rem;
-                    text-align: center;
-                }
-            }
 
             //1st section
             .visual-con {
                 .inner {
                     .visual-wrap {
+                        .title-box {
+                            &__title {
+                                font-size: 4rem;
+                                text-align: center;
+                            }
+                        }
+
                         .visual-start {
                             justify-content: center;
 
@@ -692,28 +717,33 @@ body {
 @media (max-width:500px) {
     body {
         main {
-            .title-box {
-                &__title {
-                    font-size: 3.4rem;
-
-                    span {
-                        display: block;
-                    }
-                }
-            }
 
             //1st section
             .visual-con {
                 .inner {
                     .visual-wrap {
+                        .title-box {
+                            &__title {
+                                font-size: 3rem;
+
+                                span {
+                                    display: block;
+                                }
+                            }
+                        }
+
                         .visual-start {
                             gap: 2rem;
                             flex-direction: column;
                             align-items: center;
 
-                            a {
+                            &__hid {
                                 width: 100%;
-                                font-size: 1.8rem;
+
+                                a {
+                                    width: 100%;
+                                    font-size: 1.8rem;
+                                }
                             }
                         }
                     }
@@ -732,6 +762,8 @@ body {
             .service-con {
                 .inner {
                     .service__title {
+                        font-size: 3rem;
+
                         span {
                             display: block;
                         }
@@ -761,7 +793,7 @@ body {
                             .text-wrap {
                                 .data__text-box {
                                     .layout-title {
-                                        font-size: 3.4rem;
+                                        font-size: 3rem;
                                     }
                                 }
                             }
@@ -781,7 +813,7 @@ body {
             //5th section
             .faq-con {
                 .faq-title {
-                    font-size: 3.2rem;
+                    font-size: 3rem;
                 }
             }
         }
