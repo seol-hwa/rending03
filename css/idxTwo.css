@@ -1,3 +1,4 @@
+@import url("//fonts.googleapis.com/earlyaccess/nanumgothic.css");
 * {
   margin: 0;
   font-family: "Noto Sans KR", sans-serif;
@@ -11171,6 +11172,10 @@ body {
   top: -100%;
 }
 
+.nanum {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
 .review-con {
   background-color: #fff;
   overflow: hidden;
@@ -11182,6 +11187,8 @@ body {
 .review-con .inner .review-title {
   color: #3066E2;
   text-align: center;
+  margin-bottom: 10.2rem;
+  font-weight: 800;
 }
 .review-con .inner .title-box {
   text-align: center;
@@ -11202,13 +11209,10 @@ body {
   text-align: initial;
   min-height: 25.5rem;
 }
-.review-con .inner .review-wrap {
-  height: 25.5rem;
-}
 .review-con .inner .review-wrap .review-box {
-  border-radius: 1rem;
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.15);
-  padding: 3rem 2.2rem 1.6rem;
+  border-radius: 3rem;
+  overflow: hidden;
+  box-shadow: 0 0.2rem 0.8rem 0 rgba(0, 0, 0, 0.1);
   font-size: 1.8rem;
   line-height: 1.6;
   flex-shrink: 0;
@@ -11216,9 +11220,21 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
-.review-con .inner .review-wrap .review-box .review-text {
+.review-con .inner .review-wrap .review-box .review-head {
+  min-height: 31rem;
+}
+.review-con .inner .review-wrap .review-box .review-head .review-icon {
+  width: 100%;
+  padding: 3.5rem 3rem 2rem;
+  margin-right: auto;
+}
+.review-con .inner .review-wrap .review-box .review-head .review-icon img {
+  width: auto;
+  max-width: 5rem;
+}
+.review-con .inner .review-wrap .review-box .review-head .review-text {
+  padding: 0 3rem 6rem;
   color: #404040;
-  margin-bottom: 1rem;
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
@@ -11226,13 +11242,13 @@ body {
   text-overflow: ellipsis;
 }
 .review-con .inner .review-wrap .review-box .profile-box {
+  display: flex;
+  padding: 3rem 3.5rem 4rem;
+  width: 100%;
+  border-top: solid 1px #EAEAEA;
+  background: #FAFBFF;
   align-items: center;
   margin-left: auto;
-}
-.review-con .inner .review-wrap .review-box .profile-box .profile-name {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .review-con .inner .review-wrap .review-box .profile-box .profile-img {
   width: 5.5rem;
@@ -11240,8 +11256,21 @@ body {
   overflow: hidden;
   border-radius: 50%;
   background-color: #d9d9d9;
-  margin-left: 2rem;
+  margin-right: 1.5rem;
   flex-shrink: 0;
+}
+.review-con .inner .review-wrap .review-box .profile-box .profile-txt {
+  display: flex;
+  flex-direction: column;
+}
+.review-con .inner .review-wrap .review-box .profile-box .profile-txt .profile-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.5rem;
+}
+.review-con .inner .review-wrap .review-box .profile-box .profile-txt .profile-duty {
+  color: #74A3FF;
 }
 
 .faq-con {
@@ -11249,7 +11278,6 @@ body {
   background: #3066E2;
 }
 .faq-con .faq-wrap {
-  width: 700px;
   margin: 0 auto;
 }
 .faq-con .faq-wrap .accordion {
@@ -11288,6 +11316,4 @@ body {
 }
 .faq-con .faq-wrap .faq-accordian {
   margin-top: 4rem;
-}
-
-/*# sourceMappingURL=idxTwo.css.map */
+}/*# sourceMappingURL=idxTwo.css.map */

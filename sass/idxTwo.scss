@@ -1,14 +1,23 @@
 @import './guide';
 
+@import url("//fonts.googleapis.com/earlyaccess/nanumgothic.css");
+.nanum{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
 .review-con {
     background-color: #fff;
     overflow: hidden;
+    
     .inner {
         width: 100%;
-        overflow: hidden;
+        overflow: hidden; 
         .review-title{
             color: #3066E2;
             text-align: center;
+            margin-bottom: 10.2rem;
+            // font-weight추가. 가이드에 800에 대한 클래스가 없네요!
+            font-weight: 800;
         }
         .title-box {
             text-align: center;
@@ -36,12 +45,15 @@
         }
 
         .review-wrap {
-            height:25.5rem;
-
+            //height 삭제
+            // min-height: 47rem;
+            
             .review-box {
-                border-radius: 1rem;
-                box-shadow: 0 0 1rem 0 rgba(#000, 0.15);
-                padding: 3rem 2.2rem 1.6rem;
+                //
+                border-radius: 3rem;
+                overflow: hidden;
+                box-shadow: 0 .2rem .8rem 0 rgba(#000, 0.10);
+                // 패딩 삭제, radius height 추가
                 font-size: 1.8rem;
                 line-height: 1.6;
                 flex-shrink: 0;
@@ -49,45 +61,79 @@
                 flex-direction: column;
                 justify-content: space-between;
 
-                .review-text {
-                    color: #404040;
-                    margin-bottom: 1rem;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 5;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-
-                .profile-box {
-                    align-items: center;
-                    margin-left: auto;
-
-                    .profile-name {
-                        white-space: nowrap;
+                //review-head 태그 추가
+                .review-head{
+                    //min-height추가
+                    min-height: 31rem;
+                    .review-icon{
+                        width: 100%;
+                        padding: 3.5rem 3rem 2rem;
+                        margin-right: auto;
+                        img{
+                            width: auto;
+                            max-width: 5rem;
+                        }
+                    }
+                    .review-text {
+                        padding: 0 3rem 6rem;
+                        color: #404040;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 5;
+                        -webkit-box-orient: vertical;
                         overflow: hidden;
                         text-overflow: ellipsis;
                     }
+                }
+                //
 
+                .profile-box {
+                    //
+                    display: flex;
+                    padding: 3rem 3.5rem 4rem;
+                    //끝
+                    width: 100%;
+                    border-top: solid 1px #EAEAEA;
+                    background: #FAFBFF;
+                    align-items: center;
+                    margin-left: auto;
+                    
                     .profile-img {
                         width: 5.5rem;
                         height: 5.5rem;
                         overflow: hidden;
                         border-radius: 50%;
                         background-color: #d9d9d9;
-                        margin-left: 2rem;
+                        // 마진 변경
+                        margin-right: 1.5rem;
                         flex-shrink: 0;
                     }
+                    //profile-txt태그 추가
+                    .profile-txt{
+                        display: flex;
+                        flex-direction: column;
+                        .profile-name {
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            //마진추가
+                            margin-bottom: .5rem;
+                        }
+                        .profile-duty{
+                            color: #74A3FF;
+                        }
+                    }
+                    //
                 }
             }
         }
     }
 }
+
 .faq-con{
     padding: 11.6rem 0;
     background: #3066E2;
     .faq-wrap{
-        width: 700px;
+        // width값 제거
         margin: 0 auto;
         .accordion{
             margin-top: 4rem;
@@ -132,3 +178,4 @@
         }
     }
 }
+
