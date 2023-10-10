@@ -1,0 +1,181 @@
+body {
+    .side-menu__header {
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+
+        .header__top {
+            background-color: #fff;
+            border-bottom: 1px solid #E9EAED;
+            align-items: center;
+            justify-content: space-between;
+
+            h1 {
+                display: flex;
+
+                .logo {
+                    display: block;
+                    color: #2B333E;
+                }
+            }
+
+            .mobile-menu__btn {
+                display: none;
+            }
+        }
+
+        .header__side {
+            background-color: #F4F9FB;
+            height: calc(100vh - 6.7rem);
+            width: 23rem;
+            overflow: auto;
+            border-right: 1px solid #E0E0E0;
+
+            .profile__info-wrap {
+                align-items: center;
+
+                .info-wrap__left {
+                    .left__img-box {
+                        width: 6.3rem;
+                        height: 6.3rem;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        background: url(../images/profile1.png) no-repeat center/cover;
+                    }
+                }
+
+                .info-wrap__right {
+                    width: calc(100% - 7.2rem);
+
+                    .right__name-box {
+                        .name-box__my-name {
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+
+            .side__gnb-box {
+                .gnb-box__gnb-list {
+                    >li {
+                        .gnb-list__main {
+                            align-items: center;
+
+                            &:before {
+                                content: '';
+                                width: 1.9rem;
+                                height: 1.7rem;
+                                display: block;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: contain;
+                                margin-right: 0.6rem;
+                            }
+
+                            .xi-caret-up-min {
+                                display: none;
+                                margin-left: auto;
+                            }
+
+                            .xi-caret-down-min {
+                                margin-left: auto;
+                            }
+                        }
+
+                        .gnb-list__sub-list {
+                            height: 0;
+                            overflow: hidden;
+                            transition: height 300ms;
+
+                            li {
+                                .sub-list__sub {
+                                    display: block;
+                                    color: #333;
+                                }
+                            }
+                        }
+
+                        &:nth-child(1) {
+                            .gnb-list__main {
+                                &:before {
+                                    background-image: url(../images/icon/cart.svg);
+                                }
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            .gnb-list__main {
+                                &:before {
+                                    background-image: url(../images/icon/set.svg);
+                                }
+                            }
+                        }
+
+                        &:nth-child(3) {
+                            .gnb-list__main {
+                                &:before {
+                                    background-image: url(../images/icon/box.svg);
+                                }
+                            }
+                        }
+
+                        &:nth-child(4) {
+                            .gnb-list__main {
+                                &:before {
+                                    background-image: url(../images/icon/myp.svg);
+                                }
+                            }
+                        }
+
+                        &.active {
+                            background-color: #558AC8;
+
+                            .gnb-list__main {
+                                color: #fff;
+
+                                .xi-caret-down-min {
+                                    display: none;
+                                }
+
+                                .xi-caret-up-min {
+                                    display: block;
+                                }
+                            }
+
+                            .gnb-list__sub-list {
+                                height: auto;
+                                overflow: visible;
+
+                                li {
+                                    .sub-list__sub {
+                                        color: #F9F9F9;
+
+                                        &.active {
+                                            color: #fff;
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    body {
+        .side-menu__header {
+            .header__top {
+
+                .mobile-menu__btn {
+                    display: block;
+                }
+            }
+        }
+    }
+}
