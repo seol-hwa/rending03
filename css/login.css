@@ -1,7 +1,7 @@
 @charset "UTF-8";
+@import url("//fonts.googleapis.com/earlyaccess/nanumgothic.css");
 * {
   margin: 0;
-  font-family: "Noto Sans KR", sans-serif;
   box-sizing: border-box;
 }
 
@@ -48,6 +48,15 @@ ol {
   list-style: none;
 }
 
+.nanum {
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+body, html {
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 10px;
+}
+
 @font-face {
   font-family: "Noto Sans KR";
   src: local("Noto Sans KR"), url("../fonts/NotoSansKR-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/NotoSansKR-Thin.woff") format("woff"), url("../fonts/NotoSansKR-Thin.woff2") format("woff2"), url("../fonts/NotoSansKR-Thin.ttf") format("truetype"), url("../fonts/NotoSansKR-Thin.otf") format("opentype");
@@ -84,11 +93,6 @@ ol {
   font-weight: 900;
   font-style: normal;
 }
-body, html {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 10px;
-}
-
 .font-12-bl {
   font-size: 1.2rem;
   line-height: 1.3;
@@ -4639,7 +4643,6 @@ body {
 
 body {
   background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
   margin: 0;
@@ -11320,4 +11323,6 @@ body .inner .login-container .login-copy {
   body .inner .login-container .login-wrap .login-txt {
     padding: 3.4rem 2.7rem 3.4rem;
   }
-}/*# sourceMappingURL=login.css.map */
+}
+
+/*# sourceMappingURL=login.css.map */

@@ -12,7 +12,6 @@
 </head>
 <body>
     <section class="review-con pt-234 pb-336 nanum">
-        <!-- 231006 섹션 패딩값 변경, 나눔고딕추가 -->
         <div class="inner">
             <h2 class="review-title con-title font-60">
                 99 Performance
@@ -20,8 +19,6 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper review-wrap d-flex">
                     <div class="swiper-slide review-box">
-                        <!-- review-box 전체에 review-head 추가,텍스트내용변경 -->
-                        <!-- profile-box: profile-duty추가, d-flex-right제거 -->
                         <div class="review-head">
                             <div class="review-icon">
                                 <img src="../images/icon/quotes.svg" alt="quotes 아이콘">
@@ -204,7 +201,6 @@
                 <h2 class="faq-title font-36">
                     SNS 마케팅에 대해 궁금하다면<br>
                     <span class="font-36-b">FAQ</span>를 이용해주세요
-                    <!-- span추가 -->
                 </h2>
                 <div class="faq-accordion accordion">
                     <div class="accordion-item active">
@@ -287,7 +283,6 @@
 
     const reviewCon = document.querySelector('.review-con');
     const reviewTitle = document.querySelector('.review-con .review-title');
-    // const reviewText = document.querySelector('.review-con .title-box__text');
     const slideItem = document.querySelectorAll('.review-box');
     const itemWidth = (slideItem[0].offsetWidth) + parseInt(window.getComputedStyle(slideItem[0]).getPropertyValue('margin-right'));
 
@@ -301,7 +296,6 @@
 
         const reviewScroll = reviewTitle.getBoundingClientRect().top;
 
-        //3rd section
         if (reviewScroll <= scrollPoint) {
             let tl = gsap.timeline();
 
@@ -310,11 +304,6 @@
                 opacity: 1,
                 y: 0,
             })
-            // .to(reviewText, {
-            //     duration: 0.3,
-            //     opacity: 1,
-            //     y: 0,
-            // })
 
             slideItem.forEach(el => {
                 gsap.to(el, {

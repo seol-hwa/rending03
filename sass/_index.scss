@@ -390,69 +390,183 @@ body {
             }
         }
 
-        //5th section
-        .faq-con {
-            padding: 11.6rem 0;
-            background: #3066E2;
+        //4th section
+        .review-con {
+            background-color: #fff;
+            overflow: hidden;
 
-            .faq-title {
-                font-size: 3.6rem;
+            .inner {
+                width: 100%;
+                overflow: hidden;
 
-                .font-bold {
-                    font-weight: 700;
+                .review-title {
+                    color: #3066E2;
+                    text-align: center;
+                    margin-bottom: 10.2rem;
+                    font-weight: 800;
+                }
+
+                .title-box {
+                    text-align: center;
+                    margin-bottom: 10rem;
+
+                    .title-box__text {
+                        max-width: 70rem;
+                        margin: 0 auto;
+                    }
+                }
+
+                //swiper css
+                .swiper {
+                    padding: 0 0rem 2rem;
+                    overflow: visible;
+
+                    &-wrapper {
+                        transition-timing-function: linear;
+
+                        .swiper-slide {
+                            text-align: initial;
+                            min-height: 25.5rem;
+                        }
+                    }
+                }
+
+                .review-wrap {
+
+                    .review-box {
+                        border-radius: 3rem;
+                        overflow: hidden;
+                        box-shadow: 0 .2rem .8rem 0 rgba(#000, 0.10);
+                        font-size: 1.8rem;
+                        line-height: 1.6;
+                        flex-shrink: 0;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .review-head {
+                            min-height: 31rem;
+
+                            .review-icon {
+                                width: 100%;
+                                padding: 3.5rem 3rem 2rem;
+                                margin-right: auto;
+
+                                img {
+                                    width: auto;
+                                    max-width: 5rem;
+                                }
+                            }
+
+                            .review-text {
+                                padding: 0 3rem 6rem;
+                                color: #404040;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 5;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                        }
+
+                        .profile-box {
+                            display: flex;
+                            padding: 3rem 3.5rem 4rem;
+                            width: 100%;
+                            border-top: solid 1px #EAEAEA;
+                            background: #FAFBFF;
+                            align-items: center;
+                            margin-left: auto;
+
+                            .profile-img {
+                                width: 5.5rem;
+                                height: 5.5rem;
+                                overflow: hidden;
+                                border-radius: 50%;
+                                background-color: #d9d9d9;
+                                margin-right: 1.5rem;
+                                flex-shrink: 0;
+                            }
+
+                            .profile-txt {
+                                display: flex;
+                                flex-direction: column;
+
+                                .profile-name {
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    margin-bottom: .5rem;
+                                }
+
+                                .profile-duty {
+                                    color: #74A3FF;
+                                }
+                            }
+                        }
+                    }
                 }
             }
+        }
 
-            .accordion {
-                margin-top: 4rem;
+        //5th section
+        .faq-con {
+            background: #3066E2;
 
-                .accordion-item {
-                    .accordion-head {
-                        padding: 3.5rem 3rem;
+            .faq-wrap {
+                margin: 0 auto;
 
-                        &:after {
-                            background-image: url("../images/icon/arrow-under.svg");
-                            right: 3rem;
-                        }
-                    }
+                .accordion {
+                    margin-top: 4rem;
 
-                    .accordion-body {
-                        box-sizing: border-box;
-                        border-top: none;
-                        height: 100%;
-
-                        .accordion-text {
-                            padding: 2rem 3rem 3rem;
-                        }
-                    }
-
-                    .accordion-body.none {
-                        border: solid 1px transparent;
-                    }
-
-                    &.active {
+                    .accordion-item {
                         .accordion-head {
-                            color: #3066E2;
+                            padding: 3.5rem 3rem;
 
                             &:after {
-                                transform: translateY(-50%) rotate(-180deg);
+                                background-image: url("../images/icon/arrow-under.svg");
+                                right: 3rem;
                             }
                         }
 
                         .accordion-body {
-                            border-top: solid 1px #d9d9d9;
+                            box-sizing: border-box;
+                            border-top: none;
+                            height: 100%;
+
+                            .accordion-text {
+                                padding: 2rem 3rem 3rem;
+                            }
+                        }
+
+                        .accordion-body.none {
+                            border: solid 1px transparent;
+                        }
+
+                        &.active {
+                            .accordion-head {
+                                color: #3066E2;
+
+                                &:after {
+                                    transform: translateY(-50%) rotate(-180deg);
+                                }
+                            }
+
+                            .accordion-body {
+                                border-top: solid 1px #d9d9d9;
+                            }
                         }
                     }
                 }
-            }
 
-            .faq-title {
-                color: #fff;
-                text-align: center;
-            }
+                .faq-title {
+                    color: #fff;
+                    text-align: center;
+                }
 
-            .faq-accordian {
-                margin-top: 4rem;
+                .faq-accordian {
+                    margin-top: 4rem;
+                }
             }
         }
     }
@@ -610,6 +724,19 @@ body {
             .pb-150 {
                 padding-bottom: 8.4rem;
             }
+
+            //5th section
+            .faq-con{
+                .faq-wrap{
+                    .accordion{
+                        .accordion-item{
+                            .accordion-head{
+                                padding: 2.5rem 3rem;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -714,6 +841,18 @@ body {
     }
 }
 
+@media (max-width:720px) {
+    //4th section
+    .review-con{
+        .inner{
+            .review-title{
+                font-size: 5rem;
+                margin-bottom: 7.2rem;
+            }
+        }
+    }
+}
+
 @media (max-width:500px) {
     body {
         main {
@@ -806,6 +945,15 @@ body {
                                 }
                             }
                         }
+                    }
+                }
+            }
+
+            //4th sectin
+            .review-con{
+                .inner{
+                    .review-title{
+                        font-size: 4rem;
                     }
                 }
             }

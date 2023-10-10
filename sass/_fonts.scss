@@ -1,4 +1,14 @@
-//font-family
+//nanum gothic
+@import url("//fonts.googleapis.com/earlyaccess/nanumgothic.css");
+.nanum{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+%nanumFont{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 10px;
+}
+
+//noto sans
 @mixin font-face($name, $file, $weight:normal, $style:normal){
     @font-face {
         font-family: '#{$name}';
@@ -20,12 +30,13 @@
 @include font-face('Noto Sans KR','NotoSansKR-Black',900);
 
 //
-%bodyFont{
+%notoFont{
     font-family:'Noto Sans KR', sans-serif;
     font-size: 10px;
 }
+
 body,html{
-    @extend %bodyFont;
+    @extend %nanumFont;
 }
 
 @function rem($pixel, $context:10){
