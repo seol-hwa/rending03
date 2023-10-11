@@ -47,8 +47,8 @@ const preText = document.querySelectorAll('.pre-box');
 
 select.forEach((el, index) => {
     el.addEventListener('change', function () {
-        let val = el.options[el.selectedIndex].value;
-        let child = preText[index].children;
+        const val = el.options[el.selectedIndex].value;
+        const child = preText[index].children;
         
         for (let i = 0; i < child.length; i++) {
             child[i].classList.remove('active');
