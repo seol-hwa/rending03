@@ -11153,6 +11153,19 @@ body {
   border: none;
 }
 
+.skip-menu a {
+  padding: 2rem 3rem;
+  font-size: 2rem;
+  background: #fff;
+  font-weight: 700;
+  position: absolute;
+  top: -100%;
+  z-index: 999;
+}
+.skip-menu a:focus {
+  top: 0;
+}
+
 .inner {
   width: 160rem;
   margin: 0 auto;
@@ -11169,17 +11182,20 @@ body {
   }
 }
 
-.skip-menu a {
-  padding: 2rem 3rem;
-  font-size: 2rem;
-  background: #fff;
-  font-weight: 700;
-  position: absolute;
-  top: -100%;
-  z-index: 999;
+.log-inner {
+  width: calc(100vw - 24rem);
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  padding: 9.1rem 2rem 0 3rem;
+  background-color: #FAFCFD;
 }
-.skip-menu a:focus {
-  top: 0;
+
+.page-title {
+  font-size: 3.2rem;
+  color: #2B333E;
+  font-weight: 800;
+  margin-bottom: 4rem;
 }
 
 body {

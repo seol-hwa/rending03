@@ -20,97 +20,387 @@
 </head>
 
 <body>
-    <header class="side-menu__header">
-        <div class="header__top pt-18 pb-18 pl-24 pr-24 d-flex">
-            <h1>
-                <a href="#" class="logo font-24-b">99 performance</a>
-            </h1>
-            <div class="mobile-menu__btn">
-                <button class="btn__open">
-                    <i class="xi-bars xi-2x"></i>
-                </button>
-            </div>
-        </div>
-        <div class="header__side">
-            <div class="profile__info-wrap pt-27 pb-27 pl-15 pr-27 d-flex">
-                <div class="info-wrap__left pr-9">
-                    <div class="left__img-box"></div>
-                </div>
-                <div class="info-wrap__right">
-                    <div class="right__name-box mb-9">
-                        <p class="name-box__my-name font-16-b">99performance</p>
-                    </div>
-                    <div class="right__point-box">
-                        <p class="point-box__total-point font-14-b">
-                            ₩ <span>0</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <nav class="side__gnb-box">
-                <ul class="gnb-box__gnb-list">
-                    <li class="active pt-6 pb-6">
-                        <a href="#" class="gnb-list__main font-18-b pt-18 pb-18 pl-24 pr-21 d-flex">상품정보
-                            <i class="xi-caret-up-min"></i>
-                            <i class="xi-caret-down-min"></i>
-                        </a>
-                        <ul class="gnb-list__sub-list">
-                            <li>
-                                <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21 active">상품선택</a>
-                            </li>
-                            <li>
-                                <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">자동상품</a>
-                            </li>
-                        </ul>
+    <header class="side-menu__header"></header>
+    <main>
+        <div class="log-inner">
+            <h2 class="page-title">상품선택</h2>
+            <!-- <ul class="select-wrap d-flex pb-39 mb-39">
+                <li class="select-wrap__item mr-18">
+                    <button class="item__sns mb-9 select-insta active"></button>
+                    <h3 class="item__text">인스타그램</h3>
+                </li>
+                <li class="select-wrap__item mr-18">
+                    <button class="item__sns mb-9 select-youtube"></button>
+                    <h3 class="item__text">유튜브</h3>
+                </li>
+                <li class="select-wrap__item mr-18">
+                    <button class="item__sns mb-9 select-N"></button>
+                    <h3 class="item__text">N사</h3>
+                </li>
+                <li class="select-wrap__item">
+                    <button class="item__sns mb-9 select-T"></button>
+                    <h3 class="item__text">T사</h3>
+                </li>
+            </ul> -->
+            <div class="nav-tabs">
+                <ul class="nav-list pb-39 mb-39">
+                    <li class="mr-18">
+                        <button class="nav-link select-insta mb-9 active">
+                            <span class="blind">인스타그램</span>
+                        </button>
+                        <h3 class="item__text">인스타그램</h3>
                     </li>
-                    <li class="pt-6 pb-6">
-                        <a href="#" class="gnb-list__main font-18-b pt-18 pb-18 pl-24 pr-21 d-flex">솔루션
-                            <i class="xi-caret-up-min"></i>
-                            <i class="xi-caret-down-min"></i></a>
-                        <ul class="gnb-list__sub-list">
-                            <li>
-                                <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">프로그램</a>
-                            </li>
-                        </ul>
+                    <li class="mr-18">
+                        <button class="nav-link select-youtube mb-9">
+                            <span class="blind">유튜브</span>
+                        </button>
+                        <h3 class="item__text">유튜브</h3>
                     </li>
-                    <li class="pt-6 pb-6">
-                        <a href="#" class="gnb-list__main font-18-b pt-18 pb-18 pl-24 pr-21 d-flex">내역
-                            <i class="xi-caret-up-min"></i>
-                            <i class="xi-caret-down-min"></i></a>
-                        <ul class="gnb-list__sub-list">
-                            <li>
-                                <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">상품내역</a>
-                            </li>
-                            <li>
-                                <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">처리결과</a>
-                            </li>
-                        </ul>
+                    <li class="mr-18">
+                        <button class="nav-link select-N mb-9">
+                            <span class="blind">N사</span>
+                        </button>
+                        <h3 class="item__text">N사</h3>
                     </li>
-                    <li class="pt-6 pb-6">
-                        <a href="#" class="gnb-list__main font-18-b pt-18 pb-18 pl-24 pr-21 d-flex">마이페이지
-                            <i class="xi-caret-up-min"></i>
-                            <i class="xi-caret-down-min"></i></a>
-                        <ul class="gnb-list__sub-list">
-                            <li>
-                                <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">계정등록</a>
-                            </li>
-                            <li>
-                                <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">포인트충전</a>
-                            </li>
-                            <li>
-                                <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">1:1문의</a>
-                            </li>
-                            <li>
-                                <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">FAQ</a>
-                            </li>
-                        </ul>
+                    <li>
+                        <button class="nav-link select-T mb-9">
+                            <span class="blind">T사</span>
+                        </button>
+                        <h3 class="item__text">T사</h3>
                     </li>
                 </ul>
-            </nav>
+                <div class="tab-wrap">
+                    <div class="tab-box active">
+                        <div class="layout-style-2 row mb-18">
+                            <div class="layout col-12 col-xl-6">
+                                <div class="layout-box pt-42 pl-30 pr-30 pb-42">
+                                    <h3 class="wrap-title font-28-b mb-39">주문옵션</h3>
+                                    <div class="form-style option-wrap">
+                                        <!-- <label for="inputSelect1" class="font-12">주문옵션</label> -->
+                                        <select id="inputSelect1" class="form-round text-change-select">
+                                            <option seleted="" value="0">옵션을 선택해주세요.</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-style col-6">
+                                            <label for="nameFormNoneHalf">주문자 ID</label>
+                                            <input type="text" id="nameFormNoneHalf" class="form-round">
+                                        </div>
+                                        <div class="form-style col-6">
+                                            <label for="nameFormNoneHalf">주문자 링크</label>
+                                            <input type="text" id="nameFormNoneHalf" class="form-round">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-style col-6">
+                                            <label for="nameFormNoneHalf">좋아요 작업</label>
+                                            <input type="text" id="nameFormNoneHalf" class="form-round">
+                                        </div>
+                                        <div class="form-style col-6">
+                                            <label for="nameFormNoneHalf">댓글 작업</label>
+                                            <input type="text" id="nameFormNoneHalf" class="form-round">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layout col-12 col-xl-6">
+                                <div class="layout-box pt-42 pl-30 pr-30 pb-42">
+                                    <h3 class="wrap-title font-28-b mb-39">상품설명</h3>
+                                    <div class="pre-box">
+                                        <pre
+                                            class="font-14 active">좋아요 숨기기, 비공개 시 작업이 어려울 수 있습니다. 공개로 전환 후 주문하시기 바랍니다.<br><br><br>*주문내역 안내<br>-주문내역이 실시간으로 변경되며 주문내역에서 확인 가능합니다.<br>-주문내역 상태보다 실제 작업이 더 빠르니 작업물을 확인해주세요.</pre>
+                                        <pre class="font-14">인스타1</pre>
+                                        <pre class="font-14">인스타2</pre>
+                                        <pre class="font-14">인스타3</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-wrap d-flex-all-center pt-30 pb-30 mb-48">
+                            <div class="d-flex-all-center">
+                                <div class="pt-box mr-54">
+                                    <p class="pt-box__text">보유 포인트</p>
+                                    <p class="pt-box__pt">₩
+                                        <span class="possession-num">1,700</span>
+                                    </p>
+                                </div>
+                                <i class="xi-plus-circle xi-3x mr-54"></i>
+                                <div class="pt-box mr-54">
+                                    <p class="pt-box__text">주문 금액</p>
+                                    <p class="pt-box__pt">₩
+                                        <span class="order-num">352,700</span>
+                                    </p>
+                                </div>
+                                <i class="xi-plus-circle xi-3x mr-54"></i>
+                                <div class="pt-box mr-138">
+                                    <p class="pt-box__text">사용 포인트</p>
+                                    <p class="pt-box__pt">₩
+                                        <span class="use-num">8,500</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pt-total-box">
+                                <p class="pt-total-box__text">구매 금액</p>
+                                <p class="pt-total-box__pt">₩
+                                    <span class="buy-num">352,700</span>
+                                </p>
+                            </div>
+                        </div>
+                        <button class="order-sumit pt-21 pb-21 pr-42 pl-42 font-18-b">주문서 작업요청</button>
+                    </div>
+                    <div class="tab-box">
+                        <div class="layout-style-2 row mb-18">
+                            <div class="layout col-12 col-xl-6">
+                                <div class="layout-box pt-42 pl-30 pr-30 pb-42">
+                                    <h3 class="wrap-title font-28-b mb-39">주문옵션</h3>
+                                    <div class="form-style option-wrap">
+                                        <!-- <label for="inputSelect1" class="font-12">주문옵션</label> -->
+                                        <select id="inputSelect2" class="form-round text-change-select">
+                                            <option seleted="" value="0">옵션을 선택해주세요.</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-style col-6">
+                                            <label for="nameFormNoneHalf">주문자 ID</label>
+                                            <input type="text" id="nameFormNoneHalf" class="form-round">
+                                        </div>
+                                        <div class="form-style col-6">
+                                            <label for="nameFormNoneHalf">주문자 링크</label>
+                                            <input type="text" id="nameFormNoneHalf" class="form-round">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-style col-6">
+                                            <label for="nameFormNoneHalf">좋아요 작업</label>
+                                            <input type="text" id="nameFormNoneHalf" class="form-round">
+                                        </div>
+                                        <div class="form-style col-6">
+                                            <label for="nameFormNoneHalf">댓글 작업</label>
+                                            <input type="text" id="nameFormNoneHalf" class="form-round">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layout col-12 col-xl-6">
+                                <div class="layout-box pt-42 pl-30 pr-30 pb-42">
+                                    <h3 class="wrap-title font-28-b mb-39">상품설명</h3>
+                                    <div class="pre-box">
+                                        <pre
+                                            class="font-14 active">좋아요 숨기기, 비공개 시 작업이 어려울 수 있습니다. 공개로 전환 후 주문하시기 바랍니다.<br><br><br>*주문내역 안내<br>-주문내역이 실시간으로 변경되며 주문내역에서 확인 가능합니다.<br>-주문내역 상태보다 실제 작업이 더 빠르니 작업물을 확인해주세요.</pre>
+                                        <pre class="font-14">유튜브1</pre>
+                                        <pre class="font-14">유튜브2</pre>
+                                        <pre class="font-14">유튜브3</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-wrap d-flex-all-center pt-30 pb-30 mb-48">
+                            <div class="d-flex-all-center">
+                                <div class="pt-box mr-54">
+                                    <p class="pt-box__text">보유 포인트</p>
+                                    <p class="pt-box__pt">₩
+                                        <span class="possession-num">1,700</span>
+                                    </p>
+                                </div>
+                                <i class="xi-plus-circle xi-3x mr-54"></i>
+                                <div class="pt-box mr-54">
+                                    <p class="pt-box__text">주문 금액</p>
+                                    <p class="pt-box__pt">₩
+                                        <span class="order-num">352,700</span>
+                                    </p>
+                                </div>
+                                <i class="xi-plus-circle xi-3x mr-54"></i>
+                                <div class="pt-box mr-138">
+                                    <p class="pt-box__text">사용 포인트</p>
+                                    <p class="pt-box__pt">₩
+                                        <span class="use-num">8,500</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pt-total-box">
+                                <p class="pt-total-box__text">구매 금액</p>
+                                <p class="pt-total-box__pt">₩
+                                    <span class="buy-num">352,700</span>
+                                </p>
+                            </div>
+                        </div>
+                        <button class="order-sumit pt-21 pb-21 pr-42 pl-42 font-18-b">주문서 작업요청</button>
+                    </div>
+                    <div class="tab-box">
+                        <div class="layout-style-2 row mb-18">
+                            <div class="layout col-12 col-xl-6">
+                                <div class="layout-box pt-42 pl-30 pr-30 pb-42">
+                                    <h3 class="wrap-title font-28-b mb-39">주문옵션</h3>
+                                    <div class="form-style option-wrap">
+                                        <!-- <label for="inputSelect1" class="font-12">주문옵션</label> -->
+                                        <select id="inputSelect3" class="form-round text-change-select">
+                                            <option seleted="" value="0">옵션을 선택해주세요.</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-style col-6">
+                                            <label for="nameFormNoneHalf">주문자 ID</label>
+                                            <input type="text" id="nameFormNoneHalf" class="form-round">
+                                        </div>
+                                        <div class="form-style col-6">
+                                            <label for="nameFormNoneHalf">주문자 링크</label>
+                                            <input type="text" id="nameFormNoneHalf" class="form-round">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-style col-6">
+                                            <label for="nameFormNoneHalf">좋아요 작업</label>
+                                            <input type="text" id="nameFormNoneHalf" class="form-round">
+                                        </div>
+                                        <div class="form-style col-6">
+                                            <label for="nameFormNoneHalf">댓글 작업</label>
+                                            <input type="text" id="nameFormNoneHalf" class="form-round">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layout col-12 col-xl-6">
+                                <div class="layout-box pt-42 pl-30 pr-30 pb-42">
+                                    <h3 class="wrap-title font-28-b mb-39">상품설명</h3>
+                                    <div class="pre-box">
+                                        <pre
+                                            class="font-14 active">좋아요 숨기기, 비공개 시 작업이 어려울 수 있습니다. 공개로 전환 후 주문하시기 바랍니다.<br><br><br>*주문내역 안내<br>-주문내역이 실시간으로 변경되며 주문내역에서 확인 가능합니다.<br>-주문내역 상태보다 실제 작업이 더 빠르니 작업물을 확인해주세요.</pre>
+                                        <pre class="font-14">N사1</pre>
+                                        <pre class="font-14">N사2</pre>
+                                        <pre class="font-14">N사3</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-wrap d-flex-all-center pt-30 pb-30 mb-48">
+                            <div class="d-flex-all-center">
+                                <div class="pt-box mr-54">
+                                    <p class="pt-box__text">보유 포인트</p>
+                                    <p class="pt-box__pt">₩
+                                        <span class="possession-num">1,700</span>
+                                    </p>
+                                </div>
+                                <i class="xi-plus-circle xi-3x mr-54"></i>
+                                <div class="pt-box mr-54">
+                                    <p class="pt-box__text">주문 금액</p>
+                                    <p class="pt-box__pt">₩
+                                        <span class="order-num">352,700</span>
+                                    </p>
+                                </div>
+                                <i class="xi-plus-circle xi-3x mr-54"></i>
+                                <div class="pt-box mr-138">
+                                    <p class="pt-box__text">사용 포인트</p>
+                                    <p class="pt-box__pt">₩
+                                        <span class="use-num">8,500</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pt-total-box">
+                                <p class="pt-total-box__text">구매 금액</p>
+                                <p class="pt-total-box__pt">₩
+                                    <span class="buy-num">352,700</span>
+                                </p>
+                            </div>
+                        </div>
+                        <button class="order-sumit pt-21 pb-21 pr-42 pl-42 font-18-b">주문서 작업요청</button>
+                    </div>
+                    <div class="tab-box">
+                        <div class="layout-style-2 row mb-18">
+                            <div class="layout col-12 col-xl-6">
+                                <div class="layout-box pt-42 pl-30 pr-30 pb-42">
+                                    <h3 class="wrap-title font-28-b mb-39">주문옵션</h3>
+                                    <div class="form-style option-wrap">
+                                        <!-- <label for="inputSelect1" class="font-12">주문옵션</label> -->
+                                        <select id="inputSelect4" class="form-round text-change-select">
+                                            <option seleted="" value="0">옵션을 선택해주세요.</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-style col-6">
+                                            <label for="nameFormNoneHalf">주문자 ID</label>
+                                            <input type="text" id="nameFormNoneHalf" class="form-round">
+                                        </div>
+                                        <div class="form-style col-6">
+                                            <label for="nameFormNoneHalf">주문자 링크</label>
+                                            <input type="text" id="nameFormNoneHalf" class="form-round">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-style col-6">
+                                            <label for="nameFormNoneHalf">좋아요 작업</label>
+                                            <input type="text" id="nameFormNoneHalf" class="form-round">
+                                        </div>
+                                        <div class="form-style col-6">
+                                            <label for="nameFormNoneHalf">댓글 작업</label>
+                                            <input type="text" id="nameFormNoneHalf" class="form-round">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layout col-12 col-xl-6">
+                                <div class="layout-box pt-42 pl-30 pr-30 pb-42">
+                                    <h3 class="wrap-title font-28-b mb-39">상품설명</h3>
+                                    <div class="pre-box">
+                                        <pre
+                                            class="font-14 active">좋아요 숨기기, 비공개 시 작업이 어려울 수 있습니다. 공개로 전환 후 주문하시기 바랍니다.<br><br><br>*주문내역 안내<br>-주문내역이 실시간으로 변경되며 주문내역에서 확인 가능합니다.<br>-주문내역 상태보다 실제 작업이 더 빠르니 작업물을 확인해주세요.</pre>
+                                        <pre class="font-14">T사1</pre>
+                                        <pre class="font-14">T사2</pre>
+                                        <pre class="font-14">T사3</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-wrap d-flex-all-center pt-30 pb-30 mb-48">
+                            <div class="d-flex-all-center">
+                                <div class="pt-box mr-54">
+                                    <p class="pt-box__text">보유 포인트</p>
+                                    <p class="pt-box__pt">₩
+                                        <span class="possession-num">1,700</span>
+                                    </p>
+                                </div>
+                                <i class="xi-plus-circle xi-3x mr-54"></i>
+                                <div class="pt-box mr-54">
+                                    <p class="pt-box__text">주문 금액</p>
+                                    <p class="pt-box__pt">₩
+                                        <span class="order-num">352,700</span>
+                                    </p>
+                                </div>
+                                <i class="xi-plus-circle xi-3x mr-54"></i>
+                                <div class="pt-box mr-138">
+                                    <p class="pt-box__text">사용 포인트</p>
+                                    <p class="pt-box__pt">₩
+                                        <span class="use-num">8,500</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="pt-total-box">
+                                <p class="pt-total-box__text">구매 금액</p>
+                                <p class="pt-total-box__pt">₩
+                                    <span class="buy-num">352,700</span>
+                                </p>
+                            </div>
+                        </div>
+                        <button class="order-sumit pt-21 pb-21 pr-42 pl-42 font-18-b">주문서 작업요청</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-    <main></main>
+    </main>
     <footer></footer>
+    <script src="../js/after_login_header.js"></script>
+    <script src="../js/regular_order.js"></script>
 </body>
 
 </html>
