@@ -30,10 +30,10 @@ headerSide.innerHTML=`
             <nav class="side__gnb-box">
                 <ul class="gnb-box__gnb-list">
                     <li class="pt-6 pb-6">
-                        <a href="#" class="gnb-list__main font-18-b pt-18 pb-18 pl-24 pr-21 d-flex">상품정보
+                        <button class="gnb-list__main font-18-b pt-18 pb-18 pl-24 pr-21 d-flex">상품정보
                             <i class="xi-caret-up-min"></i>
                             <i class="xi-caret-down-min"></i>
-                        </a>
+                        </button>
                         <ul class="gnb-list__sub-list">
                             <li>
                                 <a href="regular_order.html" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">상품선택</a>
@@ -44,9 +44,10 @@ headerSide.innerHTML=`
                         </ul>
                     </li>
                     <li class="pt-6 pb-6">
-                        <a href="#" class="gnb-list__main font-18-b pt-18 pb-18 pl-24 pr-21 d-flex">솔루션
+                        <button class="gnb-list__main font-18-b pt-18 pb-18 pl-24 pr-21 d-flex">솔루션
                             <i class="xi-caret-up-min"></i>
-                            <i class="xi-caret-down-min"></i></a>
+                            <i class="xi-caret-down-min"></i>
+                        </button>
                         <ul class="gnb-list__sub-list">
                             <li>
                                 <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">프로그램</a>
@@ -54,9 +55,10 @@ headerSide.innerHTML=`
                         </ul>
                     </li>
                     <li class="pt-6 pb-6">
-                        <a href="#" class="gnb-list__main font-18-b pt-18 pb-18 pl-24 pr-21 d-flex">내역
+                        <button class="gnb-list__main font-18-b pt-18 pb-18 pl-24 pr-21 d-flex">내역
                             <i class="xi-caret-up-min"></i>
-                            <i class="xi-caret-down-min"></i></a>
+                            <i class="xi-caret-down-min"></i>
+                        </button>
                         <ul class="gnb-list__sub-list">
                             <li>
                                 <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">상품내역</a>
@@ -67,9 +69,10 @@ headerSide.innerHTML=`
                         </ul>
                     </li>
                     <li class="pt-6 pb-6">
-                        <a href="#" class="gnb-list__main font-18-b pt-18 pb-18 pl-24 pr-21 d-flex">마이페이지
+                        <button class="gnb-list__main font-18-b pt-18 pb-18 pl-24 pr-21 d-flex">마이페이지
                             <i class="xi-caret-up-min"></i>
-                            <i class="xi-caret-down-min"></i></a>
+                            <i class="xi-caret-down-min"></i>
+                        </button>
                         <ul class="gnb-list__sub-list">
                             <li>
                                 <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">계정등록</a>
@@ -111,10 +114,10 @@ headerSide.innerHTML=`
             <nav class="mobile-side__gnb-box">
                 <ul class="gnb-box__mo-gnb-list">
                     <li class="active pt-6 pb-6">
-                        <a href="#" class="mo-gnb-list__main font-16-b pt-18 pb-18 pl-24 pr-21 d-flex">상품정보
+                        <button class="mo-gnb-list__main font-16-b pt-18 pb-18 pl-24 pr-21 d-flex">상품정보
                             <i class="xi-caret-up-min"></i>
                             <i class="xi-caret-down-min"></i>
-                        </a>
+                        </button>
                         <ul class="gnb-list__mo-sub-list">
                             <li>
                                 <a href="#" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21 active">상품선택</a>
@@ -125,9 +128,10 @@ headerSide.innerHTML=`
                         </ul>
                     </li>
                     <li class="pt-6 pb-6">
-                        <a href="#" class="mo-gnb-list__main font-16-b pt-18 pb-18 pl-24 pr-21 d-flex">솔루션
+                        <button class="mo-gnb-list__main font-16-b pt-18 pb-18 pl-24 pr-21 d-flex">솔루션
                             <i class="xi-caret-up-min"></i>
-                            <i class="xi-caret-down-min"></i></a>
+                            <i class="xi-caret-down-min"></i>
+                        </button>
                         <ul class="gnb-list__mo-sub-list">
                             <li>
                                 <a href="#" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">프로그램</a>
@@ -135,9 +139,10 @@ headerSide.innerHTML=`
                         </ul>
                     </li>
                     <li class="pt-6 pb-6">
-                        <a href="#" class="mo-gnb-list__main font-16-b pt-18 pb-18 pl-24 pr-21 d-flex">내역
+                        <button class="mo-gnb-list__main font-16-b pt-18 pb-18 pl-24 pr-21 d-flex">내역
                             <i class="xi-caret-up-min"></i>
-                            <i class="xi-caret-down-min"></i></a>
+                            <i class="xi-caret-down-min"></i>
+                        </button>
                         <ul class="gnb-list__mo-sub-list">
                             <li>
                                 <a href="#" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">상품내역</a>
@@ -148,9 +153,10 @@ headerSide.innerHTML=`
                         </ul>
                     </li>
                     <li class="pt-6 pb-6">
-                        <a href="#" class="mo-gnb-list__main font-16-b pt-18 pb-18 pl-24 pr-21 d-flex">마이페이지
+                        <button class="mo-gnb-list__main font-16-b pt-18 pb-18 pl-24 pr-21 d-flex">마이페이지
                             <i class="xi-caret-up-min"></i>
-                            <i class="xi-caret-down-min"></i></a>
+                            <i class="xi-caret-down-min"></i>
+                        </button>
                         <ul class="gnb-list__mo-sub-list">
                             <li>
                                 <a href="#" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">계정등록</a>

@@ -1,3 +1,15 @@
+*::-webkit-scrollbar{
+    width:2px;
+}
+*::-webkit-scrollbar-thumb {
+    background: #9aa6c7;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
 .blind{
     position:absolute;
     width:1px;
@@ -33,11 +45,11 @@
     }
 }
 .log-inner{
-    width:calc(100vw - 24rem);
+    width:calc(100vw - 23rem);
     display: flex;
     flex-direction: column;
     margin-left: auto;
-    padding:9.1rem 2rem 0 3rem;
+    padding:9.1rem 2.4rem 0 2.4rem;
     background-color: #FAFCFD;
 }
 .page-title{
