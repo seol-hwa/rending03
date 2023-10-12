@@ -49,10 +49,65 @@ select.forEach((el, index) => {
     el.addEventListener('change', function () {
         const val = el.options[el.selectedIndex].value;
         const child = preText[index].children;
-        
+
         for (let i = 0; i < child.length; i++) {
             child[i].classList.remove('active');
         }
         preText[index].children[val].classList.add('active');
     })
 })
+
+//submit btn
+const modalBtn = document.querySelectorAll('.open-modal');
+const background = document.querySelectorAll('.popup__bg');
+const closeBtn = document.querySelectorAll('.popup__close-btn');
+const cancleBtn = document.querySelectorAll('.popup__cancle-btn');
+const checkBtn = document.querySelectorAll('.popup__check-btn');
+const popup = document.querySelectorAll('.popup');
+
+const possessionNodes = document.querySelectorAll('.point-box__total-point span');
+const possessionPoint = parseInt(possessionNodes[0].innerText.replace(/,/g, ''));
+const orderNodes = document.querySelectorAll('.order-num');
+
+modalBtn.forEach((btn, index) => {
+    btn.addEventListener('click', function () {
+        if (possessionPoint < parseInt(orderNodes[index].innerText.replace(/,/g, ''))) {
+            //point가 부족할 때
+            this.nextElementSibling.classList.add('active');
+        } else {
+            //point가 부족하지 않을 때
+            this.nextElementSibling.nextElementSibling.classList.add('active');
+        }
+    })
+})
+
+//modal close
+background.forEach(bg => {
+    bg.addEventListener('click', function (e) {
+        if (e.target.classList.contains('popup__bg')) {
+            popup.forEach(all => {
+                all.classList.remove('active');
+            })
+        }
+    })
+})
+closeBtn.forEach(close => {
+    closeModal(close);
+})
+cancleBtn.forEach(close => {
+    closeModal(close);
+})
+checkBtn.forEach(check => {
+    closeModal(check);
+})
+
+function closeModal(close) {
+    close.addEventListener('click', function (e) {
+        if (this.classList.contains('return-btn')) {
+            e.preventDefault();
+        }
+        popup.forEach(all => {
+            all.classList.remove('active');
+        })
+    })
+}

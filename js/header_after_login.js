@@ -22,7 +22,7 @@ headerSide.innerHTML=`
                     </div>
                     <div class="right__point-box">
                         <p class="point-box__total-point font-14-b">
-                            ₩ <span>0</span>
+                            ₩ <span>2,000</span>
                         </p>
                     </div>
                 </div>
