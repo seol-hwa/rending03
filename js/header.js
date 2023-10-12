@@ -40,7 +40,7 @@ head.innerHTML = `
                     </button>
                 </nav>
                 <div class="pc-wrap__right">
-                    <a href="" class="pr-15 pl-15 pt-3 pb-3">시작하기</a>
+                    <a href="regular_order.html" class="pr-15 pl-15 pt-3 pb-3">시작하기</a>
                     <a href="">회원가입</a>
                 </div>
             </div>
@@ -48,7 +48,7 @@ head.innerHTML = `
                 <div class="mo-nav-wrap__mo-nav-box">
                     <div class="mo-nav-box__header">
                         <ul class="header__info">
-                            <li><a href="">시작하기</a></li>
+                            <li><a href="regular_order.html">시작하기</a></li>
                             <li><a href="">회원가입</a></li>
                         </ul>
                         <button class="mo-nav-close">

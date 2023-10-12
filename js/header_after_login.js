@@ -36,7 +36,7 @@ headerSide.innerHTML=`
                         </a>
                         <ul class="gnb-list__sub-list">
                             <li>
-                                <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">상품선택</a>
+                                <a href="regular_order.html" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">상품선택</a>
                             </li>
                             <li>
                                 <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">자동상품</a>
