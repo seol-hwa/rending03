@@ -5314,7 +5314,10 @@ body {
 .popup .popup__wrap .popup-type-1 .popup--footer {
   display: flex;
 }
-.popup .popup__wrap .popup-type-1 .popup--footer button {
+.popup .popup__wrap .popup-type-1 .popup--footer .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1;
   padding: 1.6rem;
   font-size: 1.8rem;
@@ -5332,7 +5335,10 @@ body {
 .popup .popup__wrap .popup-type-2 .popup--footer {
   display: flex;
 }
-.popup .popup__wrap .popup-type-2 .popup--footer button {
+.popup .popup__wrap .popup-type-2 .popup--footer .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1;
   padding: 1.6rem;
   font-size: 1.8rem;
@@ -5350,7 +5356,10 @@ body {
 .popup .popup__wrap .popup-type-3 .popup--footer {
   display: flex;
 }
-.popup .popup__wrap .popup-type-3 .popup--footer button {
+.popup .popup__wrap .popup-type-3 .popup--footer .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1;
   padding: 1.6rem;
   font-size: 1.8rem;
@@ -5368,7 +5377,10 @@ body {
 .popup .popup__wrap .popup-type-4 .popup--footer {
   display: flex;
 }
-.popup .popup__wrap .popup-type-4 .popup--footer button {
+.popup .popup__wrap .popup-type-4 .popup--footer .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1;
   padding: 1.6rem;
   font-size: 1.8rem;
