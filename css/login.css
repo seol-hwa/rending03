@@ -11205,12 +11205,25 @@ body {
   padding: 9.1rem 2.4rem 0 2.4rem;
   background-color: #FAFCFD;
 }
+@media (max-width: 768px) {
+  .log-inner {
+    width: 100%;
+  }
+}
 
-.page-title {
+.page-title-box {
+  margin-bottom: 4rem;
+}
+.page-title-box .page-title {
   font-size: 3.2rem;
   color: #2B333E;
   font-weight: 800;
-  margin-bottom: 4rem;
+}
+.page-title-box .page-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: 2rem;
 }
 
 body {

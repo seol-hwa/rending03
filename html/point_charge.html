@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트 충전</title>
+    <!--xeicon cdn-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!--style css-->
+    <link rel="stylesheet" href="../css/point_charge.css">
+    <!--swiper cdn-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+    <!--gsap cdn-->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+        integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+</head>
+
+<body>
+    <header class="side-menu__header"></header>
+    <main>
+        <div class="log-inner">
+            <div class="page-title-box">
+                <h2 class="page-title">포인트 충전</h2>
+                <p class="page-text">원하시는 만큼 충전 금액을 선택해주세요.</p>
+            </div>
+            <form action="" method="post" class="row pb-120">
+                <div class="charge-left col-12 col-xxl-9">
+                    <div class="charge-box---border">
+                        <h3 class="wrap-title">포인트</h3>
+                        <div class="mt-54">
+                            <div class="form-style">
+                                <label for="nameFormNoneHalf">충전금액<span>(VAT별도)</span></label>
+                                <div class="d-flex payment-box">
+                                    <input type="text" class="form-round input-point" id="nameFormNoneHalf">
+                                    <div class="d-flex payment-btn-box">
+                                        <button class="btn btn-r8-purple output-btn" value="10000">+1만원</button>
+                                        <button class="btn btn-r8-purple output-btn" value="100000">+10만원</button>
+                                        <button class="btn btn-r8-purple output-btn" value="1000000">+100만원</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="radio-box mt-48">
+                                <div class="form-check-inline">
+                                    <input type="radio" id="radio-g-5" name="inputRadioGroup2" checked>
+                                    <label for="radio-g-5">무통장입금</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" id="radio-g-6" name="inputRadioGroup2">
+                                    <label for="radio-g-6">카카오페이</label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <input type="radio" id="radio-g-7" name="inputRadioGroup2">
+                                    <label for="radio-g-7">토스</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="charge-right col-12 col-xxl-3">
+                    <div class="charge-box---border">
+                        <h3 class="wrap-title">결제상세</h3>
+                        <div class="mt-240">
+                            <div class="right__precalc mb-36">
+                                <div class="d-flex mb-18">
+                                    <p>결제금액</p>
+                                    <p class="payment-won"><span>50,000</span>원</p>
+                                </div>
+                                <div class="d-flex">
+                                    <p>VAT</p>
+                                    <p class="vat-won"><span>5,000</span>원</p>
+                                </div>
+                            </div>
+                            <div class="right__totalcalc d-flex mb-36">
+                                <p class="totalcal__text">총 결제금액</p>
+                                <p class="totalcal__won"><span>55,000</span>원</p>
+                            </div>
+                            <div>
+                                <button class="btn btn-r8-dark charge-submit">결제하기</button>
+                                <div class="popup">
+                                    <div class="popup__bg"></div>
+                                    <div class="popup__wrap">
+                                        <div class="popup-type-2">
+                                            <div class="popup--header">
+                                                <button class="popup__close-btn return-btn">
+                                                    <i class="xi-close xi-2x"></i>
+                                                </button>
+                                            </div>
+                                            <div class="popup--body">
+                                                <p class="popup--body__text">
+                                                    충전요청이 완료되었습니다.
+                                                </p>
+                                            </div>
+                                            <div class="popup--footer">
+                                                <button class="btn btn-d-purple popup__check-btn return-btn">확인</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="../js/header_after_login.js"></script>
+    <script src="../js/point_charge.js"></script>
+</body>
+
+</html>

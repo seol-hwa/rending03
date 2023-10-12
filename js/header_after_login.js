@@ -113,14 +113,14 @@ headerSide.innerHTML=`
             </div>
             <nav class="mobile-side__gnb-box">
                 <ul class="gnb-box__mo-gnb-list">
-                    <li class="active pt-6 pb-6">
+                    <li class="pt-6 pb-6">
                         <button class="mo-gnb-list__main font-16-b pt-18 pb-18 pl-24 pr-21 d-flex">상품정보
                             <i class="xi-caret-up-min"></i>
                             <i class="xi-caret-down-min"></i>
                         </button>
                         <ul class="gnb-list__mo-sub-list">
                             <li>
-                                <a href="#" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21 active">상품선택</a>
+                                <a href="#" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">상품선택</a>
                             </li>
                             <li>
                                 <a href="#" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">자동상품</a>
@@ -162,7 +162,7 @@ headerSide.innerHTML=`
                                 <a href="#" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">계정등록</a>
                             </li>
                             <li>
-                                <a href="#" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">포인트충전</a>
+                                <a href="point_charge" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">포인트충전</a>
                             </li>
                             <li>
                                 <a href="#" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">1:1문의</a>

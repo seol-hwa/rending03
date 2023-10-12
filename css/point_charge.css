@@ -11475,254 +11475,161 @@ body .side-menu__header .header__mobile-side .mobile-side__gnb-box .gnb-box__mo-
     display: block;
   }
 }
-body main .log-inner .nav-tabs .nav-list {
+body main .log-inner .page-title-box {
+  padding-bottom: 4rem;
   border-bottom: 1px solid #E9EAED;
-  overflow-x: auto;
 }
-body main .log-inner .nav-tabs .nav-list li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-body main .log-inner .nav-tabs .nav-list li .nav-link {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 1rem;
-  border: 1px solid #D9D9D9;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  overflow: hidden;
-  box-shadow: none;
-  transition: background-image 300ms;
-}
-body main .log-inner .nav-tabs .nav-list li .nav-link.select-insta {
-  background-image: url(../images/insta_off.png);
-}
-body main .log-inner .nav-tabs .nav-list li .nav-link.select-insta.active, body main .log-inner .nav-tabs .nav-list li .nav-link.select-insta:hover {
-  background-image: url(../images/insta_on.png);
-}
-body main .log-inner .nav-tabs .nav-list li .nav-link.select-youtube {
-  background-image: url(../images/youtube_off.png);
-}
-body main .log-inner .nav-tabs .nav-list li .nav-link.select-youtube.active, body main .log-inner .nav-tabs .nav-list li .nav-link.select-youtube:hover {
-  background-image: url(../images/youtube_on.png);
-}
-body main .log-inner .nav-tabs .nav-list li .nav-link.select-N {
-  background-image: url(../images/n_off.png);
-}
-body main .log-inner .nav-tabs .nav-list li .nav-link.select-N.active, body main .log-inner .nav-tabs .nav-list li .nav-link.select-N:hover {
-  background-image: url(../images/n_on.png);
-}
-body main .log-inner .nav-tabs .nav-list li .nav-link.select-T {
-  background-image: url(../images/t_off.png);
-}
-body main .log-inner .nav-tabs .nav-list li .nav-link.select-T.active, body main .log-inner .nav-tabs .nav-list li .nav-link.select-T:hover {
-  background-image: url(../images/t_on.png);
-}
-body main .log-inner .nav-tabs .nav-list li .item__text {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #333333;
-}
-body main .log-inner .nav-tabs .tab-wrap {
-  padding: 0;
-  box-shadow: none;
-  border-radius: 0;
-  background-color: transparent;
-}
-body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout {
-  background-color: transparent;
-}
-body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout:first-child {
-  padding-right: 0.9rem;
-}
-body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout:last-child {
-  padding-left: 0.9rem;
-}
-body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box {
-  background-color: #fff;
-  border: 1px solid #E0E0E0;
-  border-radius: 0.5rem;
-  height: 100%;
-}
-body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pre-box {
-  height: calc(100% - 7.2rem);
-  overflow-y: auto;
-}
-body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pre-box pre {
-  color: #333;
-  text-wrap: wrap;
-  display: none;
-  line-height: 1.3;
-}
-body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pre-box pre.active {
-  display: block;
-}
-body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .wrap-title {
-  color: #333;
-}
-body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .row {
-  margin-bottom: 2rem;
-  gap: 2rem 0;
-}
-body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .row:last-child {
-  margin-bottom: 0;
-}
-body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .row .form-style {
-  margin-bottom: 0;
+body main .log-inner .row .charge-left {
   padding: 0 0.5rem 0 0;
 }
-body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .row .form-style:last-child {
+body main .log-inner .row .charge-right {
   padding: 0 0 0 0.5rem;
 }
-body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .form-style.option-wrap {
-  margin-bottom: 5rem;
-}
-body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .form-style .form-round {
+body main .log-inner .row .col-12 .charge-box---border {
+  background-color: #fff;
   border-radius: 0.5rem;
+  border: 1px solid #E0E0E0;
+  padding: 5rem 3.5rem 3.5rem;
+  height: 100%;
+}
+body main .log-inner .row .col-12 .charge-box---border .wrap-title {
+  font-size: 2.8rem;
+  font-weight: 700;
   color: #333;
+}
+body main .log-inner .row .col-12 .charge-box---border .mt-54 .form-style label {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+}
+body main .log-inner .row .col-12 .charge-box---border .mt-54 .form-style label span {
+  font-size: 1.4rem;
+}
+body main .log-inner .row .col-12 .charge-box---border .mt-54 .form-style .payment-box {
+  align-items: flex-end;
+  gap: 1rem;
+}
+body main .log-inner .row .col-12 .charge-box---border .mt-54 .form-style .payment-box input[type=text] {
+  width: calc(100% - 30rem);
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  padding: 0.9rem 1rem;
+  text-indent: 1rem;
+}
+body main .log-inner .row .col-12 .charge-box---border .mt-54 .form-style .payment-box .payment-btn-box {
+  gap: 2rem 1rem;
+}
+body main .log-inner .row .col-12 .charge-box---border .mt-54 .form-style .payment-box .payment-btn-box .btn {
+  width: 9rem;
+  height: 3.8rem;
   font-size: 1.4rem;
   font-weight: 700;
+  padding: 0;
+  background-color: #fff;
+  color: #2E4491;
+  box-shadow: none;
+  border: 1px solid #2E4491;
+  border-radius: 0.5rem;
 }
-body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .form-style select {
-  background: url(../images/icon/down-arrow-solid-240.png) no-repeat right 1.6rem top 50%/1rem;
-  margin-top: 0;
+body main .log-inner .row .col-12 .charge-box---border .mt-54 .form-style .payment-box .payment-btn-box .btn:hover {
+  background-color: #2E4491;
+  color: #fff;
 }
-body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .form-style label {
+body main .log-inner .row .col-12 .charge-box---border .mt-54 .radio-box .form-check-inline {
+  margin-right: 3rem;
+}
+body main .log-inner .row .col-12 .charge-box---border .mt-54 .radio-box .form-check-inline:last-child {
+  margin-right: 0;
+}
+body main .log-inner .row .col-12 .charge-box---border .mt-54 .radio-box .form-check-inline input[type=radio]:checked {
+  background: #fff url(../images/icon/circle-solid-240.png) no-repeat center/1.4rem;
+  box-shadow: none;
+  border-color: #3066E2;
+}
+body main .log-inner .row .col-12 .charge-box---border .mt-54 .radio-box .form-check-inline label {
+  font-size: 1.8rem;
   color: #333;
+  font-weight: 700;
+}
+body main .log-inner .row .col-12 .charge-box---border .mt-240 .right__precalc .d-flex {
+  justify-content: space-between;
+}
+body main .log-inner .row .col-12 .charge-box---border .mt-240 .right__precalc .d-flex p {
+  color: #999;
   font-size: 1.8rem;
   font-weight: 700;
 }
-body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap {
-  background-color: #fff;
-  border: 1px solid #E0E0E0;
-  border-radius: 0.5rem;
-  flex-wrap: wrap;
-  gap: 4rem 14rem;
+body main .log-inner .row .col-12 .charge-box---border .mt-240 .right__totalcalc {
+  justify-content: space-between;
 }
-body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap .pt-calc-box {
-  gap: 5.4rem;
-}
-body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap .pt-calc-box .pt-box {
-  flex-direction: column;
-  gap: 1rem 2rem;
-}
-body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap .pt-calc-box .pt-box__text {
-  color: #666;
-  font-size: 2.2rem;
-  font-weight: 700;
-  margin-bottom: 0;
-  line-height: 1;
-}
-body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap .pt-calc-box .pt-box__pt {
-  color: #999;
-  line-height: 1.1;
-  font-size: 2.2rem;
+body main .log-inner .row .col-12 .charge-box---border .mt-240 .right__totalcalc p {
+  font-size: 1.8rem;
   font-weight: 700;
 }
-body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap .pt-total-box {
-  flex-direction: column;
-  gap: 1rem 2rem;
-}
-body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap .pt-total-box__text {
+body main .log-inner .row .col-12 .charge-box---border .mt-240 .right__totalcalc .totalcal__text {
   color: #333;
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin-bottom: 0;
-  line-height: 1;
-  text-align: center;
 }
-body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap .pt-total-box__pt {
-  color: #333;
-  line-height: 1.2;
-  font-weight: 800;
-  font-size: 3rem;
-  text-align: center;
+body main .log-inner .row .col-12 .charge-box---border .mt-240 .right__totalcalc .totalcal__won {
+  color: #3066E2;
 }
-body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap .xi-plus-circle {
-  color: #FF2B48;
-}
-body main .log-inner .nav-tabs .tab-wrap .tab-box .order-submit {
-  width: 21rem;
-  height: 6rem;
-  margin: 0 auto 8rem;
-  background-color: #3066E2;
-  color: #fff;
+body main .log-inner .row .col-12 .charge-box---border .mt-240 .btn {
   border-radius: 0.5rem;
-  cursor: pointer;
+  background-color: #2E4491;
+  box-shadow: none;
+  width: 100%;
+  padding: 2.1rem 0;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
-body main .log-inner .nav-tabs .tab-wrap .tab-box .popup__bg {
+body main .log-inner .row .col-12 .charge-box---border .mt-240 .btn:hover {
+  background-color: #405cc2;
+}
+body main .log-inner .row .col-12 .charge-box---border .mt-240 .popup__bg {
   z-index: 999;
 }
-body main .log-inner .nav-tabs .tab-wrap .tab-box .popup__wrap {
+body main .log-inner .row .col-12 .charge-box---border .mt-240 .popup__wrap {
   width: 90vw;
   z-index: 999;
   max-width: 80rem;
   right: 50%;
   transform: translate(50%, -50%);
 }
-body main .log-inner .nav-tabs .tab-wrap .tab-box .popup__wrap .btn-d-purple {
+body main .log-inner .row .col-12 .charge-box---border .mt-240 .popup__wrap .btn-d-purple {
   background-color: #3066E2;
 }
-body main .log-inner .nav-tabs .tab-wrap .tab-box .popup__wrap .btn-d-purple:hover {
+body main .log-inner .row .col-12 .charge-box---border .mt-240 .popup__wrap .btn-d-purple:hover {
   background-color: #2c5cce;
 }
 
-@media (max-width: 1199px) {
-  body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout:first-child {
-    padding-right: 0;
-    padding-bottom: 1.8rem;
+@media (max-width: 1399px) {
+  body main .log-inner .row .col-12 {
+    padding: 0;
   }
-  body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout:last-child {
-    padding-left: 0;
-  }
-  body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout:last-child .layout-box {
-    height: 50rem;
+  body main .log-inner .row .col-12 .charge-box---border .mt-240 {
+    margin-top: 5rem;
   }
 }
 @media (max-width: 1024px) {
-  body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap .pt-calc-box {
-    gap: 3rem;
+  body main .log-inner .row .col-12 .charge-box---border .mt-54 .form-style .payment-box {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap .pt-calc-box .pt-box__text, body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap .pt-calc-box .pt-box__pt {
-    font-size: 1.6rem;
-  }
-  body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap .pt-calc-box .xi-3x {
-    font-size: 2em;
-  }
-  body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap .pt-total-box__text {
-    font-size: 2rem;
-  }
-  body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap .pt-total-box__pt {
-    font-size: 2.2rem;
+  body main .log-inner .row .col-12 .charge-box---border .mt-54 .form-style .payment-box input[type=text] {
+    width: 100%;
   }
 }
-@media (max-width: 991px) {
-  body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .row .form-style {
-    padding: 0;
+@media (max-width: 500px) {
+  body main .log-inner .row .col-12 .charge-box---border .mt-54 .form-style .payment-box .payment-btn-box .btn {
+    width: 7rem;
+    letter-spacing: -1;
   }
-  body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .row .form-style:last-child {
-    padding: 0;
+  body main .log-inner .row .col-12 .charge-box---border .mt-54 .radio-box .form-check-inline {
+    display: flex;
+    margin-bottom: 2rem;
   }
-}
-@media (max-width: 550px) {
-  body main .log-inner .nav-tabs .nav-list li .nav-link {
-    width: 6rem;
-    height: 6rem;
-  }
-  body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap {
-    flex-direction: column;
-  }
-  body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap .pt-calc-box {
-    flex-direction: column;
-  }
-  body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap .pt-calc-box .pt-box {
-    flex-direction: row;
-  }
-  body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap .pt-total-box {
-    flex-direction: row;
+  body main .log-inner .row .col-12 .charge-box---border .mt-54 .radio-box .form-check-inline:last-child {
+    margin-bottom: 0;
   }
 }
 
-/*# sourceMappingURL=regular_order.css.map */
+/*# sourceMappingURL=point_charge.css.map */
