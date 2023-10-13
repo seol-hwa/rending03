@@ -57,6 +57,15 @@ select.forEach((el, index) => {
     })
 })
 
+const year=new Date().getFullYear();
+const month=('0' + (new Date().getMonth() + 1)).slice(-2);
+const day=('0' + new Date().getDate()).slice(-2);
+const inputDate=document.querySelectorAll('input[type=date]');
+
+inputDate.forEach(el=>{
+    el.setAttribute('min',`${year}-${month}-${day}`);
+})
+
 //submit btn
 const modalBtn = document.querySelectorAll('.open-modal');
 const background = document.querySelectorAll('.popup__bg');

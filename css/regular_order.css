@@ -11606,6 +11606,28 @@ body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layou
   font-size: 1.8rem;
   font-weight: 700;
 }
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .form-style input[type=date] {
+  position: relative;
+}
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .form-style input[type=date]::before {
+  content: attr(data-placeholder);
+  width: 100%;
+  height: 100%;
+  color: #999;
+}
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .form-style input[type=date]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-position: top 40% right 1rem;
+  background-size: auto 2rem;
+  cursor: pointer;
+}
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .form-style input[type=date]:valid::before {
+  display: none;
+}
 body main .log-inner .nav-tabs .tab-wrap .tab-box .pt-wrap {
   background-color: #fff;
   border: 1px solid #E0E0E0;

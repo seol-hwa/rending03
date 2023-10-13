@@ -78,7 +78,7 @@ headerSide.innerHTML=`
                                 <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">계정등록</a>
                             </li>
                             <li>
-                                <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">포인트충전</a>
+                                <a href="point_charge.html" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">포인트충전</a>
                             </li>
                             <li>
                                 <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">1:1문의</a>

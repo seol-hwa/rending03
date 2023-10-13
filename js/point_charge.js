@@ -38,10 +38,13 @@ outputBtn.forEach(el=>{
         e.preventDefault();
 
         ptValue=el.value;
-        inputPoint.value=ptValue.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
-        payment.innerHTML=ptValue.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
-        vat.innerHTML=(parseInt(ptValue)/10).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
-        total.innerHTML=(parseInt(ptValue)+(parseInt(ptValue)/10)).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+        inputPoint.value=(parseInt(inputPoint.value.replace(/,/g, ''))+parseInt(ptValue)).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+
+        let inputPointValue=inputPoint.value;
+
+        payment.innerHTML=parseInt(inputPointValue.replace(/,/g, '')).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+        vat.innerHTML=parseInt((inputPointValue).replace(/,/g, '')/10).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+        total.innerHTML=(parseInt(inputPointValue.replace(/,/g, ''))+parseInt((inputPointValue).replace(/,/g, '')/10)).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
     });
 });
 
