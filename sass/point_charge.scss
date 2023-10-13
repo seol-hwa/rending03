@@ -4,22 +4,11 @@
 body {
     main {
         .log-inner {
-            .page-title-box {
-                padding-bottom: 4rem;
-                border-bottom: 1px solid #E9EAED;
-            }
 
-            .row {
-                .charge-left {
-                    padding: 0 0.5rem 0 0;
-                }
+            .layout-style-2 {
 
-                .charge-right {
-                    padding: 0 0 0 0.5rem;
-                }
-
-                .col-12 {
-                    .charge-box---border {
+                .layout {
+                    .layout-box {
                         background-color: #fff;
                         border-radius: 0.5rem;
                         border: 1px solid #E0E0E0;
@@ -33,8 +22,8 @@ body {
                         }
 
                         //left
-                        .mt-54 {
-                            .form-style {
+                        .charge-point-wrap {
+                            .charge-payment {
                                 label {
                                     font-size: 1.8rem;
                                     font-weight: 700;
@@ -45,7 +34,7 @@ body {
                                     }
                                 }
 
-                                .payment-box {
+                                .charge-box {
                                     align-items: flex-end;
                                     gap: 1rem;
 
@@ -104,7 +93,7 @@ body {
                         }
 
                         //right
-                        .mt-240 {
+                        .charge-payment-wrap {
                             .right__precalc {
                                 .d-flex {
                                     justify-content: space-between;
@@ -181,12 +170,12 @@ body {
     body {
         main {
             .log-inner {
-                .row {
-                    .col-12 {
+                .layout-style-2 {
+                    .layout {
                         padding: 0;
 
-                        .charge-box---border {
-                            .mt-240 {
+                        .layout-box {
+                            .charge-payment-wrap {
                                 margin-top: 5rem;
                             }
                         }
@@ -201,12 +190,12 @@ body {
     body {
         main {
             .log-inner {
-                .row{
-                    .col-12{
-                        .charge-box---border{
-                            .mt-54{
-                                .form-style{
-                                    .payment-box{
+                .layout-style-2{
+                    .layout{
+                        .layout-box{
+                            .charge-point-wrap{
+                                .charge-payment{
+                                    .charge-box{
                                         flex-direction: column;
                                         align-items: flex-start;
                                         input[type=text]{
@@ -227,12 +216,12 @@ body {
     body {
         main {
             .log-inner {
-                .row{
-                    .col-12{
-                        .charge-box---border{
-                            .mt-54{
-                                .form-style{
-                                    .payment-box{
+                .layout-style-2{
+                    .layout{
+                        .layout-box{
+                            .charge-point-wrap{
+                                .charge-payment{
+                                    .charge-box{
                                         .payment-btn-box{
                                             .btn{
                                                 width:7rem;

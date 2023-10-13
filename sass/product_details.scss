@@ -1,0 +1,150 @@
+@import './guide';
+@import './login_header';
+
+body{
+    main{
+        .log-inner{
+            .pd-top{
+                justify-content: space-between;
+                border:1px solid #E0E0E0;
+                border-radius: 0.5rem;
+                background-color: #fff;
+                &-left{
+                    align-items: center;
+                    .pd-select-title{
+                        color:#2B333E;
+                    }
+                    .pd-select-box{
+                        width:16rem;
+                        margin-bottom:0;
+                        select{
+                            margin-top:0;
+                            border-radius: 0.5rem;
+                            option{
+                                font-size: 1.4rem;
+                                font-weight: 700;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                .pd-search-btn{
+                    border-radius: 0.5rem;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    padding:1.8rem 6.4rem;
+                    display: flex;
+                    align-items: center;
+                    box-shadow: none;
+                    background-color: #424B57;
+                    &:hover{
+                        background-color: #2f353d;
+                    }
+                    .xi-search{
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+            .pd-table-box{
+                background-color: #fff;
+                border-radius: 0.5rem;
+                border:1px solid #E0E0E0;
+                .pd-table{
+                    .thead{
+                        background-color: #46607E;
+                        border-radius: 0.5rem;
+                        &-tr{
+                            
+                            .th{
+                                text-align: center;
+                                color:#fff;
+                            }
+                        }
+                    }
+                    .tbody{
+                        &-tr{
+                            border-bottom: 1px solid #E9E9ED;
+                            align-items:center;
+                            .td{
+                                text-align: center;
+                                color:#333;
+                                &:first-child{
+                                    text-indent: 0;
+                                }
+                                &:nth-child(3){
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+                                div{
+                                    .pd-info-btn{
+                                        font-size: 1.8rem;
+                                        font-weight: 700;
+                                        background-color: #5EA699;
+                                        &:hover{
+                                            background-color: #4c867c;
+                                        }
+                                    }
+                                    .popup{
+                                        &__wrap{
+                                            .popup-type-1{
+                                                .popup--body{
+                                                    &__text{
+                                                        display: flex;
+                                                        .pd-order-info-name{
+                                                            width:6rem;
+                                                            text-align: left;
+                                                            margin-right:2rem;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .pd-pagenation-list{
+                    li{
+                        .pd-pagenation-btn{
+                            font-size: 1.5rem;
+                            font-weight: 700;
+                            padding:0;
+                            width:3.5rem;
+                            height:3.5rem;
+                        }
+                    }
+                    .pd-page-wrap{
+                        position:relative;
+                        width:40rem;
+                        height:3.5rem;
+                        overflow: hidden;
+                        .pd-page-list{
+                            position:absolute;
+                            top:0;
+                            left:0;
+                            transition:left 300ms;
+                            li{
+                                .pd-page{
+                                    color:#BBB;
+                                    border:1px solid transparent;
+                                    border-radius: 0.3rem;
+                                    margin-right:0.5rem;
+                                    &:hover{
+                                        border-color:#bbb;
+                                    }
+                                    &.active{
+                                        color:#2185D0;
+                                        border-color:#2185D0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

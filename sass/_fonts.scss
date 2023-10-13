@@ -1,14 +1,4 @@
-//nanum gothic
-@import url("//fonts.googleapis.com/earlyaccess/nanumgothic.css");
-.nanum{
-    font-family: 'Nanum Gothic', sans-serif;
-}
-%nanumFont{
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: 10px;
-}
-
-//noto sans
+//
 @mixin font-face($name, $file, $weight:normal, $style:normal){
     @font-face {
         font-family: '#{$name}';
@@ -22,21 +12,21 @@
         font-style:$style;
     }
 }
-@include font-face('Noto Sans KR','NotoSansKR-Thin',100);
-@include font-face('Noto Sans KR','NotoSansKR-Light',300);
-@include font-face('Noto Sans KR','NotoSansKR-Regular',400);
-@include font-face('Noto Sans KR','NotoSansKR-Medium',500);
-@include font-face('Noto Sans KR','NotoSansKR-Bold',700);
-@include font-face('Noto Sans KR','NotoSansKR-Black',900);
+@include font-face('Nanum Barun Gothic','NanumBarunGothicUltraLight',100);
+@include font-face('Nanum Barun Gothic','NanumBarunGothicLight',300);
+@include font-face('Nanum Barun Gothic','NanumBarunGothic',400);
+// @include font-face('Nanum Barun Gothic','NotoSansKR-Medium',500);
+@include font-face('Nanum Barun Gothic','NanumBarunGothicBold',700);
+// @include font-face('Nanum Barun Gothic','NotoSansKR-Black',900);
 
 //
-%notoFont{
-    font-family:'Noto Sans KR', sans-serif;
+%nanumBRFont{
+    font-family:'Nanum Barun Gothic', sans-serif;
     font-size: 10px;
 }
 
 body,html{
-    @extend %nanumFont;
+    @extend %nanumBRFont;
 }
 
 @function rem($pixel, $context:10){

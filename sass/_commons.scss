@@ -81,3 +81,72 @@
         margin-top: 2rem;
     }
 }
+
+.layout-style-2 {
+    gap: 2rem 0;
+
+    .layout {
+        background-color: transparent;
+
+        &:first-child {
+            padding-right: 0.9rem;
+        }
+
+        &:last-child {
+            padding-left: 0.9rem;
+        }
+
+        .layout-box {
+            background-color: #fff;
+            border: 1px solid #E0E0E0;
+            border-radius: 0.5rem;
+            padding: 5rem 3.5rem 3.5rem;
+            height: 100%;
+        }
+    }
+
+    @media (max-width:1024px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.boundary {
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid #E9EAED;
+}
+
+.form-style {
+    select {
+        background: url(../images/icon/down-arrow-solid-240.png) no-repeat right 1.6rem top 50%/1rem;
+    }
+}
+
+.popup {
+    .popup__bg {
+        z-index: 999;
+    }
+
+    .popup__wrap {
+        width: 90vw;
+        z-index: 999;
+        max-width: 80rem;
+        right: 50%;
+        transform: translate(50%, -50%);
+
+        .btn-d-purple {
+            background-color: #3066E2;
+
+            &:hover {
+                background-color: #2c5cce;
+            }
+        }
+
+        .popup-type-3 {
+            .popup--body__text {
+                line-height: 1.4;
+            }
+        }
+    }
+}
