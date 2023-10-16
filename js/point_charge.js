@@ -53,35 +53,38 @@ const popup=document.querySelector('.popup');
 
 chargeSubmit.addEventListener('click',function(e){
     e.preventDefault();
+    document.querySelector('body').style.overflowY = 'hidden';
     popup.classList.add('active');
 })
 
 //modal close
 const background = document.querySelectorAll('.popup__bg');
-const closeBtn = document.querySelectorAll('.popup__close-btn');
-const cancleBtn = document.querySelectorAll('.popup__cancle-btn');
+// const closeBtn = document.querySelectorAll('.popup__close-btn');
+// const cancleBtn = document.querySelectorAll('.popup__cancle-btn');
 const checkBtn = document.querySelectorAll('.popup__check-btn');
 
 background.forEach(bg => {
     bg.addEventListener('click', function (e) {
         if (e.target.classList.contains('popup__bg')) {
-            popup.classList.remove('active');
+    document.querySelector('body').style.overflowY = 'auto';
+    popup.classList.remove('active');
         }
     })
 })
-closeBtn.forEach(close => {
-    closeModal(close);
-})
-cancleBtn.forEach(close => {
-    closeModal(close);
-})
+// closeBtn.forEach(close => {
+//     closeModal(close);
+// })
+// cancleBtn.forEach(close => {
+//     closeModal(close);
+// })
 checkBtn.forEach(check => {
     closeModal(check);
 })
 
 function closeModal(close) {
     close.addEventListener('click', function (e) {
-        if (this.classList.contains('return-btn')) {
+    document.querySelector('body').style.overflowY = 'auto';
+    if (this.classList.contains('return-btn')) {
             e.preventDefault();
         }
         popup.classList.remove('active');

@@ -61,7 +61,7 @@ headerSide.innerHTML=`
                         </button>
                         <ul class="gnb-list__sub-list">
                             <li>
-                                <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">상품내역</a>
+                                <a href="product_details.html" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">상품내역</a>
                             </li>
                             <li>
                                 <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">처리결과</a>
@@ -120,7 +120,7 @@ headerSide.innerHTML=`
                         </button>
                         <ul class="gnb-list__mo-sub-list">
                             <li>
-                                <a href="#" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">상품선택</a>
+                                <a href="regular_order.html" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">상품선택</a>
                             </li>
                             <li>
                                 <a href="#" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">자동상품</a>
@@ -145,7 +145,7 @@ headerSide.innerHTML=`
                         </button>
                         <ul class="gnb-list__mo-sub-list">
                             <li>
-                                <a href="#" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">상품내역</a>
+                                <a href="product_details.html" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">상품내역</a>
                             </li>
                             <li>
                                 <a href="#" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">처리결과</a>

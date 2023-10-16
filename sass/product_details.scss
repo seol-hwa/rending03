@@ -1,26 +1,33 @@
 @import './guide';
 @import './login_header';
 
-body{
-    main{
-        .log-inner{
-            .pd-top{
+body {
+    main {
+        .log-inner {
+            .pd-top {
                 justify-content: space-between;
-                border:1px solid #E0E0E0;
+                border: 1px solid #E0E0E0;
                 border-radius: 0.5rem;
                 background-color: #fff;
-                &-left{
+                gap: 2rem 0;
+
+                &-left {
                     align-items: center;
-                    .pd-select-title{
-                        color:#2B333E;
+                    gap: 2rem 0;
+
+                    .pd-select-title {
+                        color: #2B333E;
                     }
-                    .pd-select-box{
-                        width:16rem;
-                        margin-bottom:0;
-                        select{
-                            margin-top:0;
+
+                    .pd-select-box {
+                        margin-bottom: 0;
+
+                        select {
+                            width: 16rem;
+                            margin-top: 0;
                             border-radius: 0.5rem;
-                            option{
+
+                            option {
                                 font-size: 1.4rem;
                                 font-weight: 700;
                                 display: block;
@@ -28,73 +35,349 @@ body{
                         }
                     }
                 }
-                .pd-search-btn{
+
+                .pd-search-btn {
                     border-radius: 0.5rem;
                     font-size: 1.8rem;
                     font-weight: 700;
-                    padding:1.8rem 6.4rem;
                     display: flex;
                     align-items: center;
+                    justify-content: center;
                     box-shadow: none;
                     background-color: #424B57;
-                    &:hover{
+                    width: 20.6rem;
+                    height: 6rem;
+
+                    &:hover {
                         background-color: #2f353d;
                     }
-                    .xi-search{
+
+                    .xi-search {
                         font-size: 2.4rem;
                     }
                 }
             }
-            .pd-table-box{
+
+            .pd-table-box {
                 background-color: #fff;
                 border-radius: 0.5rem;
-                border:1px solid #E0E0E0;
-                .pd-table{
-                    .thead{
+                border: 1px solid #E0E0E0;
+
+                .pd-table {
+                    .thead {
                         background-color: #46607E;
                         border-radius: 0.5rem;
-                        &-tr{
-                            
-                            .th{
+
+                        &-tr {
+
+                            .th {
                                 text-align: center;
-                                color:#fff;
+                                color: #fff;
                             }
                         }
                     }
-                    .tbody{
-                        &-tr{
+
+                    .tbody {
+                        &-tr {
                             border-bottom: 1px solid #E9E9ED;
-                            align-items:center;
-                            .td{
+                            align-items: center;
+                            display: none;
+
+                            &.active {
+                                display: flex;
+                            }
+
+                            .td {
                                 text-align: center;
-                                color:#333;
-                                &:first-child{
+                                color: #333;
+
+                                &:first-child {
                                     text-indent: 0;
                                 }
-                                &:nth-child(3){
+
+                                &:nth-child(3) {
                                     white-space: nowrap;
                                     overflow: hidden;
                                     text-overflow: ellipsis;
                                 }
-                                div{
-                                    .pd-info-btn{
+
+                                div {
+                                    .pd-info-btn {
                                         font-size: 1.8rem;
                                         font-weight: 700;
                                         background-color: #5EA699;
-                                        &:hover{
+
+                                        &:hover {
                                             background-color: #4c867c;
                                         }
                                     }
-                                    .popup{
-                                        &__wrap{
-                                            .popup-type-1{
-                                                .popup--body{
-                                                    &__text{
+
+                                    .popup {
+                                        .popup__wrap {
+                                            max-width: 90rem;
+
+                                            .popup-type-1 {
+                                                max-width: 100%;
+
+                                                .popup--header {
+                                                    padding: 5rem 3.5rem 4rem;
+                                                    justify-content: flex-start;
+                                                    position: relative;
+
+                                                    .popup--header__title {
+                                                        font-size: 2.8rem;
+                                                        color: #2B333E;
+                                                    }
+
+                                                    .popup__close-btn {
+                                                        top: 50%;
+                                                        right: 3.5rem;
+                                                        transform: translateY(-40%);
+                                                        color: #8D8D8D;
+                                                    }
+                                                }
+
+                                                .popup--body {
+                                                    padding: 0 3.5rem 7.8rem;
+
+                                                    &__text {
                                                         display: flex;
-                                                        .pd-order-info-name{
-                                                            width:6rem;
+                                                        font-size: 2.2rem;
+                                                        font-weight: 700;
+                                                        border-bottom: 1px solid #EEE;
+                                                        padding: 2rem 0;
+                                                        align-items: center;
+                                                        text-align: left;
+
+                                                        &:last-child {
+                                                            border-bottom: none;
+                                                        }
+
+                                                        .pd-order-info-name {
+                                                            width: 10rem;
                                                             text-align: left;
-                                                            margin-right:2rem;
+                                                            margin-right: 5.6rem;
+                                                            color: #333333;
+                                                        }
+
+                                                        .pd-order-info-text {
+                                                            color: #999;
+                                                        }
+
+                                                        .service-state {
+                                                            width: 9rem;
+                                                            height: 4rem;
+                                                            border-radius: 0.5rem;
+                                                            color: #fff;
+                                                            font-size: 1.4rem;
+                                                            background: #000;
+                                                            line-height: 4rem;
+                                                            text-align: center;
+
+                                                            &.pd-complete {
+                                                                background-color: #4EB770;
+                                                            }
+
+                                                            &.pd-proceed {
+                                                                background-color: #B74E55;
+                                                            }
+
+                                                            &.pd-wait {
+                                                                background-color: #4E72B7;
+                                                            }
+
+                                                            &.pd-cancle {
+                                                                background-color: #9A9A9A;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                                .popup--footer {
+                                                    padding: 0 3.5rem 5rem;
+                                                    justify-content: flex-end;
+
+                                                    .btn {
+                                                        border-radius: 0.5rem;
+                                                        padding: 0;
+                                                        max-width: 16rem;
+                                                        height: 5rem;
+                                                        font-weight: 700;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .pd-pagenation-list {
+                    li {
+                        .pd-pagenation-btn {
+                            font-size: 1.5rem;
+                            font-weight: 700;
+                            padding: 0;
+                            width: 3.5rem;
+                            height: 3.5rem;
+                        }
+
+                        .prev-page {
+                            color: #BBB;
+                        }
+                    }
+
+                    .pd-page-wrap {
+                        position: relative;
+                        max-width: 40rem;
+                        height: 3.5rem;
+                        overflow: hidden;
+
+                        .pd-page-list {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            transition: left 300ms;
+
+                            li {
+                                .pd-page {
+                                    color: #BBB;
+                                    border: 1px solid transparent;
+                                    border-radius: 0.3rem;
+                                    margin-right: 0.5rem;
+
+                                    &:hover {
+                                        border-color: #bbb;
+                                    }
+
+                                    &.active {
+                                        color: #2185D0;
+                                        border-color: #2185D0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1399px) {
+    body {
+        main {
+            .log-inner {
+                .pd-table-box {
+                    .pd-table {
+                        .thead {
+                            display: none;
+                        }
+
+                        .tbody {
+                            >.pt-12 {
+                                padding-top: 2.4rem;
+                            }
+
+                            >.pb-12 {
+                                padding-bottom: 2.4rem;
+                            }
+
+                            &-tr {
+                                .td {
+                                    text-align: left;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    body {
+        main {
+            .log-inner {
+                .pd-top {
+                    flex-direction: column;
+
+                    .pd-top-left {
+                        flex-direction: column;
+                        align-items: flex-start;
+
+                        .pd-select-box {
+                            width: 100%;
+
+                            select {
+                                width: calc(50% - 0.9rem);
+                            }
+                        }
+                    }
+
+                    .pd-search-btn {
+                        width: 100%;
+                    }
+                }
+
+                .pd-table-box {
+                    .pd-pagenation-list {
+                        .pd-page-wrap {
+                            max-width: 20rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    body {
+        main {
+            .log-inner {
+
+                .pd-table-box {
+
+                    .pd-table {
+
+                        .tbody {
+                            &-tr {
+
+                                .td {
+
+                                    div {
+                                        .popup {
+                                            .popup__wrap {
+                                                .popup-type-1 {
+                                                    .popup--body {
+                                                        &__text {
+                                                            &:first-child {
+                                                            flex-direction: column;
+                                                            align-items: flex-start;
+
+                                                            .pd-order-info-name {
+                                                                margin-right: 0;
+                                                                margin-bottom: 2rem;
+                                                            }
+
+                                                            }
+                                                            // &:last-child {
+                                                            //     flex-direction: row;
+                                                            //     align-items: center;
+
+                                                            //     .pd-order-info-name {
+                                                            //         margin-bottom: 0;
+                                                            //     }
+                                                            // }
+
+                                                            .pd-order-info-name {
+                                                                margin-right: 3rem;
+                                                            }
+
                                                         }
                                                     }
                                                 }
@@ -106,41 +389,61 @@ body{
                         }
                     }
                 }
-                .pd-pagenation-list{
-                    li{
-                        .pd-pagenation-btn{
-                            font-size: 1.5rem;
-                            font-weight: 700;
-                            padding:0;
-                            width:3.5rem;
-                            height:3.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width:500px) {
+    body {
+        main {
+            .log-inner {
+                .pd-top {
+                    .pd-top-left {
+                        .pd-select-box {
+                            flex-direction: column;
+
+                            select {
+                                width: 100%;
+
+                                &:first-child {
+                                    margin-right: 0;
+                                    margin-bottom: 1.8rem;
+                                }
+                            }
                         }
                     }
-                    .pd-page-wrap{
-                        position:relative;
-                        width:40rem;
-                        height:3.5rem;
-                        overflow: hidden;
-                        .pd-page-list{
-                            position:absolute;
-                            top:0;
-                            left:0;
-                            transition:left 300ms;
-                            li{
-                                .pd-page{
-                                    color:#BBB;
-                                    border:1px solid transparent;
-                                    border-radius: 0.3rem;
-                                    margin-right:0.5rem;
-                                    &:hover{
-                                        border-color:#bbb;
-                                    }
-                                    &.active{
-                                        color:#2185D0;
-                                        border-color:#2185D0;
+                }
+
+                .pd-table-box {
+                    .pd-table {
+
+                        .tbody {
+                            &-tr {
+
+                                .td {
+
+                                    div {
+                                        .popup {
+                                            .popup__wrap {
+                                                .popup-type-1 {
+                                                    .popup--footer {
+                                                        justify-content: center;
+                                                        .btn{
+                                                            max-width:100%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
+                        }
+                    }
+                    .pd-pagenation-list {
+                        .pd-page-wrap {
+                            max-width: 12rem;
                         }
                     }
                 }

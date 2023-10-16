@@ -69,7 +69,7 @@ inputDate.forEach(el=>{
 //submit btn
 const modalBtn = document.querySelectorAll('.open-modal');
 const background = document.querySelectorAll('.popup__bg');
-const closeBtn = document.querySelectorAll('.popup__close-btn');
+// const closeBtn = document.querySelectorAll('.popup__close-btn');
 const cancleBtn = document.querySelectorAll('.popup__cancle-btn');
 const checkBtn = document.querySelectorAll('.popup__check-btn');
 const popup = document.querySelectorAll('.popup');
@@ -80,7 +80,8 @@ const orderNodes = document.querySelectorAll('.order-num');
 
 modalBtn.forEach((btn, index) => {
     btn.addEventListener('click', function () {
-        if (possessionPoint < parseInt(orderNodes[index].innerText.replace(/,/g, ''))) {
+    document.querySelector('body').style.overflowY = 'hidden';
+    if (possessionPoint < parseInt(orderNodes[index].innerText.replace(/,/g, ''))) {
             //point가 부족할 때
             this.nextElementSibling.classList.add('active');
         } else {
@@ -94,15 +95,16 @@ modalBtn.forEach((btn, index) => {
 background.forEach(bg => {
     bg.addEventListener('click', function (e) {
         if (e.target.classList.contains('popup__bg')) {
-            popup.forEach(all => {
+    document.querySelector('body').style.overflowY = 'auto';
+    popup.forEach(all => {
                 all.classList.remove('active');
             })
         }
     })
 })
-closeBtn.forEach(close => {
-    closeModal(close);
-})
+// closeBtn.forEach(close => {
+//     closeModal(close);
+// })
 cancleBtn.forEach(close => {
     closeModal(close);
 })
@@ -112,7 +114,8 @@ checkBtn.forEach(check => {
 
 function closeModal(close) {
     close.addEventListener('click', function (e) {
-        if (this.classList.contains('return-btn')) {
+    document.querySelector('body').style.overflowY = 'auto';
+    if (this.classList.contains('return-btn')) {
             e.preventDefault();
         }
         popup.forEach(all => {

@@ -1,6 +1,6 @@
 //header setting
 const listIndex = 2;
-const pageIndex = 1;
+const pageIndex = 0;
 
 //pc
 const gnbList = document.querySelector('.gnb-box__gnb-list');
@@ -34,7 +34,8 @@ const checkBtn = document.querySelectorAll('.popup__check-btn');
 
 modalBtn.forEach((btn) => {
     btn.addEventListener('click', function () {
-        this.nextElementSibling.classList.add('active');
+    document.querySelector('body').style.overflowY = 'hidden';
+    this.nextElementSibling.classList.add('active');
     })
 })
 
@@ -42,6 +43,7 @@ modalBtn.forEach((btn) => {
 background.forEach(bg => {
     bg.addEventListener('click', function (e) {
         if (e.target.classList.contains('popup__bg')) {
+            document.querySelector('body').style.overflowY = 'auto';
             modalBtn.forEach(all => {
                 all.nextElementSibling.classList.remove('active');
             })
@@ -60,6 +62,7 @@ checkBtn.forEach(check => {
 
 function closeModal(close) {
     close.addEventListener('click', function () {
+        document.querySelector('body').style.overflowY = 'auto';
         modalBtn.forEach(all => {
             all.nextElementSibling.classList.remove('active');
         })
@@ -67,26 +70,83 @@ function closeModal(close) {
 }
 
 //pagenation
-const pagenation = document.querySelectorAll('.pd-page');
 const prevBtn = document.querySelector('.prev-page');
 const nextBtn = document.querySelector('.next-page');
 const pageList = document.querySelector('.pd-page-list');
+const tr = document.querySelectorAll('.tbody-tr');
+const trLength = Math.ceil(tr.length / 10);
+for (let pageChildI = 1; pageChildI <= trLength; pageChildI++) {
+    const pageListLi = document.createElement('li');
+    const pageButton = document.createElement('button');
+    const pageText = document.createTextNode(`${pageChildI}`);
+    pageList.appendChild(pageListLi);
+    pageListLi.appendChild(pageButton);
+    pageButton.appendChild(pageText);
+    pageButton.classList.add('pd-page');
+    pageButton.classList.add('pd-pagenation-btn');
+}
+const pagenation = document.querySelectorAll('.pd-page');
 const pageItems = document.querySelectorAll('.pd-page-list li');
 const pageMove = pageItems[0].clientWidth;
-// pageList.style.left=0+'px';
+const pageWrap = document.querySelector('.pd-page-wrap');
 
-pagenation.forEach(el => {
+let pageItemsHidNum;
+if (window.matchMedia('(max-width:500px)').matches) {
+    pageItemsHidNum = trLength - 3;
+} else if (window.matchMedia('(max-width:1024px)').matches) {
+    pageItemsHidNum = trLength - 5;
+} else {
+    pageItemsHidNum = trLength - 10;
+}
+
+pageWrap.style.width = (pageMove * trLength) - 5 + 'px';
+pagenation[0].classList.add('active');
+pageList.style.left = 0 + 'px';
+let listLeft = 0;
+
+
+pagenation.forEach((el, i) => {
     el.addEventListener('click', function () {
         pagenation.forEach(all => {
             all.classList.remove('active');
         })
         el.classList.add('active');
+
+        tr.forEach(all => {
+            all.classList.remove('active');
+        })
+        for (let z = i * 10; z <= ((i + 1) * 10) - 1; z++) {
+            tr[z].classList.add('active');
+        }
     });
 });
+nextBtn.addEventListener('click', function () {
+    if (parseInt(pageList.style.left) <= -(pageItemsHidNum * pageMove)) {
+        listLeft = -(pageItemsHidNum * pageMove);
+    } else {
+        listLeft -= pageMove;
+    }
+    pageList.style.left = listLeft + 'px';
+
+    if (listLeft <= -(pageItemsHidNum * pageMove)) {
+        nextBtn.style.color = '#BBB';
+    } else {
+        prevBtn.style.color = '#000';
+        nextBtn.style.color = '#000';
+    }
+})
 prevBtn.addEventListener('click', function () {
-    let pageLeft=pageList.style.left;
+    if (parseInt(pageList.style.left) >= 0) {
+        listLeft = 0;
+    } else {
+        listLeft += pageMove;
+    }
+    pageList.style.left = listLeft + 'px';
 
-    pageLeft = (pageLeft-pageMove) + 'px';
-
-    console.log(pageList.style.left);
+    if (listLeft >= 0) {
+        prevBtn.style.color = '#BBB';
+    } else {
+        prevBtn.style.color = '#000';
+        nextBtn.style.color = '#000';
+    }
 })
