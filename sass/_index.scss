@@ -12,11 +12,12 @@ body {
 
         .inner {
             .header2__pc-wrap {
-                h1 {
-                    .logo {
-                        color: #3066E2;
-                        display: block;
-                        font-size: 2.4rem;
+
+                .logo {
+                    color: #3066E2;
+                    display: block;
+
+                    h1 {
                         font-weight: 800;
                     }
                 }
@@ -442,7 +443,7 @@ body {
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-                        opacity:0;
+                        opacity: 0;
 
                         .review-head {
                             min-height: 31rem;
@@ -466,6 +467,7 @@ body {
                                 -webkit-box-orient: vertical;
                                 overflow: hidden;
                                 text-overflow: ellipsis;
+                                max-height: 14.4rem;
                             }
                         }
 

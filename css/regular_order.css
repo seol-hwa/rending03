@@ -11157,7 +11157,7 @@ body {
   width: 1px;
   height: 1px;
   overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
   z-index: -1;
   border: none;
 }
@@ -11377,10 +11377,7 @@ body .side-menu__header .header__top {
   align-items: center;
   justify-content: space-between;
 }
-body .side-menu__header .header__top h1 {
-  display: flex;
-}
-body .side-menu__header .header__top h1 .logo {
+body .side-menu__header .header__top .logo {
   display: block;
   color: #2B333E;
 }

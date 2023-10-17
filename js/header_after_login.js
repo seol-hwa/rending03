@@ -2,9 +2,9 @@ const headerSide=document.querySelector('.side-menu__header');
 
 headerSide.innerHTML=`
 <div class="header__top pt-18 pb-18 pl-24 pr-24 d-flex">
-            <h1>
-                <a href="#" class="logo font-24-b">99 performance</a>
-            </h1>
+            <a href="#" class="logo">
+                <h1 class="font-24-b">99 performance</h1>
+            </a>
             <div class="mobile-menu__btn">
                 <button class="btn__open">
                     <i class="xi-bars xi-2x"></i>

@@ -11157,7 +11157,7 @@ body {
   width: 1px;
   height: 1px;
   overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
   z-index: -1;
   border: none;
 }
@@ -11374,10 +11374,11 @@ body .con-wrap__header2 {
   z-index: 9;
   border-bottom: none;
 }
-body .con-wrap__header2 .inner .header2__pc-wrap h1 .logo {
+body .con-wrap__header2 .inner .header2__pc-wrap .logo {
   color: #3066E2;
   display: block;
-  font-size: 2.4rem;
+}
+body .con-wrap__header2 .inner .header2__pc-wrap .logo h1 {
   font-weight: 800;
 }
 body .con-wrap__header2 .inner .header2__pc-wrap .nav-style-2 .main-list > li:hover {
@@ -11686,6 +11687,7 @@ body main .review-con .inner .review-wrap .review-box .review-head .review-text 
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-height: 14.4rem;
 }
 body main .review-con .inner .review-wrap .review-box .profile-box {
   display: flex;

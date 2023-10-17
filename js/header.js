@@ -3,9 +3,9 @@ const head = document.querySelector('.con-wrap__header2');
 head.innerHTML = `
 <div class="inner">
             <div class="d-flex header2__pc-wrap">
-                <h1>
-                    <a href="" class="logo">99</a>
-                </h1>
+                <a href="" class="logo">
+                    <h1 class="font-24">99</h1>
+                </a>
                 <nav class="nav-style-2">
                     <ul class="main-list">
                         <li>

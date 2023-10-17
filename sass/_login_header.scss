@@ -12,13 +12,9 @@ body {
             align-items: center;
             justify-content: space-between;
 
-            h1 {
-                display: flex;
-
-                .logo {
-                    display: block;
-                    color: #2B333E;
-                }
+            .logo {
+                display: block;
+                color: #2B333E;
             }
 
             .mobile-menu__btn {
@@ -65,7 +61,7 @@ body {
                     >li {
                         .gnb-list__main {
                             align-items: center;
-                            width:100%;
+                            width: 100%;
 
                             &:before {
                                 content: '';
@@ -175,13 +171,13 @@ body {
             height: 100vh;
             visibility: hidden;
             background-color: rgba(0, 0, 0, 0.5);
-            opacity:0;
+            opacity: 0;
             transition: opacity 100ms;
             display: none;
 
             &.active {
                 visibility: visible;
-                opacity:1;
+                opacity: 1;
             }
         }
 
@@ -201,7 +197,7 @@ body {
 
             .profile__info-wrap {
                 align-items: center;
-                border-bottom:1px solid #E0E0E0;
+                border-bottom: 1px solid #E0E0E0;
 
                 .info-wrap__left {
                     .left__img-box {
@@ -233,13 +229,14 @@ body {
             }
 
             .mobile-side__gnb-box {
-                height:calc(100vh - 10rem);
+                height: calc(100vh - 10rem);
                 overflow: auto;
+
                 .gnb-box__mo-gnb-list {
                     >li {
                         .mo-gnb-list__main {
                             align-items: center;
-                            width:100%;
+                            width: 100%;
 
                             &:before {
                                 content: '';
@@ -364,7 +361,7 @@ body {
                 display: none;
             }
 
-            .header__mobile-side-bg{
+            .header__mobile-side-bg {
                 display: block;
             }
 
