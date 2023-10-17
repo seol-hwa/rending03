@@ -11611,149 +11611,114 @@ body .side-menu__header .header__mobile-side .mobile-side__gnb-box .gnb-box__mo-
     display: block;
   }
 }
-body main .log-inner .layout-style-2 .layout .layout-box {
-  background-color: #fff;
-  border-radius: 0.5rem;
-  border: 1px solid #E0E0E0;
-  padding: 5rem 3.5rem 3.5rem;
-  height: 100%;
-}
-body main .log-inner .layout-style-2 .layout .layout-box .wrap-title {
-  color: #333;
-}
-body main .log-inner .layout-style-2 .layout .layout-box .charge-point-wrap .charge-payment label {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #333;
-}
-body main .log-inner .layout-style-2 .layout .layout-box .charge-point-wrap .charge-payment label span {
-  font-size: 1.4rem;
-}
-body main .log-inner .layout-style-2 .layout .layout-box .charge-point-wrap .charge-payment .charge-box {
-  align-items: flex-end;
-  gap: 1rem;
-}
-body main .log-inner .layout-style-2 .layout .layout-box .charge-point-wrap .charge-payment .charge-box input[type=text] {
-  width: calc(100% - 30rem);
-  border-radius: 0.5rem;
-  font-size: 1.6rem;
-  padding: 0.9rem 1rem;
-  text-indent: 1rem;
-}
-body main .log-inner .layout-style-2 .layout .layout-box .charge-point-wrap .charge-payment .charge-box .payment-btn-box {
-  gap: 2rem 1rem;
-}
-body main .log-inner .layout-style-2 .layout .layout-box .charge-point-wrap .charge-payment .charge-box .payment-btn-box .btn {
-  width: 9rem;
-  height: 3.8rem;
-  font-size: 1.4rem;
-  font-weight: 700;
+body main .log-inner .nav-tabs .tab-wrap {
+  background-color: transparent;
   padding: 0;
-  background-color: #fff;
-  color: #2E4491;
   box-shadow: none;
-  border: 1px solid #2E4491;
+}
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .wrap-title {
+  color: #333;
+}
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .option-wrap {
+  margin-bottom: 0;
+}
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .option-wrap .text-change-select {
   border-radius: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: 0;
 }
-body main .log-inner .layout-style-2 .layout .layout-box .charge-point-wrap .charge-payment .charge-box .payment-btn-box .btn:hover {
-  background-color: #2E4491;
-  color: #fff;
-}
-body main .log-inner .layout-style-2 .layout .layout-box .charge-point-wrap .radio-box .form-check-inline {
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .radio-box .form-check-inline {
   margin-right: 3rem;
 }
-body main .log-inner .layout-style-2 .layout .layout-box .charge-point-wrap .radio-box .form-check-inline:last-child {
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .radio-box .form-check-inline:last-child {
   margin-right: 0;
 }
-body main .log-inner .layout-style-2 .layout .layout-box .charge-point-wrap .radio-box .form-check-inline input[type=radio]:checked {
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .radio-box .form-check-inline input[type=radio]:checked {
   background: #fff url(../images/icon/circle-solid-240.png) no-repeat center/1.4rem;
   box-shadow: none;
   border-color: #3066E2;
 }
-body main .log-inner .layout-style-2 .layout .layout-box .charge-point-wrap .radio-box .form-check-inline label {
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .radio-box .form-check-inline label {
   font-size: 1.8rem;
   color: #333;
   font-weight: 700;
 }
-body main .log-inner .layout-style-2 .layout .layout-box .charge-payment-wrap .right__precalc .d-flex {
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap {
+  flex-direction: column;
+  margin-left: auto;
+}
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-total-box .pg-total-money, body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-total-box .pg-total-text, body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-point-box .pg-point-money, body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-point-box .pg-point-text, body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-payment-box .pg-payment-money, body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-payment-box .pg-payment-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  line-height: 1;
+}
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-payment-box {
   justify-content: space-between;
 }
-body main .log-inner .layout-style-2 .layout .layout-box .charge-payment-wrap .right__precalc .d-flex p {
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-payment-box .pg-payment-text {
   color: #999;
-  font-size: 1.8rem;
-  font-weight: 700;
 }
-body main .log-inner .layout-style-2 .layout .layout-box .charge-payment-wrap .right__totalcalc {
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-payment-box .pg-payment-money {
+  color: #999;
+}
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-point-box {
   justify-content: space-between;
 }
-body main .log-inner .layout-style-2 .layout .layout-box .charge-payment-wrap .right__totalcalc p {
-  font-size: 1.8rem;
-  font-weight: 700;
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-point-box .pg-point-text {
+  color: #999;
 }
-body main .log-inner .layout-style-2 .layout .layout-box .charge-payment-wrap .right__totalcalc .totalcal__text {
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-point-box .pg-point-money {
+  color: #999;
+}
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-total-box {
+  justify-content: space-between;
+}
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-total-box .pg-total-text {
   color: #333;
 }
-body main .log-inner .layout-style-2 .layout .layout-box .charge-payment-wrap .right__totalcalc .totalcal__won {
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-total-box .pg-total-money {
   color: #3066E2;
 }
-body main .log-inner .layout-style-2 .layout .layout-box .charge-payment-wrap .btn {
-  border-radius: 0.5rem;
-  background-color: #2E4491;
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-check-box {
+  align-items: center;
+}
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-check-box input[type=checkbox] {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 0.3rem;
+}
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-check-box input[type=checkbox]:checked {
+  background-color: #3066E2;
   box-shadow: none;
-  width: 100%;
-  padding: 2.1rem 0;
+  border-color: #3066E2;
+}
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-check-box label {
+  color: #333333;
+  font-size: 1.6rem;
+}
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-payment-btn {
+  background-color: #2E4491;
+  color: #fff;
   font-size: 1.8rem;
   font-weight: 700;
+  border-radius: 0.5rem;
+  padding: 2.1rem 1rem;
 }
-body main .log-inner .layout-style-2 .layout .layout-box .charge-payment-wrap .btn:hover {
-  background-color: #405cc2;
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pre-box {
+  height: calc(100% - 7.2rem);
+  overflow-y: auto;
 }
-body main .log-inner .layout-style-2 .layout .layout-box .charge-payment-wrap .popup__bg {
-  z-index: 999;
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pre-box pre {
+  color: #333;
+  text-wrap: wrap;
+  display: none;
+  line-height: 1.4;
 }
-body main .log-inner .layout-style-2 .layout .layout-box .charge-payment-wrap .popup__wrap {
-  width: 90vw;
-  z-index: 999;
-  max-width: 80rem;
-  right: 50%;
-  transform: translate(50%, -50%);
-}
-body main .log-inner .layout-style-2 .layout .layout-box .charge-payment-wrap .popup__wrap .btn-d-purple {
-  background-color: #3066E2;
-}
-body main .log-inner .layout-style-2 .layout .layout-box .charge-payment-wrap .popup__wrap .btn-d-purple:hover {
-  background-color: #2c5cce;
+body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pre-box pre.active {
+  display: block;
 }
 
-@media (max-width: 1399px) {
-  body main .log-inner .layout-style-2 .layout {
-    padding: 0;
-  }
-  body main .log-inner .layout-style-2 .layout .layout-box .charge-payment-wrap {
-    margin-top: 5rem;
-  }
-}
-@media (max-width: 1024px) {
-  body main .log-inner .layout-style-2 .layout .layout-box .charge-point-wrap .charge-payment .charge-box {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  body main .log-inner .layout-style-2 .layout .layout-box .charge-point-wrap .charge-payment .charge-box input[type=text] {
-    width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  body main .log-inner .layout-style-2 .layout .layout-box .charge-point-wrap .charge-payment .charge-box .payment-btn-box .btn {
-    width: 7rem;
-    letter-spacing: -1;
-  }
-  body main .log-inner .layout-style-2 .layout .layout-box .charge-point-wrap .radio-box .form-check-inline {
-    display: flex;
-    margin-bottom: 2rem;
-  }
-  body main .log-inner .layout-style-2 .layout .layout-box .charge-point-wrap .radio-box .form-check-inline:last-child {
-    margin-bottom: 0;
-  }
-}
-
-/*# sourceMappingURL=point_charge.css.map */
+/*# sourceMappingURL=program_payment.css.map */

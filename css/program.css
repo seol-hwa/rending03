@@ -11611,6 +11611,11 @@ body .side-menu__header .header__mobile-side .mobile-side__gnb-box .gnb-box__mo-
     display: block;
   }
 }
+body main .log-inner .nav-tabs .tab-wrap {
+  background-color: transparent;
+  padding: 0;
+  box-shadow: none;
+}
 body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top {
   justify-content: space-between;
   border: 1px solid #E0E0E0;
@@ -11637,6 +11642,7 @@ body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top-left .use-date-wrap .u
   text-align: center;
   font-size: 1.8rem;
   line-height: 2;
+  font-weight: 700;
 }
 body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top-left .use-date-wrap .use-date-box input[type=date]::-webkit-calendar-picker-indicator {
   position: absolute;
@@ -11662,6 +11668,7 @@ body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top-left .left-text-wrap .
   line-height: 2;
   text-align: center;
   width: 9rem;
+  font-weight: 700;
 }
 body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top .pg-btn-box {
   gap: 0 1px;
@@ -11672,6 +11679,7 @@ body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top .pg-btn-box .btn {
   font-size: 1.8rem;
   font-weight: 700;
   padding: 2.1rem 6.6rem;
+  line-height: 1;
 }
 body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top .pg-btn-box .btn:hover {
   background-color: #213169;

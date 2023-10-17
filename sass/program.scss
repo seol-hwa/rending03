@@ -7,6 +7,9 @@ body {
 
             .nav-tabs {
                 .tab-wrap {
+                    background-color: transparent;
+                    padding:0;
+                    box-shadow: none;
                     .tab-box {
                         .pg-top {
                             justify-content: space-between;
@@ -35,6 +38,7 @@ body {
                                             text-align: center;
                                             font-size: 1.8rem;
                                             line-height: 2;
+                                            font-weight: 700;
 
                                             &::-webkit-calendar-picker-indicator {
                                                 position: absolute;
@@ -65,6 +69,7 @@ body {
                                             line-height: 2;
                                             text-align: center;
                                             width: 9rem;
+                                            font-weight: 700;
                                         }
                                     }
                                 }
@@ -77,6 +82,7 @@ body {
                                     font-size: 1.8rem;
                                     font-weight: 700;
                                     padding: 2.1rem 6.6rem;
+                                    line-height: 1;
                                     &:hover{
                                         background-color: #213169;
                                     }
