@@ -108,9 +108,11 @@ body {
                                         &:last-child {
                                             margin-bottom: 0;
                                         }
-                                        .form-style{
+
+                                        .form-style {
                                             margin-bottom: 0;
                                             padding: 0 0.5rem 0 0;
+
                                             &:last-child {
                                                 padding: 0 0 0 0.5rem;
                                             }
@@ -141,14 +143,17 @@ body {
                                             font-size: 1.8rem;
                                             font-weight: 700;
                                         }
-                                        input[type=date]{
-                                            position:relative;
-                                            &::before{
-                                                content:attr(data-placeholder);
-                                                width:100%;
-                                                height:100%;
-                                                color:#999;
+
+                                        input[type=date] {
+                                            position: relative;
+
+                                            &::before {
+                                                content: attr(data-placeholder);
+                                                width: 100%;
+                                                height: 100%;
+                                                color: #999;
                                             }
+
                                             &::-webkit-calendar-picker-indicator {
                                                 position: absolute;
                                                 left: 0;
@@ -158,10 +163,11 @@ body {
                                                 background-position: top 40% right 1rem;
                                                 background-size: auto 2rem;
                                                 cursor: pointer;
-                                              }
+                                            }
+
                                             &:valid::before {
                                                 display: none;
-                                              }
+                                            }
                                         }
                                     }
                                 }
@@ -315,21 +321,23 @@ body {
         }
     }
 }
+
 @media (max-width:991px) {
-    body{
-        main{
-            .log-inner{
-                .nav-tabs{
-                    .tab-wrap{
-                        .tab-box{
-                            .layout-style-2{
-                                .layout{
-                                    .layout-box{
-                                        .row{
-                                            .form-style{
-                                                padding:0;
-                                                &:last-child{
-                                                    padding:0;
+    body {
+        main {
+            .log-inner {
+                .nav-tabs {
+                    .tab-wrap {
+                        .tab-box {
+                            .layout-style-2 {
+                                .layout {
+                                    .layout-box {
+                                        .row {
+                                            .form-style {
+                                                padding: 0;
+
+                                                &:last-child {
+                                                    padding: 0;
                                                 }
                                             }
                                         }
@@ -349,14 +357,15 @@ body {
         main {
             .log-inner {
                 .nav-tabs {
-                    .nav-list{
-                        li{
-                            .nav-link{
-                                width:6rem;
-                                height:6rem;
+                    .nav-list {
+                        li {
+                            .nav-link {
+                                width: 6rem;
+                                height: 6rem;
                             }
                         }
                     }
+
                     .tab-wrap {
                         .tab-box {
                             .pt-wrap {
