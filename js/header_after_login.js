@@ -50,7 +50,7 @@ headerSide.innerHTML=`
                         </button>
                         <ul class="gnb-list__sub-list">
                             <li>
-                                <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">프로그램</a>
+                                <a href="program.html" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">프로그램</a>
                             </li>
                         </ul>
                     </li>
@@ -134,7 +134,7 @@ headerSide.innerHTML=`
                         </button>
                         <ul class="gnb-list__mo-sub-list">
                             <li>
-                                <a href="#" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">프로그램</a>
+                                <a href="program.html" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">프로그램</a>
                             </li>
                         </ul>
                     </li>

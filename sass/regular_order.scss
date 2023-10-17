@@ -5,69 +5,69 @@ body {
     main {
         .log-inner {
             .nav-tabs {
-                .nav-list {
-                    overflow-x: auto;
+                // .nav-list {
+                //     overflow-x: auto;
 
-                    li {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        .nav-link {
-                            width: 8rem;
-                            height: 8rem;
-                            border-radius: 1rem;
-                            border: 1px solid #D9D9D9;
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            background-size: cover;
-                            overflow: hidden;
-                            box-shadow: none;
-                            transition: background-image 300ms;
+                //     li {
+                //         display: flex;
+                //         flex-direction: column;
+                //         align-items: center;
+                //         .nav-link {
+                //             width: 8rem;
+                //             height: 8rem;
+                //             border-radius: 1rem;
+                //             border: 1px solid #D9D9D9;
+                //             background-repeat: no-repeat;
+                //             background-position: center;
+                //             background-size: cover;
+                //             overflow: hidden;
+                //             box-shadow: none;
+                //             transition: background-image 300ms;
 
-                            &.select-insta {
-                                background-image: url(../images/insta_off.png);
+                //             &.tabs-insta {
+                //                 background-image: url(../images/insta_off.png);
 
-                                &.active,
-                                &:hover {
-                                    background-image: url(../images/insta_on.png);
-                                }
-                            }
+                //                 &.active,
+                //                 &:hover {
+                //                     background-image: url(../images/insta_on.png);
+                //                 }
+                //             }
 
-                            &.select-youtube {
-                                background-image: url(../images/youtube_off.png);
+                //             &.tabs-youtube {
+                //                 background-image: url(../images/youtube_off.png);
 
-                                &.active,
-                                &:hover {
-                                    background-image: url(../images/youtube_on.png);
-                                }
-                            }
+                //                 &.active,
+                //                 &:hover {
+                //                     background-image: url(../images/youtube_on.png);
+                //                 }
+                //             }
 
-                            &.select-N {
-                                background-image: url(../images/n_off.png);
+                //             &.tabs-N {
+                //                 background-image: url(../images/n_off.png);
 
-                                &.active,
-                                &:hover {
-                                    background-image: url(../images/n_on.png);
-                                }
-                            }
+                //                 &.active,
+                //                 &:hover {
+                //                     background-image: url(../images/n_on.png);
+                //                 }
+                //             }
 
-                            &.select-T {
-                                background-image: url(../images/t_off.png);
+                //             &.tabs-T {
+                //                 background-image: url(../images/t_off.png);
 
-                                &.active,
-                                &:hover {
-                                    background-image: url(../images/t_on.png);
-                                }
-                            }
-                        }
+                //                 &.active,
+                //                 &:hover {
+                //                     background-image: url(../images/t_on.png);
+                //                 }
+                //             }
+                //         }
 
-                        .item__text {
-                            font-size: 1.4rem;
-                            font-weight: 700;
-                            color: #333333;
-                        }
-                    }
-                }
+                //         .item__text {
+                //             font-size: 1.4rem;
+                //             font-weight: 700;
+                //             color: #333333;
+                //         }
+                //     }
+                // }
 
                 .tab-wrap {
                     padding: 0;
