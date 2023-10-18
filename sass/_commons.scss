@@ -18,8 +18,8 @@
     height: 1px;
     overflow: hidden;
     // clip: rect(1px, 1px, 1px, 1px);
-    clip-path:polygon(0 0, 0 0, 0 0, 0 0);
-    -webkit-clip-path:polygon(0 0, 0 0, 0 0, 0 0);
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0);
+    -webkit-clip-path: polygon(0 0, 0 0, 0 0, 0 0);
     z-index: -1;
     border: none;
 }
@@ -209,9 +209,10 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
             &:first-child,
-            &:last-child{
-                .nav-link{
+            &:last-child {
+                .nav-link {
                     border-radius: 1rem;
                     border: 1px solid #d9d9d9;
                 }
@@ -271,6 +272,75 @@
                 font-weight: 700;
                 color: #333333;
             }
+        }
+    }
+
+    @media (max-width:550px) {
+        .nav-list {
+            li {
+                .nav-link {
+                    width: 6rem;
+                    height: 6rem;
+                }
+            }
+        }
+    }
+}
+
+.pd-pagenation-list {
+    li {
+        .pd-pagenation-btn {
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 0;
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+
+        .prev-page {
+            color: #BBB;
+        }
+    }
+
+    .pd-page-wrap {
+        position: relative;
+        max-width: 40rem;
+        height: 3.5rem;
+        overflow: hidden;
+
+        .pd-page-list {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: left 300ms;
+
+            li {
+                .pd-page {
+                    color: #BBB;
+                    border: 1px solid transparent;
+                    border-radius: 0.3rem;
+                    margin-right: 0.5rem;
+
+                    &:hover {
+                        border-color: #bbb;
+                    }
+
+                    &.active {
+                        color: #2185D0;
+                        border-color: #2185D0;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width:1024px) {
+        .pd-page-wrap {
+            max-width: 20rem;
+        }
+    }
+    @media (max-width:500px) {
+        .pd-page-wrap {
+            max-width: 12rem;
         }
     }
 }

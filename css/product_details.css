@@ -11367,6 +11367,58 @@ body {
   font-weight: 700;
   color: #333333;
 }
+@media (max-width: 550px) {
+  .nav-tabs .nav-list li .nav-link {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+
+.pd-pagenation-list li .pd-pagenation-btn {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.pd-pagenation-list li .prev-page {
+  color: #BBB;
+}
+.pd-pagenation-list .pd-page-wrap {
+  position: relative;
+  max-width: 40rem;
+  height: 3.5rem;
+  overflow: hidden;
+}
+.pd-pagenation-list .pd-page-wrap .pd-page-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: left 300ms;
+}
+.pd-pagenation-list .pd-page-wrap .pd-page-list li .pd-page {
+  color: #BBB;
+  border: 1px solid transparent;
+  border-radius: 0.3rem;
+  margin-right: 0.5rem;
+}
+.pd-pagenation-list .pd-page-wrap .pd-page-list li .pd-page:hover {
+  border-color: #bbb;
+}
+.pd-pagenation-list .pd-page-wrap .pd-page-list li .pd-page.active {
+  color: #2185D0;
+  border-color: #2185D0;
+}
+@media (max-width: 1024px) {
+  .pd-pagenation-list .pd-page-wrap {
+    max-width: 20rem;
+  }
+}
+@media (max-width: 500px) {
+  .pd-pagenation-list .pd-page-wrap {
+    max-width: 12rem;
+  }
+}
 
 body {
   overflow-x: hidden;
@@ -11779,41 +11831,6 @@ body main .log-inner .pd-table-box .pd-table .tbody-tr .td div .popup .popup__wr
   height: 5rem;
   font-weight: 700;
 }
-body main .log-inner .pd-table-box .pd-pagenation-list li .pd-pagenation-btn {
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding: 0;
-  width: 3.5rem;
-  height: 3.5rem;
-}
-body main .log-inner .pd-table-box .pd-pagenation-list li .prev-page {
-  color: #BBB;
-}
-body main .log-inner .pd-table-box .pd-pagenation-list .pd-page-wrap {
-  position: relative;
-  max-width: 40rem;
-  height: 3.5rem;
-  overflow: hidden;
-}
-body main .log-inner .pd-table-box .pd-pagenation-list .pd-page-wrap .pd-page-list {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: left 300ms;
-}
-body main .log-inner .pd-table-box .pd-pagenation-list .pd-page-wrap .pd-page-list li .pd-page {
-  color: #BBB;
-  border: 1px solid transparent;
-  border-radius: 0.3rem;
-  margin-right: 0.5rem;
-}
-body main .log-inner .pd-table-box .pd-pagenation-list .pd-page-wrap .pd-page-list li .pd-page:hover {
-  border-color: #bbb;
-}
-body main .log-inner .pd-table-box .pd-pagenation-list .pd-page-wrap .pd-page-list li .pd-page.active {
-  color: #2185D0;
-  border-color: #2185D0;
-}
 
 @media (max-width: 1399px) {
   body main .log-inner .pd-table-box .pd-table .thead {
@@ -11849,9 +11866,6 @@ body main .log-inner .pd-table-box .pd-pagenation-list .pd-page-wrap .pd-page-li
   body main .log-inner .pd-top .pd-search-btn {
     width: 100%;
   }
-  body main .log-inner .pd-table-box .pd-pagenation-list .pd-page-wrap {
-    max-width: 20rem;
-  }
 }
 @media (max-width: 768px) {
   body main .log-inner .pd-table-box .pd-table .tbody-tr .td div .popup .popup__wrap .popup-type-1 .popup--body__text:first-child {
@@ -11882,9 +11896,6 @@ body main .log-inner .pd-table-box .pd-pagenation-list .pd-page-wrap .pd-page-li
   }
   body main .log-inner .pd-table-box .pd-table .tbody-tr .td div .popup .popup__wrap .popup-type-1 .popup--footer .btn {
     max-width: 100%;
-  }
-  body main .log-inner .pd-table-box .pd-pagenation-list .pd-page-wrap {
-    max-width: 12rem;
   }
 }
 

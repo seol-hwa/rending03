@@ -187,24 +187,6 @@ body {
         }
     }
 }
-@media (max-width:550px) {
-    body {
-        main {
-            .log-inner {
-                .nav-tabs {
-                    .nav-list{
-                        li{
-                            .nav-link{
-                                width:6rem;
-                                height:6rem;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 @media (max-width:500px) {
     body {
         main {
