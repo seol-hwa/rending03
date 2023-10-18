@@ -1,8 +1,317 @@
 @import './guide';
 @import './login_header';
 
-body{
-    main{
-        
+body {
+    main {
+        .log-inner {
+
+            .nav-tabs {
+                .tab-wrap {
+                    background-color: transparent;
+                    padding:0;
+                    box-shadow: none;
+                    .tab-box {
+                        .pg-top {
+                            justify-content: space-between;
+                            border: 1px solid #E0E0E0;
+                            border-radius: 0.5rem;
+                            background-color: #fff;
+                            gap: 2rem 0;
+
+                            &-left {
+                                align-items: center;
+                                gap: 2rem 0;
+
+                                .use-date-wrap {
+                                    align-items: center;
+
+                                    label {
+                                        color: #333;
+                                    }
+
+                                    .use-date-box {
+                                        border: 1px solid #c2c2c2;
+                                        border-radius: 0.5rem;
+
+                                        input[type=date] {
+                                            position: relative;
+                                            text-align: center;
+                                            font-size: 1.8rem;
+                                            line-height: 2;
+                                            font-weight: 700;
+
+                                            &::-webkit-calendar-picker-indicator {
+                                                position: absolute;
+                                                left: 0;
+                                                top: 0;
+                                                width: 100%;
+                                                height: 100%;
+                                                opacity: 0;
+                                                cursor: pointer;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .left-text-wrap {
+
+                                    align-items: center;
+                                    label {
+                                        color: #333;
+                                    }
+
+                                    .left-text-box {
+                                        border: 1px solid #c2c2c2;
+                                        border-radius: 0.5rem;
+
+                                        input[type=text] {
+                                            font-size: 1.8rem;
+                                            line-height: 2;
+                                            text-align: center;
+                                            width: 9rem;
+                                            font-weight: 700;
+                                        }
+                                    }
+                                }
+                            }
+                            .pg-btn-box{
+                                gap:0 1px;
+                                .btn{
+                                    background-color: #2E4491;
+                                    box-shadow: none;
+                                    font-size: 1.8rem;
+                                    font-weight: 700;
+                                    padding: 2.1rem 6.6rem;
+                                    line-height: 1;
+                                    &:hover{
+                                        background-color: #213169;
+                                    }
+                                    &:first-child{
+                                        border-radius: 0.5rem 0 0 0.5rem;
+                                    }
+                                    &:last-child{
+                                        border-radius: 0 0.5rem 0.5rem 0;
+                                    }
+                                }
+                            }
+                        }
+
+                        .pg-table-box {
+                            background-color: #fff;
+                            border-radius: 0.5rem;
+                            border: 1px solid #E0E0E0;
+
+                            .pg-table {
+                                .thead {
+                                    background-color: #46607E;
+                                    border-radius: 0.5rem;
+
+                                    &-tr {
+
+                                        .th {
+                                            text-align: center;
+                                            color: #fff;
+                                            font-size: 1.8rem;
+                                            font-weight: 700;
+                                            line-height: 1;
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+
+                                .tbody {
+                                    &-tr {
+                                        border-bottom: 1px solid #E9E9ED;
+                                        align-items: center;
+                                        display: none;
+
+                                        &.active {
+                                            display: flex;
+                                        }
+
+                                        .td {
+                                            text-align: center;
+                                            color: #333;
+                                            font-size: 1.8rem;
+                                            font-weight: 700;
+                                            line-height: 1;
+                                            margin-bottom: 0;
+
+
+                                            &:first-child {
+                                                text-indent: 0;
+                                            }
+
+                                            &:nth-child(3) {
+                                                white-space: nowrap;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                            }
+
+                                            div {
+                                                .pg-info-btn {
+                                                    font-size: 1.8rem;
+                                                    font-weight: 700;
+                                                    background-color: #5EA699;
+
+                                                    &:hover {
+                                                        background-color: #4c867c;
+                                                    }
+                                                }
+
+                                                .popup {
+                                                    .popup__wrap {
+                                                        max-width: 90rem;
+
+                                                        .popup-type-1 {
+                                                            max-width: 100%;
+
+                                                            .popup--header {
+                                                                padding: 5rem 3.5rem 4rem;
+                                                                justify-content: flex-start;
+                                                                position: relative;
+
+                                                                .popup--header__title {
+                                                                    font-size: 2.8rem;
+                                                                    color: #2B333E;
+                                                                }
+
+                                                                .popup__close-btn {
+                                                                    top: 50%;
+                                                                    right: 3.5rem;
+                                                                    transform: translateY(-40%);
+                                                                    color: #8D8D8D;
+                                                                }
+                                                            }
+
+                                                            .popup--body {
+                                                                padding: 0 3.5rem 7.8rem;
+
+                                                                &__text {
+                                                                    display: flex;
+                                                                    font-size: 2.2rem;
+                                                                    font-weight: 700;
+                                                                    border-bottom: 1px solid #EEE;
+                                                                    padding: 2rem 0;
+                                                                    align-items: center;
+                                                                    text-align: left;
+
+                                                                    &:last-child {
+                                                                        border-bottom: none;
+                                                                    }
+
+                                                                    .pg-order-info-name {
+                                                                        width: 10rem;
+                                                                        text-align: left;
+                                                                        margin-right: 5.6rem;
+                                                                        color: #333333;
+                                                                    }
+
+                                                                    .pg-order-info-text {
+                                                                        color: #999;
+                                                                    }
+
+                                                                    .service-state {
+                                                                        width: 9rem;
+                                                                        height: 4rem;
+                                                                        border-radius: 0.5rem;
+                                                                        color: #fff;
+                                                                        font-size: 1.4rem;
+                                                                        background: #000;
+                                                                        line-height: 4rem;
+                                                                        text-align: center;
+
+                                                                        &.pg-complete {
+                                                                            background-color: #4EB770;
+                                                                        }
+
+                                                                        &.pg-proceed {
+                                                                            background-color: #B74E55;
+                                                                        }
+
+                                                                        &.pg-wait {
+                                                                            background-color: #4E72B7;
+                                                                        }
+
+                                                                        &.pg-cancle {
+                                                                            background-color: #9A9A9A;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+
+                                                            .popup--footer {
+                                                                padding: 0 3.5rem 5rem;
+                                                                justify-content: flex-end;
+
+                                                                .btn {
+                                                                    border-radius: 0.5rem;
+                                                                    padding: 0;
+                                                                    max-width: 16rem;
+                                                                    height: 5rem;
+                                                                    font-weight: 700;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .pg-pagenation-list {
+                                li {
+                                    .pg-pagenation-btn {
+                                        font-size: 1.5rem;
+                                        font-weight: 700;
+                                        padding: 0;
+                                        width: 3.5rem;
+                                        height: 3.5rem;
+                                    }
+
+                                    .prev-page {
+                                        color: #BBB;
+                                    }
+                                }
+
+                                .pg-page-wrap {
+                                    position: relative;
+                                    max-width: 40rem;
+                                    height: 3.5rem;
+                                    overflow: hidden;
+
+                                    .pg-page-list {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        transition: left 300ms;
+
+                                        li {
+                                            .pg-page {
+                                                color: #BBB;
+                                                border: 1px solid transparent;
+                                                border-radius: 0.3rem;
+                                                margin-right: 0.5rem;
+
+                                                &:hover {
+                                                    border-color: #bbb;
+                                                }
+
+                                                &.active {
+                                                    color: #2185D0;
+                                                    border-color: #2185D0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
