@@ -63,7 +63,7 @@ def search_results_extract(keyword, target_cnt):
         os.remove('links.txt')
     
     # 로그인
-    print(f'[{keyword}] 해시태그 검색을 시작합니다.')
+    # print(f'[{keyword}] 해시태그 검색을 시작합니다.')
     start = time.time()
     cl = Client()
     cl.login(data.id, data.pw) 
@@ -93,7 +93,7 @@ def search_results_extract(keyword, target_cnt):
     finally:
         # 세션 해지를 위해 로그아웃
         cl.logout()
-        print('로그아웃합니다.')
+        # print('로그아웃합니다.')
         time.sleep(2)
         end = time.time()
         print(f'해시태그 추출 작업시간 : {end-start-2 :.2f} 초')
@@ -137,7 +137,7 @@ def insta_auto_bot(driver, target_cnt):
         
         if cnt < target_cnt:
             cnt += 1
-            random_time = random.randrange(180.0, 300.0)
+            random_time = random.randrange(180, 300)
             print(f'{random_time}초 대기 후 작업을 다시 시작합니다.')
             time.sleep(random_time)
         else:

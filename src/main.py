@@ -7,29 +7,35 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
 # Selenium Drvier 생성
-
 # chromedriver_autoinstaller.install()
 # chrome_path = "C:\\Program Files\\Google\\Chrome\\Application\\Chrome.exe"
 options = webdriver.ChromeOptions()
 options.add_argument("--disable-logging")
 options.add_argument("--disable-blink-features=AutomationControlled")
-options.add_argument("headless")
 options.add_experimental_option("detach", True)
 chrome_service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(options = options, service = chrome_service)
 
 IS_LOGGED_IN = False
-auto_yn = False
-unfollow_yn = True
+auto_yn = True
+unfollow_yn = False
 try: 
     if auto_yn: 
-        keyword_list = ['도시락']
+        # keyword_list = ['맞팔환영']
+        
+        keyword_list = []
+        keyword_input = input('해시태그를 입력해주세요. :')
+        target_cnt = input('추출할 계정의 수를 입력해주세요. (숫자만 입력 가능): ')
+        keyword_list.append(keyword_input)
+        
+        
         for keyword in keyword_list:
             keyword = keyword.replace(" ","")        
-            target_cnt = 100 # 목표 작업 건수       
+            target_cnt = int(target_cnt) # 목표 작업 건수       
             if not IS_LOGGED_IN:
                 insta_auto.insta_login(driver)
                 IS_LOGGED_IN = True
+            
             start = time.time()
             insta_auto.insta_web_work(driver, keyword, target_cnt)
             end = time.time()
@@ -48,7 +54,8 @@ try:
     time.sleep(3)
     driver.quit()
     
-except:
+except Exception as e:
+    print(e)
     print("작업 도중 오류가 발생했습니다.")
     time.sleep(3)
     driver.quit()
