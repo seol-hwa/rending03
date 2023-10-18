@@ -50,6 +50,7 @@ body {
                                     .pg-payment-wrap{
                                         flex-direction: column;
                                         margin-left:auto;
+                                        width:50%;
                                         %fontSet{
                                             font-size: 1.8rem;
                                             font-weight: 700;
@@ -136,6 +137,39 @@ body {
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width:1500px) {
+    body {
+        main {
+            .log-inner {
+                .nav-tabs {
+                    .tab-wrap {
+                        .tab-box {
+                            .layout-style-2 {
+                                .layout {
+                                    .layout-box {
+                                        .pg-payment-wrap {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:1200px) {
+    body{
+        main{
+            .log-inner{
+                
             }
         }
     }
