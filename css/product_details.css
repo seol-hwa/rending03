@@ -70,11 +70,15 @@ ol {
   font-weight: 700;
   font-style: normal;
 }
-body, html {
+body *,
+html * {
   font-family: "Nanum Barun Gothic", sans-serif;
-  font-size: 10px;
 }
 
+body,
+html {
+  font-size: 10px;
+}
 .font-12-bl {
   font-size: 1.2rem;
   line-height: 1;
@@ -11823,6 +11827,9 @@ body main .log-inner .pd-table-box .pd-pagenation-list .pd-page-wrap .pd-page-li
   }
   body main .log-inner .pd-table-box .pd-table .tbody-tr .td {
     text-align: left;
+  }
+  body main .log-inner .pd-table-box .pd-table .tbody-tr .pd-table-turn {
+    display: none;
   }
 }
 @media (max-width: 1024px) {

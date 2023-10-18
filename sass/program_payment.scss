@@ -91,7 +91,7 @@ body {
                                             }
                                         }
                                         .pg-check-box{
-                                            align-items: center;
+                                            align-items: flex-start;
                                             input[type=checkbox]{
                                                 width:2.2rem;
                                                 height:2.2rem;
@@ -105,7 +105,7 @@ body {
                                             label{
                                                 color:#333333;
                                                 font-size: 1.6rem;
-
+                                                line-height: 2.2rem;
                                             }
                                         }
                                         .pg-payment-btn{
@@ -166,10 +166,67 @@ body {
     }
 }
 @media (max-width:1200px) {
-    body{
-        main{
-            .log-inner{
-                
+    body {
+        main {
+            .log-inner {
+                .nav-tabs {
+                    .tab-wrap {
+                        .tab-box {
+                            .layout-style-2 {
+                                .layout {
+                                    &:first-child,
+                                    &:last-child{
+                                        padding:0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:550px) {
+    body {
+        main {
+            .log-inner {
+                .nav-tabs {
+                    .nav-list{
+                        li{
+                            .nav-link{
+                                width:6rem;
+                                height:6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:500px) {
+    body {
+        main {
+            .log-inner {
+                .nav-tabs {
+                    .tab-wrap {
+                        .tab-box {
+                            .layout-style-2 {
+                                .layout {
+                                    .layout-box{
+                                        .radio-box{
+                                            .form-check-inline{
+                                                display: flex;
+                                                margin:0 0 2rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

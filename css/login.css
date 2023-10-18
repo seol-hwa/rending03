@@ -71,11 +71,15 @@ ol {
   font-weight: 700;
   font-style: normal;
 }
-body, html {
+body *,
+html * {
   font-family: "Nanum Barun Gothic", sans-serif;
-  font-size: 10px;
 }
 
+body,
+html {
+  font-size: 10px;
+}
 .font-12-bl {
   font-size: 1.2rem;
   line-height: 1;

@@ -70,11 +70,15 @@ ol {
   font-weight: 700;
   font-style: normal;
 }
-body, html {
+body *,
+html * {
   font-family: "Nanum Barun Gothic", sans-serif;
-  font-size: 10px;
 }
 
+body,
+html {
+  font-size: 10px;
+}
 .font-12-bl {
   font-size: 1.2rem;
   line-height: 1;
@@ -11684,7 +11688,7 @@ body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layou
   color: #3066E2;
 }
 body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-check-box {
-  align-items: center;
+  align-items: flex-start;
 }
 body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-check-box input[type=checkbox] {
   width: 2.2rem;
@@ -11699,6 +11703,7 @@ body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layou
 body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-check-box label {
   color: #333333;
   font-size: 1.6rem;
+  line-height: 2.2rem;
 }
 body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-payment-btn {
   background-color: #2E4491;
@@ -11725,6 +11730,23 @@ body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layou
 @media (max-width: 1500px) {
   body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap {
     width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout:first-child, body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout:last-child {
+    padding: 0;
+  }
+}
+@media (max-width: 550px) {
+  body main .log-inner .nav-tabs .nav-list li .nav-link {
+    width: 6rem;
+    height: 6rem;
+  }
+}
+@media (max-width: 500px) {
+  body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .radio-box .form-check-inline {
+    display: flex;
+    margin: 0 0 2rem;
   }
 }
 
