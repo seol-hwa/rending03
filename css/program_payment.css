@@ -11648,6 +11648,7 @@ body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layou
 body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap {
   flex-direction: column;
   margin-left: auto;
+  width: 50%;
 }
 body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-total-box .pg-total-money, body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-total-box .pg-total-text, body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-point-box .pg-point-money, body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-point-box .pg-point-text, body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-payment-box .pg-payment-money, body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap .pg-payment-box .pg-payment-text {
   font-size: 1.8rem;
@@ -11719,6 +11720,12 @@ body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layou
 }
 body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pre-box pre.active {
   display: block;
+}
+
+@media (max-width: 1500px) {
+  body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pg-payment-wrap {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=program_payment.css.map */
