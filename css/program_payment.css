@@ -11386,7 +11386,7 @@ body {
 }
 .pd-pagenation-list .pd-page-wrap {
   position: relative;
-  max-width: 40rem;
+  max-width: 39.5rem;
   height: 3.5rem;
   overflow: hidden;
 }
@@ -11411,12 +11411,12 @@ body {
 }
 @media (max-width: 1024px) {
   .pd-pagenation-list .pd-page-wrap {
-    max-width: 20rem;
+    max-width: 19.5rem;
   }
 }
 @media (max-width: 500px) {
   .pd-pagenation-list .pd-page-wrap {
-    max-width: 12rem;
+    max-width: 11.5rem;
   }
 }
 

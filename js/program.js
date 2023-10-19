@@ -43,16 +43,14 @@ navBtn.forEach((btn, index) => {
 });
 
 //pagenation
-//20231018추가
 const navLength = navBtn.length;
 const tabBox = document.querySelectorAll('.tab-box');
 const pageList = document.querySelectorAll('.pd-page-list');
 const pageWrap = document.querySelectorAll('.pd-page-wrap');
 
+//pagenation 목록에 따라 갯수 추가
 for (let navNum = 0; navNum < navLength; navNum++) {
-    const trLength = Math.ceil(tabBox[navNum].querySelectorAll('.tbody-tr').length / 10);
-
-    // pageWrap[navNum].style.width = (pageMove * trLength) - 5 + 'px';
+    const trLength = Math.ceil(tabBox[navNum].querySelectorAll('.tbody-tr').length / 10);//추가할 li의 갯수
 
     for (let liNum = 0; liNum < trLength; liNum++) {
         const pageListLi = document.createElement('li');
@@ -63,132 +61,106 @@ for (let navNum = 0; navNum < navLength; navNum++) {
         pageButton.appendChild(pageText);
         pageButton.classList.add('pd-page');
         pageButton.classList.add('pd-pagenation-btn');
+
     }
 }
 const pageItems = document.querySelectorAll('.pd-page-list li');
-const pageMove = pageItems[0].clientWidth;
-// console.log(element);
-//20231018추가 끝
+const pageMove = pageItems[0].clientWidth;//pagenation li 하나의 width값
 
-const prevBtn = document.querySelectorAll('.prev-page');
-const nextBtn = document.querySelectorAll('.next-page');
-// const pageList = document.querySelectorAll('.pd-page-list');
-// const tr = document.querySelectorAll('.tbody-tr');
-// const trLength = Math.ceil(tr.length / 10);
-// for (let pageChildI = 1; pageChildI <= trLength; pageChildI++) {
-//     const pageListLi = document.createElement('li');
-//     const pageButton = document.createElement('button');
-//     const pageText = document.createTextNode(`${pageChildI}`);
-//     pageList[0].appendChild(pageListLi);
-//     pageListLi.appendChild(pageButton);
-//     pageButton.appendChild(pageText);
-//     pageButton.classList.add('pd-page');
-//     pageButton.classList.add('pd-pagenation-btn');
-// }
-const pagenation = document.querySelectorAll('.pd-page');
-// const pageItems = document.querySelectorAll('.pd-page-list li');
-// const pageMove = pageItems[0].clientWidth;
-// const pageWrap = document.querySelectorAll('.pd-page-wrap');
+for (let navNum = 0; navNum < navLength; navNum++) {
+    const pageListWidth = (pageList[navNum].childElementCount * pageMove);
 
-// let pageItemsHidNum;
-// if (window.matchMedia('(max-width:500px)').matches) {
-//     pageItemsHidNum = trLength - 3;
-// } else if (window.matchMedia('(max-width:1024px)').matches) {
-//     pageItemsHidNum = trLength - 5;
-// } else {
-//     pageItemsHidNum = trLength - 10;
-// }
+    pageWrap[navNum].style.width = pageListWidth - 5 + 'px';//pagenation li 갯수에 따른 width 설정
+    pageList[navNum].style.left = 0 + 'px';//pagenation list left 초기값
+}
 
-// pageWrap[0].style.width = (pageMove * trLength) - 5 + 'px';
-// pagenation[0].classList.add('active');
-// pageList[0].style.left = 0 + 'px';
-// let listLeft = 0;
+for (let navNum = 0; navNum < navLength; navNum++) {
+    const trLength = Math.ceil(tabBox[navNum].querySelectorAll('.tbody-tr').length / 10);//추가할 li의 갯수
+    const pagenation = tabBox[navNum].querySelectorAll('.pd-page');
+    const tr = tabBox[navNum].querySelectorAll('.tbody-tr');
+    const prevBtn = tabBox[navNum].querySelector('.prev-page');
+    const nextBtn = tabBox[navNum].querySelector('.next-page');
+    let showNum;//보여줄 pagenation의 갯수
 
+    if(window.matchMedia('(max-width:500px)').matches){
+        //3개
+        showNum=3;
+    }else if(window.matchMedia('(max-width:1024px)').matches){
+        //5개
+        showNum=5;
+    }else{
+        //10개
+        showNum=10;
+    }
+    
+    let listLeft = 0;
+    let endPoint=-((pageList[navNum].childElementCount-showNum) * pageMove);
 
-// pagenation.forEach((el, i) => {
-//     el.addEventListener('click', function () {
-//         pagenation.forEach(all => {
-//             all.classList.remove('active');
-//         })
-//         el.classList.add('active');
+    pageList[navNum].style.left = 0 + 'px';
+    pageList[navNum].querySelectorAll('.pd-pagenation-btn')[0].classList.add('active');
 
-//         tr.forEach(all => {
-//             all.classList.remove('active');
-//         })
-//         for (let z = i * 10; z <= ((i + 1) * 10) - 1; z++) {
-//             tr[z].classList.add('active');
-//         }
-//     });
-// });
+    if(pageList[navNum].childElementCount<=showNum){
+        //page의 갯수가 사이즈별로 10, 5, 3개 보다 적을때
+        nextBtn.style.color = '#BBB';
+    }else{
+        nextBtn.style.color = '#000';
+    }
 
-//20231018수정
-nextBtn.forEach((el, i) => {
-    el.addEventListener('click', function () {
-        if (parseInt(pageList[i].style.left) <= -(pageItemsHidNum * pageMove)) {
-            listLeft = -(pageItemsHidNum * pageMove);
+    nextBtn.addEventListener('click', function () {
+        if (parseInt(pageList[navNum].style.left) <= endPoint) {
+            listLeft = endPoint;
+            if(pageList[navNum].childElementCount<=showNum){
+                listLeft = 0;
+            }
         } else {
             listLeft -= pageMove;
         }
-        pageList[i].style.left = listLeft + 'px';
+        pageList[navNum].style.left = listLeft + 'px';
 
-        if (listLeft <= -(pageItemsHidNum * pageMove)) {
-            el.style.color = '#BBB';
-        } else {
-            prevBtn[i].style.color = '#000';
-            el.style.color = '#000';
+        if(pageList[navNum].childElementCount>showNum){
+            prevBtn.style.color = '#000';
+            if (listLeft <= endPoint) {
+                //pagelist의 끝번호가 보일때
+                nextBtn.style.color = '#BBB';
+            } else {
+                nextBtn.style.color = '#000';
+            }
         }
-    })
-})
-//20231018수정 끝
+        
+    });
+    prevBtn.addEventListener('click', function () {
+        if (parseInt(pageList[navNum].style.left) >= 0) {
+            listLeft = 0;
+        } else {
+            listLeft += pageMove;
+        }
+        pageList[navNum].style.left = listLeft + 'px';
 
-// nextBtn.addEventListener('click', function () {
-//     if (parseInt(pageList.style.left) <= -(pageItemsHidNum * pageMove)) {
-//         listLeft = -(pageItemsHidNum * pageMove);
-//     } else {
-//         listLeft -= pageMove;
-//     }
-//     pageList.style.left = listLeft + 'px';
+        if(pageList[navNum].childElementCount>showNum){
+            nextBtn.style.color = '#000';
+            if (listLeft >= 0) {
+                //pagelist의 첫번호가 보일때
+                prevBtn.style.color = '#BBB';
+            } else {
+                prevBtn.style.color = '#000';
+            }
+        }
+    });
 
-//     if (listLeft <= -(pageItemsHidNum * pageMove)) {
-//         nextBtn.style.color = '#BBB';
-//     } else {
-//         prevBtn.style.color = '#000';
-//         nextBtn.style.color = '#000';
-//     }
-// })
+    for (let liNum = 0; liNum < trLength; liNum++) {
 
-//20231018수정
-// prevBtn.forEach((el, i) => {
-//     el.addEventListener('click', function () {
-//         if (parseInt(pageList[i].style.left) >= 0) {
-//             listLeft = 0;
-//         } else {
-//             listLeft += pageMove;
-//         }
-//         pageList[i].style.left = listLeft + 'px';
+        pagenation[liNum].addEventListener('click', function () {
+            pagenation.forEach(all => {
+                all.classList.remove('active');
+            })
+            pagenation[liNum].classList.add('active');
 
-//         if (listLeft >= 0) {
-//             el.style.color = '#BBB';
-//         } else {
-//             el.style.color = '#000';
-//             nextBtn[i].style.color = '#000';
-//         }
-//     })
-// })
-//20231018수정 끝
-
-// prevBtn.addEventListener('click', function () {
-//     if (parseInt(pageList.style.left) >= 0) {
-//         listLeft = 0;
-//     } else {
-//         listLeft += pageMove;
-//     }
-//     pageList.style.left = listLeft + 'px';
-
-//     if (listLeft >= 0) {
-//         prevBtn.style.color = '#BBB';
-//     } else {
-//         prevBtn.style.color = '#000';
-//         nextBtn.style.color = '#000';
-//     }
-// })
+            tr.forEach(all => {
+                all.classList.remove('active');
+            })
+            for (let z = liNum * 10; z <= ((liNum + 1) * 10) - 1; z++) {
+                tr[z].classList.add('active');
+            }
+        });
+    }
+}

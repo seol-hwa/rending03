@@ -11386,7 +11386,7 @@ body {
 }
 .pd-pagenation-list .pd-page-wrap {
   position: relative;
-  max-width: 40rem;
+  max-width: 39.5rem;
   height: 3.5rem;
   overflow: hidden;
 }
@@ -11411,12 +11411,12 @@ body {
 }
 @media (max-width: 1024px) {
   .pd-pagenation-list .pd-page-wrap {
-    max-width: 20rem;
+    max-width: 19.5rem;
   }
 }
 @media (max-width: 500px) {
   .pd-pagenation-list .pd-page-wrap {
-    max-width: 12rem;
+    max-width: 11.5rem;
   }
 }
 
@@ -11681,10 +11681,12 @@ body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top {
 }
 body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top-left {
   align-items: center;
-  gap: 2rem 0;
+  gap: 2rem 5rem;
+  flex-wrap: wrap;
 }
 body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top-left .use-date-wrap {
   align-items: center;
+  gap: 1rem 3rem;
 }
 body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top-left .use-date-wrap label {
   color: #333;
@@ -11712,6 +11714,7 @@ body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top-left .use-date-wrap .u
 }
 body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top-left .left-text-wrap {
   align-items: center;
+  gap: 1rem 3rem;
 }
 body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top-left .left-text-wrap label {
   color: #333;
@@ -11729,7 +11732,7 @@ body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top-left .left-text-wrap .
   color: #333;
 }
 body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top .pg-btn-box {
-  gap: 0 1px;
+  gap: 1px 1px;
 }
 body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top .pg-btn-box .btn {
   background-color: #2E4491;
@@ -11738,6 +11741,7 @@ body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top .pg-btn-box .btn {
   font-weight: 700;
   padding: 2.1rem 6.6rem;
   line-height: 1;
+  text-align: center;
 }
 body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top .pg-btn-box .btn:hover {
   background-color: #213169;
@@ -11791,6 +11795,32 @@ body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-table-box .pg-table .tbody
 }
 body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-table-box .pg-table .tbody-tr .td .new-version-download-btn {
   color: #333;
+}
+
+@media (max-width: 1399px) {
+  body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1199px) {
+  body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-table-box .pg-table .thead {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top-left .use-date-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top-left .use-date-wrap .use-date-box input[type=date] {
+    width: calc(50% - 7px);
+  }
+  body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top-left .pg-btn-box {
+    flex-direction: column;
+  }
+  body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top-left .pg-btn-box .btn:first-child, body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-top-left .pg-btn-box .btn:last-child {
+    border-radius: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=program.css.map */

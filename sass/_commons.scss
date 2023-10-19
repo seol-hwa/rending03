@@ -304,7 +304,7 @@
 
     .pd-page-wrap {
         position: relative;
-        max-width: 40rem;
+        max-width: 39.5rem;
         height: 3.5rem;
         overflow: hidden;
 
@@ -335,12 +335,12 @@
     }
     @media (max-width:1024px) {
         .pd-page-wrap {
-            max-width: 20rem;
+            max-width: 19.5rem;
         }
     }
     @media (max-width:500px) {
         .pd-page-wrap {
-            max-width: 12rem;
+            max-width: 11.5rem;
         }
     }
 }

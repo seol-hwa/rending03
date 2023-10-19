@@ -8,8 +8,9 @@ body {
             .nav-tabs {
                 .tab-wrap {
                     background-color: transparent;
-                    padding:0;
+                    padding: 0;
                     box-shadow: none;
+
                     .tab-box {
                         .pg-top {
                             justify-content: space-between;
@@ -20,10 +21,12 @@ body {
 
                             &-left {
                                 align-items: center;
-                                gap: 2rem 0;
+                                gap: 2rem 5rem;
+                                flex-wrap: wrap;
 
                                 .use-date-wrap {
                                     align-items: center;
+                                    gap: 1rem 3rem;
 
                                     label {
                                         color: #333;
@@ -39,7 +42,7 @@ body {
                                             font-size: 1.8rem;
                                             line-height: 2;
                                             font-weight: 700;
-                                            color:#333;
+                                            color: #333;
 
                                             &::-webkit-calendar-picker-indicator {
                                                 position: absolute;
@@ -57,6 +60,8 @@ body {
                                 .left-text-wrap {
 
                                     align-items: center;
+                                    gap: 1rem 3rem;
+
                                     label {
                                         color: #333;
                                     }
@@ -71,27 +76,33 @@ body {
                                             text-align: center;
                                             width: 9rem;
                                             font-weight: 700;
-                                            color:#333;
+                                            color: #333;
                                         }
                                     }
                                 }
                             }
-                            .pg-btn-box{
-                                gap:0 1px;
-                                .btn{
+
+                            .pg-btn-box {
+                                gap: 1px 1px;
+
+                                .btn {
                                     background-color: #2E4491;
                                     box-shadow: none;
                                     font-size: 1.8rem;
                                     font-weight: 700;
                                     padding: 2.1rem 6.6rem;
                                     line-height: 1;
-                                    &:hover{
+                                    text-align: center;
+
+                                    &:hover {
                                         background-color: #213169;
                                     }
-                                    &:first-child{
+
+                                    &:first-child {
                                         border-radius: 0.5rem 0 0 0.5rem;
                                     }
-                                    &:last-child{
+
+                                    &:last-child {
                                         border-radius: 0 0.5rem 0.5rem 0;
                                     }
                                 }
@@ -150,61 +161,14 @@ body {
                                                 text-overflow: ellipsis;
                                             }
 
-                                            .new-version-download-btn{
-                                                color:#333;
+                                            .new-version-download-btn {
+                                                color: #333;
                                             }
                                         }
                                     }
                                 }
                             }
 
-                            // .pg-pagenation-list {
-                            //     li {
-                            //         .pg-pagenation-btn {
-                            //             font-size: 1.5rem;
-                            //             font-weight: 700;
-                            //             padding: 0;
-                            //             width: 3.5rem;
-                            //             height: 3.5rem;
-                            //         }
-
-                            //         .prev-page {
-                            //             color: #BBB;
-                            //         }
-                            //     }
-
-                            //     .pg-page-wrap {
-                            //         position: relative;
-                            //         max-width: 40rem;
-                            //         height: 3.5rem;
-                            //         overflow: hidden;
-
-                            //         .pg-page-list {
-                            //             position: absolute;
-                            //             top: 0;
-                            //             left: 0;
-                            //             transition: left 300ms;
-
-                            //             li {
-                            //                 .pg-page {
-                            //                     color: #BBB;
-                            //                     border: 1px solid transparent;
-                            //                     border-radius: 0.3rem;
-                            //                     margin-right: 0.5rem;
-
-                            //                     &:hover {
-                            //                         border-color: #bbb;
-                            //                     }
-
-                            //                     &.active {
-                            //                         color: #2185D0;
-                            //                         border-color: #2185D0;
-                            //                     }
-                            //                 }
-                            //             }
-                            //         }
-                            //     }
-                            // }
                         }
                     }
                 }
@@ -212,5 +176,98 @@ body {
         }
     }
 }
+
 @media (max-width:1399px) {
+    body {
+        main {
+            .log-inner {
+
+                .nav-tabs {
+                    .tab-wrap {
+                        .tab-box {
+                            .pg-top {
+                                flex-direction: column;
+
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1199px) {
+    body {
+        main {
+            .log-inner {
+
+                .nav-tabs {
+                    .tab-wrap {
+                        .tab-box {
+
+                            .pg-table-box {
+
+                                .pg-table {
+                                    .thead {
+                                        display: none;
+
+                                    }
+
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:500px) {
+    body {
+        main {
+            .log-inner {
+
+                .nav-tabs {
+                    .tab-wrap {
+                        .tab-box {
+                            .pg-top {
+
+                                &-left {
+
+                                    .use-date-wrap {
+                                        flex-direction: column;
+                                        align-items: flex-start;
+
+                                        .use-date-box {
+                                            input[type=date] {
+                                                width: calc(50% - 7px);
+                                            }
+                                        }
+                                    }
+
+
+                                    .pg-btn-box {
+                                        flex-direction: column;
+
+                                        .btn {
+
+                                            &:first-child,
+                                            &:last-child {
+                                                border-radius: 0.5rem;
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
