@@ -82,34 +82,34 @@ for (let navNum = 0; navNum < navLength; navNum++) {
     const nextBtn = tabBox[navNum].querySelector('.next-page');
     let showNum;//보여줄 pagenation의 갯수
 
-    if(window.matchMedia('(max-width:500px)').matches){
+    if (window.matchMedia('(max-width:500px)').matches) {
         //3개
-        showNum=3;
-    }else if(window.matchMedia('(max-width:1024px)').matches){
+        showNum = 3;
+    } else if (window.matchMedia('(max-width:1024px)').matches) {
         //5개
-        showNum=5;
-    }else{
+        showNum = 5;
+    } else {
         //10개
-        showNum=10;
+        showNum = 10;
     }
-    
+
     let listLeft = 0;
-    let endPoint=-((pageList[navNum].childElementCount-showNum) * pageMove);
+    let endPoint = -((pageList[navNum].childElementCount - showNum) * pageMove);
 
     pageList[navNum].style.left = 0 + 'px';
     pageList[navNum].querySelectorAll('.pd-pagenation-btn')[0].classList.add('active');
 
-    if(pageList[navNum].childElementCount<=showNum){
+    if (pageList[navNum].childElementCount <= showNum) {
         //page의 갯수가 사이즈별로 10, 5, 3개 보다 적을때
         nextBtn.style.color = '#BBB';
-    }else{
+    } else {
         nextBtn.style.color = '#000';
     }
 
     nextBtn.addEventListener('click', function () {
         if (parseInt(pageList[navNum].style.left) <= endPoint) {
             listLeft = endPoint;
-            if(pageList[navNum].childElementCount<=showNum){
+            if (pageList[navNum].childElementCount <= showNum) {
                 listLeft = 0;
             }
         } else {
@@ -117,7 +117,7 @@ for (let navNum = 0; navNum < navLength; navNum++) {
         }
         pageList[navNum].style.left = listLeft + 'px';
 
-        if(pageList[navNum].childElementCount>showNum){
+        if (pageList[navNum].childElementCount > showNum) {
             prevBtn.style.color = '#000';
             if (listLeft <= endPoint) {
                 //pagelist의 끝번호가 보일때
@@ -126,7 +126,7 @@ for (let navNum = 0; navNum < navLength; navNum++) {
                 nextBtn.style.color = '#000';
             }
         }
-        
+
     });
     prevBtn.addEventListener('click', function () {
         if (parseInt(pageList[navNum].style.left) >= 0) {
@@ -136,7 +136,7 @@ for (let navNum = 0; navNum < navLength; navNum++) {
         }
         pageList[navNum].style.left = listLeft + 'px';
 
-        if(pageList[navNum].childElementCount>showNum){
+        if (pageList[navNum].childElementCount > showNum) {
             nextBtn.style.color = '#000';
             if (listLeft >= 0) {
                 //pagelist의 첫번호가 보일때
