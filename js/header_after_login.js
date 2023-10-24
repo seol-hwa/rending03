@@ -81,10 +81,10 @@ headerSide.innerHTML=`
                                 <a href="point_charge.html" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">포인트충전</a>
                             </li>
                             <li>
-                                <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">1:1문의</a>
+                                <a href="qna.html" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">1:1문의</a>
                             </li>
                             <li>
-                                <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">FAQ</a>
+                                <a href="faq.html" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">FAQ</a>
                             </li>
                         </ul>
                     </li>
@@ -165,10 +165,10 @@ headerSide.innerHTML=`
                                 <a href="point_charge.html" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">포인트충전</a>
                             </li>
                             <li>
-                                <a href="#" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">1:1문의</a>
+                                <a href="qna.html" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">1:1문의</a>
                             </li>
                             <li>
-                                <a href="#" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">FAQ</a>
+                                <a href="faq.html" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">FAQ</a>
                             </li>
                         </ul>
                     </li>

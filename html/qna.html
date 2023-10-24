@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>프로그램</title>
+    <title>99MONSTER</title>
     <!--xeicon cdn-->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!--style css-->
-    <link rel="stylesheet" href="../css/program_payment.css">
+    <link rel="stylesheet" href="../css/commons.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <!--swiper cdn-->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -23,7 +24,67 @@
     <header class="side-menu__header"></header>
     <main>
         <div class="log-inner">
-
+            <div class="page-title-box boundary">
+                <h2 class="page-title">1:1문의</h2>
+            </div>
+            <div class="qna-wrap">
+                <h3 class="wrap-title font-28-b">문의하기</h3>
+                <form action="" method="" class="qna-box">
+                    <div class="row qna-row">
+                        <div class="col-xxl-5 col-12 qna-category">
+                            <div class="form-style">
+                                <label for="inputSelect1">문의유형</label>
+                                <select id="inputSelect1" required>
+                                    <option value="" selected>선택</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xxl-7 col-12 qna-email">
+                            <div class="form-style">
+                                <label for="nameFormNone">답변 이메일</label>
+                                <div class="d-flex email-box">
+                                    <input type="text" id="nameFormNone" required>
+                                    @
+                                    <input type="text" id="nameFormNone" placeholder="example.com" required>
+                                    <select id="nameFormNone">
+                                        <option value="" selected>직접 입력</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="hanmail.net">hanmail.net</option>
+                                        <option value="gmail.com">gmail.com</option>
+                                        <option value="nate.com">nate.com</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qna-title">
+                        <div class="form-style">
+                            <label for="nameFormTitle">제목</label>
+                            <input type="text" id="nameFormTitle" placeholder="제목을 입력해주세요. (최대 100자 이내)"
+                                maxlength="100">
+                        </div>
+                    </div>
+                    <div class="qna-detail">
+                        <div class="form-style">
+                            <label for="nameFormDetail">문의내용</label>
+                            <textarea id="nameFormDetail" placeholder="문의 내용을 작성해주세요. (최대 1000자 이내)" maxlength="1000"></textarea>
+                        </div>
+                    </div>
+                    <div class="qna-file">
+                        <!--파일첨부-->
+                        <input placeholder="첨부파일">
+                        <input type="file" multiple>
+                    </div>
+                    <div class="form-check d-flex qna-check-box">
+                        <input type="checkbox" id="check-g-1">
+                        <label for="check-g-1">개인 정보 수집 및 이용에 동의합니다.</label>
+                    </div>
+                    <button class="btn btn-d-dark qna-btn d-flex-all-center">문의하기</button>
+                </form>
+            </div>
         </div>
     </main>
     <footer></footer>

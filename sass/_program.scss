@@ -1,6 +1,3 @@
-@import './guide';
-@import './login_header';
-
 body {
     main {
         .log-inner {
@@ -249,16 +246,16 @@ body {
                                         }
                                     }
 
+                                }
 
-                                    .pg-btn-box {
-                                        flex-direction: column;
+                                .pg-btn-box {
+                                    flex-direction: column;
 
-                                        .btn {
+                                    .btn {
 
-                                            &:first-child,
-                                            &:last-child {
-                                                border-radius: 0.5rem;
-                                            }
+                                        &:first-child,
+                                        &:last-child {
+                                            border-radius: 0.5rem;
                                         }
                                     }
                                 }

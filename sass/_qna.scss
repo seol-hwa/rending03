@@ -1,0 +1,353 @@
+body {
+    main {
+        .log-inner {
+            .qna-wrap {
+                background-color: #fff;
+                padding: 5rem 3.5rem;
+                border-radius: 0.5rem;
+                border: 1px solid #E0E0E0;
+                margin-bottom: 28rem;
+
+                .wrap-title {
+                    color: #333;
+                }
+
+                .qna-box {
+                    margin-top: 6rem;
+
+                    .qna-row {
+                        gap: 5rem 0;
+
+                        .qna-category {
+                            padding: 0 2.5rem 0 0;
+
+                            .form-style {
+                                label {
+                                    color: #333;
+                                    font-size: 1.8rem;
+                                    font-weight: bold;
+                                    position: relative;
+
+                                    &:after {
+                                        content: '';
+                                        width: 4px;
+                                        height: 4px;
+                                        border-radius: 50%;
+                                        background-color: #F41616;
+                                        display: block;
+                                        position: absolute;
+                                        top: -4px;
+                                        right: -4px;
+                                    }
+                                }
+
+                                select {
+                                    margin-top: 2rem;
+                                    font-size: 1.4rem;
+                                    color: #333;
+                                    font-weight: bold;
+                                    border-radius: 0.5rem;
+                                    padding: 1.2rem 2rem;
+                                }
+                            }
+                        }
+
+                        .qna-email {
+                            padding: 0 0 0 2.5rem;
+
+                            .form-style {
+                                label {
+                                    color: #333;
+                                    font-size: 1.8rem;
+                                    font-weight: bold;
+                                    position: relative;
+
+                                    &:after {
+                                        content: '';
+                                        width: 4px;
+                                        height: 4px;
+                                        border-radius: 50%;
+                                        background-color: #F41616;
+                                        display: block;
+                                        position: absolute;
+                                        top: -4px;
+                                        right: -4px;
+                                    }
+                                }
+
+                                .email-box {
+                                    align-items: center;
+                                    margin-top: 2rem;
+                                    gap: 1.2rem;
+                                    flex-wrap: wrap;
+
+                                    input[type=text],
+                                    select {
+                                        margin-top: 0;
+                                        font-size: 1.4rem;
+                                        color: #333;
+                                        font-weight: bold;
+                                        border-radius: 0.5rem;
+                                        padding: 1.2rem 2rem;
+                                    }
+
+                                    input[type=text] {
+                                        width: calc((70% - 3.9rem) / 2);
+                                    }
+
+                                    select {
+                                        width: calc(30% - 1.2rem);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .qna-title {
+                        margin-top: 3.4rem;
+
+                        .form-style {
+                            label {
+                                color: #333;
+                                font-size: 1.8rem;
+                                font-weight: bold;
+                                position: relative;
+
+                                &:after {
+                                    content: '';
+                                    width: 4px;
+                                    height: 4px;
+                                    border-radius: 50%;
+                                    background-color: #F41616;
+                                    display: block;
+                                    position: absolute;
+                                    top: -4px;
+                                    right: -4px;
+                                }
+                            }
+
+                            input[type=text] {
+                                margin-top: 0;
+                                font-size: 1.4rem;
+                                color: #333;
+                                font-weight: bold;
+                                border-radius: 0.5rem;
+                                padding: 1.2rem 2rem;
+                                margin-top: 2rem;
+                            }
+                        }
+                    }
+
+                    .qna-detail {
+                        margin-top: 3.4rem;
+
+                        .form-style {
+                            label {
+                                color: #333;
+                                font-size: 1.8rem;
+                                font-weight: bold;
+                                position: relative;
+
+                                &:after {
+                                    content: '';
+                                    width: 4px;
+                                    height: 4px;
+                                    border-radius: 50%;
+                                    background-color: #F41616;
+                                    display: block;
+                                    position: absolute;
+                                    top: -4px;
+                                    right: -4px;
+                                }
+                            }
+
+                            textarea {
+                                display: block;
+                                margin-top: 0;
+                                font-size: 1.4rem;
+                                color: #333;
+                                font-weight: bold;
+                                border-radius: 0.5rem;
+                                padding: 1.2rem 2rem;
+                                margin-top: 2rem;
+                                min-height: 20rem;
+                                // writing-mode:  !important;
+                                border: 1px solid #e0e0e0;
+                                width: 100%;
+                                resize: none;
+
+                                &::placeholder {
+                                    color: #ccc;
+                                    transition: 300ms;
+                                }
+
+                                &:focus {
+                                    border-color: #8592a3;
+                                    box-shadow: 0 0 2.5px 0.5px rgba(133, 146, 163, 0.1);
+
+                                    &::placeholder {
+                                        text-indent: 0.8rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // .qna-file {
+                    //     input[type=file] {
+                    //         // color:transparent;
+                    //         // content:'none';
+                    //     }
+                    // }
+
+                    .qna-check-box {
+                        align-items: flex-start;
+                        margin: 5rem 0 0 0;
+                        justify-content: flex-end;
+
+                        input[type=checkbox] {
+                            width: 2.2rem;
+                            height: 2.2rem;
+                            border-radius: 0.3rem;
+
+                            &:checked {
+                                background-color: #3066E2;
+                                box-shadow: none;
+                                border-color: #3066E2;
+                            }
+                        }
+
+                        label {
+                            color: #333333;
+                            font-size: 1.6rem;
+                            line-height: 2.2rem;
+                            word-break: keep-all;
+                        }
+                    }
+
+                    .qna-btn {
+                        margin: 4.8rem 0 0 auto;
+                        border-radius: 0.5rem;
+                        background-color: #2E4491;
+                        font-size: 1.8rem;
+                        font-weight: bold;
+                        padding: 0;
+                        width: 100%;
+                        max-width: 30.5rem;
+                        height: 6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1399px) {
+    body {
+        main {
+            .log-inner {
+                .qna-wrap {
+                    .qna-box {
+                        .qna-row {
+                            .qna-category {
+                                padding: 0;
+                            }
+
+                            .qna-email {
+                                padding: 0;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    body {
+        main {
+            .log-inner {
+                .qna-wrap {
+                    .qna-box {
+                        .qna-row {
+
+                            .qna-category,
+                            .qna-email {
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:768px) {
+    body {
+        main {
+            .log-inner {
+                .qna-wrap {
+                    .qna-box {
+                        .qna-row {
+                            .qna-email {
+
+                                .form-style {
+                                    .email-box {
+                                        input[type=text] {
+                                            &:first-child {
+                                                width: 100%;
+                                            }
+
+                                            &:nth-child(2) {
+                                                width: calc((100% - 3.9rem) / 2);
+                                            }
+                                        }
+
+                                        select {
+                                            width: calc((100% - 3.9rem) / 2);
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:768px) {
+    body {
+        main {
+            .log-inner {
+                .qna-wrap {
+                    .qna-box {
+                        .qna-row {
+                            .qna-email {
+
+                                .form-style {
+                                    .email-box {
+                                        input[type=text] {
+
+                                            &:nth-child(2) {
+                                                width: calc(100% - 2.7rem);
+                                            }
+                                        }
+
+                                        select {
+                                            width: 100%;
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

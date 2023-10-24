@@ -1,6 +1,3 @@
-@import './guide';
-@import './login_header';
-
 body {
     main {
         .log-inner {
@@ -164,7 +161,7 @@ body {
     }
 }
 
-@media (max-width:1399px) {
+@media (max-width:1199px) {
     body {
         main {
             .log-inner {

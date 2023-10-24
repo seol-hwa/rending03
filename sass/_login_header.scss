@@ -100,7 +100,14 @@ body {
                         &:nth-child(1) {
                             .gnb-list__main {
                                 &:before {
-                                    background-image: url(../images/icon/cart.svg);
+                                    background-image: url(../images/icon/cart_b.svg);
+                                }
+                            }
+                            &.active{
+                                .gnb-list__main{
+                                    &:before{
+                                        background-image:url(../images/icon/cart.svg);
+                                    }
                                 }
                             }
                         }
@@ -111,6 +118,13 @@ body {
                                     background-image: url(../images/icon/set.svg);
                                 }
                             }
+                            &.active{
+                                .gnb-list__main{
+                                    &:before{
+                                        background-image:url(../images/icon/set_w.svg);
+                                    }
+                                }
+                            }
                         }
 
                         &:nth-child(3) {
@@ -119,12 +133,26 @@ body {
                                     background-image: url(../images/icon/box.svg);
                                 }
                             }
+                            &.active{
+                                .gnb-list__main{
+                                    &:before{
+                                        background-image:url(../images/icon/box_w.svg);
+                                    }
+                                }
+                            }
                         }
 
                         &:nth-child(4) {
                             .gnb-list__main {
                                 &:before {
                                     background-image: url(../images/icon/myp.svg);
+                                }
+                            }
+                            &.active{
+                                .gnb-list__main{
+                                    &:before{
+                                        background-image:url(../images/icon/myp_w.svg);
+                                    }
                                 }
                             }
                         }
@@ -340,7 +368,7 @@ body {
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:1024px) {
     body {
         .side-menu__header {
             .header__top {
