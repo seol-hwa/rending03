@@ -2061,11 +2061,13 @@ body main .log-inner .faq-wrap .faq-box .faq-tabs .faq-tab-wrap {
 body main .log-inner .faq-wrap .faq-box .faq-tabs .faq-tab-wrap .tab-box {
   display: block;
   visibility: hidden;
+  opacity: 0;
   height: 0;
 }
 body main .log-inner .faq-wrap .faq-box .faq-tabs .faq-tab-wrap .tab-box.active {
   visibility: visible;
   height: auto;
+  opacity: 1;
 }
 body main .log-inner .faq-wrap .faq-box .faq-tabs .faq-tab-wrap .tab-box .accordion .accordion-item {
   border: 1px solid #E0E0E0;

@@ -44,10 +44,12 @@ body {
                             .tab-box {
                                 display: block;
                                 visibility: hidden;
+                                opacity:0;
                                 height:0;
                                 &.active{
                                     visibility: visible;
                                     height:auto;
+                                    opacity:1;
                                 }
                                 .accordion {
                                     .accordion-item {
