@@ -30,8 +30,8 @@ activeMoSubList.style.height = moSubHeight * j2 + 'px';
 //tabs
 const navBtn=document.querySelectorAll('.nav-tabs .nav-link');
 const textBox=document.querySelectorAll('.nav-tabs .tab-box');
-const navBtn2=document.querySelectorAll('.nav-fill .nav-link');
-const textBox2=document.querySelectorAll('.nav-fill .tab-box');
+// const navBtn2=document.querySelectorAll('.nav-fill .nav-link');
+// const textBox2=document.querySelectorAll('.nav-fill .tab-box');
 
 navBtn.forEach((btn, index)=>{
     btn.addEventListener('click',function(){
@@ -43,30 +43,31 @@ navBtn.forEach((btn, index)=>{
             all.classList.remove('active');
         });
         textBox[index].classList.add('active');
+
     });
 });
 
-navBtn2.forEach((btn, index)=>{
-    btn.addEventListener('click',function(){
-        navBtn2.forEach(all=>{
-            all.classList.remove('active');
-        });
-        this.classList.add('active');
-        textBox2.forEach(all=>{
-            all.classList.remove('active');
-        });
-        textBox2[index].classList.add('active');
-    });
-});
+// navBtn2.forEach((btn, index)=>{
+//     btn.addEventListener('click',function(){
+//         navBtn2.forEach(all=>{
+//             all.classList.remove('active');
+//         });
+//         this.classList.add('active');
+//         textBox2.forEach(all=>{
+//             all.classList.remove('active');
+//         });
+//         textBox2[index].classList.add('active');
+//     });
+// });
 
 //accodion
 const iconAcd = document.querySelectorAll('.accordion .accordion-item');
 const iconAcdBtn = document.querySelectorAll('.accordion .accordion-head');
 const iconAcdBody = document.querySelectorAll('.accordion .accordion-body');
 
-const noIconAcd=document.querySelectorAll('.accordion-simple .accordion-item');
-const noIconAcdBtn=document.querySelectorAll('.accordion-simple .accordion-head');
-const noIconAcdBody=document.querySelectorAll('.accordion-simple .accordion-body');
+// const noIconAcd=document.querySelectorAll('.accordion-simple .accordion-item');
+// const noIconAcdBtn=document.querySelectorAll('.accordion-simple .accordion-head');
+// const noIconAcdBody=document.querySelectorAll('.accordion-simple .accordion-body');
 
 const acdText = document.querySelectorAll('.accordion-text');
 const acdBody= document.querySelectorAll('.accordion-body');
@@ -79,9 +80,9 @@ window.addEventListener('resize',function(){
     acdBody.forEach((item,index) => {
         item.style.height=acdText[index].offsetHeight+'px';
     });
-})
+});
 accordionAct(iconAcdBtn, iconAcd, iconAcdBody);
-accordionAct(noIconAcdBtn, noIconAcd, noIconAcdBody);
+// accordionAct(noIconAcdBtn, noIconAcd, noIconAcdBody);
 
 function accordionAct(btn, item, body){
     btn.forEach((btn, index) => {
@@ -89,20 +90,33 @@ function accordionAct(btn, item, body){
             if (item[index].classList.contains('active')) {
                 item.forEach(all => {
                     all.classList.remove('active');
-                })
+                });
                 body.forEach(all=>{
                     all.classList.add('none');
-                })
+                });
             } else {
                 item.forEach(all => {
                     all.classList.remove('active');
-                })
+                });
                 item[index].classList.add('active');
                 body.forEach(all=>{
                     all.classList.add('none');
-                })
+                });
                 body[index].classList.remove('none');
             }
-        })
-    })
+        });
+    });
 }
+
+navBtn.forEach((btn,i)=>{
+    btn.addEventListener('click',function(){
+        iconAcd.forEach(all=>{
+            all.classList.remove('active');
+        });
+        textBox[i].querySelectorAll('.accordion-item')[0].classList.add('active');
+        iconAcdBody.forEach(all=>{
+            all.classList.add('none');
+        });
+        textBox[i].querySelectorAll('.accordion-body')[0].classList.remove('none');
+    });
+});
