@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>로그인페이지</title>
-  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/commons.css">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
   <div class="inner">
     <div class="login-container">
@@ -21,10 +24,16 @@
           <h2 class="logo font-32-b">99</h2>
           <div class="login-form">
             <div class="form-style">
-                <input type="text" placeholder="아이디를 입력하세요" id="login-id" name="id" value="" maxlength="20" required="required">
+              <label>
+                <input type="text" placeholder="아이디를 입력하세요" id="login-id" name="id" value="" maxlength="20"
+                  required="required">
+              </label>
             </div>
             <div class="form-style">
-                <input type="text" placeholder="비밀번호를 입력하세요" id="login-password" name="pw" value="" maxlength="20" required="required">
+              <label>
+                <input type="text" placeholder="비밀번호를 입력하세요" id="login-password" name="pw" value="" maxlength="20"
+                  required="required">
+              </label>
             </div>
           </div>
           <div class="login-btn">
@@ -54,4 +63,5 @@
     </div>
   </div>
 </body>
+
 </html>
