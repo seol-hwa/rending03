@@ -193,12 +193,55 @@ body {
                         }
                     }
 
-                    // .qna-file {
-                    //     input[type=file] {
-                    //         // color:transparent;
-                    //         // content:'none';
-                    //     }
-                    // }
+                    .qna-file {
+                        width: 100%;
+                        max-width: 73.5rem;
+                        display: flex;
+                        align-items: center;
+                        margin-left: auto;
+
+                        .qna-file__left {
+                            width: calc(100% - 14.5rem);
+                            display: flex;
+                            position: relative;
+
+                            .fake-lbl {
+                                color: #999;
+                                font-size: 1.8rem;
+                                padding: 1.2rem 0;
+                                border-bottom: 1px solid #E9EAED;
+                                display: block;
+                                width: 100%;
+
+                                span {
+                                    font-size: 1.4rem;
+                                }
+                            }
+
+                            .true-inp {
+                                position: absolute;
+                                left: 0;
+                                opacity: 0;
+                                height: 4.6rem;
+                                width: 100%;
+                            }
+
+                        }
+
+                        .true-lbl {
+                            width: 13rem;
+                            height: 6rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 1.8rem;
+                            color: #fff;
+                            background-color: #558AC8;
+                            border-radius: 0.5rem;
+                            margin-left: 1.5rem;
+                            cursor: pointer;
+                        }
+                    }
 
                     .qna-check-box {
                         align-items: flex-start;
@@ -284,6 +327,7 @@ body {
         }
     }
 }
+
 @media (max-width:768px) {
     body {
         main {
@@ -313,17 +357,39 @@ body {
                                 }
                             }
                         }
+                        .qna-file {
+                            flex-direction: column;
+                            align-items: flex-end;
+                            gap: 1rem 0;
+
+                            .qna-file__left {
+                                width: 100%;
+
+                                .fake-lbl {
+
+                                    span {
+                                        display: block;
+                                        margin: 0.5rem 0 0 0;
+                                    }
+                                }
+
+
+                            }
+
+                        }
                     }
                 }
             }
         }
     }
 }
-@media (max-width:768px) {
+
+@media (max-width:500px) {
     body {
         main {
             .log-inner {
                 .qna-wrap {
+                    padding:3.5rem 2rem;
                     .qna-box {
                         .qna-row {
                             .qna-email {
@@ -339,15 +405,19 @@ body {
 
                                         select {
                                             width: 100%;
-
                                         }
                                     }
                                 }
                             }
                         }
+
                     }
                 }
+
             }
+
         }
+
     }
+
 }

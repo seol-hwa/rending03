@@ -70,13 +70,19 @@
                     <div class="qna-detail">
                         <div class="form-style">
                             <label for="nameFormDetail">문의내용</label>
-                            <textarea id="nameFormDetail" placeholder="문의 내용을 작성해주세요. (최대 1000자 이내)" maxlength="1000"></textarea>
+                            <textarea id="nameFormDetail" placeholder="문의 내용을 작성해주세요. (최대 1000자 이내)"
+                                maxlength="1000"></textarea>
                         </div>
                     </div>
-                    <div class="qna-file">
+                    <div class="qna-file mt-30">
                         <!--파일첨부-->
-                        <input placeholder="첨부파일">
-                        <input type="file" multiple>
+                        <div class="qna-file__left">
+                            <label for="fake-file" class="fake-lbl">첨부파일등록<span class="ml-12">* 10MB 미만의 파일 5개까지
+                                    첨부가능합니다.</span></label>
+                            <input type="text" id="fake-file" class="fake-inp blind" readonly>
+                            <input type="file" id="true-file" class="true-inp" multiple>
+                        </div>
+                        <label for="true-file" class="true-lbl">파일첨부</label>
                     </div>
                     <div class="form-check d-flex qna-check-box">
                         <input type="checkbox" id="check-g-1">

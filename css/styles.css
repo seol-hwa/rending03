@@ -1959,6 +1959,49 @@ body main .log-inner .qna-wrap .qna-box .qna-detail .form-style textarea:focus {
 body main .log-inner .qna-wrap .qna-box .qna-detail .form-style textarea:focus::placeholder {
   text-indent: 0.8rem;
 }
+body main .log-inner .qna-wrap .qna-box .qna-file {
+  width: 100%;
+  max-width: 73.5rem;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+body main .log-inner .qna-wrap .qna-box .qna-file .qna-file__left {
+  width: calc(100% - 14.5rem);
+  display: flex;
+  position: relative;
+}
+body main .log-inner .qna-wrap .qna-box .qna-file .qna-file__left .fake-lbl {
+  color: #999;
+  font-size: 1.8rem;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #E9EAED;
+  display: block;
+  width: 100%;
+}
+body main .log-inner .qna-wrap .qna-box .qna-file .qna-file__left .fake-lbl span {
+  font-size: 1.4rem;
+}
+body main .log-inner .qna-wrap .qna-box .qna-file .qna-file__left .true-inp {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  height: 4.6rem;
+  width: 100%;
+}
+body main .log-inner .qna-wrap .qna-box .qna-file .true-lbl {
+  width: 13rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #558AC8;
+  border-radius: 0.5rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
 body main .log-inner .qna-wrap .qna-box .qna-check-box {
   align-items: flex-start;
   margin: 5rem 0 0 0;
@@ -2016,8 +2059,23 @@ body main .log-inner .qna-wrap .qna-box .qna-btn {
   body main .log-inner .qna-wrap .qna-box .qna-row .qna-email .form-style .email-box select {
     width: calc((100% - 3.9rem) / 2);
   }
+  body main .log-inner .qna-wrap .qna-box .qna-file {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem 0;
+  }
+  body main .log-inner .qna-wrap .qna-box .qna-file .qna-file__left {
+    width: 100%;
+  }
+  body main .log-inner .qna-wrap .qna-box .qna-file .qna-file__left .fake-lbl span {
+    display: block;
+    margin: 0.5rem 0 0 0;
+  }
 }
-@media (max-width: 768px) {
+@media (max-width: 500px) {
+  body main .log-inner .qna-wrap {
+    padding: 3.5rem 2rem;
+  }
   body main .log-inner .qna-wrap .qna-box .qna-row .qna-email .form-style .email-box input[type=text]:nth-child(2) {
     width: calc(100% - 2.7rem);
   }
