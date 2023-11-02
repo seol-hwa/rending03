@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>99MONSTER</title>
+    <!--xeicon cdn-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!--style css-->
+    <link rel="stylesheet" href="../css/commons.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--swiper cdn-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+    <!--gsap cdn-->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+        integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+</head>
+
+<body>
+    <header class="side-menu__header"></header>
+    <main>
+        <div class="log-inner">
+            <div class="page-title-box">
+                <h2 class="page-title">프로그램</h2>
+            </div>
+            <div class="nav-tabs sns-tabs">
+                <ul class="nav-list boundary">
+                    <li class="mr-18">
+                        <button class="nav-link tabs-insta mb-9 active">
+                            <span class="blind">인스타그램</span>
+                        </button>
+                        <h3 class="item__text">인스타그램</h3>
+                    </li>
+                    <li class="mr-18">
+                        <button class="nav-link tabs-youtube mb-9">
+                            <span class="blind">유튜브</span>
+                        </button>
+                        <h3 class="item__text">유튜브</h3>
+                    </li>
+                    <li class="mr-18">
+                        <button class="nav-link tabs-N mb-9">
+                            <span class="blind">N사</span>
+                        </button>
+                        <h3 class="item__text">N사</h3>
+                    </li>
+                    <li>
+                        <button class="nav-link tabs-T mb-9">
+                            <span class="blind">T사</span>
+                        </button>
+                        <h3 class="item__text">T사</h3>
+                    </li>
+                </ul>
+                <form action="" method="" class="tab-wrap">
+                    <div class="tab-box active">
+                        <div class="layout-style-2 row mb-18">
+                            <div class="layout col-12 col-xl-6">
+                                <div class="layout-box">
+                                    <h3 class="wrap-title font-28-b mb-39">주문옵션</h3>
+                                    <div class="form-style option-wrap">
+                                        <!-- <label for="inputSelect1" class="font-12">주문옵션</label> -->
+                                        <select class="form-round text-change-select">
+                                            <option selected value="0">프로그램 선택</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="radio-box mt-48 boundary">
+                                        <div class="form-check-inline">
+                                            <input type="radio" id="radio-g-1" name="inputRadioGroup1" checked="">
+                                            <label for="radio-g-1">무통장입금</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input type="radio" id="radio-g-2" name="inputRadioGroup1">
+                                            <label for="radio-g-2">카카오페이</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input type="radio" id="radio-g-3" name="inputRadioGroup1">
+                                            <label for="radio-g-3">토스</label>
+                                        </div>
+                                    </div>
+                                    <div class="pg-payment-wrap d-flex">
+                                        <div class="pg-payment-box d-flex mb-18">
+                                            <p class="pg-payment-text">결제금액</p>
+                                            <p class="pg-payment-money">
+                                                <span></span>원
+                                            </p>
+                                        </div>
+                                        <div class="pg-point-box d-flex mb-39">
+                                            <p class="pg-point-text">포인트 사용</p>
+                                            <p class="pg-point-money">
+                                                <span></span>원
+                                            </p>
+                                        </div>
+                                        <div class="pg-total-box d-flex mb-36">
+                                            <p class="pg-total-text">총 결제금액</p>
+                                            <p class="pg-total-money">
+                                                <span>10,000</span>원
+                                            </p>
+                                        </div>
+                                        <div class="form-check pg-check-box d-flex mb-18">
+                                            <input type="checkbox" id="check-g-1">
+                                            <label for="check-g-1">상품설명 확인 및 결제진행에 동의</label>
+                                        </div>
+                                        <button class="btn pg-payment-btn" type="button">결제하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layout col-12 col-xl-6">
+                                <div class="layout-box">
+                                    <h3 class="wrap-title font-28-b mb-39">상품설명</h3>
+                                    <div class="pre-box">
+                                        <pre class="font-14 active">좋아요 숨기기, 비공개 시 작업이 어려울 수 있습니다. 공개로 전환 후 주문하시기 바랍니다.<br><br><br>*주문내역 안내<br>-주문내역이 실시간으로 변경되며 주문내역에서 확인 가능합니다.<br>-주문내역 상태보다 실제 작업이 더 빠르니 작업물을 확인해주세요.</pre>
+                                        <pre class="font-14">인스타1</pre>
+                                        <pre class="font-14">인스타2</pre>
+                                        <pre class="font-14">인스타3</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-box">
+                        <div class="layout-style-2 row mb-18">
+                            <div class="layout col-12 col-xl-6">
+                                <div class="layout-box">
+                                    <h3 class="wrap-title font-28-b mb-39">주문옵션</h3>
+                                    <div class="form-style option-wrap">
+                                        <!-- <label for="inputSelect1" class="font-12">주문옵션</label> -->
+                                        <select class="form-round text-change-select">
+                                            <option selected value="0">프로그램 선택</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="radio-box mt-48 boundary">
+                                        <div class="form-check-inline">
+                                            <input type="radio" id="radio-g-4" name="inputRadioGroup2" checked="">
+                                            <label for="radio-g-4">무통장입금</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input type="radio" id="radio-g-5" name="inputRadioGroup2">
+                                            <label for="radio-g-5">카카오페이</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input type="radio" id="radio-g-6" name="inputRadioGroup2">
+                                            <label for="radio-g-6">토스</label>
+                                        </div>
+                                    </div>
+                                    <div class="pg-payment-wrap d-flex">
+                                        <div class="pg-payment-box d-flex mb-18">
+                                            <p class="pg-payment-text">결제금액</p>
+                                            <p class="pg-payment-money">
+                                                <span></span>원
+                                            </p>
+                                        </div>
+                                        <div class="pg-point-box d-flex mb-39">
+                                            <p class="pg-point-text">포인트 사용</p>
+                                            <p class="pg-point-money">
+                                                <span></span>원
+                                            </p>
+                                        </div>
+                                        <div class="pg-total-box d-flex mb-36">
+                                            <p class="pg-total-text">총 결제금액</p>
+                                            <p class="pg-total-money">
+                                                <span>0</span>원
+                                            </p>
+                                        </div>
+                                        <div class="form-check pg-check-box d-flex mb-18">
+                                            <input type="checkbox" id="check-g-2">
+                                            <label for="check-g-2">상품설명 확인 및 결제진행에 동의</label>
+                                        </div>
+                                        <button class="btn pg-payment-btn" type="button">결제하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layout col-12 col-xl-6">
+                                <div class="layout-box">
+                                    <h3 class="wrap-title font-28-b mb-39">상품설명</h3>
+                                    <div class="pre-box">
+                                        <pre class="font-14 active">좋아요 숨기기, 비공개 시 작업이 어려울 수 있습니다. 공개로 전환 후 주문하시기 바랍니다.<br><br><br>*주문내역 안내<br>-주문내역이 실시간으로 변경되며 주문내역에서 확인 가능합니다.<br>-주문내역 상태보다 실제 작업이 더 빠르니 작업물을 확인해주세요.</pre>
+                                        <pre class="font-14">유튜브1</pre>
+                                        <pre class="font-14">유튜브2</pre>
+                                        <pre class="font-14">유튜브3</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-box">
+                        <div class="layout-style-2 row mb-18">
+                            <div class="layout col-12 col-xl-6">
+                                <div class="layout-box">
+                                    <h3 class="wrap-title font-28-b mb-39">주문옵션</h3>
+                                    <div class="form-style option-wrap">
+                                        <!-- <label for="inputSelect1" class="font-12">주문옵션</label> -->
+                                        <select class="form-round text-change-select">
+                                            <option selected value="0">프로그램 선택</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="radio-box mt-48 boundary">
+                                        <div class="form-check-inline">
+                                            <input type="radio" id="radio-g-7" name="inputRadioGroup3" checked="">
+                                            <label for="radio-g-7">무통장입금</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input type="radio" id="radio-g-8" name="inputRadioGroup3">
+                                            <label for="radio-g-8">카카오페이</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input type="radio" id="radio-g-9" name="inputRadioGroup3">
+                                            <label for="radio-g-9">토스</label>
+                                        </div>
+                                    </div>
+                                    <div class="pg-payment-wrap d-flex">
+                                        <div class="pg-payment-box d-flex mb-18">
+                                            <p class="pg-payment-text">결제금액</p>
+                                            <p class="pg-payment-money">
+                                                <span></span>원
+                                            </p>
+                                        </div>
+                                        <div class="pg-point-box d-flex mb-39">
+                                            <p class="pg-point-text">포인트 사용</p>
+                                            <p class="pg-point-money">
+                                                <span></span>원
+                                            </p>
+                                        </div>
+                                        <div class="pg-total-box d-flex mb-36">
+                                            <p class="pg-total-text">총 결제금액</p>
+                                            <p class="pg-total-money">
+                                                <span></span>원
+                                            </p>
+                                        </div>
+                                        <div class="form-check pg-check-box d-flex mb-18">
+                                            <input type="checkbox" id="check-g-3">
+                                            <label for="check-g-3">상품설명 확인 및 결제진행에 동의</label>
+                                        </div>
+                                        <button class="btn pg-payment-btn" type="button">결제하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layout col-12 col-xl-6">
+                                <div class="layout-box">
+                                    <h3 class="wrap-title font-28-b mb-39">상품설명</h3>
+                                    <div class="pre-box">
+                                        <pre class="font-14 active">좋아요 숨기기, 비공개 시 작업이 어려울 수 있습니다. 공개로 전환 후 주문하시기 바랍니다.<br><br><br>*주문내역 안내<br>-주문내역이 실시간으로 변경되며 주문내역에서 확인 가능합니다.<br>-주문내역 상태보다 실제 작업이 더 빠르니 작업물을 확인해주세요.</pre>
+                                        <pre class="font-14">T사1</pre>
+                                        <pre class="font-14">T사2</pre>
+                                        <pre class="font-14">T사3</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-box">
+                        <div class="layout-style-2 row mb-18">
+                            <div class="layout col-12 col-xl-6">
+                                <div class="layout-box">
+                                    <h3 class="wrap-title font-28-b mb-39">주문옵션</h3>
+                                    <div class="form-style option-wrap">
+                                        <!-- <label for="inputSelect1" class="font-12">주문옵션</label> -->
+                                        <select class="form-round text-change-select">
+                                            <option selected value="0">프로그램 선택</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="radio-box mt-48 boundary">
+                                        <div class="form-check-inline">
+                                            <input type="radio" id="radio-g-10" name="inputRadioGroup4" checked="">
+                                            <label for="radio-g-10">무통장입금</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input type="radio" id="radio-g-11" name="inputRadioGroup4">
+                                            <label for="radio-g-11">카카오페이</label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <input type="radio" id="radio-g-12" name="inputRadioGroup4">
+                                            <label for="radio-g-12">토스</label>
+                                        </div>
+                                    </div>
+                                    <div class="pg-payment-wrap d-flex">
+                                        <div class="pg-payment-box d-flex mb-18">
+                                            <p class="pg-payment-text">결제금액</p>
+                                            <p class="pg-payment-money">
+                                                <span></span>원
+                                            </p>
+                                        </div>
+                                        <div class="pg-point-box d-flex mb-39">
+                                            <p class="pg-point-text">포인트 사용</p>
+                                            <p class="pg-point-money">
+                                                <span></span>원
+                                            </p>
+                                        </div>
+                                        <div class="pg-total-box d-flex mb-36">
+                                            <p class="pg-total-text">총 결제금액</p>
+                                            <p class="pg-total-money">
+                                                <span></span>원
+                                            </p>
+                                        </div>
+                                        <div class="form-check pg-check-box d-flex mb-18">
+                                            <input type="checkbox" id="check-g-4">
+                                            <label for="check-g-4">상품설명 확인 및 결제진행에 동의</label>
+                                        </div>
+                                        <button class="btn pg-payment-btn" type="button">결제하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="layout col-12 col-xl-6">
+                                <div class="layout-box">
+                                    <h3 class="wrap-title font-28-b mb-39">상품설명</h3>
+                                    <div class="pre-box">
+                                        <pre class="font-14 active">좋아요 숨기기, 비공개 시 작업이 어려울 수 있습니다. 공개로 전환 후 주문하시기 바랍니다.<br><br><br>*주문내역 안내<br>-주문내역이 실시간으로 변경되며 주문내역에서 확인 가능합니다.<br>-주문내역 상태보다 실제 작업이 더 빠르니 작업물을 확인해주세요.</pre>
+                                        <pre class="font-14">N사1</pre>
+                                        <pre class="font-14">N사2</pre>
+                                        <pre class="font-14">N사3</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup popup_agree">
+                        <div class="popup__bg"></div>
+                        <div class="popup__wrap">
+                            <div class="popup-type-2">
+                                <div class="popup--header">
+                                </div>
+                                <div class="popup--body">
+                                    <p class="popup--body__text">
+                                        결제 진행에 동의를 선택해주세요.
+                                    </p>
+                                </div>
+                                <div class="popup--footer">
+                                    <button type="button" class="btn btn-d-purple popup__check-btn">확인</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup popup_complete">
+                        <div class="popup__bg"></div>
+                        <div class="popup__wrap">
+                            <div class="popup-type-2">
+                                <div class="popup--header">
+                                </div>
+                                <div class="popup--body">
+                                    <p class="popup--body__text">
+                                        결제가 완료되었습니다.
+                                    </p>
+                                </div>
+                                <div class="popup--footer">
+                                    <button type="button" class="btn btn-d-purple popup__check-btn">확인</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup popup_request">
+                        <div class="popup__bg"></div>
+                        <div class="popup__wrap">
+                            <div class="popup-type-2">
+                                <div class="popup--header">
+                                </div>
+                                <div class="popup--body">
+                                    <p class="popup--body__text">
+                                        포인트를 충전해주세요.
+                                    </p>
+                                </div>
+                                <div class="popup--footer">
+                                    <button type="button" class="btn btn-d-purple popup__check-btn">확인</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </main>
+    <footer></footer>
+    <script src="../js/header_after_login.js"></script>
+    <script src="../js/program_payment.js"></script>
+</body>
+
+</html>

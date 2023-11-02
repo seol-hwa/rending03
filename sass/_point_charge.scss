@@ -1,0 +1,245 @@
+body {
+    main {
+        .log-inner {
+
+            .layout-style-2 {
+
+                .layout {
+                    .layout-box {
+                        background-color: #fff;
+                        border-radius: 0.5rem;
+                        border: 1px solid #E0E0E0;
+                        padding: 5rem 3.5rem 3.5rem;
+                        height: 100%;
+
+                        .wrap-title {
+                            color: #333;
+                        }
+
+                        //left
+                        .charge-point-wrap {
+                            .charge-payment {
+                                label {
+                                    font-size: 1.8rem;
+                                    font-weight: 700;
+                                    color: #333;
+
+                                    span {
+                                        font-size: 1.4rem;
+                                    }
+                                }
+
+                                .charge-box {
+                                    align-items: flex-end;
+                                    gap: 1rem;
+
+                                    input[type=text] {
+                                        width: calc(100% - 30rem);
+                                        border-radius: 0.5rem;
+                                        font-size: 1.6rem;
+                                        padding: 0.9rem 1rem;
+                                        text-indent: 1rem;
+                                    }
+
+                                    .payment-btn-box {
+                                        gap:2rem 1rem ;
+                                        .btn {
+                                            width: 9rem;
+                                            height: 3.8rem;
+                                            font-size: 1.4rem;
+                                            font-weight: 700;
+                                            padding: 0;
+                                            background-color: #fff;
+                                            color: #2E4491;
+                                            box-shadow: none;
+                                            border: 1px solid #2E4491;
+                                            border-radius: 0.5rem;
+
+                                            &:hover {
+                                                background-color: #2E4491;
+                                                color: #fff;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .radio-box {
+                                .form-check-inline {
+                                    margin-right: 3rem;
+
+                                    &:last-child {
+                                        margin-right: 0;
+                                    }
+
+                                    input[type=radio]:checked {
+                                        background: #fff url(../images/icon/circle-solid-240.png) no-repeat center/1.4rem;
+                                        box-shadow: none;
+                                        border-color: #3066E2;
+                                    }
+
+                                    label {
+                                        font-size: 1.8rem;
+                                        color: #333;
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+                        }
+
+                        //right
+                        .charge-payment-wrap {
+                            .right__precalc {
+                                .d-flex {
+                                    justify-content: space-between;
+
+                                    p {
+                                        color: #999;
+                                        font-size: 1.8rem;
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+
+                            .right__totalcalc {
+                                justify-content: space-between;
+
+                                p {
+                                    font-size: 1.8rem;
+                                    font-weight: 700;
+                                }
+
+                                .totalcal__text {
+                                    color: #333;
+                                }
+
+                                .totalcal__won {
+                                    color: #3066E2;
+                                }
+                            }
+
+                            .btn {
+                                border-radius: 0.5rem;
+                                background-color: #2E4491;
+                                box-shadow: none;
+                                width: 100%;
+                                padding: 2.1rem 0;
+                                font-size: 1.8rem;
+                                font-weight: 700;
+
+                                &:hover {
+                                    background-color: #405cc2;
+                                }
+                            }
+
+                            .popup {
+                                &__bg {
+                                    z-index: 999;
+                                }
+
+                                &__wrap {
+                                    width: 90vw;
+                                    z-index: 999;
+                                    max-width: 80rem;
+                                    right: 50%;
+                                    transform: translate(50%, -50%);
+
+                                    .btn-d-purple {
+                                        background-color: #3066E2;
+
+                                        &:hover {
+                                            background-color: #2c5cce;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1199px) {
+    body {
+        main {
+            .log-inner {
+                .layout-style-2 {
+                    .layout {
+                        padding: 0;
+
+                        .layout-box {
+                            .charge-payment-wrap {
+                                margin-top: 5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    body {
+        main {
+            .log-inner {
+                .layout-style-2{
+                    .layout{
+                        .layout-box{
+                            .charge-point-wrap{
+                                .charge-payment{
+                                    .charge-box{
+                                        flex-direction: column;
+                                        align-items: flex-start;
+                                        input[type=text]{
+                                            width:100%;
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:500px) {
+    body {
+        main {
+            .log-inner {
+                .layout-style-2{
+                    .layout{
+                        .layout-box{
+                            .charge-point-wrap{
+                                .charge-payment{
+                                    .charge-box{
+                                        .payment-btn-box{
+                                            .btn{
+                                                width:7rem;
+                                                letter-spacing: -1;
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+                                .radio-box{
+                                    .form-check-inline{
+                                        display: flex;
+                                        margin-bottom:2rem;
+                                        &:last-child{
+                                            margin-bottom:0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

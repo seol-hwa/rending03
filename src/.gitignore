@@ -1,0 +1,7 @@
+*.json
+*.txt
+
+/.vscode/
+/__pycache__/
+
+data.py

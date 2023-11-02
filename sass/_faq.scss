@@ -1,0 +1,117 @@
+body {
+    main {
+        .log-inner {
+            .faq-wrap {
+                background-color: #fff;
+                border-radius: 0.5rem;
+                border: 1px solid #E0E0E0;
+                padding: 5rem 3.5rem 22rem;
+                margin-bottom: 28rem;
+
+                .wrap-title {
+                    color: #333;
+                    margin-bottom: 6rem;
+                }
+
+                .faq-box {
+                    .faq-tabs {
+                        .nav-list {
+                            gap:1rem;
+                            li {
+                                .nav-link {
+                                    width: 11rem;
+                                    height: 4rem;
+                                    font-size: 1.4rem;
+                                    background-color: #fff;
+                                    border: 1px solid #E0E0E0;
+                                    border-radius: 0.5rem;
+                                    color: #333;
+
+                                    &.active {
+                                        box-shadow: none;
+                                        background-color: #558AC8;
+                                        border-color: #558AC8;
+                                        color: #fff;
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+                        }
+
+                        .faq-tab-wrap {
+                            margin-top: 3rem;
+
+                            .tab-box {
+                                display: block;
+                                visibility: hidden;
+                                opacity:0;
+                                height:0;
+                                &.active{
+                                    visibility: visible;
+                                    height:auto;
+                                    opacity:1;
+                                }
+                                .accordion {
+                                    .accordion-item {
+                                        border: 1px solid #E0E0E0;
+
+                                        .accordion-head {
+                                            background-color: #fff;
+                                            color: #333;
+                                            font-size: 1.8rem;
+                                            font-weight: 700;
+                                            display: flex;
+                                            align-items: center;
+                                            padding: 2.1rem 2.8rem;
+
+                                            &::before {
+                                                content: 'Q';
+                                                display: block;
+                                                color: #2E4491;
+                                                margin-right: 3.8rem;
+                                            }
+
+                                            &:after {
+                                                width: 1.8rem;
+                                                height: 1rem;
+                                                background-image: url(../images/icon/down_arrow.svg);
+                                                right:2rem;
+                                            }
+                                        }
+
+                                        .accordion-body {
+                                            background-color: #E0E0E0;
+                                            color: #333;
+                                            .accordion-text {
+                                                padding: 2.1rem 2.8rem;
+                                                font-size: 1.8rem;
+                                                color:#333;
+                                                display: flex;
+                                                &:before {
+                                                    content: 'A';
+                                                    display: block;
+                                                    font-size: 1.8rem;
+                                                    font-weight: 700;
+                                                    color: #999;
+                                                    margin-right:3.8rem;
+                                                }
+                                            }
+                                        }
+                                        &.active{
+                                            .accordion-head{
+                                                &:after{
+                                                    transform: translateY(-50%) rotate(180deg);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

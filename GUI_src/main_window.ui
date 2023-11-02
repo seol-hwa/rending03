@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainForm</class>
+ <widget class="QWidget" name="mainForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>545</width>
+    <height>1190</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font-size:13pt;</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>아이디</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>기간</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>240</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>인스타 계정</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>280</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>해시태그</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_hashtag">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>290</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>340</y>
+     <width>481</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>479</width>
+      <height>159</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QCheckBox" name="like_yn">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>540</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string> 좋아요</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="follow_yn">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>590</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string> 팔로우</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="comment_yn">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>640</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>댓글 설정</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_target_cnt_like">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>540</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>540</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>개 씩</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>590</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>명 씩</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_target_cnt_follow">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>590</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="input_target_cnt_comment">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>640</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>640</y>
+     <width>61</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>개 씩</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_manage_insta_id">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>250</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>계정 설정</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_manage_comments">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>640</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>댓글 설정</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_register_tags">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>290</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>등록</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_delete_tag">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>290</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>삭제</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_manage_tags">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>290</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>관리</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="tab_insta_auto_bot">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>130</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>게시물 작업</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="tab_manage_followers">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>130</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>내 팔로워 관리</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="tab_insta_unfollow">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>170</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>언팔로우</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="tab_upload_insta_feeds">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>170</y>
+     <width>241</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>인스타그램 피드 작성</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_edit_level">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>50</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>설정</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>690</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>작업완료 후 </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>690</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>초 대기</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="min_sec_each">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>690</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>690</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>~</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="max_sec_each">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>690</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>780</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>작업 순서</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="max_sec_entire">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>830</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>830</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>초 대기</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>830</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>~</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="min_sec_entire">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>830</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_job_activation">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>900</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>작업 시작</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_job_pause">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>900</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>작업 중지</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>950</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>좋아요</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_19">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>950</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>댓글</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_20">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>950</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>팔로우</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_21">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>950</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>건</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_22">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>950</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>건</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_23">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>950</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>건</string>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>990</y>
+     <width>481</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>479</width>
+      <height>159</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_24">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>830</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>작업완료 후 </string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="select_insta_bots">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>250</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="select_task_order">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>790</y>
+     <width>351</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>20</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>test</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>50</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-size:13pt;</string>
+   </property>
+   <property name="text">
+    <string>Pro</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btn_manage_insta_id</sender>
+   <signal>clicked()</signal>
+   <receiver>mainForm</receiver>
+   <slot>insta_id_manage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>467</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>496</x>
+     <y>536</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>insta_id_manage()</slot>
+ </slots>
+</ui>

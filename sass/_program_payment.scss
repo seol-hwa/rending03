@@ -1,0 +1,212 @@
+body {
+    main {
+        .log-inner {
+            .nav-tabs {
+                .tab-wrap {
+                    background-color: transparent;
+                    padding:0;
+                    box-shadow: none;
+                    .tab-box {
+                        .layout-style-2 {
+                            .layout {
+                                .layout-box {
+                                    .wrap-title{
+                                        color:#333;
+                                    }
+                                    .option-wrap{
+                                        margin-bottom:0;
+                                        .text-change-select{
+                                            border-radius: 0.5rem;
+                                            font-size: 1.4rem;
+                                            font-weight: 700;
+                                            color:#333;
+                                            margin-top:0;
+                                        }
+                                    }
+                                    .radio-box {
+                                        .form-check-inline {
+                                            margin-right: 3rem;
+
+                                            &:last-child {
+                                                margin-right: 0;
+                                            }
+
+                                            input[type=radio]:checked {
+                                                background: #fff url(../images/icon/circle-solid-240.png) no-repeat center/1.4rem;
+                                                box-shadow: none;
+                                                border-color: #3066E2;
+                                            }
+
+                                            label {
+                                                font-size: 1.8rem;
+                                                color: #333;
+                                                font-weight: 700;
+                                            }
+                                        }
+                                    }
+                                    .pg-payment-wrap{
+                                        flex-direction: column;
+                                        margin-left:auto;
+                                        width:50%;
+                                        %fontSet{
+                                            font-size: 1.8rem;
+                                            font-weight: 700;
+                                            margin-bottom:0;
+                                            line-height: 1;
+                                        }
+                                        .pg-payment-box{
+                                            justify-content: space-between;
+                                            .pg-payment-text{
+                                                @extend %fontSet;
+                                                color:#999;
+                                            }
+                                            .pg-payment-money{
+                                                @extend %fontSet;
+                                                color:#999;
+                                            }
+                                        }
+                                        .pg-point-box{
+                                            justify-content: space-between;
+                                            .pg-point-text{
+                                                @extend %fontSet;
+                                                color:#999;
+                                            }
+                                            .pg-point-money{
+                                                @extend %fontSet;
+                                                color:#999;
+                                            }
+                                        }
+                                        .pg-total-box{
+                                            justify-content: space-between;
+                                            .pg-total-text{
+                                                @extend %fontSet;
+                                                color:#333;
+                                            }
+                                            .pg-total-money{
+                                                @extend %fontSet;
+                                                color:#3066E2;
+                                            }
+                                        }
+                                        .pg-check-box{
+                                            align-items: flex-start;
+                                            input[type=checkbox]{
+                                                width:2.2rem;
+                                                height:2.2rem;
+                                                border-radius: 0.3rem;
+                                                &:checked{
+                                                    background-color: #3066E2;
+                                                    box-shadow: none;
+                                                    border-color: #3066E2;
+                                                }
+                                            }
+                                            label{
+                                                color:#333333;
+                                                font-size: 1.6rem;
+                                                line-height: 2.2rem;
+                                            }
+                                        }
+                                        .pg-payment-btn{
+                                            background-color: #2E4491;
+                                            color:#fff;
+                                            font-size: 1.8rem;
+                                            font-weight: 700;
+                                            border-radius: 0.5rem;
+                                            padding:2.1rem 1rem;
+                                        }
+                                    }
+                                    .pre-box {
+                                        height: calc(100% - 7.2rem);
+                                        overflow-y: auto;
+
+                                        pre {
+                                            color: #333;
+                                            text-wrap: wrap;
+                                            display: none;
+                                            line-height: 1.4;
+
+                                            &.active {
+                                                display: block;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1500px) {
+    body {
+        main {
+            .log-inner {
+                .nav-tabs {
+                    .tab-wrap {
+                        .tab-box {
+                            .layout-style-2 {
+                                .layout {
+                                    .layout-box {
+                                        .pg-payment-wrap {
+                                            width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:1200px) {
+    body {
+        main {
+            .log-inner {
+                .nav-tabs {
+                    .tab-wrap {
+                        .tab-box {
+                            .layout-style-2 {
+                                .layout {
+                                    &:first-child,
+                                    &:last-child{
+                                        padding:0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:500px) {
+    body {
+        main {
+            .log-inner {
+                .nav-tabs {
+                    .tab-wrap {
+                        .tab-box {
+                            .layout-style-2 {
+                                .layout {
+                                    .layout-box{
+                                        .radio-box{
+                                            .form-check-inline{
+                                                display: flex;
+                                                margin:0 0 2rem;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
