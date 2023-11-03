@@ -1,0 +1,59 @@
+body{
+    main{
+        .log-inner{
+            .nav-tabs{
+                .tab-wrap{
+                    .tab-box{
+                        .pg-table-box{
+                            .wrap-text{
+                                font-size: 1.8rem;
+                                color:#333;
+                                font-weight: 500;
+                                margin:3rem 0 0;
+                            }
+                            .pg-table{
+                                .rest-tbl-top{
+                                    justify-content: space-between;
+                                    align-items: flex-end;
+                                    .table-text{
+                                        margin:0;
+                                        font-size: 1.8rem;
+                                        color:#999;
+                                        font-weight: 500;
+                                    }
+                                    .add-acc-btn{
+                                        width:13rem;
+                                        height:4.6rem;
+                                        border:1px solid #D9D9D9;
+                                        border-radius: 0.5rem;
+                                        background-color: #fff;
+                                        color:#333;
+                                        font-size: 1.8rem;
+                                        font-weight: 700;
+                                    }
+                                }
+                                .tbody-tr{
+                                    .td{
+                                        .acc-edit-btn{
+                                            display: inline-flex;
+                                            width:7.4rem;
+                                            height:3.6rem;
+                                            border:1px solid #D9D9D9;
+                                            border-radius: 0.5rem;
+                                            background-color: #fff;
+                                            font-size: 1.8rem;
+                                            color:#333;
+                                            font-weight: 700;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

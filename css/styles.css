@@ -977,9 +977,6 @@ body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layou
 body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .pre-box pre.active {
   display: block;
 }
-body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .wrap-title {
-  color: #333;
-}
 body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .row {
   margin-bottom: 2rem;
   gap: 2rem 0;
@@ -1327,9 +1324,6 @@ body main .log-inner .nav-tabs .tab-wrap {
   background-color: transparent;
   padding: 0;
   box-shadow: none;
-}
-body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .wrap-title {
-  color: #333;
 }
 body main .log-inner .nav-tabs .tab-wrap .tab-box .layout-style-2 .layout .layout-box .option-wrap {
   margin-bottom: 0;
@@ -1689,9 +1683,6 @@ body main .log-inner .layout-style-2 .layout .layout-box {
   padding: 5rem 3.5rem 3.5rem;
   height: 100%;
 }
-body main .log-inner .layout-style-2 .layout .layout-box .wrap-title {
-  color: #333;
-}
 body main .log-inner .layout-style-2 .layout .layout-box .charge-point-wrap .charge-payment label {
   font-size: 1.8rem;
   font-weight: 700;
@@ -1832,9 +1823,6 @@ body main .log-inner .qna-wrap {
   border-radius: 0.5rem;
   border: 1px solid #E0E0E0;
   margin-bottom: 28rem;
-}
-body main .log-inner .qna-wrap .wrap-title {
-  color: #333;
 }
 body main .log-inner .qna-wrap .qna-box {
   margin-top: 6rem;
@@ -2117,7 +2105,6 @@ body main .log-inner .faq-wrap {
   margin-bottom: 28rem;
 }
 body main .log-inner .faq-wrap .wrap-title {
-  color: #333;
   margin-bottom: 6rem;
 }
 body main .log-inner .faq-wrap .faq-box .faq-tabs .nav-list {
@@ -2197,6 +2184,46 @@ body main .log-inner .faq-wrap .faq-box .faq-tabs .faq-tab-wrap .tab-box .accord
 }
 body main .log-inner .faq-wrap .faq-box .faq-tabs .faq-tab-wrap .tab-box .accordion .accordion-item.active .accordion-head:after {
   transform: translateY(-50%) rotate(180deg);
+}
+
+body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-table-box .wrap-text {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 500;
+  margin: 3rem 0 0;
+}
+body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-table-box .pg-table .rest-tbl-top {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-table-box .pg-table .rest-tbl-top .table-text {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #999;
+  font-weight: 500;
+}
+body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-table-box .pg-table .rest-tbl-top .add-acc-btn {
+  width: 13rem;
+  height: 4.6rem;
+  border: 1px solid #D9D9D9;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+body main .log-inner .nav-tabs .tab-wrap .tab-box .pg-table-box .pg-table .tbody-tr .td .acc-edit-btn {
+  display: inline-flex;
+  width: 7.4rem;
+  height: 3.6rem;
+  border: 1px solid #D9D9D9;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>99MONSTER</title>
+    <!--xeicon cdn-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!--style css-->
+    <link rel="stylesheet" href="../css/commons.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--swiper cdn-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+    <!--gsap cdn-->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+        integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+</head>
+
+<body>
+    <header class="side-menu__header"></header>
+    <main>
+        <div class="log-inner">
+            <div class="page-title-box">
+                <h2 class="page-title">계정등록</h2>
+                <p class="page-text">관리 계정을 등록해주세요.</p>
+            </div>
+            <div class="nav-tabs">
+                <div class="tab-wrap">
+                    <div class="tab-box active">
+                        <div class="pg-table-box pt-24 pr-24 pl-24 pb-30 mb-60">
+                            <h3 class="wrap-title">계정리스트</h3>
+                            <p class="wrap-text">관리 계정을 등록하여 관리하기 편리하도록 제공되는 기능입니다.</p>
+                            <div class="pg-table mt-75">
+                                <div class="d-flex rest-tbl-top">
+                                    <p class="table-text">연결된 계정 (총 <span>2</span>개)</p>
+                                    <button type="button" class="add-acc-btn">+ 계정 추가</button>
+                                </div>
+                                <div class="thead pt-21 pb-21 mt-21">
+                                    <div class="thead-tr d-flex">
+                                        <p class="th col-2">계정</p>
+                                        <p class="th col-2">등록일</p>
+                                        <p class="th col-2">서비스종류</p>
+                                        <p class="th col-3">메모</p>
+                                        <p class="th col-3">관리</p>
+                                    </div>
+                                </div>
+                                <div class="tbody">
+                                    <div class="tbody-tr row pt-12 pb-12 active">
+                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
+                                        <p class="td col-12 col-xl-2 v-update-title">인스타그램</p>
+                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
+                                        <p class="td col-12 col-xl-3">
+                                            <button type="button" class="acc-edit-btn">수정</button>
+                                            <button type="button" class="acc-edit-btn">삭제</button>
+                                        </p>
+                                    </div>
+                                    <div class="tbody-tr row pt-12 pb-12 active">
+                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
+                                        <p class="td col-12 col-xl-2 v-update-title">네이버</p>
+                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
+                                        <p class="td col-12 col-xl-3">
+                                            <button type="button" class="acc-edit-btn">수정</button>
+                                            <button type="button" class="acc-edit-btn">삭제</button>
+                                        </p>
+                                    </div>
+                                    <div class="tbody-tr row pt-12 pb-12 active">
+                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
+                                        <p class="td col-12 col-xl-2 v-update-title">유튜브</p>
+                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
+                                        <p class="td col-12 col-xl-3">
+                                            <button type="button" class="acc-edit-btn">수정</button>
+                                            <button type="button" class="acc-edit-btn">삭제</button>
+                                        </p>
+
+                                    </div>
+                                    <div class="tbody-tr row pt-12 pb-12 active">
+                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
+                                        <p class="td col-12 col-xl-2 v-update-title">인스타그램</p>
+                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
+                                        <p class="td col-12 col-xl-3">
+                                            <button type="button" class="acc-edit-btn">수정</button>
+                                            <button type="button" class="acc-edit-btn">삭제</button>
+                                        </p>
+
+                                    </div>
+                                    <div class="tbody-tr row pt-12 pb-12 active">
+                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
+                                        <p class="td col-12 col-xl-2 v-update-title">인스타그램</p>
+                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
+                                        <p class="td col-12 col-xl-3">
+                                            <button type="button" class="acc-edit-btn">수정</button>
+                                            <button type="button" class="acc-edit-btn">삭제</button>
+                                        </p>
+
+                                    </div>
+                                    <div class="tbody-tr row pt-12 pb-12">
+                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
+                                        <p class="td col-12 col-xl-2 v-update-title">인스타그램</p>
+                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
+                                        <p class="td col-12 col-xl-3">
+                                            <button type="button" class="acc-edit-btn">수정</button>
+                                            <button type="button" class="acc-edit-btn">삭제</button>
+                                        </p>
+                                    </div>
+                                    <div class="tbody-tr row pt-12 pb-12">
+                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
+                                        <p class="td col-12 col-xl-2 v-update-title">인스타그램</p>
+                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
+                                        <p class="td col-12 col-xl-3">
+                                            <button type="button" class="acc-edit-btn">수정</button>
+                                            <button type="button" class="acc-edit-btn">삭제</button>
+                                        </p>
+                                    </div>
+                                    <div class="tbody-tr row pt-12 pb-12">
+                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
+                                        <p class="td col-12 col-xl-2 v-update-title">인스타그램</p>
+                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
+                                        <p class="td col-12 col-xl-3">
+                                            <button type="button" class="acc-edit-btn">수정</button>
+                                            <button type="button" class="acc-edit-btn">삭제</button>
+                                        </p>
+                                    </div>
+                                    <div class="tbody-tr row pt-12 pb-12">
+                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
+                                        <p class="td col-12 col-xl-2 v-update-title">인스타그램</p>
+                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
+                                        <p class="td col-12 col-xl-3">
+                                            <button type="button" class="acc-edit-btn">수정</button>
+                                            <button type="button" class="acc-edit-btn">삭제</button>
+                                        </p>
+                                    </div>
+                                    <div class="tbody-tr row pt-12 pb-12">
+                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
+                                        <p class="td col-12 col-xl-2 v-update-title">인스타그램</p>
+                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
+                                        <p class="td col-12 col-xl-3">
+                                            <button type="button" class="acc-edit-btn">수정</button>
+                                            <button type="button" class="acc-edit-btn">삭제</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="pd-pagenation-list d-flex-all-center mt-30">
+                                <li>
+                                    <button class="prev-page pd-pagenation-btn">
+                                        <i class="xi-angle-left-min xi-2x"></i>
+                                    </button>
+                                </li>
+                                <li class="pd-page-wrap">
+                                    <ul class="pd-page-list d-flex">
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button class="next-page pd-pagenation-btn">
+                                        <i class="xi-angle-right-min xi-2x"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer></footer>
+    <script src="../js/header_after_login.js"></script>
+    <script src="../js/restration.js"></script>
+</body>
+
+</html>

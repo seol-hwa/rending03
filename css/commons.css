@@ -11221,9 +11221,21 @@ body {
 }
 .page-title-box .page-text {
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 500;
   color: #333;
   margin-top: 2rem;
+}
+
+.wrap-title {
+  font-size: 2.8rem;
+  color: #333;
+  font-weight: 700;
+}
+
+.wrap-text {
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .layout-style-2 {

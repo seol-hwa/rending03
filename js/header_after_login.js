@@ -75,7 +75,7 @@ headerSide.innerHTML=`
                         </button>
                         <ul class="gnb-list__sub-list">
                             <li>
-                                <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">계정등록</a>
+                                <a href="restration.html" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">계정등록</a>
                             </li>
                             <li>
                                 <a href="point_charge.html" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">포인트충전</a>
@@ -159,7 +159,7 @@ headerSide.innerHTML=`
                         </button>
                         <ul class="gnb-list__mo-sub-list">
                             <li>
-                                <a href="#" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">계정등록</a>
+                                <a href="restration.html" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">계정등록</a>
                             </li>
                             <li>
                                 <a href="point_charge.html" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">포인트충전</a>
