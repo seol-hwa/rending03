@@ -64,7 +64,8 @@ const inputDate=document.querySelectorAll('input[type=date]');
 
 inputDate.forEach(el=>{
     el.setAttribute('min',`${year}-${month}-${day}`);
-})
+});
+//point text
 
 //submit btn
 const modalBtn = document.querySelectorAll('.open-modal');
@@ -76,17 +77,18 @@ const popup = document.querySelectorAll('.popup');
 
 const possessionNodes = document.querySelectorAll('.point-box__total-point span');
 const possessionPoint = parseInt(possessionNodes[0].innerText.replace(/,/g, ''));
-const orderNodes = document.querySelectorAll('.order-num');
+const orderNodes = document.querySelectorAll('.ro-use-pt span');
 
 modalBtn.forEach((btn, index) => {
     btn.addEventListener('click', function () {
     document.querySelector('body').style.overflowY = 'hidden';
     if (possessionPoint < parseInt(orderNodes[index].innerText.replace(/,/g, ''))) {
             //point가 부족할 때
-            this.nextElementSibling.classList.add('active');
+            // this.nextElementSibling.classList.add('active');
+            this.closest('.tab-box').querySelector('.fail-pop').classList.add('active');
         } else {
             //point가 부족하지 않을 때
-            this.nextElementSibling.nextElementSibling.classList.add('active');
+            this.closest('.tab-box').querySelector('.complete-pop').classList.add('active');
         }
     })
 })

@@ -104,79 +104,167 @@ body {
                                             }
                                         }
                                     }
+
                                 }
-                            }
-                        }
 
-                        .pt-wrap {
-                            background-color: #fff;
-                            border: 1px solid #E0E0E0;
-                            border-radius: 0.5rem;
-                            flex-wrap: wrap;
-                            gap: 4rem 14rem;
+                                .ro-lay2-bx {
+                                    padding: 2.6rem 0;
 
-                            .pt-calc-box {
-                                gap: 5.4rem;
+                                    .ro-pt-box {
+                                        padding: 2rem 0;
+                                        border-right: 1px solid #E0E0E0;
 
-                                .pt-box {
-                                    flex-direction: column;
-                                    gap: 1rem 2rem;
+                                        &:last-child {
+                                            border-right: none;
+                                        }
 
-                                    &__text {
-                                        color: #666;
-                                        font-size: 2.2rem;
-                                        font-weight: 700;
-                                        margin-bottom: 0;
-                                        line-height: 1;
-                                        // text-align: center;
+                                        .ro-pt-tit {
+                                            text-align: center;
+                                            font-size: 2.2rem;
+                                            font-weight: 500;
+                                            color: #666;
+                                        }
+
+                                        .ro-pt {
+                                            text-align: center;
+                                            font-size: 4rem;
+                                            font-weight: 700;
+                                            line-height: 1;
+                                            margin-top: 2rem;
+                                        }
+
+                                        .ro-pss-pt {
+                                            color: #3066E2;
+                                        }
+
+                                        .ro-use-pt {
+                                            color: #9CA3AF;
+                                        }
+                                    }
+                                }
+
+                                .ro-pcs-wrap {
+                                    height: 100%;
+                                    padding: 5.2rem 3.5rem;
+                                    flex-wrap: wrap;
+                                    gap: 1rem 0;
+
+                                    .ro-pcs-box {
+                                        width: calc(100% - 16.7rem);
+                                        padding-right: 2rem;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: space-between;
+                                        gap:1rem 0;
+
+                                        .ro-pcs-tit {
+                                            font-size: 2.2rem;
+                                            font-weight: 500;
+                                            color: #666;
+                                        }
+
+                                        .ro-pcs {
+                                            padding: 0.8rem 2.6rem;
+                                            border: 1px solid #E0E0E0;
+                                            border-radius: 0.5rem;
+                                            background-color: #E9E9E9;
+                                            color: #333;
+                                            font-size: 1.8rem;
+                                            font-weight: 500;
+                                            line-height: 1;
+                                        }
                                     }
 
-                                    &__pt {
-                                        color: #999;
-                                        line-height: 1.1;
-                                        font-size: 2.2rem;
-                                        font-weight: 700;
-                                        // text-align: center;
+                                    .ro-pcs-btn {
+                                        width: 16.7rem;
+                                        height: 7.6rem;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border-radius: 0.5rem;
+                                        border: 1px solid #E0E0E0;
+                                        background-color: #ABABAB;
+                                        color: #fff;
+                                        font-size: 1.8rem;
+                                        font-weight: 500;
+
+                                        &:hover {
+                                            background-color: #3066E2;
+                                        }
                                     }
                                 }
                             }
-
-                            .pt-total-box {
-                                flex-direction: column;
-                                gap: 1rem 2rem;
-
-                                &__text {
-                                    color: #333;
-                                    font-size: 2.8rem;
-                                    font-weight: 700;
-                                    margin-bottom: 0;
-                                    line-height: 1;
-                                    text-align: center;
-                                }
-
-                                &__pt {
-                                    color: #333;
-                                    line-height: 1.2;
-                                    font-weight: 800;
-                                    font-size: 3rem;
-                                    text-align: center;
-                                }
-                            }
-
-                            .xi-plus-circle {
-                                color: #FF2B48;
-                            }
                         }
 
-                        .order-submit {
-                            width: 21rem;
-                            height: 6rem;
-                            margin: 0 auto 8rem;
-                            background-color: #3066E2;
-                            color: #fff;
-                            border-radius: 0.5rem;
-                            cursor: pointer;
-                        }
+                        // .pt-wrap {
+                        //     background-color: #fff;
+                        //     border: 1px solid #E0E0E0;
+                        //     border-radius: 0.5rem;
+                        //     flex-wrap: wrap;
+                        //     gap: 4rem 14rem;
+
+                        //     .pt-calc-box {
+                        //         gap: 5.4rem;
+
+                        //         .pt-box {
+                        //             flex-direction: column;
+                        //             gap: 1rem 2rem;
+
+                        //             &__text {
+                        //                 color: #666;
+                        //                 font-size: 2.2rem;
+                        //                 font-weight: 700;
+                        //                 margin-bottom: 0;
+                        //                 line-height: 1;
+                        //                 // text-align: center;
+                        //             }
+
+                        //             &__pt {
+                        //                 color: #999;
+                        //                 line-height: 1.1;
+                        //                 font-size: 2.2rem;
+                        //                 font-weight: 700;
+                        //                 // text-align: center;
+                        //             }
+                        //         }
+                        //     }
+
+                        //     .pt-total-box {
+                        //         flex-direction: column;
+                        //         gap: 1rem 2rem;
+
+                        //         &__text {
+                        //             color: #333;
+                        //             font-size: 2.8rem;
+                        //             font-weight: 700;
+                        //             margin-bottom: 0;
+                        //             line-height: 1;
+                        //             text-align: center;
+                        //         }
+
+                        //         &__pt {
+                        //             color: #333;
+                        //             line-height: 1.2;
+                        //             font-weight: 800;
+                        //             font-size: 3rem;
+                        //             text-align: center;
+                        //         }
+                        //     }
+
+                        //     .xi-plus-circle {
+                        //         color: #FF2B48;
+                        //     }
+                        // }
+
+                        // .order-submit {
+                        //     width: 21rem;
+                        //     height: 6rem;
+                        //     margin: 0 auto 8rem;
+                        //     background-color: #3066E2;
+                        //     color: #fff;
+                        //     border-radius: 0.5rem;
+                        //     cursor: pointer;
+                        // }
                     }
                 }
             }
@@ -203,49 +291,11 @@ body {
                                         .layout-box {
                                             height: 50rem;
                                         }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
-@media (max-width:1024px) {
-    body {
-        main {
-            .log-inner {
-                .nav-tabs {
-                    .tab-wrap {
-                        .tab-box {
-                            .pt-wrap {
-                                .pt-calc-box {
-                                    gap: 3rem;
-
-                                    .pt-box {
-
-                                        &__text,
-                                        &__pt {
-                                            font-size: 1.6rem;
+                                        .ro-pcs-wrap {
+                                            height: initial;
                                         }
                                     }
-
-                                    .xi-3x {
-                                        font-size: 2em;
-                                    }
-                                }
-
-                                .pt-total-box {
-                                    &__text {
-                                        font-size: 2rem;
-                                    }
-
-                                    &__pt {
-                                        font-size: 2.2rem;
-                                    }
                                 }
                             }
                         }
@@ -255,6 +305,48 @@ body {
         }
     }
 }
+
+// @media (max-width:1024px) {
+//     body {
+//         main {
+//             .log-inner {
+//                 .nav-tabs {
+//                     .tab-wrap {
+//                         .tab-box {
+//                             .pt-wrap {
+//                                 .pt-calc-box {
+//                                     gap: 3rem;
+
+//                                     .pt-box {
+
+//                                         &__text,
+//                                         &__pt {
+//                                             font-size: 1.6rem;
+//                                         }
+//                                     }
+
+//                                     .xi-3x {
+//                                         font-size: 2em;
+//                                     }
+//                                 }
+
+//                                 .pt-total-box {
+//                                     &__text {
+//                                         font-size: 2rem;
+//                                     }
+
+//                                     &__pt {
+//                                         font-size: 2.2rem;
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 @media (max-width:991px) {
     body {
@@ -285,28 +377,110 @@ body {
         }
     }
 }
-
-@media (max-width:550px) {
-    body {
-        main {
-            .log-inner {
-                .nav-tabs {
-
-                    .tab-wrap {
-                        .tab-box {
-                            .pt-wrap {
-                                flex-direction: column;
-
-                                .pt-calc-box {
-                                    flex-direction: column;
-
-                                    .pt-box {
-                                        flex-direction: row;
+@media (max-width:768px) {
+    body{
+        main{
+            .log-inner{
+                .nav-tabs{
+                    .tab-wrap{
+                        .tab-box{
+                            .layout-style-2{
+                                .layout{
+                                    .layout-box{
+                                        .ro-pt-box{
+                                            .ro-pt-tit{
+                                                font-size: 1.8rem;
+                                            }
+                                            .ro-pt{
+                                                font-size: 3rem;
+                                            }
+                                        }
+                                    }
+                                    .ro-pcs-wrap{
+                                        .ro-pcs-box{
+                                            width:calc(100% - 14rem);
+                                            padding-right:1rem;
+                                            .ro-pcs-tit{
+                                                font-size: 1.8rem;
+                                            }
+                                            .ro-pcs{
+                                                font-size: 1.6rem;
+                                            }
+                                        }
+                                        .ro-pcs-btn{
+                                            width:14rem;
+                                            font-size: 1.6rem;
+                                        }
                                     }
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
-                                .pt-total-box {
-                                    flex-direction: row;
+// @media (max-width:550px) {
+//     body {
+//         main {
+//             .log-inner {
+//                 .nav-tabs {
+
+//                     .tab-wrap {
+//                         .tab-box {
+//                             .pt-wrap {
+//                                 flex-direction: column;
+
+//                                 .pt-calc-box {
+//                                     flex-direction: column;
+
+//                                     .pt-box {
+//                                         flex-direction: row;
+//                                     }
+//                                 }
+
+//                                 .pt-total-box {
+//                                     flex-direction: row;
+//                                 }
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+@media (max-width:500px) {
+    body{
+        main{
+            .log-inner{
+                .nav-tabs{
+                    .tab-wrap{
+                        .tab-box{
+                            .layout-style-2{
+                                .layout{
+                                    .layout-box{
+                                        .ro-pt-box{
+                                            .ro-pt-tit{
+                                                font-size: 1.8rem;
+                                            }
+                                            .ro-pt{
+                                                font-size: 2.5rem;
+                                            }
+                                        }
+                                    }
+                                    .ro-pcs-wrap{
+                                        .ro-pcs-box{
+                                            width:100%;
+                                            padding-right:0;
+                                        }
+                                        .ro-pcs-btn{
+                                            width:100%;
+                                            height:6rem;
+                                        }
+                                    }
                                 }
                             }
                         }
