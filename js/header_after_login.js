@@ -39,7 +39,7 @@ headerSide.innerHTML=`
                                 <a href="regular_order.html" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">상품선택</a>
                             </li>
                             <li>
-                                <a href="#" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">자동상품</a>
+                                <a href="auto_order.html" class="sub-list__sub font-16 pt-15 pb-15 pl-24 pr-21">자동상품</a>
                             </li>
                         </ul>
                     </li>
@@ -123,7 +123,7 @@ headerSide.innerHTML=`
                                 <a href="regular_order.html" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">상품선택</a>
                             </li>
                             <li>
-                                <a href="#" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">자동상품</a>
+                                <a href="auto_order.html" class="mo-sub-list__sub font-14 pt-15 pb-15 pl-24 pr-21">자동상품</a>
                             </li>
                         </ul>
                     </li>
