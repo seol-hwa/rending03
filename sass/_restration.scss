@@ -57,3 +57,53 @@ body{
         }
     }
 }
+@media (max-width:1199px) {
+    body{
+        main{
+            .log-inner{
+                .nav-tabs{
+                    .tab-wrap{
+                        .tab-box{
+                            .pg-table-box{
+                                .pg-table{
+                                    .rest-tbl-top{
+                                        flex-wrap: wrap;
+                                        padding-bottom:1rem;
+                                        border-bottom:1px solid #E9E9E9;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:500px) {
+    body{
+        main{
+            .log-inner{
+                .nav-tabs{
+                    .tab-wrap{
+                        .tab-box{
+                            .pg-table-box{
+                                .pg-table{
+                                    .rest-tbl-top{
+                                        .table-text{
+                                            font-size: 1.6rem;
+                                        }
+                                        .add-acc-btn{
+                                            font-size: 1.6rem;
+                                            width:10rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
