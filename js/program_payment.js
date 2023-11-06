@@ -77,11 +77,14 @@ modalBtn.forEach((btn, index) => {
             if (parseInt(orderNodes[index].innerText.replace(/,/g, '')) > 0) {
                 //총 결제금액이 0 보다 클때
                 popupRequest.classList.add('active');
+                document.querySelector('body').style.overflowY='hidden';
             }else{
                 popupComplete.classList.add('active');
+                document.querySelector('body').style.overflowY='hidden';
             }
         } else {
             popupAgree.classList.add('active');
+            document.querySelector('body').style.overflowY='hidden';
         }
     })
 })

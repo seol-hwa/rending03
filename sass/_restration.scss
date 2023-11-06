@@ -1,48 +1,52 @@
-body{
-    main{
-        .log-inner{
-            .nav-tabs{
-                .tab-wrap{
-                    .tab-box{
-                        .pg-table-box{
-                            .wrap-text{
+body {
+    main {
+        .log-inner {
+            .nav-tabs {
+                .tab-wrap {
+                    .tab-box {
+                        .pg-table-box {
+                            .wrap-text {
                                 font-size: 1.8rem;
-                                color:#333;
+                                color: #333;
                                 font-weight: 500;
-                                margin:3rem 0 0;
+                                margin: 3rem 0 0;
                             }
-                            .pg-table{
-                                .rest-tbl-top{
+
+                            .pg-table {
+                                .rest-tbl-top {
                                     justify-content: space-between;
                                     align-items: flex-end;
-                                    .table-text{
-                                        margin:0;
+
+                                    .table-text {
+                                        margin: 0;
                                         font-size: 1.8rem;
-                                        color:#999;
+                                        color: #999;
                                         font-weight: 500;
                                     }
-                                    .add-acc-btn{
-                                        width:13rem;
-                                        height:4.6rem;
-                                        border:1px solid #D9D9D9;
+
+                                    .add-acc-btn {
+                                        width: 13rem;
+                                        height: 4.6rem;
+                                        border: 1px solid #D9D9D9;
                                         border-radius: 0.5rem;
                                         background-color: #fff;
-                                        color:#333;
+                                        color: #333;
                                         font-size: 1.8rem;
                                         font-weight: 700;
                                     }
                                 }
-                                .tbody-tr{
-                                    .td{
-                                        .acc-edit-btn{
+
+                                .tbody-tr {
+                                    .td {
+                                        .acc-mng-btn {
                                             display: inline-flex;
-                                            width:7.4rem;
-                                            height:3.6rem;
-                                            border:1px solid #D9D9D9;
+                                            width: 7.4rem;
+                                            height: 3.6rem;
+                                            border: 1px solid #D9D9D9;
                                             border-radius: 0.5rem;
                                             background-color: #fff;
                                             font-size: 1.8rem;
-                                            color:#333;
+                                            color: #333;
                                             font-weight: 700;
                                             justify-content: center;
                                             align-items: center;
@@ -55,21 +59,143 @@ body{
                 }
             }
         }
+
+        .pop-manage {
+            .popup__wrap {
+                max-width: 90rem;
+
+                .popup-type-4 {
+                    max-width: 100%;
+                    max-height: 90vh;
+                    overflow-y: auto;
+                    .popup--header {
+                        justify-content: space-between;
+                        padding: 5rem 3.5rem 4rem;
+
+                        .popup--header__title {
+                            color: #2B333E;
+                            font-size: 2.8rem;
+                        }
+                        .popup__close-btn{
+                            position:initial;
+                            color:#8D8D8D;
+                        }
+                    }
+
+                    .popup--body {
+                        padding: 0 3.5rem 3rem;
+
+                        .popup-tr {
+                            padding: 2rem 0;
+                            border-bottom: 1px solid #EEEEEE;
+                            &.lab-align{
+                                align-items: center;
+                            }
+                            &.select-box{
+                                padding:1rem 0;
+                            }
+
+                            &:last-child {
+                                border-bottom: none;
+                            }
+
+                            label {
+                                width: 15rem;
+                                font-size: 2.2rem;
+                                font-weight: bold;
+
+                                &.lab-required:after {
+                                    content: '';
+                                    display: inline-block;
+                                    width: 4px;
+                                    height: 4px;
+                                    background-color: #F41616;
+                                    border-radius: 50%;
+                                    vertical-align: top;
+                                }
+                            }
+
+                            input {
+                                font-size: 2.2rem;
+                                color:#333;
+                                &::placeholder{
+                                    color:#999;
+                                }
+                            }
+
+                            select {
+                                font-size: 2rem;
+                                border: 1px solid #EEEEEE;
+                                padding: 0.8rem 6rem 0.8rem 2rem;
+                                border-radius: 0.5rem;
+                                appearance: none;
+                                background: url(../images/icon/down-arrow-solid-240.png) no-repeat right 2rem top 50%/1rem;
+                                color: #999;
+                                option{
+                                    color:#333;
+                                }
+                                &:focus{
+                                    border-color:#2B333E;
+                                }
+                            }
+
+                            textarea {
+                                resize: none;
+                                border: 1px solid #EEEEEE;
+                                width: calc(100% - 15rem);
+                                font-size: 2rem;
+                                border-radius: 0.5rem;
+                                color:#333;
+                                padding:2rem;
+                                &::placeholder{
+                                    color:#999;
+                                }
+                                &:focus{
+                                    border-color:#2B333E;
+                                }
+                            }
+                        }
+                    }
+                    .popup--footer{
+                        justify-content: flex-end;
+                        padding: 0 3.5rem 5rem;
+                        gap:1rem;
+                        .btn{
+                            flex:initial;
+                            padding:0;
+                            width:16rem;
+                            height:5rem;
+                            border-radius:0.5rem;
+                            box-shadow: none;
+                            border:1px solid #3066E2;
+                            &.popup__check-btn{
+                                background-color: #3066E2;
+                            }
+                            &.popup__cancle-btn{
+                                background-color: #fff;
+                                color:#3066E2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
+
 @media (max-width:1199px) {
-    body{
-        main{
-            .log-inner{
-                .nav-tabs{
-                    .tab-wrap{
-                        .tab-box{
-                            .pg-table-box{
-                                .pg-table{
-                                    .rest-tbl-top{
+    body {
+        main {
+            .log-inner {
+                .nav-tabs {
+                    .tab-wrap {
+                        .tab-box {
+                            .pg-table-box {
+                                .pg-table {
+                                    .rest-tbl-top {
                                         flex-wrap: wrap;
-                                        padding-bottom:1rem;
-                                        border-bottom:1px solid #E9E9E9;
+                                        padding-bottom: 1rem;
+                                        border-bottom: 1px solid #E9E9E9;
                                     }
                                 }
                             }
@@ -80,22 +206,56 @@ body{
         }
     }
 }
-@media (max-width:500px) {
+@media (max-width:768px) {
     body{
         main{
-            .log-inner{
-                .nav-tabs{
-                    .tab-wrap{
-                        .tab-box{
-                            .pg-table-box{
-                                .pg-table{
-                                    .rest-tbl-top{
-                                        .table-text{
+            .pop-manage{
+                .popup__wrap{
+                    .popup-type-4{
+                        .popup--body{
+                            .popup-tr{
+                                flex-direction: column;
+                                gap:1rem 0;
+                                &.lab-align{
+                                    align-items: flex-start;
+                                }
+                                label{
+                                    font-size: 1.8rem;
+                                }
+                                input{
+                                    font-size: 1.6rem;
+                                }
+                                select{
+                                    font-size: 1.6rem;
+                                }
+                                textarea{
+                                    width:100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:500px) {
+    body {
+        main {
+            .log-inner {
+                .nav-tabs {
+                    .tab-wrap {
+                        .tab-box {
+                            .pg-table-box {
+                                .pg-table {
+                                    .rest-tbl-top {
+                                        .table-text {
                                             font-size: 1.6rem;
                                         }
-                                        .add-acc-btn{
+
+                                        .add-acc-btn {
                                             font-size: 1.6rem;
-                                            width:10rem;
+                                            width: 10rem;
                                         }
                                     }
                                 }

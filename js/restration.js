@@ -28,7 +28,6 @@ activeMoSubList.style.height = moSubHeight * j2 + 'px';
 //main
 const navBtn = document.querySelectorAll('.nav-tabs .nav-link');
 
-
 //pagenation
 const pageList = document.querySelector('.pd-page-list');
 const pageWrap = document.querySelector('.pd-page-wrap');
@@ -140,5 +139,57 @@ for (let liNum = 0; liNum < trLength; liNum++) {
         for (let z = liNum * 5; z <= ((liNum + 1) * 5) - 1; z++) {
             tr[z].classList.add('active');
         }
+    });
+}
+
+//modal
+const addBtn = document.querySelector('.add-acc-btn');
+const editBtn = document.querySelectorAll('.acc-edit-btn');
+const addPop = document.querySelector('.pop-add-acc');
+const editPop = document.querySelectorAll('.pop-edit-acc');
+const closeBtn = document.querySelectorAll('.popup__close-btn');
+const checkBtn = document.querySelectorAll('.popup__check-btn');
+const cancleBtn = document.querySelectorAll('.popup__cancle-btn');
+const background = document.querySelectorAll('.popup__bg');
+
+addBtn.addEventListener('click', function () {
+    document.querySelector('body').style.overflowY = 'hidden';
+    addPop.classList.add('active');
+});
+editBtn.forEach((el,index)=>{
+    el.addEventListener('click',function(){
+        editPop[index].classList.add('active');
+    });
+});
+//modal close
+background.forEach(bg => {
+    bg.addEventListener('click', function (e) {
+        if (e.target.classList.contains('popup__bg')) {
+            document.querySelector('body').style.overflowY = 'auto';
+
+            addPop.classList.remove('active');
+            editPop.forEach(el=>{
+                el.classList.remove('active');
+            });
+        }
+    });
+});
+closeBtn.forEach(close => {
+    closeModal(close);
+});
+cancleBtn.forEach(close => {
+    closeModal(close);
+});
+checkBtn.forEach(check => {
+    closeModal(check);
+});
+
+function closeModal(close) {
+    close.addEventListener('click', function () {
+        document.querySelector('body').style.overflowY = 'auto';
+        addPop.classList.remove('active');
+        editPop.forEach(el=>{
+            el.classList.remove('active');
+        });
     });
 }
