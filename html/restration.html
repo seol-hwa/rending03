@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>99MONSTER</title>
     <!--xeicon cdn-->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
     <!--style css-->
-    <link rel="stylesheet" href="../css/commons.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/commons.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <!--swiper cdn-->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -18,406 +20,720 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
         integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-</head>
+  </head>
 
-<body>
-    <header class="side-menu__header"></header>
+  <body>
+    <header class="side-menu__header">
+      <div class="inner">
+        <div class="d-flex header2__pc-wrap">
+          <a href="../index.html" class="logo">
+            <h1 class="font-24">99</h1>
+          </a>
+          <nav class="nav-style-2">
+            <ul class="main-list">
+              <li>
+                <a href="#" class="main-list__menu">99몬스터</a>
+              </li>
+              <li>
+                <a href="#" class="main-list__menu">프로그램 소개</a>
+              </li>
+              <li>
+                <a href="#" class="main-list__menu">프로그램</a>
+                <ul class="sub-list">
+                  <li><a href="" class="sub-list__menu">인스타그램</a></li>
+                  <li><a href="" class="sub-list__menu">N사</a></li>
+                  <li><a href="" class="sub-list__menu">블로그</a></li>
+                  <li><a href="" class="sub-list__menu">T사</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="main-list__menu">업데이트 목록</a>
+              </li>
+              <li>
+                <a href="#" class="main-list__menu">고객센터</a>
+                <ul class="sub-list">
+                  <li><a href="" class="sub-list__menu">공지사항</a></li>
+                  <li><a href="" class="sub-list__menu">1:1 문의</a></li>
+                </ul>
+              </li>
+              <li class="nav-bg"></li>
+            </ul>
+            <button class="mo-nav-open" value="전체메뉴">
+              <i class="xi-bars xi-2x"></i>
+            </button>
+          </nav>
+          <div class="pc-wrap__right">
+            <a href="regular_order.html" class="pr-15 pl-15 pt-3 pb-3"
+              >시작하기</a
+            >
+            <a href="">회원가입</a>
+          </div>
+        </div>
+        <div class="mo-nav-wrap-2">
+          <div class="mo-nav-wrap__mo-nav-box">
+            <div class="mo-nav-box__header">
+              <ul class="header__info">
+                <li><a href="regular_order.html">시작하기</a></li>
+                <li><a href="">회원가입</a></li>
+              </ul>
+              <button class="mo-nav-close">
+                <i class="xi-close xi-2x"></i>
+              </button>
+            </div>
+            <ul class="mo-main-list">
+              <li><a href="" class="mo-main-list__menu">99몬스터</a></li>
+              <li><a href="" class="mo-main-list__menu">프로그램 소개</a></li>
+              <li>
+                <a href="" class="mo-main-list__menu"
+                  >프로그램<i class="xi-angle-down"></i
+                ></a>
+                <ul class="sub-list">
+                  <li><a href="" class="sub-list__menu">인스타그램</a></li>
+                  <li><a href="" class="sub-list__menu">N사</a></li>
+                  <li><a href="" class="sub-list__menu">블로그</a></li>
+                  <li><a href="" class="sub-list__menu">T사</a></li>
+                </ul>
+              </li>
+              <li><a href="" class="mo-main-list__menu">업데이트 목록</a></li>
+              <li>
+                <a href="" class="mo-main-list__menu"
+                  >고객센터<i class="xi-angle-down"></i
+                ></a>
+                <ul class="sub-list">
+                  <li><a href="" class="sub-list__menu">공지사항</a></li>
+                  <li><a href="" class="sub-list__menu">1:1 문의</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
-        <div class="log-inner">
-            <div class="page-title-box">
-                <h2 class="page-title">계정등록</h2>
-                <p class="page-text">관리 계정을 등록해주세요.</p>
-            </div>
-            <div class="nav-tabs">
-                <div class="tab-wrap">
-                    <div class="tab-box active">
-                        <div class="pg-table-box pt-24 pr-24 pl-24 pb-30 mb-60">
-                            <h3 class="wrap-title">계정리스트</h3>
-                            <p class="wrap-text">관리 계정을 등록하여 관리하기 편리하도록 제공되는 기능입니다.</p>
-                            <div class="pg-table mt-75">
-                                <div class="d-flex rest-tbl-top">
-                                    <p class="table-text">연결된 계정 (총 <span>2</span>개)</p>
-                                    <button type="button" class="add-acc-btn">+ 계정 추가</button>
-                                </div>
-                                <div class="thead pt-21 pb-21 mt-21">
-                                    <div class="thead-tr d-flex">
-                                        <p class="th col-2">계정</p>
-                                        <p class="th col-2">등록일</p>
-                                        <p class="th col-2">서비스종류</p>
-                                        <p class="th col-3">메모</p>
-                                        <p class="th col-3">관리</p>
-                                    </div>
-                                </div>
-                                <div class="tbody">
-                                    <div class="tbody-tr row pt-12 pb-12 active">
-                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
-                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
-                                        <p class="td col-12 col-xl-2 v-update-title">인스타그램</p>
-                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
-                                        <p class="td col-12 col-xl-3">
-                                            <button type="button" class="acc-mng-btn acc-edit-btn">수정</button>
-                                            <button type="button" class="acc-mng-btn acc-delete-btn">삭제</button>
-                                        </p>
-                                    </div>
-                                    <div class="tbody-tr row pt-12 pb-12 active">
-                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
-                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
-                                        <p class="td col-12 col-xl-2 v-update-title">네이버</p>
-                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
-                                        <p class="td col-12 col-xl-3">
-                                            <button type="button" class="acc-mng-btn acc-edit-btn">수정</button>
-                                            <button type="button" class="acc-mng-btn acc-delete-btn">삭제</button>
-                                        </p>
-                                    </div>
-                                    <div class="tbody-tr row pt-12 pb-12 active">
-                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
-                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
-                                        <p class="td col-12 col-xl-2 v-update-title">유튜브</p>
-                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
-                                        <p class="td col-12 col-xl-3">
-                                            <button type="button" class="acc-mng-btn acc-edit-btn">수정</button>
-                                            <button type="button" class="acc-mng-btn acc-delete-btn">삭제</button>
-                                        </p>
-
-                                    </div>
-                                    <div class="tbody-tr row pt-12 pb-12 active">
-                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
-                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
-                                        <p class="td col-12 col-xl-2 v-update-title">인스타그램</p>
-                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
-                                        <p class="td col-12 col-xl-3">
-                                            <button type="button" class="acc-mng-btn acc-edit-btn">수정</button>
-                                            <button type="button" class="acc-mng-btn acc-delete-btn">삭제</button>
-                                        </p>
-
-                                    </div>
-                                    <div class="tbody-tr row pt-12 pb-12 active">
-                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
-                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
-                                        <p class="td col-12 col-xl-2 v-update-title">인스타그램</p>
-                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
-                                        <p class="td col-12 col-xl-3">
-                                            <button type="button" class="acc-mng-btn acc-edit-btn">수정</button>
-                                            <button type="button" class="acc-mng-btn acc-delete-btn">삭제</button>
-                                        </p>
-
-                                    </div>
-                                    <div class="tbody-tr row pt-12 pb-12">
-                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
-                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
-                                        <p class="td col-12 col-xl-2 v-update-title">인스타그램</p>
-                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
-                                        <p class="td col-12 col-xl-3">
-                                            <button type="button" class="acc-mng-btn acc-edit-btn">수정</button>
-                                            <button type="button" class="acc-mng-btn acc-delete-btn">삭제</button>
-                                        </p>
-                                    </div>
-                                    <div class="tbody-tr row pt-12 pb-12">
-                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
-                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
-                                        <p class="td col-12 col-xl-2 v-update-title">인스타그램</p>
-                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
-                                        <p class="td col-12 col-xl-3">
-                                            <button type="button" class="acc-mng-btn acc-edit-btn">수정</button>
-                                            <button type="button" class="acc-mng-btn acc-delete-btn">삭제</button>
-                                        </p>
-                                    </div>
-                                    <div class="tbody-tr row pt-12 pb-12">
-                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
-                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
-                                        <p class="td col-12 col-xl-2 v-update-title">인스타그램</p>
-                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
-                                        <p class="td col-12 col-xl-3">
-                                            <button type="button" class="acc-mng-btn acc-edit-btn">수정</button>
-                                            <button type="button" class="acc-mng-btn acc-delete-btn">삭제</button>
-                                        </p>
-                                    </div>
-                                    <div class="tbody-tr row pt-12 pb-12">
-                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
-                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
-                                        <p class="td col-12 col-xl-2 v-update-title">인스타그램</p>
-                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
-                                        <p class="td col-12 col-xl-3">
-                                            <button type="button" class="acc-mng-btn acc-edit-btn">수정</button>
-                                            <button type="button" class="acc-mng-btn acc-delete-btn">삭제</button>
-                                        </p>
-                                    </div>
-                                    <div class="tbody-tr row pt-12 pb-12">
-                                        <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
-                                        <p class="td col-12 col-xl-2 v-update-version">23.10.24</p>
-                                        <p class="td col-12 col-xl-2 v-update-title">인스타그램</p>
-                                        <p class="td col-12 col-xl-3 v-update-program">꽃집 홍보 계정</p>
-                                        <p class="td col-12 col-xl-3">
-                                            <button type="button" class="acc-mng-btn acc-edit-btn">수정</button>
-                                            <button type="button" class="acc-mng-btn acc-delete-btn">삭제</button>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <ul class="pd-pagenation-list d-flex-all-center mt-30">
-                                <li>
-                                    <button class="prev-page pd-pagenation-btn">
-                                        <i class="xi-angle-left-min xi-2x"></i>
-                                    </button>
-                                </li>
-                                <li class="pd-page-wrap">
-                                    <ul class="pd-page-list d-flex">
-                                    </ul>
-                                </li>
-                                <li>
-                                    <button class="next-page pd-pagenation-btn">
-                                        <i class="xi-angle-right-min xi-2x"></i>
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="log-inner">
+        <div class="page-title-box">
+          <h2 class="page-title">계정등록</h2>
+          <p class="page-text">관리 계정을 등록해주세요.</p>
         </div>
-        <div class="popup pop-manage pop-add-acc">
-            <div class="popup__bg"></div>
-            <div class="popup__wrap">
-                <div class="popup-type-4">
-                    <div class="popup--header">
-                        <h4 class="popup--header__title">관리계정 등록</h4>
-                        <button class="popup__close-btn">
-                            <i class="xi-close xi-2x"></i>
+        <div class="nav-tabs">
+          <div class="tab-wrap">
+            <div class="tab-box active">
+              <div class="pg-table-box pt-24 pr-24 pl-24 pb-30 mb-60">
+                <h3 class="wrap-title">계정리스트</h3>
+                <p class="wrap-text">
+                  관리 계정을 등록하여 관리하기 편리하도록 제공되는 기능입니다.
+                </p>
+                <div class="pg-table mt-75">
+                  <div class="d-flex rest-tbl-top">
+                    <p class="table-text">연결된 계정 (총 <span>2</span>개)</p>
+                    <button type="button" class="add-acc-btn">
+                      + 계정 추가
+                    </button>
+                  </div>
+                  <div class="thead pt-21 pb-21 mt-21">
+                    <div class="thead-tr d-flex">
+                      <p class="th col-2">계정</p>
+                      <p class="th col-2">등록일</p>
+                      <p class="th col-2">서비스종류</p>
+                      <p class="th col-3">메모</p>
+                      <p class="th col-3">관리</p>
+                    </div>
+                  </div>
+                  <div class="tbody">
+                    <div class="tbody-tr row pt-12 pb-12 active">
+                      <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                      <p class="td col-12 col-xl-2 v-update-version">
+                        23.10.24
+                      </p>
+                      <p class="td col-12 col-xl-2 v-update-title">
+                        인스타그램
+                      </p>
+                      <p class="td col-12 col-xl-3 v-update-program">
+                        꽃집 홍보 계정
+                      </p>
+                      <p class="td col-12 col-xl-3">
+                        <button type="button" class="acc-mng-btn acc-edit-btn">
+                          수정
                         </button>
-                    </div>
-                    <div class="popup--body">
-                        <div class="d-flex popup-tr lab-align">
-                            <label for="inputText01" class="lab-required">아이디</label>
-                            <input type="text" placeholder="아이디를 입력해주세요." id="inputText01" required>
-                        </div>
-                        <div class="d-flex popup-tr lab-align">
-                            <label for="inputPass01" class="lab-required">비밀번호</label>
-                            <input type="password" placeholder="패스워드를 입력해주세요." id="inputPass01" required>
-                        </div>
-                        <div class="d-flex popup-tr lab-align select-box">
-                            <label for="inputSelect01">서비스종류</label>
-                            <select id="inputSelect01">
-                                <option value="none" selected>선택해주세요.</option>
-                                <option value="A">A</option>
-                                <option value="B">B</option>
-                            </select>
-                        </div>
-                        <div class="d-flex popup-tr">
-                            <label for="inputPre01">메모</label>
-                            <textarea id="inputPre01" rows="3"></textarea>
-                        </div>
-                    </div>
-                    <div class="popup--footer">
-                        <button type="button" class="btn btn-d-purple popup__check-btn">등록</button>
-                        <button type="button" class="btn btn-d-gray popup__cancle-btn">취소</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="popup pop-manage pop-edit-acc">
-            <div class="popup__bg"></div>
-            <div class="popup__wrap">
-                <div class="popup-type-4">
-                    <div class="popup--header">
-                        <h4 class="popup--header__title">관리계정 수정</h4>
-                        <button class="popup__close-btn">
-                            <i class="xi-close xi-2x"></i>
+                        <button
+                          type="button"
+                          class="acc-mng-btn acc-delete-btn"
+                        >
+                          삭제
                         </button>
+                      </p>
                     </div>
-                    <div class="popup--body">
-                        <div class="d-flex popup-tr lab-align">
-                            <label for="inputText02" class="lab-required">아이디</label>
-                            <input type="text" placeholder="99monster" id="inputText02" required>
-                        </div>
-                        <div class="d-flex popup-tr lab-align">
-                            <label for="inputPass02" class="lab-required">비밀번호</label>
-                            <input type="password" placeholder="패스워드를 입력해주세요." id="inputPass02" required>
-                        </div>
-                        <div class="d-flex popup-tr lab-align select-box">
-                            <label for="inputSelect02">서비스종류</label>
-                            <select id="inputSelect02">
-                                <option value="none">선택해주세요.</option>
-                                <option value="instagram" selected>인스타그램</option>
-                                <option value="youtube">유튜브</option>
-                                <option value="naver">네이버</option>
-                            </select>
-                        </div>
-                        <div class="d-flex popup-tr">
-                            <label for="inputPre02">메모</label>
-                            <textarea id="inputPre02" rows="3" placeholder="꽃집 홍보 계정"></textarea>
-                        </div>
-                    </div>
-                    <div class="popup--footer">
-                        <button type="button" class="btn btn-d-purple popup__check-btn">저장</button>
-                        <button type="button" class="btn btn-d-gray popup__cancle-btn">취소</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="popup pop-manage pop-edit-acc">
-            <div class="popup__bg"></div>
-            <div class="popup__wrap">
-                <div class="popup-type-4">
-                    <div class="popup--header">
-                        <h4 class="popup--header__title">관리계정 수정</h4>
-                        <button class="popup__close-btn">
-                            <i class="xi-close xi-2x"></i>
+                    <div class="tbody-tr row pt-12 pb-12 active">
+                      <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                      <p class="td col-12 col-xl-2 v-update-version">
+                        23.10.24
+                      </p>
+                      <p class="td col-12 col-xl-2 v-update-title">네이버</p>
+                      <p class="td col-12 col-xl-3 v-update-program">
+                        꽃집 홍보 계정
+                      </p>
+                      <p class="td col-12 col-xl-3">
+                        <button type="button" class="acc-mng-btn acc-edit-btn">
+                          수정
                         </button>
-                    </div>
-                    <div class="popup--body">
-                        <div class="d-flex popup-tr lab-align">
-                            <label for="inputText03" class="lab-required">아이디</label>
-                            <input type="text" placeholder="99monster" id="inputText03" required>
-                        </div>
-                        <div class="d-flex popup-tr lab-align">
-                            <label for="inputPass03" class="lab-required">비밀번호</label>
-                            <input type="password" placeholder="패스워드를 입력해주세요." id="inputPass03" required>
-                        </div>
-                        <div class="d-flex popup-tr lab-align select-box">
-                            <label for="inputSelect03">서비스종류</label>
-                            <select id="inputSelect03">
-                                <option value="none">선택해주세요.</option>
-                                <option value="instagram">인스타그램</option>
-                                <option value="youtube">유튜브</option>
-                                <option value="naver" selected>네이버</option>
-                            </select>
-                        </div>
-                        <div class="d-flex popup-tr">
-                            <label for="inputPre03">메모</label>
-                            <textarea id="inputPre03" rows="3" placeholder="꽃집 홍보 계정"></textarea>
-                        </div>
-                    </div>
-                    <div class="popup--footer">
-                        <button type="button" class="btn btn-d-purple popup__check-btn">저장</button>
-                        <button type="button" class="btn btn-d-gray popup__cancle-btn">취소</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="popup pop-manage pop-edit-acc">
-            <div class="popup__bg"></div>
-            <div class="popup__wrap">
-                <div class="popup-type-4">
-                    <div class="popup--header">
-                        <h4 class="popup--header__title">관리계정 수정</h4>
-                        <button class="popup__close-btn">
-                            <i class="xi-close xi-2x"></i>
+                        <button
+                          type="button"
+                          class="acc-mng-btn acc-delete-btn"
+                        >
+                          삭제
                         </button>
+                      </p>
                     </div>
-                    <div class="popup--body">
-                        <div class="d-flex popup-tr lab-align">
-                            <label for="inputText04" class="lab-required">아이디</label>
-                            <input type="text" placeholder="99monster" id="inputText04" required>
-                        </div>
-                        <div class="d-flex popup-tr lab-align">
-                            <label for="inputPass04" class="lab-required">비밀번호</label>
-                            <input type="password" placeholder="패스워드를 입력해주세요." id="inputPass04" required>
-                        </div>
-                        <div class="d-flex popup-tr lab-align select-box">
-                            <label for="inputSelect04">서비스종류</label>
-                            <select id="inputSelect04">
-                                <option value="none">선택해주세요.</option>
-                                <option value="instagram">인스타그램</option>
-                                <option value="youtube" selected>유튜브</option>
-                                <option value="naver">네이버</option>
-                            </select>
-                        </div>
-                        <div class="d-flex popup-tr">
-                            <label for="inputPre04">메모</label>
-                            <textarea id="inputPre04" rows="3" placeholder="꽃집 홍보 계정"></textarea>
-                        </div>
-                    </div>
-                    <div class="popup--footer">
-                        <button type="button" class="btn btn-d-purple popup__check-btn">저장</button>
-                        <button type="button" class="btn btn-d-gray popup__cancle-btn">취소</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="popup pop-manage pop-edit-acc">
-            <div class="popup__bg"></div>
-            <div class="popup__wrap">
-                <div class="popup-type-4">
-                    <div class="popup--header">
-                        <h4 class="popup--header__title">관리계정 수정</h4>
-                        <button class="popup__close-btn">
-                            <i class="xi-close xi-2x"></i>
+                    <div class="tbody-tr row pt-12 pb-12 active">
+                      <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                      <p class="td col-12 col-xl-2 v-update-version">
+                        23.10.24
+                      </p>
+                      <p class="td col-12 col-xl-2 v-update-title">유튜브</p>
+                      <p class="td col-12 col-xl-3 v-update-program">
+                        꽃집 홍보 계정
+                      </p>
+                      <p class="td col-12 col-xl-3">
+                        <button type="button" class="acc-mng-btn acc-edit-btn">
+                          수정
                         </button>
-                    </div>
-                    <div class="popup--body">
-                        <div class="d-flex popup-tr lab-align">
-                            <label for="inputText05" class="lab-required">아이디</label>
-                            <input type="text" placeholder="99monster" id="inputText05" required>
-                        </div>
-                        <div class="d-flex popup-tr lab-align">
-                            <label for="inputPass05" class="lab-required">비밀번호</label>
-                            <input type="password" placeholder="패스워드를 입력해주세요." id="inputPass05" required>
-                        </div>
-                        <div class="d-flex popup-tr lab-align select-box">
-                            <label for="inputSelect05">서비스종류</label>
-                            <select id="inputSelect05">
-                                <option value="none">선택해주세요.</option>
-                                <option value="instagram" selected>인스타그램</option>
-                                <option value="youtube">유튜브</option>
-                                <option value="naver">네이버</option>
-                            </select>
-                        </div>
-                        <div class="d-flex popup-tr">
-                            <label for="inputPre05">메모</label>
-                            <textarea id="inputPre05" rows="3" placeholder="꽃집 홍보 계정"></textarea>
-                        </div>
-                    </div>
-                    <div class="popup--footer">
-                        <button type="button" class="btn btn-d-purple popup__check-btn">저장</button>
-                        <button type="button" class="btn btn-d-gray popup__cancle-btn">취소</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="popup pop-manage pop-edit-acc">
-            <div class="popup__bg"></div>
-            <div class="popup__wrap">
-                <div class="popup-type-4">
-                    <div class="popup--header">
-                        <h4 class="popup--header__title">관리계정 수정</h4>
-                        <button class="popup__close-btn">
-                            <i class="xi-close xi-2x"></i>
+                        <button
+                          type="button"
+                          class="acc-mng-btn acc-delete-btn"
+                        >
+                          삭제
                         </button>
+                      </p>
                     </div>
-                    <div class="popup--body">
-                        <div class="d-flex popup-tr lab-align">
-                            <label for="inputText06" class="lab-required">아이디</label>
-                            <input type="text" placeholder="99monster" id="inputText06" required>
-                        </div>
-                        <div class="d-flex popup-tr lab-align">
-                            <label for="inputPass06" class="lab-required">비밀번호</label>
-                            <input type="password" placeholder="패스워드를 입력해주세요." id="inputPass06" required>
-                        </div>
-                        <div class="d-flex popup-tr lab-align select-box">
-                            <label for="inputSelect06">서비스종류</label>
-                            <select id="inputSelect06">
-                                <option value="none">선택해주세요.</option>
-                                <option value="instagram" selected>인스타그램</option>
-                                <option value="youtube">유튜브</option>
-                                <option value="naver">네이버</option>
-                            </select>
-                        </div>
-                        <div class="d-flex popup-tr">
-                            <label for="inputPre06">메모</label>
-                            <textarea id="inputPre06" rows="3" placeholder="꽃집 홍보 계정"></textarea>
-                        </div>
+                    <div class="tbody-tr row pt-12 pb-12 active">
+                      <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                      <p class="td col-12 col-xl-2 v-update-version">
+                        23.10.24
+                      </p>
+                      <p class="td col-12 col-xl-2 v-update-title">
+                        인스타그램
+                      </p>
+                      <p class="td col-12 col-xl-3 v-update-program">
+                        꽃집 홍보 계정
+                      </p>
+                      <p class="td col-12 col-xl-3">
+                        <button type="button" class="acc-mng-btn acc-edit-btn">
+                          수정
+                        </button>
+                        <button
+                          type="button"
+                          class="acc-mng-btn acc-delete-btn"
+                        >
+                          삭제
+                        </button>
+                      </p>
                     </div>
-                    <div class="popup--footer">
-                        <button type="button" class="btn btn-d-purple popup__check-btn">저장</button>
-                        <button type="button" class="btn btn-d-gray popup__cancle-btn">취소</button>
+                    <div class="tbody-tr row pt-12 pb-12 active">
+                      <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                      <p class="td col-12 col-xl-2 v-update-version">
+                        23.10.24
+                      </p>
+                      <p class="td col-12 col-xl-2 v-update-title">
+                        인스타그램
+                      </p>
+                      <p class="td col-12 col-xl-3 v-update-program">
+                        꽃집 홍보 계정
+                      </p>
+                      <p class="td col-12 col-xl-3">
+                        <button type="button" class="acc-mng-btn acc-edit-btn">
+                          수정
+                        </button>
+                        <button
+                          type="button"
+                          class="acc-mng-btn acc-delete-btn"
+                        >
+                          삭제
+                        </button>
+                      </p>
                     </div>
+                    <div class="tbody-tr row pt-12 pb-12">
+                      <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                      <p class="td col-12 col-xl-2 v-update-version">
+                        23.10.24
+                      </p>
+                      <p class="td col-12 col-xl-2 v-update-title">
+                        인스타그램
+                      </p>
+                      <p class="td col-12 col-xl-3 v-update-program">
+                        꽃집 홍보 계정
+                      </p>
+                      <p class="td col-12 col-xl-3">
+                        <button type="button" class="acc-mng-btn acc-edit-btn">
+                          수정
+                        </button>
+                        <button
+                          type="button"
+                          class="acc-mng-btn acc-delete-btn"
+                        >
+                          삭제
+                        </button>
+                      </p>
+                    </div>
+                    <div class="tbody-tr row pt-12 pb-12">
+                      <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                      <p class="td col-12 col-xl-2 v-update-version">
+                        23.10.24
+                      </p>
+                      <p class="td col-12 col-xl-2 v-update-title">
+                        인스타그램
+                      </p>
+                      <p class="td col-12 col-xl-3 v-update-program">
+                        꽃집 홍보 계정
+                      </p>
+                      <p class="td col-12 col-xl-3">
+                        <button type="button" class="acc-mng-btn acc-edit-btn">
+                          수정
+                        </button>
+                        <button
+                          type="button"
+                          class="acc-mng-btn acc-delete-btn"
+                        >
+                          삭제
+                        </button>
+                      </p>
+                    </div>
+                    <div class="tbody-tr row pt-12 pb-12">
+                      <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                      <p class="td col-12 col-xl-2 v-update-version">
+                        23.10.24
+                      </p>
+                      <p class="td col-12 col-xl-2 v-update-title">
+                        인스타그램
+                      </p>
+                      <p class="td col-12 col-xl-3 v-update-program">
+                        꽃집 홍보 계정
+                      </p>
+                      <p class="td col-12 col-xl-3">
+                        <button type="button" class="acc-mng-btn acc-edit-btn">
+                          수정
+                        </button>
+                        <button
+                          type="button"
+                          class="acc-mng-btn acc-delete-btn"
+                        >
+                          삭제
+                        </button>
+                      </p>
+                    </div>
+                    <div class="tbody-tr row pt-12 pb-12">
+                      <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                      <p class="td col-12 col-xl-2 v-update-version">
+                        23.10.24
+                      </p>
+                      <p class="td col-12 col-xl-2 v-update-title">
+                        인스타그램
+                      </p>
+                      <p class="td col-12 col-xl-3 v-update-program">
+                        꽃집 홍보 계정
+                      </p>
+                      <p class="td col-12 col-xl-3">
+                        <button type="button" class="acc-mng-btn acc-edit-btn">
+                          수정
+                        </button>
+                        <button
+                          type="button"
+                          class="acc-mng-btn acc-delete-btn"
+                        >
+                          삭제
+                        </button>
+                      </p>
+                    </div>
+                    <div class="tbody-tr row pt-12 pb-12">
+                      <p class="td col-12 col-xl-2 v-update-date">99mo***</p>
+                      <p class="td col-12 col-xl-2 v-update-version">
+                        23.10.24
+                      </p>
+                      <p class="td col-12 col-xl-2 v-update-title">
+                        인스타그램
+                      </p>
+                      <p class="td col-12 col-xl-3 v-update-program">
+                        꽃집 홍보 계정
+                      </p>
+                      <p class="td col-12 col-xl-3">
+                        <button type="button" class="acc-mng-btn acc-edit-btn">
+                          수정
+                        </button>
+                        <button
+                          type="button"
+                          class="acc-mng-btn acc-delete-btn"
+                        >
+                          삭제
+                        </button>
+                      </p>
+                    </div>
+                  </div>
                 </div>
+                <ul class="pd-pagenation-list d-flex-all-center mt-30">
+                  <li>
+                    <button class="prev-page pd-pagenation-btn">
+                      <i class="xi-angle-left-min xi-2x"></i>
+                    </button>
+                  </li>
+                  <li class="pd-page-wrap">
+                    <ul class="pd-page-list d-flex"></ul>
+                  </li>
+                  <li>
+                    <button class="next-page pd-pagenation-btn">
+                      <i class="xi-angle-right-min xi-2x"></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+      <div class="popup pop-manage pop-add-acc">
+        <div class="popup__bg"></div>
+        <div class="popup__wrap">
+          <div class="popup-type-4">
+            <div class="popup--header">
+              <h4 class="popup--header__title">관리계정 등록</h4>
+              <button class="popup__close-btn">
+                <i class="xi-close xi-2x"></i>
+              </button>
+            </div>
+            <div class="popup--body">
+              <div class="d-flex popup-tr lab-align">
+                <label for="inputText01" class="lab-required">아이디</label>
+                <input
+                  type="text"
+                  placeholder="아이디를 입력해주세요."
+                  id="inputText01"
+                  required
+                />
+              </div>
+              <div class="d-flex popup-tr lab-align">
+                <label for="inputPass01" class="lab-required">비밀번호</label>
+                <input
+                  type="password"
+                  placeholder="패스워드를 입력해주세요."
+                  id="inputPass01"
+                  required
+                />
+              </div>
+              <div class="d-flex popup-tr lab-align select-box">
+                <label for="inputSelect01">서비스종류</label>
+                <select id="inputSelect01">
+                  <option value="none" selected>선택해주세요.</option>
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                </select>
+              </div>
+              <div class="d-flex popup-tr">
+                <label for="inputPre01">메모</label>
+                <textarea id="inputPre01" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="popup--footer">
+              <button type="button" class="btn btn-d-purple popup__check-btn">
+                등록
+              </button>
+              <button type="button" class="btn btn-d-gray popup__cancle-btn">
+                취소
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup pop-manage pop-edit-acc">
+        <div class="popup__bg"></div>
+        <div class="popup__wrap">
+          <div class="popup-type-4">
+            <div class="popup--header">
+              <h4 class="popup--header__title">관리계정 수정</h4>
+              <button class="popup__close-btn">
+                <i class="xi-close xi-2x"></i>
+              </button>
+            </div>
+            <div class="popup--body">
+              <div class="d-flex popup-tr lab-align">
+                <label for="inputText02" class="lab-required">아이디</label>
+                <input
+                  type="text"
+                  placeholder="99monster"
+                  id="inputText02"
+                  required
+                />
+              </div>
+              <div class="d-flex popup-tr lab-align">
+                <label for="inputPass02" class="lab-required">비밀번호</label>
+                <input
+                  type="password"
+                  placeholder="패스워드를 입력해주세요."
+                  id="inputPass02"
+                  required
+                />
+              </div>
+              <div class="d-flex popup-tr lab-align select-box">
+                <label for="inputSelect02">서비스종류</label>
+                <select id="inputSelect02">
+                  <option value="none">선택해주세요.</option>
+                  <option value="instagram" selected>인스타그램</option>
+                  <option value="youtube">유튜브</option>
+                  <option value="naver">네이버</option>
+                </select>
+              </div>
+              <div class="d-flex popup-tr">
+                <label for="inputPre02">메모</label>
+                <textarea
+                  id="inputPre02"
+                  rows="3"
+                  placeholder="꽃집 홍보 계정"
+                ></textarea>
+              </div>
+            </div>
+            <div class="popup--footer">
+              <button type="button" class="btn btn-d-purple popup__check-btn">
+                저장
+              </button>
+              <button type="button" class="btn btn-d-gray popup__cancle-btn">
+                취소
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup pop-manage pop-edit-acc">
+        <div class="popup__bg"></div>
+        <div class="popup__wrap">
+          <div class="popup-type-4">
+            <div class="popup--header">
+              <h4 class="popup--header__title">관리계정 수정</h4>
+              <button class="popup__close-btn">
+                <i class="xi-close xi-2x"></i>
+              </button>
+            </div>
+            <div class="popup--body">
+              <div class="d-flex popup-tr lab-align">
+                <label for="inputText03" class="lab-required">아이디</label>
+                <input
+                  type="text"
+                  placeholder="99monster"
+                  id="inputText03"
+                  required
+                />
+              </div>
+              <div class="d-flex popup-tr lab-align">
+                <label for="inputPass03" class="lab-required">비밀번호</label>
+                <input
+                  type="password"
+                  placeholder="패스워드를 입력해주세요."
+                  id="inputPass03"
+                  required
+                />
+              </div>
+              <div class="d-flex popup-tr lab-align select-box">
+                <label for="inputSelect03">서비스종류</label>
+                <select id="inputSelect03">
+                  <option value="none">선택해주세요.</option>
+                  <option value="instagram">인스타그램</option>
+                  <option value="youtube">유튜브</option>
+                  <option value="naver" selected>네이버</option>
+                </select>
+              </div>
+              <div class="d-flex popup-tr">
+                <label for="inputPre03">메모</label>
+                <textarea
+                  id="inputPre03"
+                  rows="3"
+                  placeholder="꽃집 홍보 계정"
+                ></textarea>
+              </div>
+            </div>
+            <div class="popup--footer">
+              <button type="button" class="btn btn-d-purple popup__check-btn">
+                저장
+              </button>
+              <button type="button" class="btn btn-d-gray popup__cancle-btn">
+                취소
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup pop-manage pop-edit-acc">
+        <div class="popup__bg"></div>
+        <div class="popup__wrap">
+          <div class="popup-type-4">
+            <div class="popup--header">
+              <h4 class="popup--header__title">관리계정 수정</h4>
+              <button class="popup__close-btn">
+                <i class="xi-close xi-2x"></i>
+              </button>
+            </div>
+            <div class="popup--body">
+              <div class="d-flex popup-tr lab-align">
+                <label for="inputText04" class="lab-required">아이디</label>
+                <input
+                  type="text"
+                  placeholder="99monster"
+                  id="inputText04"
+                  required
+                />
+              </div>
+              <div class="d-flex popup-tr lab-align">
+                <label for="inputPass04" class="lab-required">비밀번호</label>
+                <input
+                  type="password"
+                  placeholder="패스워드를 입력해주세요."
+                  id="inputPass04"
+                  required
+                />
+              </div>
+              <div class="d-flex popup-tr lab-align select-box">
+                <label for="inputSelect04">서비스종류</label>
+                <select id="inputSelect04">
+                  <option value="none">선택해주세요.</option>
+                  <option value="instagram">인스타그램</option>
+                  <option value="youtube" selected>유튜브</option>
+                  <option value="naver">네이버</option>
+                </select>
+              </div>
+              <div class="d-flex popup-tr">
+                <label for="inputPre04">메모</label>
+                <textarea
+                  id="inputPre04"
+                  rows="3"
+                  placeholder="꽃집 홍보 계정"
+                ></textarea>
+              </div>
+            </div>
+            <div class="popup--footer">
+              <button type="button" class="btn btn-d-purple popup__check-btn">
+                저장
+              </button>
+              <button type="button" class="btn btn-d-gray popup__cancle-btn">
+                취소
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup pop-manage pop-edit-acc">
+        <div class="popup__bg"></div>
+        <div class="popup__wrap">
+          <div class="popup-type-4">
+            <div class="popup--header">
+              <h4 class="popup--header__title">관리계정 수정</h4>
+              <button class="popup__close-btn">
+                <i class="xi-close xi-2x"></i>
+              </button>
+            </div>
+            <div class="popup--body">
+              <div class="d-flex popup-tr lab-align">
+                <label for="inputText05" class="lab-required">아이디</label>
+                <input
+                  type="text"
+                  placeholder="99monster"
+                  id="inputText05"
+                  required
+                />
+              </div>
+              <div class="d-flex popup-tr lab-align">
+                <label for="inputPass05" class="lab-required">비밀번호</label>
+                <input
+                  type="password"
+                  placeholder="패스워드를 입력해주세요."
+                  id="inputPass05"
+                  required
+                />
+              </div>
+              <div class="d-flex popup-tr lab-align select-box">
+                <label for="inputSelect05">서비스종류</label>
+                <select id="inputSelect05">
+                  <option value="none">선택해주세요.</option>
+                  <option value="instagram" selected>인스타그램</option>
+                  <option value="youtube">유튜브</option>
+                  <option value="naver">네이버</option>
+                </select>
+              </div>
+              <div class="d-flex popup-tr">
+                <label for="inputPre05">메모</label>
+                <textarea
+                  id="inputPre05"
+                  rows="3"
+                  placeholder="꽃집 홍보 계정"
+                ></textarea>
+              </div>
+            </div>
+            <div class="popup--footer">
+              <button type="button" class="btn btn-d-purple popup__check-btn">
+                저장
+              </button>
+              <button type="button" class="btn btn-d-gray popup__cancle-btn">
+                취소
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup pop-manage pop-edit-acc">
+        <div class="popup__bg"></div>
+        <div class="popup__wrap">
+          <div class="popup-type-4">
+            <div class="popup--header">
+              <h4 class="popup--header__title">관리계정 수정</h4>
+              <button class="popup__close-btn">
+                <i class="xi-close xi-2x"></i>
+              </button>
+            </div>
+            <div class="popup--body">
+              <div class="d-flex popup-tr lab-align">
+                <label for="inputText06" class="lab-required">아이디</label>
+                <input
+                  type="text"
+                  placeholder="99monster"
+                  id="inputText06"
+                  required
+                />
+              </div>
+              <div class="d-flex popup-tr lab-align">
+                <label for="inputPass06" class="lab-required">비밀번호</label>
+                <input
+                  type="password"
+                  placeholder="패스워드를 입력해주세요."
+                  id="inputPass06"
+                  required
+                />
+              </div>
+              <div class="d-flex popup-tr lab-align select-box">
+                <label for="inputSelect06">서비스종류</label>
+                <select id="inputSelect06">
+                  <option value="none">선택해주세요.</option>
+                  <option value="instagram" selected>인스타그램</option>
+                  <option value="youtube">유튜브</option>
+                  <option value="naver">네이버</option>
+                </select>
+              </div>
+              <div class="d-flex popup-tr">
+                <label for="inputPre06">메모</label>
+                <textarea
+                  id="inputPre06"
+                  rows="3"
+                  placeholder="꽃집 홍보 계정"
+                ></textarea>
+              </div>
+            </div>
+            <div class="popup--footer">
+              <button type="button" class="btn btn-d-purple popup__check-btn">
+                저장
+              </button>
+              <button type="button" class="btn btn-d-gray popup__cancle-btn">
+                취소
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer></footer>
     <script src="../js/header_after_login.js"></script>
     <script src="../js/restration.js"></script>
-</body>
-
+  </body>
 </html>

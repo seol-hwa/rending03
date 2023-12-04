@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>99MONSTER</title>
     <!--xeicon cdn-->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
     <!--style css-->
-    <link rel="stylesheet" href="../css/commons.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/commons.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <!--swiper cdn-->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -18,87 +20,194 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
         integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-</head>
+  </head>
 
-<body>
-    <header class="side-menu__header"></header>
-    <main>
-        <div class="log-inner">
-            <div class="page-title-box boundary">
-                <h2 class="page-title">1:1문의</h2>
-            </div>
-            <div class="qna-wrap">
-                <h3 class="wrap-title">문의하기</h3>
-                <form action="#none" method="post" class="qna-box">
-                    <div class="row qna-row">
-                        <div class="col-xxl-5 col-12 qna-category">
-                            <div class="form-style">
-                                <label for="inputSelect1">문의유형</label>
-                                <select id="inputSelect1" required>
-                                    <option value="" selected>선택</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-xxl-7 col-12 qna-email">
-                            <div class="form-style">
-                                <label for="nameFormNone1">답변 이메일</label>
-                                <div class="d-flex email-box">
-                                    <input type="text" id="nameFormNone1" required>
-                                    @
-                                    <label for="inputText1" class="blind">도메인입력</label>
-                                    <input type="text" placeholder="example.com" 
-                                    id="inputText1" required>
-                                    <label for="nameFormNone2" class="blind">도메인선택</label>
-                                    <select id="nameFormNone2">
-                                        <option value="" selected>직접 입력</option>
-                                        <option value="naver.com">naver.com</option>
-                                        <option value="hanmail.net">hanmail.net</option>
-                                        <option value="gmail.com">gmail.com</option>
-                                        <option value="nate.com">nate.com</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="qna-title">
-                        <div class="form-style">
-                            <label for="nameFormTitle">제목</label>
-                            <input type="text" id="nameFormTitle" placeholder="제목을 입력해주세요. (최대 100자 이내)"
-                                maxlength="100">
-                        </div>
-                    </div>
-                    <div class="qna-detail">
-                        <div class="form-style">
-                            <label for="nameFormDetail">문의내용</label>
-                            <textarea id="nameFormDetail" placeholder="문의 내용을 작성해주세요. (최대 1000자 이내)"
-                                maxlength="1000"></textarea>
-                        </div>
-                    </div>
-                    <div class="qna-file mt-30">
-                        <!--파일첨부-->
-                        <div class="qna-file__left">
-                            <label for="fake-file" class="fake-lbl">첨부파일등록<span class="ml-12">* 10MB 미만의 파일 5개까지
-                                    첨부가능합니다.</span></label>
-                            <input type="text" id="fake-file" class="fake-inp blind" readonly>
-                            <input type="file" id="true-file" class="true-inp" multiple>
-                        </div>
-                        <label for="true-file" class="true-lbl">파일첨부</label>
-                    </div>
-                    <div class="form-check d-flex qna-check-box">
-                        <input type="checkbox" id="check-g-1">
-                        <label for="check-g-1">개인 정보 수집 및 이용에 동의합니다.</label>
-                    </div>
-                    <button class="btn btn-d-dark qna-btn d-flex-all-center">문의하기</button>
-                </form>
-            </div>
+  <body>
+    <header class="side-menu__header">
+      <div class="inner">
+        <div class="d-flex header2__pc-wrap">
+          <a href="../index.html" class="logo">
+            <h1 class="font-24">99</h1>
+          </a>
+          <nav class="nav-style-2">
+            <ul class="main-list">
+              <li>
+                <a href="#" class="main-list__menu">99몬스터</a>
+              </li>
+              <li>
+                <a href="#" class="main-list__menu">프로그램 소개</a>
+              </li>
+              <li>
+                <a href="#" class="main-list__menu">프로그램</a>
+                <ul class="sub-list">
+                  <li><a href="" class="sub-list__menu">인스타그램</a></li>
+                  <li><a href="" class="sub-list__menu">N사</a></li>
+                  <li><a href="" class="sub-list__menu">블로그</a></li>
+                  <li><a href="" class="sub-list__menu">T사</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="main-list__menu">업데이트 목록</a>
+              </li>
+              <li>
+                <a href="#" class="main-list__menu">고객센터</a>
+                <ul class="sub-list">
+                  <li><a href="" class="sub-list__menu">공지사항</a></li>
+                  <li><a href="" class="sub-list__menu">1:1 문의</a></li>
+                </ul>
+              </li>
+              <li class="nav-bg"></li>
+            </ul>
+            <button class="mo-nav-open" value="전체메뉴">
+              <i class="xi-bars xi-2x"></i>
+            </button>
+          </nav>
+          <div class="pc-wrap__right">
+            <a href="regular_order.html" class="pr-15 pl-15 pt-3 pb-3"
+              >시작하기</a
+            >
+            <a href="">회원가입</a>
+          </div>
         </div>
+        <div class="mo-nav-wrap-2">
+          <div class="mo-nav-wrap__mo-nav-box">
+            <div class="mo-nav-box__header">
+              <ul class="header__info">
+                <li><a href="regular_order.html">시작하기</a></li>
+                <li><a href="">회원가입</a></li>
+              </ul>
+              <button class="mo-nav-close">
+                <i class="xi-close xi-2x"></i>
+              </button>
+            </div>
+            <ul class="mo-main-list">
+              <li><a href="" class="mo-main-list__menu">99몬스터</a></li>
+              <li><a href="" class="mo-main-list__menu">프로그램 소개</a></li>
+              <li>
+                <a href="" class="mo-main-list__menu"
+                  >프로그램<i class="xi-angle-down"></i
+                ></a>
+                <ul class="sub-list">
+                  <li><a href="" class="sub-list__menu">인스타그램</a></li>
+                  <li><a href="" class="sub-list__menu">N사</a></li>
+                  <li><a href="" class="sub-list__menu">블로그</a></li>
+                  <li><a href="" class="sub-list__menu">T사</a></li>
+                </ul>
+              </li>
+              <li><a href="" class="mo-main-list__menu">업데이트 목록</a></li>
+              <li>
+                <a href="" class="mo-main-list__menu"
+                  >고객센터<i class="xi-angle-down"></i
+                ></a>
+                <ul class="sub-list">
+                  <li><a href="" class="sub-list__menu">공지사항</a></li>
+                  <li><a href="" class="sub-list__menu">1:1 문의</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="log-inner">
+        <div class="page-title-box boundary">
+          <h2 class="page-title">1:1문의</h2>
+        </div>
+        <div class="qna-wrap">
+          <h3 class="wrap-title">문의하기</h3>
+          <form action="#none" method="post" class="qna-box">
+            <div class="row qna-row">
+              <div class="col-xxl-5 col-12 qna-category">
+                <div class="form-style">
+                  <label for="inputSelect1">문의유형</label>
+                  <select id="inputSelect1" required>
+                    <option value="" selected>선택</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-xxl-7 col-12 qna-email">
+                <div class="form-style">
+                  <label for="nameFormNone1">답변 이메일</label>
+                  <div class="d-flex email-box">
+                    <input type="text" id="nameFormNone1" required />
+                    @
+                    <label for="inputText1" class="blind">도메인입력</label>
+                    <input
+                      type="text"
+                      placeholder="example.com"
+                      id="inputText1"
+                      required
+                    />
+                    <label for="nameFormNone2" class="blind">도메인선택</label>
+                    <select id="nameFormNone2">
+                      <option value="" selected>직접 입력</option>
+                      <option value="naver.com">naver.com</option>
+                      <option value="hanmail.net">hanmail.net</option>
+                      <option value="gmail.com">gmail.com</option>
+                      <option value="nate.com">nate.com</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="qna-title">
+              <div class="form-style">
+                <label for="nameFormTitle">제목</label>
+                <input
+                  type="text"
+                  id="nameFormTitle"
+                  placeholder="제목을 입력해주세요. (최대 100자 이내)"
+                  maxlength="100"
+                />
+              </div>
+            </div>
+            <div class="qna-detail">
+              <div class="form-style">
+                <label for="nameFormDetail">문의내용</label>
+                <textarea
+                  id="nameFormDetail"
+                  placeholder="문의 내용을 작성해주세요. (최대 1000자 이내)"
+                  maxlength="1000"
+                ></textarea>
+              </div>
+            </div>
+            <div class="qna-file mt-30">
+              <!--파일첨부-->
+              <div class="qna-file__left">
+                <label for="fake-file" class="fake-lbl"
+                  >첨부파일등록<span class="ml-12"
+                    >* 10MB 미만의 파일 5개까지 첨부가능합니다.</span
+                  ></label
+                >
+                <input
+                  type="text"
+                  id="fake-file"
+                  class="fake-inp blind"
+                  readonly
+                />
+                <input type="file" id="true-file" class="true-inp" multiple />
+              </div>
+              <label for="true-file" class="true-lbl">파일첨부</label>
+            </div>
+            <div class="form-check d-flex qna-check-box">
+              <input type="checkbox" id="check-g-1" />
+              <label for="check-g-1"
+                >개인 정보 수집 및 이용에 동의합니다.</label
+              >
+            </div>
+            <button class="btn btn-d-dark qna-btn d-flex-all-center">
+              문의하기
+            </button>
+          </form>
+        </div>
+      </div>
     </main>
     <footer></footer>
     <script src="../js/header_after_login.js"></script>
     <script src="../js/qna.js"></script>
-</body>
-
+  </body>
 </html>
