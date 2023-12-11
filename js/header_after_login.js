@@ -1,6 +1,6 @@
-const headerSide=document.querySelector('.side-menu__header');
+const headerSide = document.querySelector(".side-menu__header");
 
-headerSide.innerHTML=`
+headerSide.innerHTML = `
 <div class="header__top pt-18 pb-18 pl-24 pr-24 d-flex">
             <a href="#" class="logo">
                 <h1 class="font-24-b">99 performance</h1>
@@ -27,7 +27,7 @@ headerSide.innerHTML=`
                     </div>
                 </div>
             </div>
-            <nav class="side__gnb-box">
+            <nav class="side__gnb-box" id="nav">
                 <ul class="gnb-box__gnb-list">
                     <li class="pt-6 pb-6">
                         <button class="gnb-list__main font-18-b pt-18 pb-18 pl-24 pr-21 d-flex">상품정보
@@ -175,87 +175,84 @@ headerSide.innerHTML=`
                 </ul>
             </nav>
         </div>
-`
+`;
 
 //pc
-const main = document.querySelectorAll('.gnb-list__main');
-const subList = document.querySelectorAll('.gnb-list__sub-list');
+const main = document.querySelectorAll(".gnb-list__main");
+const subList = document.querySelectorAll(".gnb-list__sub-list");
 // const subHeight=subList[0].children[0].clientHeight;
-const subHeight=46;
+const subHeight = 46;
 
+main.forEach((el) => {
+  el.addEventListener("click", function (e) {
+    if (el.parentElement.classList.contains("active")) {
+      if (el.nextElementSibling.classList.contains("gnb-list__sub-list")) {
+        e.preventDefault();
 
-main.forEach(el => {
-    el.addEventListener('click', function (e) {
-        if (el.parentElement.classList.contains('active')) {
-            if (el.nextElementSibling.classList.contains('gnb-list__sub-list')) {
-                e.preventDefault();
+        el.parentElement.classList.remove("active");
+        el.nextElementSibling.style.height = 0 + "px";
+      }
+    } else {
+      if (el.nextElementSibling.classList.contains("gnb-list__sub-list")) {
+        e.preventDefault();
+        let i = el.nextElementSibling.childElementCount;
 
-                el.parentElement.classList.remove('active');
-                el.nextElementSibling.style.height=0+'px';
-            }
-        }else{
-            if (el.nextElementSibling.classList.contains('gnb-list__sub-list')) {
-                e.preventDefault();
-                let i=el.nextElementSibling.childElementCount;
-
-                main.forEach(all=>{
-                    all.parentElement.classList.remove('active');
-                    all.nextElementSibling.style.height=0+'px';
-                })
-                el.parentElement.classList.add('active');
-                el.nextElementSibling.style.height=subHeight*i+'px';
-            }
-        }
-    });
+        main.forEach((all) => {
+          all.parentElement.classList.remove("active");
+          all.nextElementSibling.style.height = 0 + "px";
+        });
+        el.parentElement.classList.add("active");
+        el.nextElementSibling.style.height = subHeight * i + "px";
+      }
+    }
+  });
 });
 
 //mobile
-const body=document.querySelector('body');
-const opBtn=document.querySelector('.btn__open');
-const clBtn=document.querySelector('.btn__close');
-const sideBg=document.querySelector('.header__mobile-side-bg');
-const sideMenu=document.querySelector('.header__mobile-side');
+const body = document.querySelector("body");
+const opBtn = document.querySelector(".btn__open");
+const clBtn = document.querySelector(".btn__close");
+const sideBg = document.querySelector(".header__mobile-side-bg");
+const sideMenu = document.querySelector(".header__mobile-side");
 
-const moMain = document.querySelectorAll('.mo-gnb-list__main');
-const moSubList = document.querySelectorAll('.gnb-list__mo-sub-list');
+const moMain = document.querySelectorAll(".mo-gnb-list__main");
+const moSubList = document.querySelectorAll(".gnb-list__mo-sub-list");
 // const moSubHeight=moSubList[0].children[0].clientHeight;
-const moSubHeight=44;
+const moSubHeight = 44;
 
-opBtn.addEventListener('click',function(){
-    sideBg.classList.add('active');
-    sideMenu.classList.add('active');
-    body.style.overflowY='hidden';
+opBtn.addEventListener("click", function () {
+  sideBg.classList.add("active");
+  sideMenu.classList.add("active");
+  body.style.overflowY = "hidden";
 });
-clBtn.addEventListener('click',function(){
-    sideBg.classList.remove('active');
-    sideMenu.classList.remove('active');
-    body.style.overflowY='auto';
+clBtn.addEventListener("click", function () {
+  sideBg.classList.remove("active");
+  sideMenu.classList.remove("active");
+  body.style.overflowY = "auto";
 });
 
-moMain.forEach(el => {
-    el.addEventListener('click', function (e) {
-        if (el.parentElement.classList.contains('active')) {
-            if (el.nextElementSibling.classList.contains('gnb-list__mo-sub-list')) {
-                e.preventDefault();
+moMain.forEach((el) => {
+  el.addEventListener("click", function (e) {
+    if (el.parentElement.classList.contains("active")) {
+      if (el.nextElementSibling.classList.contains("gnb-list__mo-sub-list")) {
+        e.preventDefault();
 
-                el.parentElement.classList.remove('active');
-                el.nextElementSibling.style.height=0+'px';
-            }
-        }else{
-            if (el.nextElementSibling.classList.contains('gnb-list__mo-sub-list')) {
-                e.preventDefault();
-                let i2=el.nextElementSibling.childElementCount;
+        el.parentElement.classList.remove("active");
+        el.nextElementSibling.style.height = 0 + "px";
+      }
+    } else {
+      if (el.nextElementSibling.classList.contains("gnb-list__mo-sub-list")) {
+        e.preventDefault();
+        let i2 = el.nextElementSibling.childElementCount;
 
-                moMain.forEach(all=>{
-                    all.parentElement.classList.remove('active');
-                    all.nextElementSibling.style.height=0+'px';
-                })
-                el.parentElement.classList.add('active');
-                el.nextElementSibling.style.height=moSubHeight*i2+'px';
-            }
-        }
-    });
-    window.addEventListener('resize',function(){
-
-    })
+        moMain.forEach((all) => {
+          all.parentElement.classList.remove("active");
+          all.nextElementSibling.style.height = 0 + "px";
+        });
+        el.parentElement.classList.add("active");
+        el.nextElementSibling.style.height = moSubHeight * i2 + "px";
+      }
+    }
+  });
+  window.addEventListener("resize", function () {});
 });
