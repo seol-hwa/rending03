@@ -51,8 +51,8 @@ window.addEventListener("scroll", function () {
       color: "#3066E2",
     });
     gsap.to(nav2_open, {
-      duration:0.3,
-      color:"#fff",
+      duration: 0.3,
+      color: "#fff",
     });
   } else if (prevScroll > visualSecHeight) {
     gsap.to(head, {
@@ -80,8 +80,8 @@ window.addEventListener("scroll", function () {
     });
     
     gsap.to(nav2_open, {
-      duration:0.3,
-      color:"#3066E2",
+      duration: 0.3,
+      color: "#3066E2",
     });
   } else {
     gsap.to(head, {
