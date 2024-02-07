@@ -6,6 +6,7 @@ const nav2_main = document.querySelectorAll(".main-list__menu");
 const nav2_mainlist = document.querySelector(".main-list");
 const logo = document.querySelector(".logo");
 const header_right = document.querySelectorAll(".pc-wrap__right a");
+const nav2_open = document.querySelector(".nav-style-2 .mo-nav-open");
 
 nav2_main.forEach((el) => {
   el.addEventListener("focus", function () {
@@ -49,6 +50,10 @@ window.addEventListener("scroll", function () {
       duration: 0.3,
       color: "#3066E2",
     });
+    gsap.to(nav2_open, {
+      duration:0.3,
+      color:"#fff",
+    });
   } else if (prevScroll > visualSecHeight) {
     gsap.to(head, {
       duration: 0.3,
@@ -73,6 +78,11 @@ window.addEventListener("scroll", function () {
       duration: 0.3,
       color: "#fff",
     });
+    
+    gsap.to(nav2_open, {
+      duration:0.3,
+      color:"#3066E2",
+    });
   } else {
     gsap.to(head, {
       duration: 0.3,
@@ -81,7 +91,6 @@ window.addEventListener("scroll", function () {
   }
 });
 //mobile
-const nav2_open = document.querySelector(".nav-style-2 .mo-nav-open");
 const nav2_close = document.querySelector(".mo-nav-wrap-2 .mo-nav-close");
 const nav2_moWrap = document.querySelector(".mo-nav-wrap-2");
 const nav2_subList = document.querySelectorAll(".mo-nav-wrap-2 .sub-list");
