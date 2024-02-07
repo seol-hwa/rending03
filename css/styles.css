@@ -80,6 +80,9 @@ body .con-wrap__header2 .inner .header2__pc-wrap .nav-style-2 .main-list.active 
   height: 30.6rem;
 }
 body .con-wrap__header2 .inner .header2__pc-wrap .nav-style-2 .mo-nav-open {
+  color: #3066E2;
+}
+body .con-wrap__header2 .inner .header2__pc-wrap .nav-style-2 .mo-nav-open.cl-w {
   color: #fff;
 }
 body .con-wrap__header2 .inner .header2__pc-wrap .pc-wrap__right {
